@@ -1,0 +1,34 @@
+<nav id="sidebar">
+  <div class="sidebar-logo">
+    <div class="logo-icon"><svg class="icon icon-w"><use href="#i-tooth"/></svg></div>
+    <h1>Pro Funnel Basté</h1>
+    <p>Marketing Automation Suite</p>
+  </div>
+
+  {% for section in navigation.items %}
+  <div class="nav-section-label">{{ section.section }}</div>
+  {% for link in section.links %}
+  {% set isActive = (page.url == "/" or page.url == "/index.html") and link.page == "index" or (page.url and link.url and link.page != "index" and link.page in page.url) %}
+  <a href="{{ link.url }}" class="{% if isActive %}active{% endif %}">
+    <span class="nav-icon">
+      {% if link.label == "TV Escaparate" %}<svg class="icon icon-w"><use href="#i-tv"/></svg>
+      {% elif link.label == "Visión General" %}<svg class="icon icon-w"><use href="#i-target"/></svg>
+      {% elif link.label == "Arquitectura Técnica" %}<svg class="icon icon-w"><use href="#i-building"/></svg>
+      {% elif link.label == "Flujos y Procesos" %}<svg class="icon icon-w"><use href="#i-gear"/></svg>
+      {% elif link.label == "Integraciones y APIs" %}<svg class="icon icon-w"><use href="#i-link"/></svg>
+      {% elif link.label == "Estrategia de Vídeo" %}<svg class="icon icon-w"><use href="#i-video"/></svg>
+      {% elif link.label == "KPIs y Métricas" %}<svg class="icon icon-w"><use href="#i-chart"/></svg>
+      {% elif link.label == "Roadmaps y Tareas" %}<svg class="icon icon-w"><use href="#i-list"/></svg>
+      {% endif %}
+    </span>
+    {{ link.label }}
+  </a>
+  {% endfor %}
+  {% endfor %}
+
+  <div class="sidebar-footer">
+    <div>Pro Funnel Basté v1.0</div>
+    <div>Última revisión: Mar 2026</div>
+    <span class="version-badge">CONFIDENCIAL</span>
+  </div>
+</nav>

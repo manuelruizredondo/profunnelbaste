@@ -1,0 +1,13 @@
+{
+  "name": "profunnel-baste",
+  "version": "1.0.0",
+  "description": "Pro Funnel Basté - Documentación técnica y operativa",
+  "scripts": {
+    "build": "eleventy",
+    "dev": "eleventy --serve",
+    "start": "eleventy --serve"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0"
+  }
+}

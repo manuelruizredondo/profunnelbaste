@@ -1,0 +1,1611 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pro Funnel Basté — Documentación Técnica y Operativa</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/assets/css/main.css" />
+</head>
+<body>
+
+<svg xmlns="http://www.w3.org/2000/svg" style="position:absolute;width:0;height:0">
+  <defs>
+    <symbol id="i-tv" viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="15" rx="2"/><path d="M17 2l-5 5-5-5"/></symbol>
+    <symbol id="i-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></symbol>
+    <symbol id="i-building" viewBox="0 0 24 24"><rect x="4" y="2" width="16" height="20" rx="2"/><path d="M9 6h6M9 10h6M9 14h6M9 18h6"/></symbol>
+    <symbol id="i-gear" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 1v2M12 21v2M1 12h2M21 12h2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M4.2 19.8l1.4-1.4M18.4 5.6l-1.4-1.4"/></symbol>
+    <symbol id="i-link" viewBox="0 0 24 24"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></symbol>
+    <symbol id="i-video" viewBox="0 0 24 24"><path d="m22 8-6 4 6 4V8Z"/><rect x="2" y="6" width="14" height="12" rx="2"/></symbol>
+    <symbol id="i-chart" viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="M7 16v-4M12 16v-8M17 16V7"/></symbol>
+    <symbol id="i-list" viewBox="0 0 24 24"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></symbol>
+    <symbol id="i-tooth" viewBox="0 0 24 24"><path d="M12 2c-2 2-3 5-3 8 0 4 2 5 3 5s3-1 3-5c0-3-1-6-3-8z"/></symbol>
+    <symbol id="i-alert" viewBox="0 0 24 24"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"/><path d="M12 9v4"/><path d="M12 17h.01"/></symbol>
+    <symbol id="i-bulb" viewBox="0 0 24 24"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/></symbol>
+    <symbol id="i-lock" viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></symbol>
+    <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></symbol>
+    <symbol id="i-message" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></symbol>
+    <symbol id="i-dollar" viewBox="0 0 24 24"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></symbol>
+    <symbol id="i-refresh" viewBox="0 0 24 24"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/></symbol>
+    <symbol id="i-ruler" viewBox="0 0 24 24"><path d="M21 3H3v18h18"/><path d="M3 9h3M3 15h3M3 12h6M9 3v3M15 3v3M12 3v6"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+    <symbol id="i-bot" viewBox="0 0 24 24"><path d="M12 8V4H8"/><rect x="2" y="14" width="20" height="8" rx="2"/><path d="M6 18v-4M18 18v-4"/><path d="M12 8a4 4 0 0 0-4 4h8a4 4 0 0 0-4-4z"/></symbol>
+    <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/><path d="M2 12h20"/></symbol>
+    <symbol id="i-clipboard" viewBox="0 0 24 24"><rect x="8" y="2" width="8" height="4" rx="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/></symbol>
+    <symbol id="i-trend" viewBox="0 0 24 24"><path d="m22 7-8.5 8.5-4-4L2 17"/><path d="M16 7h6v6"/></symbol>
+    <symbol id="i-scissors" viewBox="0 0 24 24"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M20 4 8.5 15.5"/><path d="M8.5 8.5 20 20"/></symbol>
+    <symbol id="i-upload" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/></symbol>
+  </defs>
+</svg>
+
+<nav id="sidebar">
+  <div class="sidebar-logo">
+    <div class="logo-icon"><svg class="icon icon-w"><use href="#i-tooth"/></svg></div>
+    <h1>Pro Funnel Basté</h1>
+    <p>Marketing Automation Suite</p>
+  </div>
+
+  
+  <div class="nav-section-label">Prioridad 0</div>
+  
+  
+  <a href="/#tv-escaparate" class="active">
+    <span class="nav-icon">
+      <svg class="icon icon-w"><use href="#i-tv"/></svg>
+      
+    </span>
+    TV Escaparate
+  </a>
+  
+  
+  <div class="nav-section-label">Documentación</div>
+  
+  
+  <a href="/#vision" class="active">
+    <span class="nav-icon">
+      <svg class="icon icon-w"><use href="#i-target"/></svg>
+      
+    </span>
+    Visión General
+  </a>
+  
+  
+  <a href="/#arquitectura" class="active">
+    <span class="nav-icon">
+      <svg class="icon icon-w"><use href="#i-building"/></svg>
+      
+    </span>
+    Arquitectura Técnica
+  </a>
+  
+  
+  <a href="/#flujos" class="active">
+    <span class="nav-icon">
+      <svg class="icon icon-w"><use href="#i-gear"/></svg>
+      
+    </span>
+    Flujos y Procesos
+  </a>
+  
+  
+  <a href="/#integraciones" class="active">
+    <span class="nav-icon">
+      <svg class="icon icon-w"><use href="#i-link"/></svg>
+      
+    </span>
+    Integraciones y APIs
+  </a>
+  
+  
+  <a href="/video.html" class="">
+    <span class="nav-icon">
+      <svg class="icon icon-w"><use href="#i-video"/></svg>
+      
+    </span>
+    Estrategia de Vídeo
+  </a>
+  
+  
+  <a href="/#kpis" class="active">
+    <span class="nav-icon">
+      <svg class="icon icon-w"><use href="#i-chart"/></svg>
+      
+    </span>
+    KPIs y Métricas
+  </a>
+  
+  
+  <div class="nav-section-label">Equipo</div>
+  
+  
+  <a href="/roadmap.html" class="">
+    <span class="nav-icon">
+      <svg class="icon icon-w"><use href="#i-list"/></svg>
+      
+    </span>
+    Roadmaps y Tareas
+  </a>
+  
+  
+
+  <div class="sidebar-footer">
+    <div>Pro Funnel Basté v1.0</div>
+    <div>Última revisión: Mar 2026</div>
+    <span class="version-badge">CONFIDENCIAL</span>
+  </div>
+</nav>
+
+
+<main class="">
+  
+  <!-- HERO -->
+  <div class="hero">
+    <div class="hero-content">
+      <div class="hero-badge"><span class="dot"></span> Proyecto Activo — Fase 1</div>
+      <h2>Automatización de Marketing para <span>Clínica Dental</span> con IA</h2>
+      <p>Sistema integral de captación, nurturing y retención de pacientes, impulsado por Inteligencia Artificial y producción de vídeo profesional.</p>
+      <div class="hero-stats">
+        <div class="stat-item"><span class="stat-value">5</span><span class="stat-label">Fases (0–4)</span></div>
+        <div class="stat-item"><span class="stat-value">3 días</span><span class="stat-label">TV en marcha</span></div>
+        <div class="stat-item"><span class="stat-value">+60%</span><span class="stat-label">Leads Est.</span></div>
+        <div class="stat-item"><span class="stat-value">24/7</span><span class="stat-label">IA Activa</span></div>
+        <div class="stat-item"><span class="stat-value">-40%</span><span class="stat-label">Trabajo Manual</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ════ 0. TV ESCAPARATE ════ -->
+  <div class="priority-zero-banner">
+    <span class="pz-dot"></span>
+    Prioridad 0 — Acción Inmediata &nbsp;|&nbsp; <svg class="icon icon-w" style="width:14px;height:14px;display:inline;vertical-align:middle"><use href="#i-tv"/></svg> Vídeos Promocionales para TV del Escaparate
+  </div>
+
+  <section id="tv-escaparate">
+    <div class="section-header">
+      <div class="section-icon"><svg class="icon icon-b"><use href="#i-tv"/></svg></div>
+      <div>
+        <div class="section-title">0. TV Escaparate — Digital Signage Dental</div>
+        <div class="section-subtitle">El primer punto de contacto con el paciente: la calle</div>
+      </div>
+    </div>
+
+    <div class="alert alert-amber">
+      <span class="alert-icon"><svg class="icon icon-b"><use href="#i-alert"/></svg></span>
+      <p><strong>Máxima prioridad:</strong> La pantalla del escaparate es el único canal de marketing que funciona las 24 horas sin coste por impresión. Una TV bien programada convierte transeúntes en pacientes. Este es el primer activo a implementar, antes que cualquier campaña digital.</p>
+    </div>
+
+    <div class="two-col">
+      <div class="card">
+        <div class="card-icon"><svg class="icon icon-b"><use href="#i-target"/></svg></div>
+        <h4>Por qué la TV del escaparate es prioritaria</h4>
+        <ul class="feature-list">
+          <li>Impacto visual inmediato a personas que pasan por delante</li>
+          <li>Funciona 24/7 sin intervención del equipo</li>
+          <li>Coste de producción amortizado en semanas</li>
+          <li>Transmite profesionalidad y modernidad instantáneamente</li>
+          <li>Puede incluir QR code para reserva inmediata de cita</li>
+          <li>Diferencia visualmente la clínica de la competencia</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="card-icon"><svg class="icon icon-b"><use href="#i-ruler"/></svg></div>
+        <h4>Configuración técnica recomendada</h4>
+        <ul class="feature-list">
+          <li>Pantalla: LG 75UQ80006LB (75") — 4K UHD</li>
+          <li>Una TV: 3840 × 2160 px (4K estándar)</li>
+          <li>Dos TVs en tándem (USB): 3840 × 4320 px (pantalla extendida vertical)</li>
+          <li>Orientación: Horizontal (16:9) o Vertical (9:16) según espacio</li>
+          <li>Reproductor: integrado en la TV (reproductor nativo LG)</li>
+          <li>Gestión remota: Rise Vision o Screenly OSE (gratuito)</li>
+          <li>Conexión: WiFi o cable Ethernet para actualizaciones remotas</li>
+          <li>Protección: Pantalla de cristal anti-reflejo recomendada</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- CONFIG HARDWARE -->
+    <h3>Configuración de Televisores — Hardware Instalado</h3>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Modelo</th><th>Fabricante</th><th>Reproductor</th><th>Resolución 1 TV</th><th>Resolución 2 TVs (tándem USB)</th><th>Notas</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>75UQ80006LB</strong></td>
+            <td>LG</td>
+            <td>Integrado (nativo)</td>
+            <td>3840 × 2160 px (4K UHD)</td>
+            <td>3840 × 4320 px</td>
+            <td>Dos pantallas apiladas verticalmente, conectadas por USB como pantalla extendida</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- MOCKUPS TV -->
+    <h3>Tipos de Vídeo para la Pantalla del Escaparate</h3>
+    <div class="tv-mockup-grid">
+
+      <div class="tv-mockup">
+        <div class="tv-screen">
+          <div class="tv-content-type">Promoción</div>
+          <div class="tv-screen-title">Primera Visita<br>Gratuita</div>
+          <div class="tv-screen-sub">Ortodoncia · Implantes · Blanqueamiento</div>
+          <div class="tv-duration">0:15 seg</div>
+        </div>
+        <div class="tv-footer">
+          <span class="tv-format-label">promo_visita.mp4</span>
+          <span class="tv-res">1920×1080</span>
+        </div>
+      </div>
+
+      <div class="tv-mockup">
+        <div class="tv-screen">
+          <div class="tv-content-type">Antes / Después</div>
+          <div class="tv-screen-title">Tu sonrisa,<br>transformada</div>
+          <div class="tv-screen-sub">Resultados reales de nuestros pacientes</div>
+          <div class="tv-duration">0:20 seg</div>
+        </div>
+        <div class="tv-footer">
+          <span class="tv-format-label">antes_despues.mp4</span>
+          <span class="tv-res">1920×1080</span>
+        </div>
+      </div>
+
+      <div class="tv-mockup">
+        <div class="tv-screen">
+          <div class="tv-content-type">QR + CTA</div>
+          <div class="tv-screen-title">Reserva tu cita<br>ahora mismo</div>
+          <div class="tv-screen-sub">Escanea el QR · Sin esperas · Sin llamadas</div>
+          <div class="tv-duration">0:10 seg</div>
+        </div>
+        <div class="tv-footer">
+          <span class="tv-format-label">qr_reserva.mp4</span>
+          <span class="tv-res">1920×1080</span>
+        </div>
+      </div>
+
+      <div class="tv-mockup">
+        <div class="tv-screen portrait">
+          <div class="tv-content-type">Vertical / Vitrina</div>
+          <div class="tv-screen-title">Implantes<br>Dentales</div>
+          <div class="tv-screen-sub">Desde 899€ · Financiación 0%</div>
+          <div class="tv-duration">0:12 seg</div>
+        </div>
+        <div class="tv-footer">
+          <span class="tv-format-label">implantes_v.mp4</span>
+          <span class="tv-res">1080×1920</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- SPEC TÉCNICAS -->
+    <h3>Especificaciones Técnicas de Exportación</h3>
+    <div class="two-col">
+      <div class="spec-highlight">
+        <h4>Formato Horizontal — LG 75UQ80006LB</h4>
+        <div class="spec-row"><span class="spec-label">1 TV (4K)</span><span class="spec-value">3840 × 2160 px</span></div>
+        <div class="spec-row"><span class="spec-label">2 TVs tándem (USB)</span><span class="spec-value">3840 × 4320 px</span></div>
+        <div class="spec-row"><span class="spec-label">Full HD (escalado)</span><span class="spec-value">1920 × 1080 px</span></div>
+        <div class="spec-row"><span class="spec-label">Frame rate</span><span class="spec-value">25 fps o 30 fps</span></div>
+        <div class="spec-row"><span class="spec-label">Codec vídeo</span><span class="spec-value">H.264 / H.265</span></div>
+        <div class="spec-row"><span class="spec-label">Bitrate</span><span class="spec-value">10–15 Mbps (FHD)</span></div>
+        <div class="spec-row"><span class="spec-label">Audio</span><span class="spec-value">AAC 48kHz — o sin audio</span></div>
+        <div class="spec-row"><span class="spec-label">Formato archivo</span><span class="spec-value">.mp4 (contenedor)</span></div>
+        <div class="spec-row"><span class="spec-label">Duración recomendada</span><span class="spec-value">10 – 30 segundos por clip</span></div>
+      </div>
+      <div class="spec-highlight">
+        <h4>Formato Vertical (Pantalla en pie / vitrina estrecha)</h4>
+        <div class="spec-row"><span class="spec-label">Resolución</span><span class="spec-value">1080 × 1920 px (9:16)</span></div>
+        <div class="spec-row"><span class="spec-label">Frame rate</span><span class="spec-value">25 fps o 30 fps</span></div>
+        <div class="spec-row"><span class="spec-label">Codec vídeo</span><span class="spec-value">H.264</span></div>
+        <div class="spec-row"><span class="spec-label">Safe zone</span><span class="spec-value">Margen 80px todos los lados</span></div>
+        <div class="spec-row"><span class="spec-label">Texto mínimo</span><span class="spec-value">Fuente ≥ 60px en 1080px ancho</span></div>
+        <div class="spec-row"><span class="spec-label">Contraste</span><span class="spec-value">≥ 4.5:1 (legible en vitrina)</span></div>
+        <div class="spec-row"><span class="spec-label">Formato archivo</span><span class="spec-value">.mp4 (contenedor)</span></div>
+        <div class="spec-row"><span class="spec-label">Duración recomendada</span><span class="spec-value">8 – 15 segundos por clip</span></div>
+      </div>
+    </div>
+
+    <!-- PIPELINE PRODUCCIÓN -->
+    <h3>Pipeline de Producción de Vídeo para TV</h3>
+    <div class="flow-container">
+      <div class="flow-title"><svg class="icon icon-b"><use href="#i-tv"/></svg> Pipeline Completo — De Idea a Pantalla del Escaparate</div>
+      <div class="flow-steps">
+        <div class="flow-step trigger">
+          <div class="step-label">Briefing</div>
+          <div class="step-text">Selección de tratamiento a promocionar (mensual)</div>
+        </div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-step action">
+          <div class="step-label">IA Guión</div>
+          <div class="step-text">GPT-4o genera copy del spot de 15–30 seg + CTA</div>
+        </div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-step action">
+          <div class="step-label">Diseño</div>
+          <div class="step-text">Canva Pro o After Effects — plantilla de marca</div>
+        </div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-step action">
+          <div class="step-label">Vídeo / IA</div>
+          <div class="step-text">Grabación real o vídeo IA con HeyGen/Runway</div>
+        </div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-step action">
+          <div class="step-label">Export</div>
+          <div class="step-text">DaVinci Resolve → H.264 3840×2160 (4K) o 3840×4320 (2 TVs)</div>
+        </div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-step output">
+          <div class="step-label">Subida</div>
+          <div class="step-text">Rise Vision sube remotamente a la TV del escaparate</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- HERRAMIENTAS -->
+    <h3>Herramientas Específicas para Digital Signage</h3>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Herramienta</th><th>Uso</th><th>Precio</th><th>Por qué usarla</th><th>Prioridad</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Rise Vision</strong></td>
+            <td>Gestor de contenido digital signage — programa, programa playlists y actualiza remotamente las TVs</td>
+            <td>Desde 11€/pantalla/mes</td>
+            <td>Sin necesidad de ir físicamente a cambiar USB. Actualización en segundos desde el móvil.</td>
+            <td><span class="pill badge-rose">Crítico</span></td>
+          </tr>
+          <tr>
+            <td><strong>Screenly OSE</strong></td>
+            <td>Alternativa open source para Raspberry Pi. Gestión remota gratuita.</td>
+            <td>Gratis (hardware ~60€)</td>
+            <td>Opción de coste cero si se dispone de Raspberry Pi. Requiere algo más de configuración técnica.</td>
+            <td><span class="pill badge-amber">Alta</span></td>
+          </tr>
+          <tr>
+            <td><strong>Canva Pro</strong></td>
+            <td>Diseño de slides y vídeos animados para TV. Plantillas TV 1920×1080.</td>
+            <td>~13€/mes</td>
+            <td>El equipo de marketing puede crear piezas sin conocimientos técnicos. Exporta directo a MP4.</td>
+            <td><span class="pill badge-rose">Crítico</span></td>
+          </tr>
+          <tr>
+            <td><strong>Adobe After Effects / Premiere</strong></td>
+            <td>Animaciones profesionales, motion graphics, spots de alta calidad</td>
+            <td>Plan CC ~60€/mes</td>
+            <td>Para piezas de alto impacto: lanzamientos, campañas estacionales (verano, Navidad, vuelta al cole)</td>
+            <td><span class="pill badge-amber">Alta</span></td>
+          </tr>
+          <tr>
+            <td><strong>HeyGen</strong></td>
+            <td>Generar presentador IA (avatar) que habla el guión para spots sin grabar</td>
+            <td>Desde 24€/mes</td>
+            <td>Producir spots rápidos con "doctor IA" presentando promociones sin necesidad de grabar</td>
+            <td><span class="pill badge-purple">Opcional</span></td>
+          </tr>
+          <tr>
+            <td><strong>Runway Gen-3</strong></td>
+            <td>Generar vídeo IA (imágenes de tratamientos, clínica, sonrisas) de manera realista</td>
+            <td>Desde 12€/mes</td>
+            <td>Stock de vídeo personalizado sin necesidad de contratar grabaciones extra</td>
+            <td><span class="pill badge-gray">Futuro</span></td>
+          </tr>
+          <tr>
+            <td><strong>QR Tiger / Uniqode</strong></td>
+            <td>Generador de QR dinámicos con analytics para incluir en los vídeos</td>
+            <td>Desde 0€ (QR estático gratis)</td>
+            <td>El QR en pantalla lleva al paciente directamente a la reserva de cita. Rastrea escaneos.</td>
+            <td><span class="pill badge-rose">Crítico</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- CÓDIGO: GENERADOR DE COPY PARA TV -->
+    <div class="code-block">
+      <div class="code-header">
+        <span class="code-lang">Python — Generador de Copy para Spot de TV (GPT-4o)</span>
+        <div class="code-dots"><span class="dot-red"></span><span class="dot-amber"></span><span class="dot-green"></span></div>
+      </div>
+      <pre><code><span class="c-kw">import</span> openai
+
+<span class="c-fn">def</span> <span class="c-key">generar_spot_tv</span>(
+    tratamiento: <span class="c-key">str</span>,
+    duracion_seg: <span class="c-key">int</span> = <span class="c-num">15</span>,
+    oferta: <span class="c-key">str</span> = <span class="c-str">""</span>,
+    orientacion: <span class="c-key">str</span> = <span class="c-str">"horizontal"</span>
+) -> <span class="c-key">dict</span>:
+
+    palabras_max = duracion_seg * <span class="c-num">3</span>  <span class="c-comment"># ~3 palabras/segundo leídas en pantalla</span>
+
+    prompt = <span class="c-str">f"""
+Crea el contenido textual para un spot de TV digital de escaparate de clínica dental.
+
+Parámetros:
+- Tratamiento: {tratamiento}
+- Duración: {duracion_seg} segundos (máximo {palabras_max} palabras visibles)
+- Oferta especial: {oferta if oferta else "ninguna"}
+- Formato pantalla: {orientacion}
+
+Devuelve JSON con esta estructura exacta:
+{{
+  "titular": "Texto grande, máximo 5 palabras, impacto máximo",
+  "subtitulo": "Beneficio principal, máximo 8 palabras",
+  "cuerpo": "Detalle opcional, máximo 12 palabras",
+  "cta": "Llamada a la acción, máximo 4 palabras",
+  "qr_texto": "Texto junto al QR, máximo 5 palabras",
+  "color_fondo_sugerido": "#hexcolor",
+  "emoji_decorativo": "1 emoji relevante"
+}}
+Tono: Profesional, confianza, urgencia suave. Español neutro.
+"""</span>
+
+    response = openai.chat.completions.create(
+        model=<span class="c-str">"gpt-4o"</span>,
+        messages=[{<span class="c-str">"role"</span>: <span class="c-str">"user"</span>, <span class="c-str">"content"</span>: prompt}],
+        response_format={<span class="c-str">"type"</span>: <span class="c-str">"json_object"</span>},
+        temperature=<span class="c-num">0.6</span>
+    )
+
+    spot_data = response.choices[<span class="c-num">0</span>].message.content
+    <span class="c-kw">return</span> spot_data
+
+<span class="c-comment"># Ejemplos de uso:</span>
+<span class="c-comment"># generar_spot_tv("Ortodoncia invisible", 20, "Primera consulta gratis")</span>
+<span class="c-comment"># generar_spot_tv("Blanqueamiento dental", 15, "50% en julio")</span>
+<span class="c-comment"># generar_spot_tv("Implantes dentales", 30, "Financiación sin intereses")</span></code></pre>
+    </div>
+
+    <!-- TIPOS DE CONTENIDO Y PLAYLIST -->
+    <h3>Playlist Semanal Recomendada para el Escaparate</h3>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>#</th><th>Pieza</th><th>Duración</th><th>Frecuencia en playlist</th><th>Actualización</th><th>Herramienta</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>1</strong></td>
+            <td><strong>Spot promoción principal del mes</strong> — tratamiento estrella con precio/oferta</td>
+            <td>15–20 seg</td><td>Cada 2 clips</td><td>Mensual</td>
+            <td><span class="pill badge-purple">Canva Pro</span></td>
+          </tr>
+          <tr>
+            <td><strong>2</strong></td>
+            <td><strong>Antes/Después animado</strong> — fotos reales de pacientes (con permiso firmado)</td>
+            <td>10–15 seg</td><td>Cada 3 clips</td><td>Quincenal</td>
+            <td><span class="pill badge-blue">Premiere/Canva</span></td>
+          </tr>
+          <tr>
+            <td><strong>3</strong></td>
+            <td><strong>Presentación del equipo</strong> — doctor/a + higienistas, humaniza la clínica</td>
+            <td>20 seg</td><td>1 vez cada 10 min</td><td>Semestral</td>
+            <td><span class="pill badge-rose">Grabación real</span></td>
+          </tr>
+          <tr>
+            <td><strong>4</strong></td>
+            <td><strong>Dato educativo / curiosidad dental</strong> — "¿Sabías que…?"</td>
+            <td>8–12 seg</td><td>Cada 4 clips</td><td>Semanal</td>
+            <td><span class="pill badge-teal">Canva (IA copy)</span></td>
+          </tr>
+          <tr>
+            <td><strong>5</strong></td>
+            <td><strong>QR + CTA directo</strong> — "Reserva ahora tu cita gratis"</td>
+            <td>10 seg</td><td>Cada 5 clips</td><td>Permanente</td>
+            <td><span class="pill badge-purple">Canva + QR Tiger</span></td>
+          </tr>
+          <tr>
+            <td><strong>6</strong></td>
+            <td><strong>Vídeo testimonial de paciente</strong> — grabado en clínica, 30–60 seg editado a 20</td>
+            <td>20 seg</td><td>1 vez cada 15 min</td><td>Mensual</td>
+            <td><span class="pill badge-rose">Grabación + Descript</span></td>
+          </tr>
+          <tr>
+            <td><strong>7</strong></td>
+            <td><strong>Campaña estacional</strong> — Navidad, verano, vuelta al cole, San Valentín</td>
+            <td>15–20 seg</td><td>Sustituye spot principal</td><td>Estacional</td>
+            <td><span class="pill badge-blue">After Effects</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- CALENDARIO SEMANAL -->
+    <h3>Calendario de Actualización de Contenido</h3>
+    <div class="content-calendar">
+      <div class="cal-header">Lun</div>
+      <div class="cal-header">Mar</div>
+      <div class="cal-header">Mié</div>
+      <div class="cal-header">Jue</div>
+      <div class="cal-header">Vie</div>
+      <div class="cal-header">Sáb</div>
+      <div class="cal-header">Dom</div>
+
+      <div class="cal-cell"><div class="cal-date">Sem 1</div><span class="cal-event">Spot mensual</span><span class="cal-event green">Dato IA</span></div>
+      <div class="cal-cell"><div class="cal-date"></div><span class="cal-event blue">Antes/Después</span></div>
+      <div class="cal-cell"><div class="cal-date"></div><span class="cal-event">QR Refresh</span></div>
+      <div class="cal-cell"><div class="cal-date"></div><span class="cal-event green">Dato IA</span></div>
+      <div class="cal-cell"><div class="cal-date"></div><span class="cal-event amber">Testimonial</span></div>
+      <div class="cal-cell"><div class="cal-date"></div></div>
+      <div class="cal-cell"><div class="cal-date"></div></div>
+
+      <div class="cal-cell"><div class="cal-date">Sem 2</div><span class="cal-event green">Dato IA nuevo</span></div>
+      <div class="cal-cell"><div class="cal-date"></div><span class="cal-event blue">Equipo clínica</span></div>
+      <div class="cal-cell"><div class="cal-date"></div><span class="cal-event">Spot mensual</span></div>
+      <div class="cal-cell"><div class="cal-date"></div><span class="cal-event green">Dato IA</span></div>
+      <div class="cal-cell"><div class="cal-date"></div><span class="cal-event amber">Antes/Después</span></div>
+      <div class="cal-cell"><div class="cal-date"></div></div>
+      <div class="cal-cell"><div class="cal-date"></div></div>
+
+      <div class="cal-cell"><div class="cal-date">Sem 3</div><span class="cal-event">Spot 2 tratamiento</span></div>
+      <div class="cal-cell"><div class="cal-date"></div><span class="cal-event green">Dato IA nuevo</span></div>
+      <div class="cal-cell"><div class="cal-date"></div><span class="cal-event blue">QR actualizado</span></div>
+      <div class="cal-cell"><div class="cal-date"></div><span class="cal-event amber">Testimonial 2</span></div>
+      <div class="cal-cell"><div class="cal-date"></div><span class="cal-event">Spot mensual</span></div>
+      <div class="cal-cell"><div class="cal-date"></div></div>
+      <div class="cal-cell"><div class="cal-date"></div></div>
+
+      <div class="cal-cell"><div class="cal-date">Sem 4</div><span class="cal-event blue">Review playlist</span></div>
+      <div class="cal-cell"><div class="cal-date"></div><span class="cal-event">Dato IA</span></div>
+      <div class="cal-cell"><div class="cal-date"></div><span class="cal-event amber">Prepara mes sig.</span></div>
+      <div class="cal-cell"><div class="cal-date"></div><span class="cal-event green">Antes/Después</span></div>
+      <div class="cal-cell"><div class="cal-date"></div><span class="cal-event blue">Nuevos spots</span></div>
+      <div class="cal-cell"><div class="cal-date"></div></div>
+      <div class="cal-cell"><div class="cal-date"></div></div>
+    </div>
+
+    <!-- CONFIGURACIÓN RISE VISION -->
+    <div class="code-block">
+      <div class="code-header">
+        <span class="code-lang">JSON — Configuración de Playlist Rise Vision (API)</span>
+        <div class="code-dots"><span class="dot-red"></span><span class="dot-amber"></span><span class="dot-green"></span></div>
+      </div>
+      <pre><code>{
+  <span class="c-key">"playlist"</span>: {
+    <span class="c-key">"name"</span>: <span class="c-str">"Clinica Dental Escaparate - Mensual"</span>,
+    <span class="c-key">"transition"</span>: <span class="c-str">"fade"</span>,
+    <span class="c-key">"transition_duration"</span>: <span class="c-num">500</span>,
+    <span class="c-key">"items"</span>: [
+      {
+        <span class="c-key">"name"</span>: <span class="c-str">"spot_promocion_principal"</span>,
+        <span class="c-key">"type"</span>: <span class="c-str">"video"</span>,
+        <span class="c-key">"url"</span>: <span class="c-str">"https://storage/spot_implantes_julio.mp4"</span>,
+        <span class="c-key">"duration"</span>: <span class="c-num">20</span>,
+        <span class="c-key">"play_until"</span>: <span class="c-str">"2026-07-31"</span>
+      },
+      {
+        <span class="c-key">"name"</span>: <span class="c-str">"antes_despues_ortodoncia"</span>,
+        <span class="c-key">"type"</span>: <span class="c-str">"video"</span>,
+        <span class="c-key">"url"</span>: <span class="c-str">"https://storage/antes_despues_01.mp4"</span>,
+        <span class="c-key">"duration"</span>: <span class="c-num">15</span>
+      },
+      {
+        <span class="c-key">"name"</span>: <span class="c-str">"dato_educativo_semanal"</span>,
+        <span class="c-key">"type"</span>: <span class="c-str">"video"</span>,
+        <span class="c-key">"url"</span>: <span class="c-str">"https://storage/dato_sem_{{week_number}}.mp4"</span>,
+        <span class="c-key">"duration"</span>: <span class="c-num">10</span>,
+        <span class="c-key">"auto_rotate"</span>: <span class="c-str">"weekly"</span>
+      },
+      {
+        <span class="c-key">"name"</span>: <span class="c-str">"qr_reserva_cita"</span>,
+        <span class="c-key">"type"</span>: <span class="c-str">"video"</span>,
+        <span class="c-key">"url"</span>: <span class="c-str">"https://storage/qr_reserva_permanente.mp4"</span>,
+        <span class="c-key">"duration"</span>: <span class="c-num">10</span>
+      }
+    ],
+    <span class="c-key">"schedule"</span>: {
+      <span class="c-key">"active_hours"</span>: <span class="c-str">"08:00-21:00"</span>,
+      <span class="c-key">"days"</span>: [<span class="c-str">"mon"</span>, <span class="c-str">"tue"</span>, <span class="c-str">"wed"</span>, <span class="c-str">"thu"</span>, <span class="c-str">"fri"</span>, <span class="c-str">"sat"</span>],
+      <span class="c-key">"standby_on_close"</span>: <span class="c-kw">true</span>
+    }
+  }
+}</code></pre>
+    </div>
+
+    <div class="alert alert-green">
+      <span class="alert-icon"><svg class="icon icon-b"><use href="#i-bulb"/></svg></span>
+      <p><strong>Quick Win — Semana 1:</strong> Con Canva Pro y el reproductor integrado de la TV LG, puedes tener la primera playlist funcionando en el escaparate en menos de 3 días. Empieza con 3 piezas simples: (1) spot de bienvenida con servicios, (2) oferta del mes, (3) QR de reserva. Perfecciona el resto en paralelo.</p>
+    </div>
+
+  </section>
+
+  <!-- ════ 1. VISIÓN GENERAL ════ -->
+  <section id="vision">
+    <div class="section-header">
+      <div class="section-icon"><svg class="icon icon-b"><use href="#i-target"/></svg></div>
+      <div>
+        <div class="section-title">1. Visión General</div>
+        <div class="section-subtitle">Resumen ejecutivo y hoja de ruta de implementación</div>
+      </div>
+    </div>
+
+    <div class="alert alert-blue">
+      <span class="alert-icon"><svg class="icon icon-b"><use href="#i-bulb"/></svg></span>
+      <p><strong>Objetivo central:</strong> Transformar la clínica dental en una máquina de captación y fidelización de pacientes, combinando automatización con IA conversacional, contenido de vídeo profesional y CRM inteligente — reduciendo el trabajo manual en un 40 % y multiplicando los leads cualificados por 2,5x en 6 meses.</p>
+    </div>
+
+    <div class="two-col">
+      <div class="card">
+        <div class="card-icon"><svg class="icon icon-b"><use href="#i-target"/></svg></div>
+        <h4>Problema que resolvemos</h4>
+        <ul class="feature-list">
+          <li>Recepción desbordada atendiendo consultas repetitivas</li>
+          <li>Pacientes potenciales perdidos fuera del horario</li>
+          <li>Sin seguimiento post-visita sistematizado</li>
+          <li>Contenido de redes sociales inconsistente</li>
+          <li>Nula automatización de campañas de email/SMS</li>
+          <li>Datos de pacientes dispersos sin análisis</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="card-icon"><svg class="icon icon-b"><use href="#i-check"/></svg></div>
+        <h4>Solución propuesta</h4>
+        <ul class="feature-list">
+          <li>Chatbot IA omnicanal (web + WhatsApp + Instagram)</li>
+          <li>Reserva de citas automatizada 24/7</li>
+          <li>Secuencias de nurturing por email y SMS</li>
+          <li>Producción de vídeo con guiones IA y postpro</li>
+          <li>CRM unificado con lead scoring automático</li>
+          <li>Dashboard de métricas en tiempo real</li>
+        </ul>
+      </div>
+    </div>
+
+    <h3>Fases de Implementación</h3>
+    <div class="phases">
+
+      <div class="phase-item">
+        <div class="phase-left">
+          <div class="phase-dot">1</div>
+          <div class="phase-line"></div>
+        </div>
+        <div class="phase-body">
+          <div class="phase-header">
+            <span class="phase-title">Fase 1 — Cimientos Digitales</span>
+            <div class="badges">
+              <span class="badge badge-blue">Semanas 1–3</span>
+              <span class="badge badge-rose">CRÍTICO</span>
+            </div>
+          </div>
+          <p>Instalación del CRM, configuración del chatbot inicial, integración con Google Calendar, pixel de Facebook y Google Tag Manager. Onboarding del equipo.</p>
+          <div class="deliverables">
+            <span class="deliverable-tag">CRM configurado</span>
+            <span class="deliverable-tag">Chatbot básico live</span>
+            <span class="deliverable-tag">Tracking instalado</span>
+            <span class="deliverable-tag">GTM activo</span>
+            <span class="deliverable-tag">Formación equipo</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="phase-item">
+        <div class="phase-left">
+          <div class="phase-dot">2</div>
+          <div class="phase-line"></div>
+        </div>
+        <div class="phase-body">
+          <div class="phase-header">
+            <span class="phase-title">Fase 2 — Automatización de Captación</span>
+            <div class="badges">
+              <span class="badge badge-teal">Semanas 4–6</span>
+              <span class="badge badge-amber">ALTA</span>
+            </div>
+          </div>
+          <p>Lanzamiento de funnels de captación con Meta Ads + Google Ads, secuencias de email/SMS automatizadas, integración WhatsApp Business API y flujos de reserva 24/7.</p>
+          <div class="deliverables">
+            <span class="deliverable-tag">Funnel pago activo</span>
+            <span class="deliverable-tag">Email sequences</span>
+            <span class="deliverable-tag">WhatsApp API live</span>
+            <span class="deliverable-tag">Booking 24/7</span>
+            <span class="deliverable-tag">Lead scoring v1</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="phase-item">
+        <div class="phase-left">
+          <div class="phase-dot">3</div>
+          <div class="phase-line"></div>
+        </div>
+        <div class="phase-body">
+          <div class="phase-header">
+            <span class="phase-title">Fase 3 — Contenido y Vídeo IA</span>
+            <div class="badges">
+              <span class="badge badge-purple">Semanas 7–9</span>
+              <span class="badge badge-amber">ALTA</span>
+            </div>
+          </div>
+          <p>Producción de vídeos educativos y testimonios con guiones generados por IA, pipeline de postproducción, publicación automatizada en redes sociales y YouTube.</p>
+          <div class="deliverables">
+            <span class="deliverable-tag">4 vídeos piloto</span>
+            <span class="deliverable-tag">Plantillas IA guiones</span>
+            <span class="deliverable-tag">Canal YouTube</span>
+            <span class="deliverable-tag">Social scheduler</span>
+            <span class="deliverable-tag">Reels/Shorts</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="phase-item">
+        <div class="phase-left">
+          <div class="phase-dot">4</div>
+          <div class="phase-line"></div>
+        </div>
+        <div class="phase-body">
+          <div class="phase-header">
+            <span class="phase-title">Fase 4 — Optimización e IA Avanzada</span>
+            <div class="badges">
+              <span class="badge badge-amber">Semanas 10–12</span>
+              <span class="badge badge-green">MEDIA</span>
+            </div>
+          </div>
+          <p>Implementación de IA predictiva para lead scoring, personalización dinámica de emails, retargeting avanzado, análisis de sentimiento de reseñas y recomendaciones automatizadas.</p>
+          <div class="deliverables">
+            <span class="deliverable-tag">Lead scoring IA</span>
+            <span class="deliverable-tag">Personalización dinámica</span>
+            <span class="deliverable-tag">Retargeting avanzado</span>
+            <span class="deliverable-tag">Análisis reseñas IA</span>
+            <span class="deliverable-tag">Dashboard ejecutivo</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <h3>Tabla Maestra de Fases</h3>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Fase</th><th>Plazo</th><th>Entregables Clave</th><th>Responsable</th><th>Prioridad</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>F1 — Cimientos</strong></td>
+            <td>Sem 1–3</td>
+            <td>CRM, Chatbot básico, Tracking, GTM, Onboarding</td>
+            <td>Tech Lead + Mktg</td>
+            <td><span class="pill badge-rose">Crítico</span></td>
+          </tr>
+          <tr>
+            <td><strong>F2 — Captación</strong></td>
+            <td>Sem 4–6</td>
+            <td>Ads, Email/SMS sequences, WhatsApp API, Booking</td>
+            <td>Marketing Manager</td>
+            <td><span class="pill badge-amber">Alta</span></td>
+          </tr>
+          <tr>
+            <td><strong>F3 — Vídeo IA</strong></td>
+            <td>Sem 7–9</td>
+            <td>4 vídeos, Guiones IA, YouTube, Social scheduler</td>
+            <td>Content Creator + IA</td>
+            <td><span class="pill badge-amber">Alta</span></td>
+          </tr>
+          <tr>
+            <td><strong>F4 — Optimización</strong></td>
+            <td>Sem 10–12</td>
+            <td>Lead scoring IA, Retargeting, Dashboard ejecutivo</td>
+            <td>Data Analyst + Tech</td>
+            <td><span class="pill badge-green">Media</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ════ 2. ARQUITECTURA TÉCNICA ════ -->
+  <section id="arquitectura">
+    <div class="section-header">
+      <div class="section-icon"><svg class="icon icon-b"><use href="#i-building"/></svg></div>
+      <div>
+        <div class="section-title">2. Arquitectura Técnica</div>
+        <div class="section-subtitle">Stack de herramientas, integraciones y responsabilidades</div>
+      </div>
+    </div>
+
+    <div class="card-grid">
+      <div class="card">
+        <div class="card-icon"><svg class="icon icon-b"><use href="#i-bot"/></svg></div>
+        <h4>Capa de IA</h4>
+        <p>GPT-4o para chatbot y generación de contenido, Claude para análisis de reseñas, Whisper para transcripción de vídeos, ElevenLabs para voz sintética.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon"><svg class="icon icon-b"><use href="#i-gear"/></svg></div>
+        <h4>Automatización</h4>
+        <p>Make (ex-Integromat) como orquestador principal. Zapier para integraciones simples. n8n self-hosted para flujos sensibles con datos de pacientes (RGPD).</p>
+      </div>
+      <div class="card">
+        <div class="card-icon"><svg class="icon icon-b"><use href="#i-clipboard"/></svg></div>
+        <h4>CRM &amp; Email</h4>
+        <p>HubSpot CRM (tier gratuito + Sales Hub). ActiveCampaign para email marketing y automatizaciones avanzadas de nurturing.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon"><svg class="icon icon-b"><use href="#i-phone"/></svg></div>
+        <h4>Mensajería</h4>
+        <p>Twilio para SMS. WhatsApp Business API vía 360dialog. ManyChat para flujos Instagram/Facebook DM.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon"><svg class="icon icon-b"><use href="#i-video"/></svg></div>
+        <h4>Producción Vídeo</h4>
+        <p>DaVinci Resolve para edición. CapCut para Reels. HeyGen para avatares IA. Descript para edición basada en transcripción.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon"><svg class="icon icon-b"><use href="#i-chart"/></svg></div>
+        <h4>Analytics</h4>
+        <p>Google Analytics 4 + Search Console. Meta Pixel. Looker Studio para dashboards. Hotjar para mapas de calor.</p>
+      </div>
+    </div>
+
+    <h3>Stack Completo — Tabla de Herramientas</h3>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Herramienta</th><th>Función</th><th>Quién Gestiona</th><th>Capa</th><th>Prioridad</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>HubSpot CRM</strong></td>
+            <td>Gestión de contactos, pipeline de citas, historial de pacientes</td>
+            <td>Marketing Manager</td>
+            <td><span class="pill badge-purple">CRM</span></td>
+            <td><span class="pill badge-rose">Crítico</span></td>
+          </tr>
+          <tr>
+            <td><strong>Make (Integromat)</strong></td>
+            <td>Orquestador de automatizaciones entre plataformas</td>
+            <td>Tech Lead</td>
+            <td><span class="pill badge-teal">Automation</span></td>
+            <td><span class="pill badge-rose">Crítico</span></td>
+          </tr>
+          <tr>
+            <td><strong>OpenAI GPT-4o</strong></td>
+            <td>Chatbot conversacional, generación de emails/guiones</td>
+            <td>Tech Lead</td>
+            <td><span class="pill badge-blue">IA</span></td>
+            <td><span class="pill badge-rose">Crítico</span></td>
+          </tr>
+          <tr>
+            <td><strong>ActiveCampaign</strong></td>
+            <td>Email marketing, segmentación, lead scoring</td>
+            <td>Marketing</td>
+            <td><span class="pill badge-purple">Email</span></td>
+            <td><span class="pill badge-amber">Alta</span></td>
+          </tr>
+          <tr>
+            <td><strong>360dialog / WhatsApp API</strong></td>
+            <td>Notificaciones y conversaciones WhatsApp Business</td>
+            <td>Tech Lead</td>
+            <td><span class="pill badge-green">Mensajería</span></td>
+            <td><span class="pill badge-amber">Alta</span></td>
+          </tr>
+          <tr>
+            <td><strong>Twilio</strong></td>
+            <td>SMS de confirmación y recordatorios de cita</td>
+            <td>Tech Lead</td>
+            <td><span class="pill badge-green">Mensajería</span></td>
+            <td><span class="pill badge-amber">Alta</span></td>
+          </tr>
+          <tr>
+            <td><strong>Calendly / Cal.com</strong></td>
+            <td>Booking de citas online integrado con agenda clínica</td>
+            <td>Recepción + Tech</td>
+            <td><span class="pill badge-teal">Booking</span></td>
+            <td><span class="pill badge-rose">Crítico</span></td>
+          </tr>
+          <tr>
+            <td><strong>ManyChat</strong></td>
+            <td>Chatbot Instagram DM y Messenger</td>
+            <td>Marketing</td>
+            <td><span class="pill badge-blue">IA</span></td>
+            <td><span class="pill badge-amber">Alta</span></td>
+          </tr>
+          <tr>
+            <td><strong>Google Ads + Meta Ads</strong></td>
+            <td>Campañas de captación PPC y retargeting</td>
+            <td>Marketing Manager</td>
+            <td><span class="pill badge-amber">Ads</span></td>
+            <td><span class="pill badge-amber">Alta</span></td>
+          </tr>
+          <tr>
+            <td><strong>HeyGen / Synthesia</strong></td>
+            <td>Avatares IA para vídeos explicativos dentales</td>
+            <td>Content Creator</td>
+            <td><span class="pill badge-rose">Vídeo IA</span></td>
+            <td><span class="pill badge-gray">Media</span></td>
+          </tr>
+          <tr>
+            <td><strong>Descript</strong></td>
+            <td>Edición de vídeo por transcripción, subtítulos automáticos</td>
+            <td>Content Creator</td>
+            <td><span class="pill badge-rose">Vídeo</span></td>
+            <td><span class="pill badge-amber">Alta</span></td>
+          </tr>
+          <tr>
+            <td><strong>ElevenLabs</strong></td>
+            <td>Voz sintética en castellano para narraciones</td>
+            <td>Content Creator</td>
+            <td><span class="pill badge-blue">IA</span></td>
+            <td><span class="pill badge-gray">Media</span></td>
+          </tr>
+          <tr>
+            <td><strong>Looker Studio</strong></td>
+            <td>Dashboard de métricas unificado (GA4 + CRM + Ads)</td>
+            <td>Data Analyst</td>
+            <td><span class="pill badge-green">Analytics</span></td>
+            <td><span class="pill badge-amber">Alta</span></td>
+          </tr>
+          <tr>
+            <td><strong>n8n (self-hosted)</strong></td>
+            <td>Automatizaciones con datos sensibles de pacientes (RGPD)</td>
+            <td>Tech Lead</td>
+            <td><span class="pill badge-teal">Automation</span></td>
+            <td><span class="pill badge-amber">Alta</span></td>
+          </tr>
+          <tr>
+            <td><strong>Google Tag Manager</strong></td>
+            <td>Gestión centralizada de tracking y eventos</td>
+            <td>Tech Lead</td>
+            <td><span class="pill badge-green">Analytics</span></td>
+            <td><span class="pill badge-rose">Crítico</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="alert alert-amber">
+      <span class="alert-icon"><svg class="icon icon-b"><use href="#i-alert"/></svg></span>
+      <p><strong>Consideración RGPD:</strong> Todos los datos de salud bucodental y datos personales de pacientes deben procesarse en servidores UE. n8n self-hosted (VPS en España/Alemania) es obligatorio para flujos que manejen historiales clínicos. Nunca enviar datos clínicos a APIs de terceros sin anonimización previa.</p>
+    </div>
+  </section>
+
+  <!-- ════ 3. FLUJOS Y PROCESOS ════ -->
+  <section id="flujos">
+    <div class="section-header">
+      <div class="section-icon"><svg class="icon icon-b"><use href="#i-gear"/></svg></div>
+      <div>
+        <div class="section-title">3. Flujos y Procesos</div>
+        <div class="section-subtitle">Automatizaciones paso a paso con triggers, acciones y configuraciones</div>
+      </div>
+    </div>
+
+    <!-- FLUJO 1 -->
+    <div class="flow-container">
+      <div class="flow-title"><svg class="icon icon-b"><use href="#i-bot"/></svg> Flujo 1 — Captación y Cualificación de Lead (Chatbot IA)</div>
+      <div class="flow-steps">
+        <div class="flow-step trigger">
+          <div class="step-label">Trigger</div>
+          <div class="step-text">Usuario llega a web o envía DM en Instagram/WhatsApp</div>
+        </div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-step action">
+          <div class="step-label">Acción</div>
+          <div class="step-text">Chatbot GPT-4o saluda y pregunta tipo de tratamiento</div>
+        </div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-step condition">
+          <div class="step-label">Condición</div>
+          <div class="step-text">¿Ha proporcionado nombre + email/teléfono?</div>
+        </div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-step action">
+          <div class="step-label">Acción</div>
+          <div class="step-text">Crea contacto en HubSpot + asigna etiqueta de interés</div>
+        </div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-step output">
+          <div class="step-label">Salida</div>
+          <div class="step-text">Ofrece cita + envía SMS/email de confirmación</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="code-block">
+      <div class="code-header">
+        <span class="code-lang">Python — Chatbot Handler (Make / n8n webhook)</span>
+        <div class="code-dots"><span class="dot-red"></span><span class="dot-amber"></span><span class="dot-green"></span></div>
+      </div>
+      <pre><code><span class="c-comment"># Sistema prompt para el chatbot dental IA</span>
+<span class="c-key">SYSTEM_PROMPT</span> = <span class="c-str">"""
+Eres el asistente virtual de Clínica Dental [NOMBRE].
+Tu objetivo es:
+1. Saludar calurosamente y preguntar en qué puedes ayudar
+2. Identificar el tratamiento de interés (ortodoncia, implantes, blanqueamiento, etc.)
+3. Recopilar nombre completo y método de contacto
+4. Ofrecer disponibilidad de cita y redirigir al booking
+5. Nunca diagnosticar. Si preguntan por síntomas, remitir al doctor.
+
+Tono: cercano, profesional, en español. Respuestas máximo 3 frases.
+"""</span>
+
+<span class="c-kw">import</span> openai, json
+
+<span class="c-fn">def</span> <span class="c-key">process_lead_message</span>(user_message: <span class="c-key">str</span>, conversation_history: <span class="c-key">list</span>) -> <span class="c-key">dict</span>:
+    messages = [
+        {<span class="c-str">"role"</span>: <span class="c-str">"system"</span>, <span class="c-str">"content"</span>: SYSTEM_PROMPT},
+        *conversation_history,
+        {<span class="c-str">"role"</span>: <span class="c-str">"user"</span>, <span class="c-str">"content"</span>: user_message}
+    ]
+
+    response = openai.chat.completions.create(
+        model=<span class="c-str">"gpt-4o"</span>,
+        messages=messages,
+        temperature=<span class="c-num">0.4</span>,
+        max_tokens=<span class="c-num">200</span>,
+        response_format={<span class="c-str">"type"</span>: <span class="c-str">"json_object"</span>},
+        functions=[{
+            <span class="c-str">"name"</span>: <span class="c-str">"capture_lead_data"</span>,
+            <span class="c-str">"parameters"</span>: {
+                <span class="c-str">"type"</span>: <span class="c-str">"object"</span>,
+                <span class="c-str">"properties"</span>: {
+                    <span class="c-str">"nombre"</span>: {<span class="c-str">"type"</span>: <span class="c-str">"string"</span>},
+                    <span class="c-str">"tratamiento_interes"</span>: {<span class="c-str">"type"</span>: <span class="c-str">"string"</span>},
+                    <span class="c-str">"telefono"</span>: {<span class="c-str">"type"</span>: <span class="c-str">"string"</span>},
+                    <span class="c-str">"lead_score"</span>: {<span class="c-str">"type"</span>: <span class="c-str">"number"</span>, <span class="c-str">"description"</span>: <span class="c-str">"0-100"</span>}
+                }
+            }
+        }]
+    )
+    <span class="c-kw">return</span> response.choices[<span class="c-num">0</span>].message</code></pre>
+    </div>
+
+    <!-- FLUJO 2 -->
+    <div class="flow-container">
+      <div class="flow-title"><svg class="icon icon-b"><use href="#i-calendar"/></svg> Flujo 2 — Reserva Automática de Cita y Recordatorios</div>
+      <div class="flow-steps">
+        <div class="flow-step trigger">
+          <div class="step-label">Trigger</div>
+          <div class="step-text">Lead cualificado acepta proponer cita</div>
+        </div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-step action">
+          <div class="step-label">Acción</div>
+          <div class="step-text">Calendly muestra slots disponibles en tiempo real</div>
+        </div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-step action">
+          <div class="step-label">Acción</div>
+          <div class="step-text">Cita confirmada → Make crea evento en Google Calendar clínica</div>
+        </div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-step action">
+          <div class="step-label">Acción</div>
+          <div class="step-text">Email confirmación + SMS inmediato vía Twilio</div>
+        </div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-step output">
+          <div class="step-label">Recordatorio</div>
+          <div class="step-text">WhatsApp 24h antes + SMS 2h antes de la cita</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="code-block">
+      <div class="code-header">
+        <span class="code-lang">JSON — Make Scenario: Reminder Automation</span>
+        <div class="code-dots"><span class="dot-red"></span><span class="dot-amber"></span><span class="dot-green"></span></div>
+      </div>
+      <pre><code>{
+  <span class="c-key">"scenario"</span>: <span class="c-str">"dental_appointment_reminder"</span>,
+  <span class="c-key">"trigger"</span>: {
+    <span class="c-key">"app"</span>: <span class="c-str">"calendly"</span>,
+    <span class="c-key">"event"</span>: <span class="c-str">"invitee.created"</span>
+  },
+  <span class="c-key">"steps"</span>: [
+    {
+      <span class="c-key">"id"</span>: <span class="c-num">1</span>,
+      <span class="c-key">"app"</span>: <span class="c-str">"hubspot"</span>,
+      <span class="c-key">"action"</span>: <span class="c-str">"update_contact"</span>,
+      <span class="c-key">"data"</span>: {
+        <span class="c-key">"lifecycle_stage"</span>: <span class="c-str">"opportunity"</span>,
+        <span class="c-key">"appointment_date"</span>: <span class="c-str">"{{trigger.event.start_time}}"</span>
+      }
+    },
+    {
+      <span class="c-key">"id"</span>: <span class="c-num">2</span>,
+      <span class="c-key">"app"</span>: <span class="c-str">"twilio"</span>,
+      <span class="c-key">"action"</span>: <span class="c-str">"send_sms"</span>,
+      <span class="c-key">"schedule"</span>: <span class="c-str">"-24h"</span>,
+      <span class="c-key">"template"</span>: <span class="c-str">"Hola {{nombre}}, te recordamos tu cita mañana a las {{hora}}. Responde CANCELAR si no puedes asistir."</span>
+    },
+    {
+      <span class="c-key">"id"</span>: <span class="c-num">3</span>,
+      <span class="c-key">"app"</span>: <span class="c-str">"whatsapp_360dialog"</span>,
+      <span class="c-key">"action"</span>: <span class="c-str">"send_template_message"</span>,
+      <span class="c-key">"schedule"</span>: <span class="c-str">"-2h"</span>,
+      <span class="c-key">"template_name"</span>: <span class="c-str">"appointment_reminder_es"</span>
+    }
+  ]
+}</code></pre>
+    </div>
+
+    <!-- FLUJO 3 -->
+    <div class="flow-container">
+      <div class="flow-title"><svg class="icon icon-b"><use href="#i-mail"/></svg> Flujo 3 — Secuencia de Nurturing Post-Lead (Email + WhatsApp)</div>
+      <div class="flow-steps">
+        <div class="flow-step trigger">
+          <div class="step-label">Trigger</div>
+          <div class="step-text">Nuevo contacto en HubSpot sin cita confirmada</div>
+        </div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-step action">
+          <div class="step-label">Día 0</div>
+          <div class="step-text">Email bienvenida + descarga PDF gratuito (guía dental)</div>
+        </div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-step action">
+          <div class="step-label">Día 3</div>
+          <div class="step-text">Email educativo sobre tratamiento de interés + vídeo</div>
+        </div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-step action">
+          <div class="step-label">Día 7</div>
+          <div class="step-text">WhatsApp personalizado con oferta de primera visita gratuita</div>
+        </div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-step output">
+          <div class="step-label">Día 14</div>
+          <div class="step-text">SMS de seguimiento + transferencia a comercial si no convierte</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="code-block">
+      <div class="code-header">
+        <span class="code-lang">YAML — ActiveCampaign Automation: Nurture Sequence</span>
+        <div class="code-dots"><span class="dot-red"></span><span class="dot-amber"></span><span class="dot-green"></span></div>
+      </div>
+      <pre><code><span class="c-key">automation</span>:
+  <span class="c-key">name</span>: <span class="c-str">"Dental Lead Nurturing ES"</span>
+  <span class="c-key">trigger</span>:
+    <span class="c-key">type</span>: <span class="c-str">contact_tag_added</span>
+    <span class="c-key">tag</span>: <span class="c-str">"lead-cualificado"</span>
+
+  <span class="c-key">steps</span>:
+    - <span class="c-key">wait</span>: <span class="c-num">0</span>
+      <span class="c-key">action</span>: send_email
+      <span class="c-key">template</span>: <span class="c-str">"bienvenida_dental"</span>
+      <span class="c-key">subject</span>: <span class="c-str">"Tu sonrisa merece lo mejor 😊 — Guía gratuita incluida"</span>
+
+    - <span class="c-key">wait</span>: <span class="c-num">3</span> <span class="c-comment"># días</span>
+      <span class="c-key">condition</span>: <span class="c-str">"NOT has_appointment"</span>
+      <span class="c-key">action</span>: send_email
+      <span class="c-key">template</span>: <span class="c-str">"educativo_{{lead.tratamiento_interes}}"</span>
+
+    - <span class="c-key">wait</span>: <span class="c-num">7</span>
+      <span class="c-key">condition</span>: <span class="c-str">"NOT has_appointment"</span>
+      <span class="c-key">action</span>: send_whatsapp
+      <span class="c-key">message</span>: <span class="c-str">"Hola {{first_name}}, ¿tienes 15 min esta semana? Primera visita sin coste 🦷"</span>
+
+    - <span class="c-key">wait</span>: <span class="c-num">14</span>
+      <span class="c-key">condition</span>: <span class="c-str">"NOT has_appointment"</span>
+      <span class="c-key">action</span>: assign_to_sales_rep
+      <span class="c-key">priority</span>: <span class="c-str">"high"</span></code></pre>
+    </div>
+
+    <!-- FLUJO 4 -->
+    <div class="flow-container">
+      <div class="flow-title"><svg class="icon icon-b"><use href="#i-star"/></svg> Flujo 4 — Solicitud Automática de Reseña Post-Tratamiento</div>
+      <div class="flow-steps">
+        <div class="flow-step trigger">
+          <div class="step-label">Trigger</div>
+          <div class="step-text">Cita marcada como "completada" en el sistema</div>
+        </div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-step action">
+          <div class="step-label">+2h</div>
+          <div class="step-text">SMS de satisfacción (escala 1-5)</div>
+        </div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-step condition">
+          <div class="step-label">Condición</div>
+          <div class="step-text">Puntuación ≥ 4? → Sí: pide reseña Google; No: alerta interna</div>
+        </div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-step action">
+          <div class="step-label">Acción</div>
+          <div class="step-text">IA analiza texto reseña negativa y sugiere respuesta</div>
+        </div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-step output">
+          <div class="step-label">Salida</div>
+          <div class="step-text">Reseña publicada / Incidencia gestionada por equipo</div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ════ 4. INTEGRACIONES Y APIs ════ -->
+  <section id="integraciones">
+    <div class="section-header">
+      <div class="section-icon"><svg class="icon icon-b"><use href="#i-link"/></svg></div>
+      <div>
+        <div class="section-title">4. Integraciones y APIs</div>
+        <div class="section-subtitle">Mapa de conexiones, credenciales y notas técnicas</div>
+      </div>
+    </div>
+
+    <div class="alert alert-green">
+      <span class="alert-icon"><svg class="icon icon-b"><use href="#i-lock"/></svg></span>
+      <p><strong>Gestión de credenciales:</strong> Todas las API Keys deben almacenarse en un gestor de secretos (Bitwarden Secrets Manager o HashiCorp Vault). Nunca en texto plano ni en repositorios. Rotación trimestral obligatoria.</p>
+    </div>
+
+    <div class="integration-map">
+
+      <div class="integration-card">
+        <div class="int-header">
+          <div class="int-logo" style="background:var(--gray-200);font-size:.75rem;color:var(--gray-800);">GPT</div>
+          <div><div class="int-name">OpenAI API</div><div class="int-type">IA Generativa</div></div>
+        </div>
+        <div class="int-row"><span class="int-label">Método</span><span class="int-value">REST API v1</span></div>
+        <div class="int-row"><span class="int-label">Endpoint</span><span class="int-value">api.openai.com/v1/chat</span></div>
+        <div class="int-row"><span class="int-label">Credencial</span><span class="int-value">API Key (Bearer Token)</span></div>
+        <div class="int-row"><span class="int-label">Modelo</span><span class="int-value">gpt-4o / gpt-4o-mini</span></div>
+        <div class="int-row"><span class="int-label">Uso</span><span class="int-value">Chatbot + generación contenido</span></div>
+        <div class="int-row"><span class="int-label">Límite</span><span class="int-value">Rate limit: 10k TPM</span></div>
+      </div>
+
+      <div class="integration-card">
+        <div class="int-header">
+          <div class="int-logo" style="background:var(--gray-200);font-size:.75rem;color:var(--gray-800);">HUB</div>
+          <div><div class="int-name">HubSpot CRM</div><div class="int-type">CRM & Pipeline</div></div>
+        </div>
+        <div class="int-row"><span class="int-label">Método</span><span class="int-value">REST API v3 + Webhooks</span></div>
+        <div class="int-row"><span class="int-label">Auth</span><span class="int-value">OAuth 2.0 / Private App Token</span></div>
+        <div class="int-row"><span class="int-label">Recursos</span><span class="int-value">contacts, deals, tasks</span></div>
+        <div class="int-row"><span class="int-label">Webhook</span><span class="int-value">contact.creation, deal.update</span></div>
+        <div class="int-row"><span class="int-label">Integra con</span><span class="int-value">Make, Calendly, WhatsApp</span></div>
+      </div>
+
+      <div class="integration-card">
+        <div class="int-header">
+          <div class="int-logo" style="background:var(--gray-200);font-size:.75rem;color:var(--gray-800);">TWL</div>
+          <div><div class="int-name">Twilio</div><div class="int-type">SMS & Voz</div></div>
+        </div>
+        <div class="int-row"><span class="int-label">Método</span><span class="int-value">REST API + Node SDK</span></div>
+        <div class="int-row"><span class="int-label">Auth</span><span class="int-value">Account SID + Auth Token</span></div>
+        <div class="int-row"><span class="int-label">Servicios</span><span class="int-value">SMS, WhatsApp Sandbox</span></div>
+        <div class="int-row"><span class="int-label">Sender</span><span class="int-value">Número DID España (+34)</span></div>
+        <div class="int-row"><span class="int-label">Webhook</span><span class="int-value">message status callbacks</span></div>
+      </div>
+
+      <div class="integration-card">
+        <div class="int-header">
+          <div class="int-logo" style="background:var(--gray-200);font-size:.75rem;color:var(--gray-800);">360</div>
+          <div><div class="int-name">360dialog</div><div class="int-type">WhatsApp Business API</div></div>
+        </div>
+        <div class="int-row"><span class="int-label">Método</span><span class="int-value">REST API (Meta Cloud API)</span></div>
+        <div class="int-row"><span class="int-label">Auth</span><span class="int-value">API Key partner channel</span></div>
+        <div class="int-row"><span class="int-label">Templates</span><span class="int-value">Pre-aprobados por Meta</span></div>
+        <div class="int-row"><span class="int-label">Integra con</span><span class="int-value">ManyChat, Make, HubSpot</span></div>
+        <div class="int-row"><span class="int-label">Nota</span><span class="int-value">Verificación negocio Meta requerida</span></div>
+      </div>
+
+      <div class="integration-card">
+        <div class="int-header">
+          <div class="int-logo" style="background:var(--gray-200);font-size:.75rem;color:var(--gray-800);">CAL</div>
+          <div><div class="int-name">Calendly / Cal.com</div><div class="int-type">Booking Engine</div></div>
+        </div>
+        <div class="int-row"><span class="int-label">Método</span><span class="int-value">REST API v2 + Webhooks</span></div>
+        <div class="int-row"><span class="int-label">Auth</span><span class="int-value">OAuth 2.0 / Personal Token</span></div>
+        <div class="int-row"><span class="int-label">Webhooks</span><span class="int-value">invitee.created/canceled</span></div>
+        <div class="int-row"><span class="int-label">Integra con</span><span class="int-value">Google Calendar, HubSpot</span></div>
+        <div class="int-row"><span class="int-label">Embed</span><span class="int-value">Widget inline en web</span></div>
+      </div>
+
+      <div class="integration-card">
+        <div class="int-header">
+          <div class="int-logo" style="background:var(--gray-200);font-size:.75rem;color:var(--gray-800);">AC</div>
+          <div><div class="int-name">ActiveCampaign</div><div class="int-type">Email Marketing</div></div>
+        </div>
+        <div class="int-row"><span class="int-label">Método</span><span class="int-value">REST API v3</span></div>
+        <div class="int-row"><span class="int-label">Auth</span><span class="int-value">API Key en header</span></div>
+        <div class="int-row"><span class="int-label">Recursos</span><span class="int-value">contacts, automations, lists</span></div>
+        <div class="int-row"><span class="int-label">Webhook</span><span class="int-value">contact.subscribe, email.open</span></div>
+        <div class="int-row"><span class="int-label">Integra con</span><span class="int-value">HubSpot, Make, Typeform</span></div>
+      </div>
+
+    </div>
+
+    <h3>Mapa de Conexiones</h3>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Origen</th><th>Destino</th><th>Método</th><th>Dato transferido</th><th>Frecuencia</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>Web / Landing</strong></td><td>HubSpot CRM</td><td>Formulario → Make Webhook</td><td>Nombre, email, tratamiento</td><td>Tiempo real</td></tr>
+          <tr><td><strong>Chatbot GPT-4o</strong></td><td>HubSpot CRM</td><td>API REST</td><td>Lead data + score</td><td>Tiempo real</td></tr>
+          <tr><td><strong>Calendly</strong></td><td>HubSpot + Twilio</td><td>Webhook → Make</td><td>Cita confirmada + datos</td><td>Tiempo real</td></tr>
+          <tr><td><strong>HubSpot</strong></td><td>ActiveCampaign</td><td>Webhook bidireccional</td><td>Stage cambios, etiquetas</td><td>Tiempo real</td></tr>
+          <tr><td><strong>ActiveCampaign</strong></td><td>360dialog (WhatsApp)</td><td>Make / Zapier</td><td>Mensajes plantilla</td><td>Programado</td></tr>
+          <tr><td><strong>Google Ads / Meta</strong></td><td>HubSpot CRM</td><td>Pixel + Offline conversions</td><td>Leads, conversiones</td><td>Diario</td></tr>
+          <tr><td><strong>Clínica (citas)</strong></td><td>Twilio SMS</td><td>n8n webhook</td><td>Confirmaciones, recordatorios</td><td>Programado</td></tr>
+          <tr><td><strong>Google Reviews</strong></td><td>Slack + CRM</td><td>Make + Places API</td><td>Nuevas reseñas</td><td>Cada 6h</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="code-block">
+      <div class="code-header">
+        <span class="code-lang">JavaScript — HubSpot Contact Upsert via API</span>
+        <div class="code-dots"><span class="dot-red"></span><span class="dot-amber"></span><span class="dot-green"></span></div>
+      </div>
+      <pre><code><span class="c-kw">const</span> <span class="c-key">upsertDentalLead</span> = <span class="c-kw">async</span> (leadData) => {
+  <span class="c-kw">const</span> { nombre, email, telefono, tratamiento, leadScore } = leadData;
+
+  <span class="c-kw">const</span> payload = {
+    <span class="c-key">properties</span>: {
+      <span class="c-key">firstname</span>: nombre.split(<span class="c-str">' '</span>)[<span class="c-num">0</span>],
+      <span class="c-key">lastname</span>: nombre.split(<span class="c-str">' '</span>).slice(<span class="c-num">1</span>).join(<span class="c-str">' '</span>),
+      <span class="c-key">email</span>: email,
+      <span class="c-key">phone</span>: telefono,
+      <span class="c-key">tratamiento_interes</span>: tratamiento,
+      <span class="c-key">hs_lead_status</span>: <span class="c-str">'NEW'</span>,
+      <span class="c-key">lead_score_ia</span>: leadScore,
+      <span class="c-key">fuente_captacion</span>: <span class="c-str">'chatbot_web'</span>
+    }
+  };
+
+  <span class="c-kw">const</span> response = <span class="c-kw">await</span> <span class="c-fn">fetch</span>(
+    <span class="c-str">'https://api.hubapi.com/crm/v3/objects/contacts/upsert'</span>,
+    {
+      method: <span class="c-str">'POST'</span>,
+      headers: {
+        <span class="c-str">'Authorization'</span>: <span class="c-str">`Bearer ${process.env.HUBSPOT_TOKEN}`</span>,
+        <span class="c-str">'Content-Type'</span>: <span class="c-str">'application/json'</span>
+      },
+      body: JSON.<span class="c-fn">stringify</span>(payload)
+    }
+  );
+
+  <span class="c-kw">if</span> (response.ok) {
+    <span class="c-comment">// Disparar secuencia de nurturing en ActiveCampaign</span>
+    <span class="c-kw">await</span> <span class="c-fn">triggerNurturingSequence</span>(email, tratamiento);
+  }
+};</code></pre>
+    </div>
+  </section>
+
+  <!-- ════ 5. KPIs Y MÉTRICAS ════ -->
+  <section id="kpis">
+    <div class="section-header">
+      <div class="section-icon"><svg class="icon icon-b"><use href="#i-chart"/></svg></div>
+      <div>
+        <div class="section-title">5. KPIs y Métricas</div>
+        <div class="section-subtitle">Indicadores clave de rendimiento, targets y fuentes de datos</div>
+      </div>
+    </div>
+
+    <div class="kpi-grid">
+      <div class="kpi-card">
+        <div class="kpi-icon"><svg class="icon icon-b"><use href="#i-target"/></svg></div>
+        <div class="kpi-metric">CPL (Coste por Lead)</div>
+        <div class="kpi-target">&lt; 15€</div>
+        <div class="kpi-source">Google Ads + Meta Ads Manager</div>
+        <span class="kpi-freq">Semanal</span>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-icon"><svg class="icon icon-b"><use href="#i-refresh"/></svg></div>
+        <div class="kpi-metric">Lead → Cita</div>
+        <div class="kpi-target">&gt; 35%</div>
+        <div class="kpi-source">HubSpot CRM Pipeline</div>
+        <span class="kpi-freq">Semanal</span>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-icon"><svg class="icon icon-b"><use href="#i-calendar"/></svg></div>
+        <div class="kpi-metric">No-Show Rate</div>
+        <div class="kpi-target">&lt; 12%</div>
+        <div class="kpi-source">Calendly + CRM</div>
+        <span class="kpi-freq">Mensual</span>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-icon"><svg class="icon icon-b"><use href="#i-mail"/></svg></div>
+        <div class="kpi-metric">Email Open Rate</div>
+        <div class="kpi-target">&gt; 28%</div>
+        <div class="kpi-source">ActiveCampaign Reports</div>
+        <span class="kpi-freq">Semanal</span>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-icon"><svg class="icon icon-b"><use href="#i-message"/></svg></div>
+        <div class="kpi-metric">Chatbot CSAT</div>
+        <div class="kpi-target">&gt; 4.2/5</div>
+        <div class="kpi-source">Encuesta in-chat</div>
+        <span class="kpi-freq">Mensual</span>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-icon"><svg class="icon icon-b"><use href="#i-star"/></svg></div>
+        <div class="kpi-metric">Google Rating</div>
+        <div class="kpi-target">&gt; 4.7</div>
+        <div class="kpi-source">Google Business Profile</div>
+        <span class="kpi-freq">Mensual</span>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-icon"><svg class="icon icon-b"><use href="#i-video"/></svg></div>
+        <div class="kpi-metric">Views Vídeo/mes</div>
+        <div class="kpi-target">&gt; 5.000</div>
+        <div class="kpi-source">YouTube Studio + IG Insights</div>
+        <span class="kpi-freq">Mensual</span>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-icon"><svg class="icon icon-b"><use href="#i-dollar"/></svg></div>
+        <div class="kpi-metric">ROAS Campañas</div>
+        <div class="kpi-target">&gt; 4x</div>
+        <div class="kpi-source">Meta Ads + Google Ads</div>
+        <span class="kpi-freq">Semanal</span>
+      </div>
+    </div>
+
+    <h3>Tabla Completa de KPIs</h3>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Métrica</th><th>Categoría</th><th>Target</th><th>Línea Base</th><th>Fuente de Datos</th><th>Revisión</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Leads/mes captados</strong></td>
+            <td><span class="pill badge-blue">Captación</span></td>
+            <td>+80 leads/mes</td><td>~30 actuales</td>
+            <td>HubSpot + GTM</td><td>Semanal</td>
+          </tr>
+          <tr>
+            <td><strong>Coste por Lead (CPL)</strong></td>
+            <td><span class="pill badge-blue">Ads</span></td>
+            <td>&lt; 15€</td><td>N/A</td>
+            <td>Meta/Google Ads Manager</td><td>Semanal</td>
+          </tr>
+          <tr>
+            <td><strong>Tasa Lead → Cita</strong></td>
+            <td><span class="pill badge-green">Conversión</span></td>
+            <td>&gt; 35%</td><td>~20%</td>
+            <td>HubSpot Pipeline</td><td>Semanal</td>
+          </tr>
+          <tr>
+            <td><strong>Tasa Cita → Paciente</strong></td>
+            <td><span class="pill badge-green">Conversión</span></td>
+            <td>&gt; 65%</td><td>~55%</td>
+            <td>CRM + Software Clínica</td><td>Mensual</td>
+          </tr>
+          <tr>
+            <td><strong>No-show Rate</strong></td>
+            <td><span class="pill badge-amber">Retención</span></td>
+            <td>&lt; 12%</td><td>~25%</td>
+            <td>Calendly + CRM</td><td>Mensual</td>
+          </tr>
+          <tr>
+            <td><strong>ROAS total campañas</strong></td>
+            <td><span class="pill badge-blue">Ads</span></td>
+            <td>&gt; 4x</td><td>N/A</td>
+            <td>Meta + Google Ads</td><td>Semanal</td>
+          </tr>
+          <tr>
+            <td><strong>Email Open Rate</strong></td>
+            <td><span class="pill badge-purple">Email</span></td>
+            <td>&gt; 28%</td><td>~20%</td>
+            <td>ActiveCampaign</td><td>Semanal</td>
+          </tr>
+          <tr>
+            <td><strong>Email CTR</strong></td>
+            <td><span class="pill badge-purple">Email</span></td>
+            <td>&gt; 4.5%</td><td>~2%</td>
+            <td>ActiveCampaign</td><td>Semanal</td>
+          </tr>
+          <tr>
+            <td><strong>WhatsApp Response Rate</strong></td>
+            <td><span class="pill badge-green">Mensajería</span></td>
+            <td>&gt; 45%</td><td>N/A</td>
+            <td>360dialog Dashboard</td><td>Mensual</td>
+          </tr>
+          <tr>
+            <td><strong>Chatbot Cualificación</strong></td>
+            <td><span class="pill badge-teal">IA</span></td>
+            <td>&gt; 60%</td><td>N/A</td>
+            <td>Logs GPT + HubSpot</td><td>Mensual</td>
+          </tr>
+          <tr>
+            <td><strong>Views Vídeo/mes</strong></td>
+            <td><span class="pill badge-rose">Vídeo</span></td>
+            <td>&gt; 5.000</td><td>~500</td>
+            <td>YouTube Studio + IG</td><td>Mensual</td>
+          </tr>
+          <tr>
+            <td><strong>Suscriptores YouTube</strong></td>
+            <td><span class="pill badge-rose">Vídeo</span></td>
+            <td>+500 en 6 meses</td><td>~0</td>
+            <td>YouTube Studio</td><td>Mensual</td>
+          </tr>
+          <tr>
+            <td><strong>Google Rating (estrella)</strong></td>
+            <td><span class="pill badge-amber">Reputación</span></td>
+            <td>&gt; 4.7/5</td><td>~4.2</td>
+            <td>Google Business API</td><td>Mensual</td>
+          </tr>
+          <tr>
+            <td><strong>Net Promoter Score (NPS)</strong></td>
+            <td><span class="pill badge-amber">Satisfacción</span></td>
+            <td>&gt; 55</td><td>N/A</td>
+            <td>Encuesta post-visita</td><td>Trimestral</td>
+          </tr>
+          <tr>
+            <td><strong>CAC (Coste Adquisición Paciente)</strong></td>
+            <td><span class="pill badge-blue">Economía</span></td>
+            <td>&lt; 80€</td><td>N/A</td>
+            <td>Ads + CRM (manual)</td><td>Mensual</td>
+          </tr>
+          <tr>
+            <td><strong>LTV (Valor de vida paciente)</strong></td>
+            <td><span class="pill badge-blue">Economía</span></td>
+            <td>&gt; 1.200€</td><td>~700€</td>
+            <td>Software Clínica + CRM</td><td>Trimestral</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="alert alert-green">
+      <span class="alert-icon"><svg class="icon icon-b"><use href="#i-trend"/></svg></span>
+      <p><strong>Dashboard recomendado:</strong> Consolidar todos los KPIs en <strong>Looker Studio</strong> conectado a Google Ads, Meta Ads, GA4, HubSpot y ActiveCampaign. Enviar resumen ejecutivo automático cada lunes a las 9h vía email usando Make + Google Slides API para generar el informe en PDF.</p>
+    </div>
+
+    <div class="card-grid" style="margin-top:24px;">
+      <div class="card">
+        <div class="card-icon"><svg class="icon icon-b"><use href="#i-ruler"/></svg></div>
+        <h4>Revisión Operativa Semanal</h4>
+        <ul class="feature-list">
+          <li>Leads captados vs objetivo</li>
+          <li>Rendimiento de campañas (ROAS, CPL)</li>
+          <li>Email open rate y CTR</li>
+          <li>Citas confirmadas vs canceladas</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="card-icon"><svg class="icon icon-b"><use href="#i-clipboard"/></svg></div>
+        <h4>Revisión Estratégica Mensual</h4>
+        <ul class="feature-list">
+          <li>Análisis completo del funnel</li>
+          <li>LTV y CAC actualizados</li>
+          <li>Performance de vídeo y contenido</li>
+          <li>NPS y estado de reputación online</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+
+
+</main>
+
+<script>
+  // Active nav link on scroll (index page sections)
+  const sections = document.querySelectorAll('section[id]');
+  const navLinks = document.querySelectorAll('nav a');
+  if (sections.length && navLinks.length) {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          navLinks.forEach(link => {
+            link.classList.toggle('active', link.getAttribute('href') === '#' + entry.target.id);
+          });
+        }
+      });
+    }, { threshold: 0.25 });
+    sections.forEach(s => observer.observe(s));
+  }
+</script>
+</body>
+</html>

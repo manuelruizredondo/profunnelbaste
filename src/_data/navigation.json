@@ -1,0 +1,27 @@
+{
+  "items": [
+    {
+      "section": "Prioridad 0",
+      "links": [
+        { "label": "TV Escaparate", "url": "/#tv-escaparate", "page": "index" }
+      ]
+    },
+    {
+      "section": "Documentación",
+      "links": [
+        { "label": "Visión General", "url": "/#vision", "page": "index" },
+        { "label": "Arquitectura Técnica", "url": "/#arquitectura", "page": "index" },
+        { "label": "Flujos y Procesos", "url": "/#flujos", "page": "index" },
+        { "label": "Integraciones y APIs", "url": "/#integraciones", "page": "index" },
+        { "label": "Estrategia de Vídeo", "url": "/video.html", "page": "video" },
+        { "label": "KPIs y Métricas", "url": "/#kpis", "page": "index" }
+      ]
+    },
+    {
+      "section": "Equipo",
+      "links": [
+        { "label": "Roadmaps y Tareas", "url": "/roadmap.html", "page": "roadmap" }
+      ]
+    }
+  ]
+}
