@@ -54,8 +54,8 @@ permalink: /especialista-marketing.html
           <li class="task-item priority">
             <span class="task-checkbox"></span>
             <div class="task-content">
-              <div class="task-title">Configurar Rise Vision y cargar la playlist inicial</div>
-              <div class="task-detail">Crear cuenta Rise Vision, registrar la pantalla, subir los 3 spots y configurar la rotación. Probar que la TV reproduce correctamente.</div>
+              <div class="task-title">Preparar USB con la playlist inicial y probar en la TV</div>
+              <div class="task-detail">Copiar los 3 spots al USB con la nomenclatura correcta. La TV LG reproduce automáticamente todos los vídeos de la carpeta en bucle. Probar que la rotación funciona correctamente in situ.</div>
               <span class="task-tag critical">Crítico</span>
             </div>
           </li>
@@ -91,7 +91,7 @@ permalink: /especialista-marketing.html
             <span class="task-checkbox"></span>
             <div class="task-content">
               <div class="task-title">Actualizar playlist de TV con vídeos grabados en la clínica</div>
-              <div class="task-detail">Cuando el especialista de vídeo entrega las piezas editadas, subirlas a Rise Vision y actualizar la rotación. Sustituir los spots programáticos por contenido real grabado.</div>
+              <div class="task-detail">Cuando el especialista de vídeo entrega las piezas editadas (en Google Drive), descargarlas, copiarlas al USB y actualizar el contenido de la TV. Sustituir los spots programáticos por contenido real grabado.</div>
               <span class="task-tag high">Alta</span>
             </div>
           </li>
@@ -99,7 +99,7 @@ permalink: /especialista-marketing.html
             <span class="task-checkbox"></span>
             <div class="task-content">
               <div class="task-title">Spot mensual nuevo para la TV</div>
-              <div class="task-detail">Cada mes: un tratamiento u oferta diferente. Rellenar el Excel en Drive con los textos, solicitar el fondo a Canva, generar el vídeo con la plantilla programática y subir a Rise Vision.</div>
+              <div class="task-detail">Cada mes: un tratamiento u oferta diferente. Rellenar el Excel en Drive con los textos, generar el vídeo con la plantilla programática y actualizar el USB de la TV.</div>
               <span class="task-tag high">Alta</span>
             </div>
           </li>
@@ -173,7 +173,7 @@ permalink: /especialista-marketing.html
 
     <div class="alert alert-blue">
       <span class="alert-icon"><svg class="icon icon-b"><use href="#i-target"/></svg></span>
-      <p><strong>Flujo:</strong> La clínica (o el equipo) rellena el Excel de Drive con los textos del nuevo spot y sube el fondo visual. Se notifica al responsable de marketing. Marketing unifica los datos, genera el vídeo con la plantilla programática y lo sube a Rise Vision o Dropbox para la TV.</p>
+      <p><strong>Flujo:</strong> La clínica (o el equipo) rellena el Excel de Drive con los textos del nuevo spot y sube el fondo visual. Se notifica al responsable de marketing. Marketing unifica los datos, genera el vídeo con la plantilla programática y lo copia al USB físico de la TV.</p>
     </div>
 
     <div class="card-grid">
@@ -211,10 +211,9 @@ permalink: /especialista-marketing.html
         <div class="card-icon"><svg class="icon icon-b"><use href="#i-upload"/></svg></div>
         <h4>4. Entrega en TV</h4>
         <ul class="feature-list">
-          <li>Subir a Rise Vision y añadir a la playlist activa</li>
-          <li>O exportar a USB / Dropbox para carga manual en la TV</li>
-          <li>Confirmar que la pantalla reproduce el nuevo spot</li>
-          <li>Archivar el archivo en Drive: <code>/TV_Escaparate/AAAA-MM/</code></li>
+          <li>Copiar el archivo al USB físico de la TV</li>
+          <li>Confirmar in situ (o pedir al equipo de la clínica) que la pantalla reproduce el nuevo spot</li>
+          <li>Archivar una copia en Google Drive: <code>/TV_Escaparate/AAAA-MM/</code></li>
         </ul>
       </div>
     </div>
@@ -369,57 +368,54 @@ permalink: /especialista-marketing.html
       <div class="section-icon"><svg class="icon icon-b"><use href="#i-upload"/></svg></div>
       <div>
         <div class="section-title">Almacenamiento y Distribución</div>
-        <div class="section-subtitle">Dónde guardar los vídeos y cómo servirlos a Rise Vision</div>
+        <div class="section-subtitle">Google Drive como archivo maestro · USB físico para la TV</div>
       </div>
     </div>
 
-    <div class="table-wrap">
-      <table>
-        <thead>
-          <tr><th>Opción</th><th>Uso recomendado</th><th>Ventajas</th><th>Coste</th><th>Rise Vision</th></tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><strong>Rise Vision (propio)</strong></td>
-            <td>TV escaparate</td>
-            <td>Subida directa desde el panel, gestión remota incluida, sin configurar servidor</td>
-            <td>~11€/pantalla/mes</td>
-            <td><span class="pill badge-green">Nativa</span></td>
-          </tr>
-          <tr>
-            <td><strong>Google Drive</strong></td>
-            <td>Archivo maestro y trabajo en equipo</td>
-            <td>Familiar para el equipo, carpeta compartida, 15 GB gratis</td>
-            <td>Gratis o ~2€/mes (100 GB)</td>
-            <td>Enlace de descarga directa</td>
-          </tr>
-          <tr>
-            <td><strong>Dropbox</strong></td>
-            <td>Entrega de archivos grandes</td>
-            <td>URLs directas de vídeo, fácil de compartir con el filmmaker</td>
-            <td>Gratis 2 GB, Plus ~12€/mes (2 TB)</td>
-            <td>URL directa (?dl=1)</td>
-          </tr>
-          <tr>
-            <td><strong>Cloudflare R2</strong></td>
-            <td>Si crece el volumen</td>
-            <td>Sin coste de egress, URLs públicas, compatible con S3</td>
-            <td>10 GB gratis, ~0,015€/GB/mes</td>
-            <td>URL pública por archivo</td>
-          </tr>
-        </tbody>
-      </table>
+    <div class="two-col">
+      <div class="card">
+        <div class="card-icon"><svg class="icon icon-b"><use href="#i-clipboard"/></svg></div>
+        <h4>Google Drive — Archivo maestro</h4>
+        <ul class="feature-list">
+          <li>Carpeta compartida con todo el equipo (filmmaker + marketing)</li>
+          <li>El filmmaker sube aquí los archivos editados</li>
+          <li>Marketing descarga, revisa y copia al USB para la TV</li>
+          <li>Coste: gratis (15 GB) o Google One ~2€/mes (100 GB)</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="card-icon"><svg class="icon icon-b"><use href="#i-upload"/></svg></div>
+        <h4>USB físico — TV del escaparate</h4>
+        <ul class="feature-list">
+          <li>La TV LG reproduce todos los vídeos de la carpeta raíz del USB en bucle automático</li>
+          <li>Actualizar: reemplazar o añadir archivos en el USB y reconectar</li>
+          <li>Usar USB de alta velocidad (USB 3.0) para archivos 4K</li>
+          <li>Mantener una copia de seguridad del USB actualizada</li>
+        </ul>
+      </div>
     </div>
 
     <div class="alert alert-blue">
       <span class="alert-icon"><svg class="icon icon-b"><use href="#i-bulb"/></svg></span>
-      <p><strong>Estructura de carpetas recomendada en Drive / Dropbox:</strong><br>
-        <code>/TV_Escaparate/</code> — spots listos para pantalla<br>
+      <p><strong>Estructura de carpetas en Google Drive:</strong><br>
+        <code>/TV_Escaparate/</code> — spots listos para copiar al USB<br>
         <code>/TV_Escaparate/AAAA-MM/</code> — archivo por mes<br>
         <code>/YouTube/</code> — versiones largas para YouTube<br>
-        <code>/Reels/</code> — versiones verticales para redes<br>
-        <code>/Raw/</code> — material en bruto del filmmaker (no tocar)
+        <code>/Reels/</code> — versiones verticales para redes sociales<br>
+        <code>/Raw/</code> — material en bruto del filmmaker (no editar)
       </p>
+    </div>
+
+    <h3>Orden de reproducción en el USB</h3>
+    <p>La TV LG reproduce los vídeos en orden alfabético. Usa un prefijo numérico en el nombre del archivo para controlar el orden de la playlist.</p>
+    <div class="spec-box">
+      <div class="spec-row"><span class="spec-label">01_bienvenida.mp4</span><span class="spec-value">Spot bienvenida / presentación clínica</span></div>
+      <div class="spec-row"><span class="spec-label">02_oferta_mes.mp4</span><span class="spec-value">Oferta o tratamiento del mes</span></div>
+      <div class="spec-row"><span class="spec-label">03_testimonio.mp4</span><span class="spec-value">Testimonio de paciente (si disponible)</span></div>
+      <div class="spec-row"><span class="spec-label">04_tratamiento.mp4</span><span class="spec-value">Explicativo de un tratamiento</span></div>
+      <div class="spec-row"><span class="spec-label">05_qr_reserva.mp4</span><span class="spec-value">Spot QR con link de reserva de cita</span></div>
+      <div class="spec-row"><span class="spec-label">06_dato_educativo.mp4</span><span class="spec-value">¿Sabías que…? — dato semanal</span></div>
+      <p style="margin:12px 0 0; font-size:.82rem; color:var(--gray-600);">Para cambiar el orden, modificar el prefijo numérico del nombre de archivo.</p>
     </div>
   </section>
 

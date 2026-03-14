@@ -61,7 +61,7 @@ title: Pro Funnel Basté — Documentación Técnica y Operativa
           <li>Dos TVs en tándem (USB): 3840 × 4320 px (pantalla extendida vertical)</li>
           <li>Orientación: Horizontal (16:9)</li>
           <li>Reproductor: integrado en la TV (reproductor nativo LG)</li>
-          <li>Gestión remota: Rise Vision o Screenly OSE (gratuito)</li>
+          <li>Gestión: USB físico con playlist de vídeos (reproducción nativa de la TV LG)</li>
           <li>Conexión: WiFi o cable Ethernet para actualizaciones remotas</li>
           <li>Protección: Pantalla de cristal anti-reflejo recomendada</li>
         </ul>
@@ -171,18 +171,18 @@ title: Pro Funnel Basté — Documentación Técnica y Operativa
         </thead>
         <tbody>
           <tr>
-            <td><strong>Rise Vision</strong></td>
-            <td>Gestor de contenido digital signage — programa, programa playlists y actualiza remotamente las TVs</td>
-            <td>Desde 11€/pantalla/mes</td>
-            <td>Sin necesidad de ir físicamente a cambiar USB. Actualización en segundos desde el móvil.</td>
+            <td><strong>USB físico (LG nativo)</strong></td>
+            <td>Playlist de vídeos reproducida directamente por el reproductor integrado de la TV LG</td>
+            <td>Gratis</td>
+            <td>Sin suscripción, sin configuración de red. Los archivos se ordenan por nombre (prefijo numérico).</td>
             <td><span class="pill badge-rose">Crítico</span></td>
           </tr>
           <tr>
-            <td><strong>Screenly OSE</strong></td>
-            <td>Alternativa open source para Raspberry Pi. Gestión remota gratuita.</td>
-            <td>Gratis (hardware ~60€)</td>
-            <td>Opción de coste cero si se dispone de Raspberry Pi. Requiere algo más de configuración técnica.</td>
-            <td><span class="pill badge-amber">Alta</span></td>
+            <td><strong>Google Drive</strong></td>
+            <td>Archivo maestro compartido con el equipo. El filmmaker sube aquí los archivos editados.</td>
+            <td>Gratis (15 GB) o ~2€/mes</td>
+            <td>Centraliza todo el contenido. Marketing descarga y copia al USB para actualizar la TV.</td>
+            <td><span class="pill badge-rose">Crítico</span></td>
           </tr>
           <tr>
             <td><strong>Canva Pro</strong></td>
@@ -332,52 +332,15 @@ Tono: Profesional, confianza, urgencia suave. Español neutro.
       </table>
     </div>
 
-    <!-- CONFIGURACIÓN RISE VISION -->
-    <div class="code-block">
-      <div class="code-header">
-        <span class="code-lang">JSON — Configuración de Playlist Rise Vision (API)</span>
-        <div class="code-dots"><span class="dot-red"></span><span class="dot-amber"></span><span class="dot-green"></span></div>
-      </div>
-      <pre><code>{
-  <span class="c-key">"playlist"</span>: {
-    <span class="c-key">"name"</span>: <span class="c-str">"Dental Basté — Escaparate Mensual"</span>,
-    <span class="c-key">"transition"</span>: <span class="c-str">"fade"</span>,
-    <span class="c-key">"transition_duration"</span>: <span class="c-num">500</span>,
-    <span class="c-key">"items"</span>: [
-      {
-        <span class="c-key">"name"</span>: <span class="c-str">"spot_promocion_principal"</span>,
-        <span class="c-key">"type"</span>: <span class="c-str">"video"</span>,
-        <span class="c-key">"url"</span>: <span class="c-str">"https://storage/spot_implantes_julio.mp4"</span>,
-        <span class="c-key">"duration"</span>: <span class="c-num">20</span>,
-        <span class="c-key">"play_until"</span>: <span class="c-str">"2026-07-31"</span>
-      },
-      {
-        <span class="c-key">"name"</span>: <span class="c-str">"antes_despues_ortodoncia"</span>,
-        <span class="c-key">"type"</span>: <span class="c-str">"video"</span>,
-        <span class="c-key">"url"</span>: <span class="c-str">"https://storage/antes_despues_01.mp4"</span>,
-        <span class="c-key">"duration"</span>: <span class="c-num">15</span>
-      },
-      {
-        <span class="c-key">"name"</span>: <span class="c-str">"dato_educativo_semanal"</span>,
-        <span class="c-key">"type"</span>: <span class="c-str">"video"</span>,
-        <span class="c-key">"url"</span>: <span class="c-str">"https://storage/dato_sem_{{week_number}}.mp4"</span>,
-        <span class="c-key">"duration"</span>: <span class="c-num">10</span>,
-        <span class="c-key">"auto_rotate"</span>: <span class="c-str">"weekly"</span>
-      },
-      {
-        <span class="c-key">"name"</span>: <span class="c-str">"qr_reserva_cita"</span>,
-        <span class="c-key">"type"</span>: <span class="c-str">"video"</span>,
-        <span class="c-key">"url"</span>: <span class="c-str">"https://storage/qr_reserva_permanente.mp4"</span>,
-        <span class="c-key">"duration"</span>: <span class="c-num">10</span>
-      }
-    ],
-    <span class="c-key">"schedule"</span>: {
-      <span class="c-key">"active_hours"</span>: <span class="c-str">"08:00-21:00"</span>,
-      <span class="c-key">"days"</span>: [<span class="c-str">"mon"</span>, <span class="c-str">"tue"</span>, <span class="c-str">"wed"</span>, <span class="c-str">"thu"</span>, <span class="c-str">"fri"</span>, <span class="c-str">"sat"</span>],
-      <span class="c-key">"standby_on_close"</span>: <span class="c-kw">true</span>
-    }
-  }
-}</code></pre>
+    <!-- PLAYLIST USB -->
+    <div class="info-box">
+      <strong>Orden de reproducción en el USB:</strong> La TV LG reproduce los archivos en orden alfabético. Usa un prefijo numérico para controlar la secuencia.<br><br>
+      <code>01_bienvenida.mp4</code> — Spot bienvenida / presentación clínica<br>
+      <code>02_oferta_mes.mp4</code> — Oferta o tratamiento del mes<br>
+      <code>03_testimonio.mp4</code> — Testimonio de paciente<br>
+      <code>04_tratamiento.mp4</code> — Explicativo de tratamiento<br>
+      <code>05_qr_reserva.mp4</code> — Spot QR de reserva de cita<br>
+      <code>06_dato_educativo.mp4</code> — ¿Sabías que…? semanal
     </div>
 
     <div class="alert alert-green">
