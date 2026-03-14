@@ -8,7 +8,7 @@ permalink: /video.html
 <div class="hero">
   <h1>Estrategia de Vídeo</h1>
   <p>Pipeline de producción profesional asistido por inteligencia artificial. Grabaciones en Centre Médic Basté.</p>
-  <p style="margin-top:12px; font-size:.9rem; opacity:.9;"><a href="#almacenamiento" style="color:var(--white); text-decoration:underline;">Almacenamiento</a> · <a href="#edicion" style="color:var(--white); text-decoration:underline;">Guía de Edición</a></p>
+  <p style="margin-top:12px; font-size:.9rem; opacity:.9;"><a href="#pedir-material" style="color:var(--white); text-decoration:underline;">Pedir material</a> · <a href="#almacenamiento" style="color:var(--white); text-decoration:underline;">Almacenamiento</a> · <a href="#edicion" style="color:var(--white); text-decoration:underline;">Guía de Edición</a></p>
 </div>
 
 <div class="page-content">
@@ -67,6 +67,85 @@ permalink: /video.html
           <li>LinkedIn: clips educativos para profesionales</li>
           <li>Publicación programada con Buffer/Later</li>
         </ul>
+      </div>
+    </div>
+
+    <h3 id="pedir-material">Material Necesario para los Slides</h3>
+    <p>Especificación exacta de lo que debes pedir a la clínica para crear cada slide o spot de la TV del escaparate.</p>
+
+    <h4>Textos (obligatorios / opcionales)</h4>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Campo</th><th>Descripción</th><th>Ejemplo</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>titulo_1</strong></td>
+            <td>Título grande — nombre del tratamiento</td>
+            <td>"BOTOX"</td>
+          </tr>
+          <tr>
+            <td><strong>titulo_2</strong></td>
+            <td>Subtítulo — beneficio principal</td>
+            <td>"Tratamiento antiedad"</td>
+          </tr>
+          <tr>
+            <td><strong>titulo_3</strong></td>
+            <td>Detalle extra — puntos clave</td>
+            <td>"Frente · Entrecejo · Patas de gallo"</td>
+          </tr>
+          <tr>
+            <td><strong>descripcion</strong></td>
+            <td>Texto largo descriptivo (2–3 líneas)</td>
+            <td>"Elimina arrugas de expresión..."</td>
+          </tr>
+          <tr>
+            <td><strong>precio</strong></td>
+            <td>Precio actual</td>
+            <td>"Desde 180 €"</td>
+          </tr>
+          <tr>
+            <td><strong>precio_antes</strong></td>
+            <td><em>(opcional)</em> Precio tachado</td>
+            <td>"250 €"</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h4>Imagen o vídeo de fondo (obligatorio)</h4>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Formato</th><th>Notas</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>.jpg / .png</strong></td>
+            <td>Imagen estática. Mínimo 3840×2160 px para que no pixele</td>
+          </tr>
+          <tr>
+            <td><strong>.mp4 / .mov</strong></td>
+            <td>Vídeo de fondo en bucle. Cualquier resolución, se escala</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h4>Esquema del slide — Posiciones de los textos</h4>
+    <p>Distribución visual de los elementos en el frame. Logo y tagline arriba; títulos en bloque central; descripción debajo; precios en la parte inferior.</p>
+    <div class="slide-schema-wrap">
+      <img src="/assets/images/slide-esquema.png" alt="Esquema del slide de vídeo con posiciones de titulo_1, titulo_2, titulo_3, descripcion, precio y precio_antes" class="slide-schema-img" />
+      <div class="slide-schema-legend">
+        <div class="schema-zone"><span class="schema-label">Logo + tagline</span> — Arriba centrado</div>
+        <div class="schema-zone"><span class="schema-label">titulo_1</span> — Título grande, centro superior</div>
+        <div class="schema-zone"><span class="schema-label">titulo_2</span> — Subtítulo, debajo de titulo_1</div>
+        <div class="schema-zone"><span class="schema-label">titulo_3</span> — Detalle, debajo de titulo_2</div>
+        <div class="schema-zone"><span class="schema-label">descripcion</span> — Texto 2–3 líneas, zona media</div>
+        <div class="schema-zone"><span class="schema-label">precio_antes</span> — Izquierda abajo, tachado</div>
+        <div class="schema-zone"><span class="schema-label">precio</span> — Derecha abajo, precio actual</div>
+        <div class="schema-zone"><span class="schema-label">Fondo</span> — Imagen o vídeo en bucle (3840×2160)</div>
       </div>
     </div>
 

@@ -14,11 +14,42 @@
 {% include "partials/icons.njk" %}
 {% include "partials/sidebar.njk" %}
 
+<button id="menu-toggle" type="button" class="menu-toggle" aria-label="Abrir menú">
+  <span class="menu-toggle-bar"></span>
+  <span class="menu-toggle-bar"></span>
+  <span class="menu-toggle-bar"></span>
+</button>
+<div id="menu-backdrop" class="menu-backdrop" aria-hidden="true"></div>
+
 <main class="{% if layoutClass %}{{ layoutClass }}{% endif %}">
   {{ content | safe }}
 </main>
 
 <script>
+  // Mobile menu toggle
+  (function() {
+    const toggle = document.getElementById('menu-toggle');
+    const sidebar = document.getElementById('sidebar');
+    const backdrop = document.getElementById('menu-backdrop');
+    const closeMenu = function() {
+      document.body.classList.remove('menu-open');
+      if (backdrop) backdrop.setAttribute('aria-hidden', 'true');
+    };
+    const openMenu = function() {
+      document.body.classList.add('menu-open');
+      if (backdrop) backdrop.setAttribute('aria-hidden', 'false');
+    };
+    if (toggle) {
+      toggle.addEventListener('click', function() {
+        document.body.classList.toggle('menu-open');
+        backdrop.setAttribute('aria-hidden', document.body.classList.contains('menu-open') ? 'false' : 'true');
+      });
+    }
+    if (backdrop) backdrop.addEventListener('click', closeMenu);
+    document.querySelectorAll('#sidebar a').forEach(function(link) {
+      link.addEventListener('click', closeMenu);
+    });
+  })();
   // Active nav link on scroll (index page sections)
   const sections = document.querySelectorAll('section[id]');
   const navLinks = document.querySelectorAll('nav a');
