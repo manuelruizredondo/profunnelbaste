@@ -4,15 +4,27 @@ title: Pro Funnel Basté — Especialista en Web
 layoutClass: layout-simple
 permalink: /especialista-web.html
 ---
-
+{% raw %}
 <div class="hero">
   <h1>Especialista en Web</h1>
-  <p>Landing pages, tracking, integración de chatbot, SEO y conversión.</p>
-  <p style="margin-top:12px; font-size:.9rem; opacity:.9;"><a href="/roadmap.html" style="color:var(--white); text-decoration:underline;">← Volver al Roadmap</a></p>
+  <p>Tracking · Landing pages · SEO local · Integración de chatbot y CRM · Conversión</p>
+  <p style="margin-top:12px; font-size:.9rem; opacity:.9;">
+    <a href="/roadmap.html" style="color:var(--white); text-decoration:underline;">← Volver al Roadmap</a>
+    &nbsp;·&nbsp; <a href="#tracking" style="color:var(--white); text-decoration:underline;">Tracking</a>
+    &nbsp;·&nbsp; <a href="#landings" style="color:var(--white); text-decoration:underline;">Landings</a>
+    &nbsp;·&nbsp; <a href="#seo" style="color:var(--white); text-decoration:underline;">SEO</a>
+    &nbsp;·&nbsp; <a href="#integraciones" style="color:var(--white); text-decoration:underline;">Integraciones</a>
+  </p>
 </div>
 
 <div class="page-content">
 
+  <div class="alert alert-blue">
+    <span class="alert-icon"><svg class="icon icon-b"><use href="#i-globe"/></svg></span>
+    <p><strong>Este rol cubre:</strong> la configuración del tracking (GTM, GA4, Meta Pixel), la creación y optimización de landing pages por tratamiento, el SEO local, la integración del chatbot y el widget de reserva en la web, y la sincronización de formularios con HubSpot.</p>
+  </div>
+
+  <!-- ════ TAREAS ════ -->
   <section class="specialist-section">
     <div class="specialist-header web">
       <div class="specialist-icon"><svg class="icon icon-b"><use href="#i-globe"/></svg></div>
@@ -22,11 +34,12 @@ permalink: /especialista-web.html
       </div>
     </div>
     <div class="roadmap">
+
       <div class="roadmap-phase">
         <div class="phase-header">
           <div class="phase-badge web">1</div>
           <div>
-            <div class="phase-title">Fase 1 — Fundamentos y Tracking (Semanas 1–3)</div>
+            <div class="phase-title">Fase 1 — Tracking y Fundamentos (Semanas 1–3)</div>
             <div class="phase-dates">Prioridad crítica</div>
           </div>
         </div>
@@ -34,24 +47,24 @@ permalink: /especialista-web.html
           <li class="task-item priority">
             <span class="task-checkbox"></span>
             <div class="task-content">
-              <div class="task-title">Instalar y configurar Google Tag Manager en la web</div>
-              <div class="task-detail">Contenedor GTM en todas las páginas. Crear variables y triggers base.</div>
+              <div class="task-title">Instalar Google Tag Manager en la web</div>
+              <div class="task-detail">Contenedor GTM en el &lt;head&gt; y &lt;body&gt; de todas las páginas. Crear variables de capa de datos (dataLayer) para eventos clave: CTA click, scroll depth, form submit, chatbot open.</div>
               <span class="task-tag critical">Crítico</span>
             </div>
           </li>
-          <li class="task-item">
+          <li class="task-item priority">
             <span class="task-checkbox"></span>
             <div class="task-content">
-              <div class="task-title">Implementar Google Analytics 4 y Meta Pixel</div>
-              <div class="task-detail">Eventos: page_view, scroll, click CTA, inicio formulario, envío formulario, click chatbot.</div>
+              <div class="task-title">Configurar GA4 y Meta Pixel vía GTM</div>
+              <div class="task-detail">Propiedad GA4 nueva para Dental Basté. Meta Pixel conectado al Business Manager. Eventos estándar: page_view, scroll_25/50/75/90, click_cta, form_start, form_submit, booking_started, booking_completed.</div>
               <span class="task-tag critical">Crítico</span>
             </div>
           </li>
-          <li class="task-item">
+          <li class="task-item priority">
             <span class="task-checkbox"></span>
             <div class="task-content">
               <div class="task-title">Integrar widget de chatbot en la web</div>
-              <div class="task-detail">Widget flotante que conecta con el backend del especialista IA. Diseño responsive y accesible.</div>
+              <div class="task-detail">Widget flotante (bottom-right) que conecta con el backend del especialista IA. Aparece tras 8 seg o al intentar salir (exit intent). Responsive y accesible (ARIA labels). Evento GA4 al abrir.</div>
               <span class="task-tag critical">Crítico</span>
             </div>
           </li>
@@ -59,69 +72,71 @@ permalink: /especialista-web.html
             <span class="task-checkbox"></span>
             <div class="task-content">
               <div class="task-title">Crear landing page de captación principal</div>
-              <div class="task-detail">Página de aterrizaje para campañas de ads. Formulario + chatbot. CTA claro: "Reserva tu primera visita gratis".</div>
+              <div class="task-detail">Página de aterrizaje para todas las campañas de ads. Hero con propuesta de valor, formulario visible sin scroll, chatbot flotante, CTA: "Reserva tu primera visita gratis". Sin menú de navegación (más conversión).</div>
               <span class="task-tag high">Alta</span>
             </div>
           </li>
           <li class="task-item">
             <span class="task-checkbox"></span>
             <div class="task-content">
-              <div class="task-title">Configurar Calendly / Cal.com embebido</div>
-              <div class="task-detail">Widget de reserva integrado en web y landing. Sincronización con Google Calendar de la clínica.</div>
+              <div class="task-title">Embeber Calendly / Cal.com en web y landing</div>
+              <div class="task-detail">Widget inline en la página de contacto y en todas las landings. Sincronización con Google Calendar de la clínica. Configurar confirmación de evento → webhook a HubSpot (coordinar con especialista IA).</div>
               <span class="task-tag high">Alta</span>
             </div>
           </li>
         </ul>
       </div>
+
       <div class="roadmap-phase">
         <div class="phase-header">
           <div class="phase-badge web">2</div>
           <div>
-            <div class="phase-title">Fase 2 — Conversión y SEO (Semanas 4–8)</div>
-            <div class="phase-dates">Landings por tratamiento, optimización</div>
+            <div class="phase-title">Fase 2 — Landings y SEO (Semanas 4–8)</div>
+            <div class="phase-dates">Landings por tratamiento · QR · SEO on-page</div>
           </div>
         </div>
         <ul class="task-list">
           <li class="task-item">
             <span class="task-checkbox"></span>
             <div class="task-content">
-              <div class="task-title">Landing pages por tratamiento (ortodoncia, implantes, blanqueamiento)</div>
-              <div class="task-detail">Una página por tratamiento con contenido SEO, testimonios, CTA y formulario/chatbot.</div>
+              <div class="task-title">Landing pages por tratamiento (ortodoncia, implantes, blanqueamiento, periodoncia)</div>
+              <div class="task-detail">Una página por tratamiento. Estructura: hero + beneficios + proceso en 3 pasos + testimonios + FAQ + CTA. Contenido SEO generado con IA revisado por el equipo. Formulario y chatbot integrados.</div>
               <span class="task-tag high">Alta</span>
-            </div>
-          </li>
-          <li class="task-item">
-            <span class="task-checkbox"></span>
-            <div class="task-content">
-              <div class="task-title">Implementar Hotjar o similar para mapas de calor</div>
-              <div class="task-detail">Análisis de comportamiento: dónde hacen click, dónde abandonan, scroll depth.</div>
-              <span class="task-tag medium">Media</span>
-            </div>
-          </li>
-          <li class="task-item">
-            <span class="task-checkbox"></span>
-            <div class="task-content">
-              <div class="task-title">Optimización SEO on-page</div>
-              <div class="task-detail">Meta titles, descriptions, headings H1–H3, schema markup para negocio local (LocalBusiness).</div>
-              <span class="task-tag medium">Media</span>
             </div>
           </li>
           <li class="task-item">
             <span class="task-checkbox"></span>
             <div class="task-content">
               <div class="task-title">Página de destino para QR del escaparate</div>
-              <div class="task-detail">URL corta y dedicada para el QR de la TV. Landing minimalista: "Has escaneado desde nuestro escaparate" + reserva directa.</div>
+              <div class="task-detail">URL corta dedicada (ej: dentalbaste.com/escaparate). Landing minimalista: logo + "Has escaneado desde nuestra clínica" + botón reserva directa. Sin distracciones. Tracking de fuente = "qr_escaparate".</div>
               <span class="task-tag high">Alta</span>
+            </div>
+          </li>
+          <li class="task-item">
+            <span class="task-checkbox"></span>
+            <div class="task-content">
+              <div class="task-title">SEO on-page en todas las páginas</div>
+              <div class="task-detail">Meta title y description únicos, H1 con keyword principal, schema markup LocalBusiness + MedicalClinic, Google Business Profile actualizado, imágenes con alt text, URL canónicas. Priorizar búsquedas locales "dentista [ciudad]".</div>
+              <span class="task-tag high">Alta</span>
+            </div>
+          </li>
+          <li class="task-item">
+            <span class="task-checkbox"></span>
+            <div class="task-content">
+              <div class="task-title">Instalar Hotjar para mapas de calor y grabaciones</div>
+              <div class="task-detail">Heatmaps en landing principal y por tratamiento. Grabaciones de sesión para ver dónde abandonan. Funnel tracking desde landing → formulario → Calendly. Revisar cada 2 semanas.</div>
+              <span class="task-tag medium">Media</span>
             </div>
           </li>
         </ul>
       </div>
+
       <div class="roadmap-phase">
         <div class="phase-header">
           <div class="phase-badge web">3</div>
           <div>
-            <div class="phase-title">Fase 3 — Integraciones y Mantenimiento (Semanas 9–12)</div>
-            <div class="phase-dates">CRM, formularios, A/B testing</div>
+            <div class="phase-title">Fase 3 — Optimización y CRO (Semanas 9–12)</div>
+            <div class="phase-dates">A/B testing · velocidad · HubSpot sync</div>
           </div>
         </div>
         <ul class="task-list">
@@ -129,21 +144,505 @@ permalink: /especialista-web.html
             <span class="task-checkbox"></span>
             <div class="task-content">
               <div class="task-title">Sincronización bidireccional HubSpot ↔ formularios web</div>
-              <div class="task-detail">Todos los formularios envían datos a HubSpot. Webhooks para actualizar etapas del pipeline.</div>
+              <div class="task-detail">Todos los formularios envían datos directamente a HubSpot via API o formulario nativo. Webhook para actualizar etapas del pipeline cuando cambia el estado en CRM.</div>
               <span class="task-tag medium">Media</span>
             </div>
           </li>
           <li class="task-item">
             <span class="task-checkbox"></span>
             <div class="task-content">
-              <div class="task-title">A/B testing de headlines y CTAs</div>
-              <div class="task-detail">Google Optimize o similar. Pruebas en landing principal y páginas de tratamiento.</div>
+              <div class="task-title">Optimización Core Web Vitals (LCP, CLS, INP)</div>
+              <div class="task-detail">LCP &lt; 2.5 seg, CLS &lt; 0.1, INP &lt; 200ms. Optimizar imágenes (WebP, lazy loading), diferir scripts no críticos, usar CDN para estáticos. Google PageSpeed Insights como referencia.</div>
+              <span class="task-tag medium">Media</span>
+            </div>
+          </li>
+          <li class="task-item">
+            <span class="task-checkbox"></span>
+            <div class="task-content">
+              <div class="task-title">A/B testing de headlines y CTAs principales</div>
+              <div class="task-detail">Probar variantes del hero de la landing principal: headline, subheadline, CTA ("Reserva gratis" vs "Primera visita sin coste"). Mínimo 200 visitas por variante antes de concluir.</div>
               <span class="task-tag low">Baja</span>
             </div>
           </li>
         </ul>
       </div>
+
+    </div>
+  </section>
+
+  <!-- ════ TRACKING ════ -->
+  <section id="tracking">
+    <div class="section-header">
+      <div class="section-icon"><svg class="icon icon-b"><use href="#i-trend"/></svg></div>
+      <div>
+        <div class="section-title">Tracking y Analítica</div>
+        <div class="section-subtitle">GTM · GA4 · Meta Pixel · Hotjar — eventos clave y configuración</div>
+      </div>
+    </div>
+
+    <div class="card-grid">
+      <div class="card">
+        <div class="card-icon"><svg class="icon icon-b"><use href="#i-gear"/></svg></div>
+        <h4>Google Tag Manager</h4>
+        <ul class="feature-list">
+          <li>Un único contenedor GTM gestiona todos los tags</li>
+          <li>Variables: URL, clic elemento, formulario, scroll depth</li>
+          <li>Triggers basados en dataLayer events</li>
+          <li>Publicar siempre en modo Preview antes de producción</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="card-icon"><svg class="icon icon-b"><use href="#i-chart"/></svg></div>
+        <h4>Google Analytics 4</h4>
+        <ul class="feature-list">
+          <li>Propiedad GA4 nueva para Dental Basté</li>
+          <li>Conversiones: form_submit, booking_completed</li>
+          <li>Audiencias para retargeting en Google Ads</li>
+          <li>Conectar a Search Console y Looker Studio</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="card-icon"><svg class="icon icon-b"><use href="#i-target"/></svg></div>
+        <h4>Meta Pixel</h4>
+        <ul class="feature-list">
+          <li>Pixel instalado en todas las páginas vía GTM</li>
+          <li>Eventos: ViewContent, Lead, InitiateCheckout, CompleteRegistration</li>
+          <li>Conversions API (CAPI) para datos de servidor — coordinar con IA</li>
+          <li>Audiencias de retargeting: visitantes 30 días, abandonos de formulario</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="card-icon"><svg class="icon icon-b"><use href="#i-bulb"/></svg></div>
+        <h4>Hotjar</h4>
+        <ul class="feature-list">
+          <li>Heatmaps en landing principal y páginas de tratamiento</li>
+          <li>Grabaciones de sesión: identificar puntos de abandono</li>
+          <li>Funnel: landing → formulario → Calendly → confirmación</li>
+          <li>Encuesta de salida: "¿Por qué no has reservado hoy?"</li>
+        </ul>
+      </div>
+    </div>
+
+    <h3>Esquema de Eventos GTM / GA4</h3>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Evento GA4</th><th>Trigger GTM</th><th>Meta Pixel equivalente</th><th>Conversión</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><code>page_view</code></td><td>All Pages</td><td>PageView</td><td>No</td></tr>
+          <tr><td><code>scroll_depth</code></td><td>Scroll 25/50/75/90%</td><td>—</td><td>No</td></tr>
+          <tr><td><code>click_cta</code></td><td>Click en .cta-button</td><td>InitiateCheckout</td><td>No</td></tr>
+          <tr><td><code>chatbot_open</code></td><td>Click en widget chatbot</td><td>—</td><td>No</td></tr>
+          <tr><td><code>form_start</code></td><td>Focus en primer campo</td><td>—</td><td>No</td></tr>
+          <tr><td><code>form_submit</code></td><td>Form Submit Success</td><td>Lead</td><td><strong>Sí</strong></td></tr>
+          <tr><td><code>booking_started</code></td><td>Click en widget Calendly</td><td>InitiateCheckout</td><td>No</td></tr>
+          <tr><td><code>booking_completed</code></td><td>Evento Calendly <code>event_scheduled</code></td><td>CompleteRegistration</td><td><strong>Sí</strong></td></tr>
+          <tr><td><code>qr_scan_landing</code></td><td>Page View URL contiene /escaparate</td><td>ViewContent</td><td>No</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>Código GTM — dataLayer Events</h3>
+    <div class="code-block">
+      <div class="code-header">
+        <span class="code-lang">JavaScript — dataLayer push para eventos clave</span>
+        <div class="code-dots"><span class="dot-red"></span><span class="dot-amber"></span><span class="dot-green"></span></div>
+      </div>
+      <pre><code><span class="c-comment">// Al abrir el chatbot</span>
+window.dataLayer = window.dataLayer || [];
+window.dataLayer.push({
+  event: <span class="c-str">'chatbot_open'</span>,
+  chatbot_source: <span class="c-str">'floating_widget'</span>,
+  page_path: window.location.pathname
+});
+
+<span class="c-comment">// Al enviar formulario con éxito</span>
+<span class="c-fn">function</span> <span class="c-key">onFormSuccess</span>(tratamiento) {
+  window.dataLayer.push({
+    event: <span class="c-str">'form_submit'</span>,
+    form_type: <span class="c-str">'lead_capture'</span>,
+    tratamiento_interes: tratamiento,
+    fuente: document.referrer || <span class="c-str">'direct'</span>
+  });
+}
+
+<span class="c-comment">// Calendly: escuchar evento de cita confirmada</span>
+window.addEventListener(<span class="c-str">'message'</span>, <span class="c-fn">function</span>(e) {
+  <span class="c-kw">if</span> (e.data.event === <span class="c-str">'calendly.event_scheduled'</span>) {
+    window.dataLayer.push({
+      event: <span class="c-str">'booking_completed'</span>,
+      booking_type: <span class="c-str">'calendly'</span>
+    });
+  }
+});</code></pre>
+    </div>
+
+    <h3>Meta Pixel — Eventos Estándar</h3>
+    <div class="code-block">
+      <div class="code-header">
+        <span class="code-lang">JavaScript — Meta Pixel custom events vía GTM</span>
+        <div class="code-dots"><span class="dot-red"></span><span class="dot-amber"></span><span class="dot-green"></span></div>
+      </div>
+      <pre><code><span class="c-comment">// Instalar en tag GTM de tipo "Custom HTML" — activar en All Pages</span>
+!<span class="c-fn">function</span>(f,b,e,v,n,t,s) {
+  <span class="c-kw">if</span>(f.fbq) <span class="c-kw">return</span>; n=f.fbq=<span class="c-fn">function</span>(){...}; <span class="c-comment">/* código estándar Meta */</span>
+}(window, document,<span class="c-str">'script'</span>,<span class="c-str">'https://connect.facebook.net/en_US/fbevents.js'</span>);
+fbq(<span class="c-str">'init'</span>, <span class="c-str">'TU_PIXEL_ID'</span>);
+fbq(<span class="c-str">'track'</span>, <span class="c-str">'PageView'</span>);
+
+<span class="c-comment">// Lead — trigger: dataLayer event "form_submit"</span>
+fbq(<span class="c-str">'track'</span>, <span class="c-str">'Lead'</span>, {
+  content_name: {{DLV - tratamiento_interes}},
+  content_category: <span class="c-str">'dental_treatment'</span>
+});
+
+<span class="c-comment">// Cita confirmada — trigger: dataLayer event "booking_completed"</span>
+fbq(<span class="c-str">'track'</span>, <span class="c-str">'CompleteRegistration'</span>, {
+  content_name: <span class="c-str">'appointment_booked'</span>
+});</code></pre>
+    </div>
+  </section>
+
+  <!-- ════ LANDING PAGES ════ -->
+  <section id="landings">
+    <div class="section-header">
+      <div class="section-icon"><svg class="icon icon-b"><use href="#i-target"/></svg></div>
+      <div>
+        <div class="section-title">Landing Pages</div>
+        <div class="section-subtitle">Estructura, páginas necesarias y landing del QR escaparate</div>
+      </div>
+    </div>
+
+    <h3>Páginas a crear</h3>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Página</th><th>URL sugerida</th><th>Objetivo</th><th>Fuente de tráfico</th><th>Prioridad</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Landing captación principal</strong></td>
+            <td>/primera-visita-gratis</td>
+            <td>Convertir tráfico de ads en leads</td>
+            <td>Google Ads, Meta Ads</td>
+            <td><span class="pill badge-rose">Crítico</span></td>
+          </tr>
+          <tr>
+            <td><strong>QR escaparate</strong></td>
+            <td>/escaparate</td>
+            <td>Convertir transeúntes que escanean el QR</td>
+            <td>QR de la TV</td>
+            <td><span class="pill badge-rose">Crítico</span></td>
+          </tr>
+          <tr>
+            <td><strong>Ortodoncia</strong></td>
+            <td>/ortodoncia</td>
+            <td>SEO + conversión tratamiento específico</td>
+            <td>Orgánico, Google Ads</td>
+            <td><span class="pill badge-amber">Alta</span></td>
+          </tr>
+          <tr>
+            <td><strong>Implantes dentales</strong></td>
+            <td>/implantes-dentales</td>
+            <td>SEO + conversión (ticket alto)</td>
+            <td>Orgánico, Google Ads</td>
+            <td><span class="pill badge-amber">Alta</span></td>
+          </tr>
+          <tr>
+            <td><strong>Blanqueamiento</strong></td>
+            <td>/blanqueamiento-dental</td>
+            <td>SEO + conversión</td>
+            <td>Orgánico, Meta Ads</td>
+            <td><span class="pill badge-amber">Alta</span></td>
+          </tr>
+          <tr>
+            <td><strong>Periodoncia</strong></td>
+            <td>/periodoncia</td>
+            <td>SEO + conversión</td>
+            <td>Orgánico</td>
+            <td><span class="pill badge-gray">Media</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>Estructura de una Landing por Tratamiento</h3>
+    <div class="card-grid">
+      <div class="card">
+        <div class="card-icon"><svg class="icon icon-b"><use href="#i-star"/></svg></div>
+        <h4>1. Hero</h4>
+        <ul class="feature-list">
+          <li>Headline con keyword + beneficio principal</li>
+          <li>Subheadline: "En Dental Basté, [ciudad]"</li>
+          <li>CTA primario: "Reserva tu primera visita gratis"</li>
+          <li>Imagen del equipo o de la clínica (real, no stock)</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="card-icon"><svg class="icon icon-b"><use href="#i-check"/></svg></div>
+        <h4>2. Beneficios + Proceso</h4>
+        <ul class="feature-list">
+          <li>3 beneficios del tratamiento en iconos</li>
+          <li>Proceso en 3 pasos: Consulta → Diagnóstico → Tratamiento</li>
+          <li>Badge de confianza: años de experiencia, nº pacientes</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="card-icon"><svg class="icon icon-b"><use href="#i-message"/></svg></div>
+        <h4>3. Testimonios + FAQ</h4>
+        <ul class="feature-list">
+          <li>2–3 testimonios reales con foto (con permiso)</li>
+          <li>5–7 preguntas frecuentes en acordeón</li>
+          <li>Enlace a reseñas de Google</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="card-icon"><svg class="icon icon-b"><use href="#i-calendar"/></svg></div>
+        <h4>4. CTA Final + Booking</h4>
+        <ul class="feature-list">
+          <li>Widget Calendly embebido o formulario corto</li>
+          <li>CTA repetido: "Primera visita sin compromiso"</li>
+          <li>Chatbot flotante activo en toda la página</li>
+        </ul>
+      </div>
+    </div>
+
+    <h3>Landing QR Escaparate — Especificación</h3>
+    <div class="info-box">
+      <strong>Esta página es crítica:</strong> el transeúnte que escanea el QR de la TV viene con alta intención. La página debe cargarse en &lt;2 seg (mobile first), sin menú, sin distracciones — solo reservar.
+    </div>
+    <div class="code-block">
+      <div class="code-header">
+        <span class="code-lang">HTML — Estructura de la landing /escaparate</span>
+        <div class="code-dots"><span class="dot-red"></span><span class="dot-amber"></span><span class="dot-green"></span></div>
+      </div>
+      <pre><code><span class="c-comment">&lt;!-- URL: dentalbaste.com/escaparate --&gt;</span>
+<span class="c-comment">&lt;!-- Sin menú, sin footer, sin distracciones --&gt;</span>
+
+&lt;<span class="c-kw">section</span> class=<span class="c-str">"qr-hero"</span>&gt;
+  &lt;<span class="c-kw">img</span> src=<span class="c-str">"/logo.svg"</span> alt=<span class="c-str">"Dental Basté"</span> /&gt;
+  &lt;<span class="c-kw">h1</span>&gt;¡Bienvenido a Dental Basté!&lt;/<span class="c-kw">h1</span>&gt;
+  &lt;<span class="c-kw">p</span>&gt;Has escaneado el QR de nuestra clínica.
+     Reserva ahora tu primera visita — sin coste.&lt;/<span class="c-kw">p</span>&gt;
+  &lt;<span class="c-kw">a</span> href=<span class="c-str">"#booking"</span> class=<span class="c-str">"cta-button"</span>&gt;Reservar cita gratis →&lt;/<span class="c-kw">a</span>&gt;
+&lt;/<span class="c-kw">section</span>&gt;
+
+&lt;<span class="c-kw">section</span> id=<span class="c-str">"booking"</span>&gt;
+  <span class="c-comment">&lt;!-- Widget Calendly inline --&gt;</span>
+  &lt;<span class="c-kw">div</span> class=<span class="c-str">"calendly-inline-widget"</span>
+       data-url=<span class="c-str">"https://calendly.com/dentalbaste/primera-visita?utm_source=qr_escaparate"</span>&gt;
+  &lt;/<span class="c-kw">div</span>&gt;
+&lt;/<span class="c-kw">section</span>&gt;
+
+<span class="c-comment">&lt;!-- GTM: registrar qr_scan_landing en dataLayer --&gt;</span>
+&lt;<span class="c-kw">script</span>&gt;
+  dataLayer.push({ event: <span class="c-str">'qr_scan_landing'</span>, source: <span class="c-str">'tv_escaparate'</span> });
+&lt;/<span class="c-kw">script</span>&gt;</code></pre>
+    </div>
+  </section>
+
+  <!-- ════ SEO ════ -->
+  <section id="seo">
+    <div class="section-header">
+      <div class="section-icon"><svg class="icon icon-b"><use href="#i-trend"/></svg></div>
+      <div>
+        <div class="section-title">SEO Local</div>
+        <div class="section-subtitle">On-page · Schema markup · Google Business Profile · Core Web Vitals</div>
+      </div>
+    </div>
+
+    <div class="two-col">
+      <div class="card">
+        <div class="card-icon"><svg class="icon icon-b"><use href="#i-check"/></svg></div>
+        <h4>Checklist On-Page (por página)</h4>
+        <ul class="feature-list">
+          <li>Meta title: keyword principal + ciudad (55–60 car.)</li>
+          <li>Meta description con CTA implícito (150–160 car.)</li>
+          <li>H1 único con keyword principal, solo uno por página</li>
+          <li>H2/H3 con variaciones semánticas de la keyword</li>
+          <li>URL corta y descriptiva, sin parámetros</li>
+          <li>Imágenes: WebP, &lt;100KB, alt text descriptivo</li>
+          <li>Enlace interno a la página de reserva en cada sección</li>
+          <li>Schema markup (ver código abajo)</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="card-icon"><svg class="icon icon-b"><use href="#i-target"/></svg></div>
+        <h4>Google Business Profile</h4>
+        <ul class="feature-list">
+          <li>Verificar y completar el perfil al 100%</li>
+          <li>Categoría principal: "Dentista". Secundarias: ortodoncia, implantes</li>
+          <li>Fotos reales de la clínica (mínimo 10, incluyendo equipo)</li>
+          <li>Horario actualizado, incluyendo festivos</li>
+          <li>Publicaciones semanales con el contenido del equipo de vídeo</li>
+          <li>Responder a todas las reseñas (el especialista IA ayuda con esto)</li>
+        </ul>
+      </div>
+    </div>
+
+    <h3>Schema Markup — LocalBusiness + MedicalClinic</h3>
+    <div class="code-block">
+      <div class="code-header">
+        <span class="code-lang">JSON-LD — Schema para Dental Basté (insertar en &lt;head&gt;)</span>
+        <div class="code-dots"><span class="dot-red"></span><span class="dot-amber"></span><span class="dot-green"></span></div>
+      </div>
+      <pre><code>&lt;<span class="c-kw">script</span> type=<span class="c-str">"application/ld+json"</span>&gt;
+{
+  <span class="c-key">"@context"</span>: <span class="c-str">"https://schema.org"</span>,
+  <span class="c-key">"@type"</span>: [<span class="c-str">"Dentist"</span>, <span class="c-str">"LocalBusiness"</span>],
+  <span class="c-key">"name"</span>: <span class="c-str">"Dental Basté"</span>,
+  <span class="c-key">"url"</span>: <span class="c-str">"https://dentalbaste.com"</span>,
+  <span class="c-key">"telephone"</span>: <span class="c-str">"+34 9XX XXX XXX"</span>,
+  <span class="c-key">"address"</span>: {
+    <span class="c-key">"@type"</span>: <span class="c-str">"PostalAddress"</span>,
+    <span class="c-key">"streetAddress"</span>: <span class="c-str">"Calle ..."</span>,
+    <span class="c-key">"addressLocality"</span>: <span class="c-str">"[Ciudad]"</span>,
+    <span class="c-key">"addressCountry"</span>: <span class="c-str">"ES"</span>
+  },
+  <span class="c-key">"openingHoursSpecification"</span>: [
+    { <span class="c-key">"@type"</span>: <span class="c-str">"OpeningHoursSpecification"</span>, <span class="c-key">"dayOfWeek"</span>: [<span class="c-str">"Monday"</span>,<span class="c-str">"Tuesday"</span>,<span class="c-str">"Wednesday"</span>,<span class="c-str">"Thursday"</span>,<span class="c-str">"Friday"</span>], <span class="c-key">"opens"</span>: <span class="c-str">"09:00"</span>, <span class="c-key">"closes"</span>: <span class="c-str">"20:00"</span> }
+  ],
+  <span class="c-key">"priceRange"</span>: <span class="c-str">"€€"</span>,
+  <span class="c-key">"medicalSpecialty"</span>: [<span class="c-str">"Dentistry"</span>, <span class="c-str">"Orthodontics"</span>],
+  <span class="c-key">"hasMap"</span>: <span class="c-str">"https://maps.google.com/?q=Dental+Basté"</span>
+}
+&lt;/<span class="c-kw">script</span>&gt;</code></pre>
+    </div>
+
+    <h3>Core Web Vitals — Objetivos y Acciones</h3>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Métrica</th><th>Objetivo</th><th>Cómo conseguirlo</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>LCP</strong> (Largest Contentful Paint)</td>
+            <td>&lt; 2.5 seg</td>
+            <td>Imagen hero en WebP preloaded, CDN para estáticos, hosting rápido</td>
+          </tr>
+          <tr>
+            <td><strong>CLS</strong> (Cumulative Layout Shift)</td>
+            <td>&lt; 0.1</td>
+            <td>Dimensiones fijas en imágenes y embeds (Calendly, widget chatbot)</td>
+          </tr>
+          <tr>
+            <td><strong>INP</strong> (Interaction to Next Paint)</td>
+            <td>&lt; 200ms</td>
+            <td>Diferir scripts de terceros (GTM, Pixel, Hotjar) con loading="lazy"</td>
+          </tr>
+          <tr>
+            <td><strong>TTFB</strong> (Time to First Byte)</td>
+            <td>&lt; 600ms</td>
+            <td>Caché del servidor, evitar redirects innecesarios, hosting SSD</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ════ INTEGRACIONES WEB ════ -->
+  <section id="integraciones">
+    <div class="section-header">
+      <div class="section-icon"><svg class="icon icon-b"><use href="#i-link"/></svg></div>
+      <div>
+        <div class="section-title">Integraciones Web</div>
+        <div class="section-subtitle">Calendly · Chatbot · Formularios HubSpot · Mapa de conexiones</div>
+      </div>
+    </div>
+
+    <h3>Calendly — Embed en landing</h3>
+    <div class="code-block">
+      <div class="code-header">
+        <span class="code-lang">HTML — Calendly widget inline con tracking</span>
+        <div class="code-dots"><span class="dot-red"></span><span class="dot-amber"></span><span class="dot-green"></span></div>
+      </div>
+      <pre><code><span class="c-comment">&lt;!-- Cargar script de Calendly --&gt;</span>
+&lt;<span class="c-kw">link</span> href=<span class="c-str">"https://assets.calendly.com/assets/external/widget.css"</span> rel=<span class="c-str">"stylesheet"</span>/&gt;
+&lt;<span class="c-kw">script</span> src=<span class="c-str">"https://assets.calendly.com/assets/external/widget.js"</span> async&gt;&lt;/<span class="c-kw">script</span>&gt;
+
+<span class="c-comment">&lt;!-- Widget inline --&gt;</span>
+&lt;<span class="c-kw">div</span> class=<span class="c-str">"calendly-inline-widget"</span>
+     data-url=<span class="c-str">"https://calendly.com/dentalbaste/primera-visita
+               ?hide_gdpr_banner=1
+               &amp;utm_source=web
+               &amp;utm_medium=landing"</span>
+     style=<span class="c-str">"min-width:320px; height:700px;"</span>&gt;
+&lt;/<span class="c-kw">div</span>&gt;
+
+<span class="c-comment">&lt;!-- Escuchar evento de cita confirmada para GTM --&gt;</span>
+&lt;<span class="c-kw">script</span>&gt;
+  window.addEventListener(<span class="c-str">'message'</span>, function(e) {
+    if (e.data.event === <span class="c-str">'calendly.event_scheduled'</span>) {
+      dataLayer.push({ event: <span class="c-str">'booking_completed'</span> });
+    }
+  });
+&lt;/<span class="c-kw">script</span>&gt;</code></pre>
+    </div>
+
+    <h3>Formulario de Captación — Integración con HubSpot</h3>
+    <div class="code-block">
+      <div class="code-header">
+        <span class="code-lang">HTML + JavaScript — Formulario con envío a HubSpot API</span>
+        <div class="code-dots"><span class="dot-red"></span><span class="dot-amber"></span><span class="dot-green"></span></div>
+      </div>
+      <pre><code>&lt;<span class="c-kw">form</span> id=<span class="c-str">"lead-form"</span>&gt;
+  &lt;<span class="c-kw">input</span> name=<span class="c-str">"nombre"</span> placeholder=<span class="c-str">"Tu nombre"</span> required /&gt;
+  &lt;<span class="c-kw">input</span> name=<span class="c-str">"email"</span> type=<span class="c-str">"email"</span> placeholder=<span class="c-str">"Tu email"</span> required /&gt;
+  &lt;<span class="c-kw">input</span> name=<span class="c-str">"telefono"</span> placeholder=<span class="c-str">"Teléfono"</span> /&gt;
+  &lt;<span class="c-kw">select</span> name=<span class="c-str">"tratamiento"</span>&gt;
+    &lt;<span class="c-kw">option</span>&gt;Ortodoncia&lt;/<span class="c-kw">option</span>&gt;
+    &lt;<span class="c-kw">option</span>&gt;Implantes&lt;/<span class="c-kw">option</span>&gt;
+    &lt;<span class="c-kw">option</span>&gt;Blanqueamiento&lt;/<span class="c-kw">option</span>&gt;
+    &lt;<span class="c-kw">option</span>&gt;Otra consulta&lt;/<span class="c-kw">option</span>&gt;
+  &lt;/<span class="c-kw">select</span>&gt;
+  &lt;<span class="c-kw">button</span> type=<span class="c-str">"submit"</span>&gt;Reserva tu primera visita gratis →&lt;/<span class="c-kw">button</span>&gt;
+&lt;/<span class="c-kw">form</span>&gt;
+
+&lt;<span class="c-kw">script</span>&gt;
+document.getElementById(<span class="c-str">'lead-form'</span>).addEventListener(<span class="c-str">'submit'</span>, async function(e) {
+  e.preventDefault();
+  const data = Object.fromEntries(new FormData(e.target));
+
+  <span class="c-comment">// Enviar a HubSpot Forms API</span>
+  await fetch(<span class="c-str">'https://api.hsforms.com/submissions/v3/integration/submit/TU_PORTAL_ID/TU_FORM_ID'</span>, {
+    method: <span class="c-str">'POST'</span>,
+    headers: { <span class="c-str">'Content-Type'</span>: <span class="c-str">'application/json'</span> },
+    body: JSON.stringify({
+      fields: [
+        { name: <span class="c-str">'firstname'</span>, value: data.nombre },
+        { name: <span class="c-str">'email'</span>, value: data.email },
+        { name: <span class="c-str">'phone'</span>, value: data.telefono },
+        { name: <span class="c-str">'tratamiento_interes'</span>, value: data.tratamiento }
+      ],
+      context: { pageUri: window.location.href }
+    })
+  });
+
+  <span class="c-comment">// Disparar evento GA4 + Meta Pixel</span>
+  dataLayer.push({ event: <span class="c-str">'form_submit'</span>, tratamiento_interes: data.tratamiento });
+});
+&lt;/<span class="c-kw">script</span>&gt;</code></pre>
+    </div>
+
+    <h3>Mapa de Conexiones Web</h3>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Elemento web</th><th>Destino</th><th>Método</th><th>Dato enviado</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>Formulario de captación</strong></td><td>HubSpot CRM</td><td>HubSpot Forms API</td><td>Nombre, email, teléfono, tratamiento</td></tr>
+          <tr><td><strong>Widget Calendly</strong></td><td>HubSpot + Make</td><td>Webhook Calendly</td><td>Cita confirmada, datos del lead</td></tr>
+          <tr><td><strong>Widget chatbot</strong></td><td>Backend IA (Make/n8n)</td><td>Iframe / WebSocket</td><td>Mensajes de conversación</td></tr>
+          <tr><td><strong>GTM — form_submit</strong></td><td>GA4 + Meta Pixel</td><td>dataLayer push</td><td>Evento de conversión + tratamiento</td></tr>
+          <tr><td><strong>GTM — booking_completed</strong></td><td>GA4 + Meta Pixel + HubSpot</td><td>dataLayer push</td><td>Conversión de cita</td></tr>
+          <tr><td><strong>Landing /escaparate</strong></td><td>GA4 + Calendly</td><td>UTM params + dataLayer</td><td>Fuente = qr_escaparate</td></tr>
+        </tbody>
+      </table>
     </div>
   </section>
 
 </div>
+{% endraw %}
