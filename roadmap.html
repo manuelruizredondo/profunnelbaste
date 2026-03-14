@@ -85,7 +85,8 @@
     color: var(--white);
     letter-spacing: .02em;
   }
-  .top-bar .logo-icon { filter: grayscale(1) brightness(0) invert(1); display: inline-block; }
+  .top-bar .logo-icon { display: inline-flex; align-items: center; }
+  .top-bar .logo-icon .icon { width: 18px; height: 18px; color: var(--white); }
 
   /* ── HERO ─────────────────────────────────────────────── */
   .hero {
@@ -131,7 +132,9 @@
     font-size: 1.6rem;
     flex-shrink: 0;
   }
-  .specialist-icon { background: var(--gray-200); filter: grayscale(1) brightness(0); }
+  .icon { width: 24px; height: 24px; flex-shrink: 0; stroke: currentColor; fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+  .icon-b { color: var(--gray-900); }
+  .specialist-icon { background: var(--gray-200); display: flex; align-items: center; justify-content: center; }
   .specialist-title {
     font-size: 1.25rem;
     font-weight: 800;
@@ -238,7 +241,8 @@
     background: var(--amber-100);
     border-left: 4px solid var(--amber-500);
   }
-  .alert-icon { font-size: 1.1rem; flex-shrink: 0; filter: grayscale(1) brightness(0); }
+  .alert-icon { flex-shrink: 0; }
+  .alert-icon .icon { width: 20px; height: 20px; }
   .alert p { margin: 0; color: var(--gray-700); }
   .alert strong { color: var(--gray-900); }
 
@@ -265,8 +269,17 @@
 </head>
 <body>
 
+<svg xmlns="http://www.w3.org/2000/svg" style="position:absolute;width:0;height:0">
+  <defs>
+    <symbol id="i-tooth" viewBox="0 0 24 24"><path d="M12 2c-2 2-3 5-3 8 0 4 2 5 3 5s3-1 3-5c0-3-1-6-3-8z"/></symbol>
+    <symbol id="i-bot" viewBox="0 0 24 24"><path d="M12 8V4H8"/><rect x="2" y="14" width="20" height="8" rx="2"/><path d="M6 18v-4M18 18v-4"/><path d="M12 8a4 4 0 0 0-4 4h8a4 4 0 0 0-4-4z"/></symbol>
+    <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/><path d="M2 12h20"/></symbol>
+    <symbol id="i-video" viewBox="0 0 24 24"><path d="m22 8-6 4 6 4V8Z"/><rect x="2" y="6" width="14" height="12" rx="2"/></symbol>
+  </defs>
+</svg>
+
 <div class="top-bar">
-  <span class="logo"><span class="logo-icon">🦷</span> Pro Funnel Basté</span>
+  <span class="logo"><span class="logo-icon"><svg class="icon"><use href="#i-tooth"/></svg></span> Pro Funnel Basté</span>
   <a href="index.html">← Volver a Documentación</a>
 </div>
 
@@ -280,7 +293,7 @@
   <!-- ════ ESPECIALISTA IA ════ -->
   <section class="specialist-section">
     <div class="specialist-header ai">
-      <div class="specialist-icon">🤖</div>
+      <div class="specialist-icon"><svg class="icon icon-b"><use href="#i-bot"/></svg></div>
       <div>
         <div class="specialist-title">Especialista en Inteligencia Artificial</div>
         <div class="specialist-subtitle">Chatbot, automatizaciones, generación de contenido textual y análisis de datos</div>
@@ -406,7 +419,7 @@
   <!-- ════ ESPECIALISTA WEB ════ -->
   <section class="specialist-section">
     <div class="specialist-header web">
-      <div class="specialist-icon">🌐</div>
+      <div class="specialist-icon"><svg class="icon icon-b"><use href="#i-globe"/></svg></div>
       <div>
         <div class="specialist-title">Especialista en Web</div>
         <div class="specialist-subtitle">Landing pages, tracking, integración de chatbot, SEO y conversión</div>
@@ -539,13 +552,13 @@
 
   <!-- ════ ESPECIALISTA VÍDEO ════ -->
   <div class="alert">
-    <span class="alert-icon">🎬</span>
+    <span class="alert-icon"><svg class="icon icon-b"><use href="#i-video"/></svg></span>
     <p><strong>Importante:</strong> Los vídeos son <strong>grabados por un profesional</strong> que acude a <strong>Centre Médic Basté</strong> para las sesiones. No se utilizan vídeos generados por IA. El especialista en vídeo coordina las grabaciones in situ, la postproducción y la distribución.</p>
   </div>
 
   <section class="specialist-section">
     <div class="specialist-header video">
-      <div class="specialist-icon">🎥</div>
+      <div class="specialist-icon"><svg class="icon icon-b"><use href="#i-video"/></svg></div>
       <div>
         <div class="specialist-title">Especialista en Vídeo</div>
         <div class="specialist-subtitle">Grabación profesional en Centre Médic Basté · Postproducción · TV escaparate · Redes sociales</div>
@@ -553,7 +566,10 @@
     </div>
     <div class="roadmap">
       <div class="info-box">
-        <strong>📍 Ubicación de grabación:</strong> Centre Médic Basté. El profesional de vídeo acude al centro para grabar testimonios, presentaciones del equipo, tratamientos (con consentimiento) y B-roll de las instalaciones.
+        <strong>Ubicación de grabación:</strong> Centre Médic Basté. El profesional de vídeo acude al centro para grabar testimonios, presentaciones del equipo, tratamientos (con consentimiento) y B-roll de las instalaciones.
+      </div>
+      <div class="info-box">
+        <strong>Televisores instalados:</strong> LG 75UQ80006LB (75", 4K). Resolución 1 TV: 3840×2160 px. Resolución 2 TVs en tándem (USB): 3840×4320 px.
       </div>
       <div class="roadmap-phase">
         <div class="phase-header">
@@ -568,7 +584,7 @@
             <span class="task-checkbox"></span>
             <div class="task-content">
               <div class="task-title">Producir 3 piezas iniciales para la TV del escaparate</div>
-              <div class="task-detail">(1) Spot bienvenida + servicios, (2) Oferta del mes, (3) QR reserva. Formato 1920×1080, 10–20 seg cada una. Canva Pro o After Effects.</div>
+              <div class="task-detail">(1) Spot bienvenida + servicios, (2) Oferta del mes, (3) QR reserva. Formato 3840×2160 (1 TV) o 3840×4320 (2 TVs tándem), 10–20 seg cada una. Canva Pro o After Effects.</div>
               <span class="task-tag critical">Crítico</span>
             </div>
           </li>
@@ -646,7 +662,7 @@
             <span class="task-checkbox"></span>
             <div class="task-content">
               <div class="task-title">Editar material grabado en Centre Médic Basté</div>
-              <div class="task-detail">DaVinci Resolve o Premiere. Cortes, color grading, música. Versiones: larga (YouTube), corta (Reels/Stories), TV (1920×1080).</div>
+              <div class="task-detail">DaVinci Resolve o Premiere. Cortes, color grading, música. Versiones: larga (YouTube), corta (Reels/Stories), TV 4K (3840×2160) o 2 TVs (3840×4320).</div>
               <span class="task-tag high">Alta</span>
             </div>
           </li>
