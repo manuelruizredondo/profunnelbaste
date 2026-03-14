@@ -1,24 +1,36 @@
 ---
 layout: base.njk
-title: Pro Funnel Basté — Especialista en IA
+title: Pro Funnel Basté — Especialista en IA y Automatizaciones
 layoutClass: layout-simple
 permalink: /especialista-ia.html
 ---
-
+{% raw %}
 <div class="hero">
-  <h1>Especialista en Inteligencia Artificial</h1>
-  <p>Chatbot con ManyChat, automatizaciones, generación de contenido textual y análisis de datos.</p>
-  <p style="margin-top:12px; font-size:.9rem; opacity:.9;"><a href="/roadmap.html" style="color:var(--white); text-decoration:underline;">← Volver al Roadmap</a></p>
+  <h1>Especialista en IA y Automatizaciones</h1>
+  <p>Chatbot conversacional · Automatizaciones Make/n8n · CRM · Nurturing · Generación de contenido</p>
+  <p style="margin-top:12px; font-size:.9rem; opacity:.9;">
+    <a href="/roadmap.html" style="color:var(--white); text-decoration:underline;">← Volver al Roadmap</a>
+    &nbsp;·&nbsp; <a href="#chatbot" style="color:var(--white); text-decoration:underline;">Chatbot IA</a>
+    &nbsp;·&nbsp; <a href="#automatizaciones" style="color:var(--white); text-decoration:underline;">Automatizaciones</a>
+    &nbsp;·&nbsp; <a href="#integraciones" style="color:var(--white); text-decoration:underline;">Integraciones</a>
+    &nbsp;·&nbsp; <a href="#contenido" style="color:var(--white); text-decoration:underline;">Contenido IA</a>
+  </p>
 </div>
 
 <div class="page-content">
 
+  <div class="alert alert-blue">
+    <span class="alert-icon"><svg class="icon icon-b"><use href="#i-bot"/></svg></span>
+    <p><strong>Este rol cubre:</strong> la configuración y mantenimiento del chatbot (ManyChat + GPT-4o), todos los flujos de automatización en Make y n8n, las integraciones entre plataformas (HubSpot, Calendly, WhatsApp, email) y la generación programática de contenido textual con IA.</p>
+  </div>
+
+  <!-- ════ TAREAS ════ -->
   <section class="specialist-section">
     <div class="specialist-header ai">
       <div class="specialist-icon"><svg class="icon icon-b"><use href="#i-bot"/></svg></div>
       <div>
         <div class="specialist-title">Mis tareas</div>
-        <div class="specialist-subtitle">Lo que debo hacer como Especialista en IA</div>
+        <div class="specialist-subtitle">Lo que debo hacer como Especialista en IA y Automatizaciones</div>
       </div>
     </div>
     <div class="roadmap">
@@ -34,102 +46,120 @@ permalink: /especialista-ia.html
           <li class="task-item priority">
             <span class="task-checkbox"></span>
             <div class="task-content">
-              <div class="task-title">Configurar ManyChat para Instagram y Facebook Messenger</div>
-              <div class="task-detail">Crear flujos de chatbot en ManyChat para DM. Integrar con OpenAI GPT-4o vía webhook para respuestas inteligentes. System prompt para rol dental.</div>
+              <div class="task-title">Configurar ManyChat para Instagram DM y Facebook Messenger</div>
+              <div class="task-detail">Crear cuenta ManyChat conectada a la página de Instagram/Facebook de Dental Basté. Configurar el flujo de entrada (trigger por keyword o DM nuevo). Conectar con GPT-4o vía webhook para respuestas inteligentes. System prompt específico para rol dental.</div>
               <span class="task-tag critical">Crítico</span>
             </div>
           </li>
-          <li class="task-item">
+          <li class="task-item priority">
             <span class="task-checkbox"></span>
             <div class="task-content">
-              <div class="task-title">Definir flujo de cualificación de leads en el chatbot</div>
-              <div class="task-detail">Preguntas: tratamiento de interés, nombre, email/teléfono. Función de extracción de datos estructurados (JSON).</div>
-              <span class="task-tag high">Alta</span>
+              <div class="task-title">Definir y construir el flujo de cualificación de leads</div>
+              <div class="task-detail">El chatbot debe recoger: tratamiento de interés, nombre completo, email o teléfono. Usar function calling de GPT-4o para extraer datos estructurados en JSON y calcular lead score (0–100).</div>
+              <span class="task-tag critical">Crítico</span>
             </div>
           </li>
-          <li class="task-item">
+          <li class="task-item priority">
             <span class="task-checkbox"></span>
             <div class="task-content">
               <div class="task-title">Conectar chatbot con HubSpot CRM</div>
-              <div class="task-detail">Upsert de contactos vía API cuando el lead proporciona datos. Asignar etiquetas según tratamiento.</div>
+              <div class="task-detail">Upsert de contacto vía API de HubSpot cada vez que el lead proporciona datos. Asignar propiedades: tratamiento_interes, lead_score_ia, fuente_captacion. Disparar secuencia de nurturing en ActiveCampaign al crear el contacto.</div>
               <span class="task-tag critical">Crítico</span>
             </div>
           </li>
           <li class="task-item">
             <span class="task-checkbox"></span>
             <div class="task-content">
-              <div class="task-title">Implementar lead scoring básico con IA</div>
-              <div class="task-detail">Puntuación 0–100 según intención, completitud de datos y tratamiento (implantes/ortodoncia = mayor score).</div>
-              <span class="task-tag medium">Media</span>
+              <div class="task-title">Implementar handoff chatbot → humano</div>
+              <div class="task-detail">Cuando el lead pide hablar con alguien, escalar a la recepción. Notificación interna vía WhatsApp o Slack con el resumen de la conversación.</div>
+              <span class="task-tag high">Alta</span>
             </div>
           </li>
         </ul>
       </div>
+
       <div class="roadmap-phase">
         <div class="phase-header">
           <div class="phase-badge ai">2</div>
           <div>
             <div class="phase-title">Fase 2 — Automatizaciones y Nurturing (Semanas 4–6)</div>
-            <div class="phase-dates">Make / n8n</div>
+            <div class="phase-dates">Make · n8n · WhatsApp · Email</div>
           </div>
         </div>
         <ul class="task-list">
           <li class="task-item">
             <span class="task-checkbox"></span>
             <div class="task-content">
-              <div class="task-title">Configurar escenarios Make para flujo Calendly → HubSpot → Twilio</div>
-              <div class="task-detail">Cuando se confirma cita: actualizar CRM, enviar SMS confirmación, programar recordatorio 24h antes.</div>
+              <div class="task-title">Montar escenario Make: Calendly → HubSpot → notificaciones</div>
+              <div class="task-detail">Trigger: nueva cita en Calendly. Acciones: actualizar lifecycle en HubSpot (→ "opportunity"), enviar email de confirmación automático, programar SMS recordatorio 24h antes y WhatsApp 2h antes.</div>
               <span class="task-tag high">Alta</span>
             </div>
           </li>
           <li class="task-item">
             <span class="task-checkbox"></span>
             <div class="task-content">
-              <div class="task-title">Generar copy de emails de nurturing con GPT-4o</div>
-              <div class="task-detail">Plantillas personalizadas por tratamiento (ortodoncia, implantes, blanqueamiento). Integrar con ActiveCampaign.</div>
+              <div class="task-title">Configurar secuencia de nurturing post-lead en HubSpot / ActiveCampaign</div>
+              <div class="task-detail">Día 0: email bienvenida + guía dental gratuita. Día 3: email educativo según tratamiento de interés (generado con GPT-4o). Día 7: WhatsApp con oferta primera visita. Día 14: asignar a comercial si no ha convertido.</div>
               <span class="task-tag high">Alta</span>
             </div>
           </li>
           <li class="task-item">
             <span class="task-checkbox"></span>
             <div class="task-content">
-              <div class="task-title">Integrar WhatsApp Business API con flujos de IA</div>
-              <div class="task-detail">Respuestas automáticas con templates aprobados. Handoff a humano cuando el lead pide hablar con alguien.</div>
+              <div class="task-title">Integrar WhatsApp Business API (360dialog) en los flujos</div>
+              <div class="task-detail">Configurar templates aprobados de WhatsApp para recordatorios y nurturing. Los templates requieren aprobación de Meta previamente. Usar Make o n8n para disparar los envíos.</div>
+              <span class="task-tag high">Alta</span>
+            </div>
+          </li>
+          <li class="task-item">
+            <span class="task-checkbox"></span>
+            <div class="task-content">
+              <div class="task-title">Flujo de solicitud automática de reseña post-tratamiento</div>
+              <div class="task-detail">Trigger: cita marcada como completada. +2h: SMS de satisfacción (escala 1-5). Si puntuación ≥ 4: enviar enlace de reseña Google. Si &lt; 4: alerta interna + gestión manual.</div>
               <span class="task-tag medium">Media</span>
             </div>
           </li>
         </ul>
       </div>
+
       <div class="roadmap-phase">
         <div class="phase-header">
           <div class="phase-badge ai">3</div>
           <div>
-            <div class="phase-title">Fase 3 — Análisis y Optimización (Semanas 7–12)</div>
-            <div class="phase-dates">Lead scoring avanzado, reseñas</div>
+            <div class="phase-title">Fase 3 — Análisis y Contenido IA (Semanas 7–12)</div>
+            <div class="phase-dates">Lead scoring avanzado · reseñas · copy</div>
           </div>
         </div>
         <ul class="task-list">
           <li class="task-item">
             <span class="task-checkbox"></span>
             <div class="task-content">
-              <div class="task-title">Análisis de sentimiento de reseñas Google con IA</div>
-              <div class="task-detail">Pipeline para detectar reseñas negativas y sugerir respuesta. Alertas internas si puntuación &lt; 3.</div>
+              <div class="task-title">Lead scoring avanzado con IA predictiva</div>
+              <div class="task-detail">Usar datos históricos de HubSpot para entrenar un modelo de puntuación. Variables: tratamiento, canal de entrada, interacciones, tiempo de respuesta. Integrar score en pipeline de ventas.</div>
+              <span class="task-tag high">Alta</span>
+            </div>
+          </li>
+          <li class="task-item">
+            <span class="task-checkbox"></span>
+            <div class="task-content">
+              <div class="task-title">Pipeline de análisis de reseñas Google con IA</div>
+              <div class="task-detail">Make + Google Places API: monitorizar nuevas reseñas cada 6h. Enviar texto a GPT-4o para análisis de sentimiento. Si negativa: generar respuesta sugerida y alertar a recepción vía Slack/WhatsApp.</div>
               <span class="task-tag medium">Media</span>
             </div>
           </li>
           <li class="task-item">
             <span class="task-checkbox"></span>
             <div class="task-content">
-              <div class="task-title">Generador de copy para spots de TV del escaparate</div>
-              <div class="task-detail">Script Python que llama a GPT-4o para titular, subtítulo, CTA según tratamiento y duración. Entregar al equipo de vídeo.</div>
+              <div class="task-title">Generador de copy para spots TV y emails con GPT-4o</div>
+              <div class="task-detail">Script Python que recibe tratamiento + formato (TV spot, email, WhatsApp) y devuelve titulo_1, titulo_2, descripción, CTA. Coordinar salida con el especialista de vídeo.</div>
               <span class="task-tag medium">Media</span>
             </div>
           </li>
           <li class="task-item">
             <span class="task-checkbox"></span>
             <div class="task-content">
-              <div class="task-title">Dashboard Looker Studio con métricas de chatbot</div>
-              <div class="task-detail">Leads captados, tasa de cualificación, CSAT del chat. Conexión a BigQuery o datos de HubSpot.</div>
+              <div class="task-title">Dashboard Looker Studio con métricas de chatbot e IA</div>
+              <div class="task-detail">Leads captados por canal (chatbot/web/DM), tasa de cualificación, conversión lead→cita, CSAT del chat. Conectar a HubSpot y datos de Calendly.</div>
               <span class="task-tag low">Baja</span>
             </div>
           </li>
@@ -138,4 +168,518 @@ permalink: /especialista-ia.html
     </div>
   </section>
 
+  <!-- ════ CHATBOT IA ════ -->
+  <section id="chatbot">
+    <div class="section-header">
+      <div class="section-icon"><svg class="icon icon-b"><use href="#i-bot"/></svg></div>
+      <div>
+        <div class="section-title">Chatbot IA — ManyChat + GPT-4o</div>
+        <div class="section-subtitle">Arquitectura, system prompt y flujo de cualificación</div>
+      </div>
+    </div>
+
+    <div class="two-col">
+      <div class="card">
+        <div class="card-icon"><svg class="icon icon-b"><use href="#i-message"/></svg></div>
+        <h4>ManyChat — qué hace</h4>
+        <ul class="feature-list">
+          <li>Gestiona los flujos de conversación en Instagram DM y Facebook Messenger</li>
+          <li>Captura el primer mensaje y decide si escalar a GPT-4o o responder con plantilla</li>
+          <li>Recoge nombre, email y teléfono cuando el usuario los proporciona</li>
+          <li>Activa la integración con HubSpot vía webhook cuando hay datos suficientes</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="card-icon"><svg class="icon icon-b"><use href="#i-bot"/></svg></div>
+        <h4>GPT-4o — qué hace</h4>
+        <ul class="feature-list">
+          <li>Responde con lenguaje natural en castellano a las preguntas del lead</li>
+          <li>Extrae datos estructurados (nombre, tratamiento, contacto) con function calling</li>
+          <li>Calcula un lead score (0–100) basado en intención y completitud</li>
+          <li>Nunca diagnostica: deriva al doctor para preguntas clínicas</li>
+        </ul>
+      </div>
+    </div>
+
+    <h3>System Prompt del Chatbot Dental</h3>
+    <div class="code-block">
+      <div class="code-header">
+        <span class="code-lang">Python — Chatbot Handler (Make / n8n webhook)</span>
+        <div class="code-dots"><span class="dot-red"></span><span class="dot-amber"></span><span class="dot-green"></span></div>
+      </div>
+      <pre><code><span class="c-comment"># Sistema prompt para el chatbot dental IA</span>
+<span class="c-key">SYSTEM_PROMPT</span> = <span class="c-str">"""
+Eres el asistente virtual de Dental Basté.
+Tu objetivo es:
+1. Saludar calurosamente y preguntar en qué puedes ayudar
+2. Identificar el tratamiento de interés (ortodoncia, implantes, blanqueamiento, etc.)
+3. Recopilar nombre completo y método de contacto
+4. Ofrecer disponibilidad de cita y redirigir al booking
+5. Nunca diagnosticar. Si preguntan por síntomas, remitir al doctor.
+
+Tono: cercano, profesional, en español. Respuestas máximo 3 frases.
+"""</span>
+
+<span class="c-kw">import</span> openai, json
+
+<span class="c-fn">def</span> <span class="c-key">process_lead_message</span>(user_message: <span class="c-key">str</span>, conversation_history: <span class="c-key">list</span>) -> <span class="c-key">dict</span>:
+    messages = [
+        {<span class="c-str">"role"</span>: <span class="c-str">"system"</span>, <span class="c-str">"content"</span>: SYSTEM_PROMPT},
+        *conversation_history,
+        {<span class="c-str">"role"</span>: <span class="c-str">"user"</span>, <span class="c-str">"content"</span>: user_message}
+    ]
+
+    response = openai.chat.completions.create(
+        model=<span class="c-str">"gpt-4o"</span>,
+        messages=messages,
+        temperature=<span class="c-num">0.4</span>,
+        max_tokens=<span class="c-num">200</span>,
+        functions=[{
+            <span class="c-str">"name"</span>: <span class="c-str">"capture_lead_data"</span>,
+            <span class="c-str">"parameters"</span>: {
+                <span class="c-str">"type"</span>: <span class="c-str">"object"</span>,
+                <span class="c-str">"properties"</span>: {
+                    <span class="c-str">"nombre"</span>: {<span class="c-str">"type"</span>: <span class="c-str">"string"</span>},
+                    <span class="c-str">"tratamiento_interes"</span>: {<span class="c-str">"type"</span>: <span class="c-str">"string"</span>},
+                    <span class="c-str">"telefono"</span>: {<span class="c-str">"type"</span>: <span class="c-str">"string"</span>},
+                    <span class="c-str">"lead_score"</span>: {<span class="c-str">"type"</span>: <span class="c-str">"number"</span>, <span class="c-str">"description"</span>: <span class="c-str">"0-100"</span>}
+                }
+            }
+        }]
+    )
+    <span class="c-kw">return</span> response.choices[<span class="c-num">0</span>].message</code></pre>
+    </div>
+
+    <h3>Lead Scoring — Criterios</h3>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Variable</th><th>Peso</th><th>Lógica</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Tratamiento de interés</strong></td>
+            <td>+40 pts</td>
+            <td>Implantes u ortodoncia = 40. Blanqueamiento = 20. Consulta genérica = 10.</td>
+          </tr>
+          <tr>
+            <td><strong>Datos de contacto completos</strong></td>
+            <td>+30 pts</td>
+            <td>Nombre + teléfono + email = 30. Solo uno de los dos = 15.</td>
+          </tr>
+          <tr>
+            <td><strong>Intención explícita de cita</strong></td>
+            <td>+20 pts</td>
+            <td>Menciona querer pedir cita o preguntar por disponibilidad = 20.</td>
+          </tr>
+          <tr>
+            <td><strong>Urgencia expresada</strong></td>
+            <td>+10 pts</td>
+            <td>Palabras como "dolor", "urgente", "esta semana" = 10.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ════ AUTOMATIZACIONES ════ -->
+  <section id="automatizaciones">
+    <div class="section-header">
+      <div class="section-icon"><svg class="icon icon-b"><use href="#i-refresh"/></svg></div>
+      <div>
+        <div class="section-title">Automatizaciones</div>
+        <div class="section-subtitle">4 flujos principales en Make y n8n</div>
+      </div>
+    </div>
+
+    <div class="info-box">
+      <strong>Make vs n8n:</strong> Usar <strong>Make</strong> para flujos generales entre plataformas (Calendly, HubSpot, WhatsApp, email). Usar <strong>n8n self-hosted</strong> (VPS en España) para cualquier flujo que maneje datos clínicos o historial de pacientes — obligatorio por RGPD.
+    </div>
+
+    <!-- FLUJO 1 -->
+    <div class="flow-container">
+      <div class="flow-title"><svg class="icon icon-b"><use href="#i-bot"/></svg> Flujo 1 — Captación y Cualificación de Lead (Chatbot IA)</div>
+      <div class="flow-steps">
+        <div class="flow-step trigger">
+          <div class="step-label">Trigger</div>
+          <div class="step-text">Usuario llega a web o envía DM en Instagram/WhatsApp</div>
+        </div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-step action">
+          <div class="step-label">Acción</div>
+          <div class="step-text">Chatbot GPT-4o saluda y pregunta tipo de tratamiento</div>
+        </div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-step condition">
+          <div class="step-label">Condición</div>
+          <div class="step-text">¿Ha proporcionado nombre + email/teléfono?</div>
+        </div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-step action">
+          <div class="step-label">Acción</div>
+          <div class="step-text">Crea contacto en HubSpot + asigna etiqueta de interés</div>
+        </div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-step output">
+          <div class="step-label">Salida</div>
+          <div class="step-text">Ofrece cita + envía SMS/email de confirmación</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FLUJO 2 -->
+    <div class="flow-container">
+      <div class="flow-title"><svg class="icon icon-b"><use href="#i-calendar"/></svg> Flujo 2 — Reserva Automática de Cita y Recordatorios</div>
+      <div class="flow-steps">
+        <div class="flow-step trigger">
+          <div class="step-label">Trigger</div>
+          <div class="step-text">Lead cualificado acepta proponer cita</div>
+        </div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-step action">
+          <div class="step-label">Acción</div>
+          <div class="step-text">Calendly muestra slots disponibles en tiempo real</div>
+        </div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-step action">
+          <div class="step-label">Acción</div>
+          <div class="step-text">Cita confirmada → Make crea evento en Google Calendar clínica</div>
+        </div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-step action">
+          <div class="step-label">Acción</div>
+          <div class="step-text">Email confirmación + SMS inmediato</div>
+        </div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-step output">
+          <div class="step-label">Recordatorio</div>
+          <div class="step-text">WhatsApp 24h antes + SMS 2h antes de la cita</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="code-block">
+      <div class="code-header">
+        <span class="code-lang">JSON — Make Scenario: Reminder Automation</span>
+        <div class="code-dots"><span class="dot-red"></span><span class="dot-amber"></span><span class="dot-green"></span></div>
+      </div>
+      <pre><code>{
+  <span class="c-key">"scenario"</span>: <span class="c-str">"dental_appointment_reminder"</span>,
+  <span class="c-key">"trigger"</span>: {
+    <span class="c-key">"app"</span>: <span class="c-str">"calendly"</span>,
+    <span class="c-key">"event"</span>: <span class="c-str">"invitee.created"</span>
+  },
+  <span class="c-key">"steps"</span>: [
+    {
+      <span class="c-key">"id"</span>: <span class="c-num">1</span>,
+      <span class="c-key">"app"</span>: <span class="c-str">"hubspot"</span>,
+      <span class="c-key">"action"</span>: <span class="c-str">"update_contact"</span>,
+      <span class="c-key">"data"</span>: {
+        <span class="c-key">"lifecycle_stage"</span>: <span class="c-str">"opportunity"</span>,
+        <span class="c-key">"appointment_date"</span>: <span class="c-str">"{{trigger.event.start_time}}"</span>
+      }
+    },
+    {
+      <span class="c-key">"id"</span>: <span class="c-num">2</span>,
+      <span class="c-key">"app"</span>: <span class="c-str">"whatsapp_360dialog"</span>,
+      <span class="c-key">"action"</span>: <span class="c-str">"send_template_message"</span>,
+      <span class="c-key">"schedule"</span>: <span class="c-str">"-24h"</span>,
+      <span class="c-key">"template_name"</span>: <span class="c-str">"appointment_reminder_es"</span>
+    },
+    {
+      <span class="c-key">"id"</span>: <span class="c-num">3</span>,
+      <span class="c-key">"app"</span>: <span class="c-str">"whatsapp_360dialog"</span>,
+      <span class="c-key">"action"</span>: <span class="c-str">"send_template_message"</span>,
+      <span class="c-key">"schedule"</span>: <span class="c-str">"-2h"</span>,
+      <span class="c-key">"template_name"</span>: <span class="c-str">"appointment_reminder_2h_es"</span>
+    }
+  ]
+}</code></pre>
+    </div>
+
+    <!-- FLUJO 3 -->
+    <div class="flow-container">
+      <div class="flow-title"><svg class="icon icon-b"><use href="#i-mail"/></svg> Flujo 3 — Secuencia de Nurturing Post-Lead</div>
+      <div class="flow-steps">
+        <div class="flow-step trigger">
+          <div class="step-label">Trigger</div>
+          <div class="step-text">Nuevo contacto en HubSpot sin cita confirmada</div>
+        </div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-step action">
+          <div class="step-label">Día 0</div>
+          <div class="step-text">Email bienvenida + PDF guía dental gratuita</div>
+        </div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-step action">
+          <div class="step-label">Día 3</div>
+          <div class="step-text">Email educativo sobre el tratamiento de interés + vídeo</div>
+        </div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-step action">
+          <div class="step-label">Día 7</div>
+          <div class="step-text">WhatsApp con oferta de primera visita gratuita</div>
+        </div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-step output">
+          <div class="step-label">Día 14</div>
+          <div class="step-text">SMS de seguimiento + transferencia a comercial si no convierte</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="code-block">
+      <div class="code-header">
+        <span class="code-lang">YAML — HubSpot / ActiveCampaign: Nurture Sequence</span>
+        <div class="code-dots"><span class="dot-red"></span><span class="dot-amber"></span><span class="dot-green"></span></div>
+      </div>
+      <pre><code><span class="c-key">automation</span>:
+  <span class="c-key">name</span>: <span class="c-str">"Dental Lead Nurturing ES"</span>
+  <span class="c-key">trigger</span>:
+    <span class="c-key">type</span>: <span class="c-str">contact_tag_added</span>
+    <span class="c-key">tag</span>: <span class="c-str">"lead-cualificado"</span>
+
+  <span class="c-key">steps</span>:
+    - <span class="c-key">wait</span>: <span class="c-num">0</span>
+      <span class="c-key">action</span>: send_email
+      <span class="c-key">template</span>: <span class="c-str">"bienvenida_dental"</span>
+      <span class="c-key">subject</span>: <span class="c-str">"Tu sonrisa merece lo mejor — Guía gratuita incluida"</span>
+
+    - <span class="c-key">wait</span>: <span class="c-num">3</span> <span class="c-comment"># días</span>
+      <span class="c-key">condition</span>: <span class="c-str">"NOT has_appointment"</span>
+      <span class="c-key">action</span>: send_email
+      <span class="c-key">template</span>: <span class="c-str">"educativo_{{lead.tratamiento_interes}}"</span>
+
+    - <span class="c-key">wait</span>: <span class="c-num">7</span>
+      <span class="c-key">condition</span>: <span class="c-str">"NOT has_appointment"</span>
+      <span class="c-key">action</span>: send_whatsapp
+      <span class="c-key">message</span>: <span class="c-str">"Hola {{first_name}}, ¿tienes 15 min esta semana? Primera visita sin coste"</span>
+
+    - <span class="c-key">wait</span>: <span class="c-num">14</span>
+      <span class="c-key">condition</span>: <span class="c-str">"NOT has_appointment"</span>
+      <span class="c-key">action</span>: assign_to_sales_rep
+      <span class="c-key">priority</span>: <span class="c-str">"high"</span></code></pre>
+    </div>
+
+    <!-- FLUJO 4 -->
+    <div class="flow-container">
+      <div class="flow-title"><svg class="icon icon-b"><use href="#i-star"/></svg> Flujo 4 — Solicitud de Reseña Post-Tratamiento</div>
+      <div class="flow-steps">
+        <div class="flow-step trigger">
+          <div class="step-label">Trigger</div>
+          <div class="step-text">Cita marcada como "completada" en el sistema</div>
+        </div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-step action">
+          <div class="step-label">+2h</div>
+          <div class="step-text">WhatsApp de satisfacción (escala 1–5)</div>
+        </div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-step condition">
+          <div class="step-label">Condición</div>
+          <div class="step-text">Puntuación ≥ 4 → pedir reseña Google · &lt; 4 → alerta interna</div>
+        </div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-step action">
+          <div class="step-label">Acción</div>
+          <div class="step-text">IA analiza texto de reseña negativa y genera respuesta sugerida</div>
+        </div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-step output">
+          <div class="step-label">Salida</div>
+          <div class="step-text">Reseña publicada / Incidencia gestionada por recepción</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════ INTEGRACIONES ════ -->
+  <section id="integraciones">
+    <div class="section-header">
+      <div class="section-icon"><svg class="icon icon-b"><use href="#i-link"/></svg></div>
+      <div>
+        <div class="section-title">Integraciones y APIs</div>
+        <div class="section-subtitle">Mapa de conexiones, credenciales y notas técnicas</div>
+      </div>
+    </div>
+
+    <div class="alert alert-green">
+      <span class="alert-icon"><svg class="icon icon-b"><use href="#i-lock"/></svg></span>
+      <p><strong>Gestión de credenciales:</strong> Todas las API Keys deben almacenarse en un gestor de secretos (Bitwarden Secrets Manager o similar). Nunca en texto plano ni en repositorios. Rotación trimestral obligatoria.</p>
+    </div>
+
+    <h3>Mapa de Conexiones</h3>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Origen</th><th>Destino</th><th>Método</th><th>Dato transferido</th><th>Frecuencia</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>Web / Landing</strong></td><td>HubSpot CRM</td><td>Formulario → Make Webhook</td><td>Nombre, email, tratamiento</td><td>Tiempo real</td></tr>
+          <tr><td><strong>Chatbot GPT-4o</strong></td><td>HubSpot CRM</td><td>API REST</td><td>Lead data + score</td><td>Tiempo real</td></tr>
+          <tr><td><strong>Calendly</strong></td><td>HubSpot + WhatsApp</td><td>Webhook → Make</td><td>Cita confirmada + datos</td><td>Tiempo real</td></tr>
+          <tr><td><strong>HubSpot</strong></td><td>ActiveCampaign</td><td>Webhook bidireccional</td><td>Stage cambios, etiquetas</td><td>Tiempo real</td></tr>
+          <tr><td><strong>ActiveCampaign</strong></td><td>360dialog (WhatsApp)</td><td>Make</td><td>Mensajes plantilla aprobados</td><td>Programado</td></tr>
+          <tr><td><strong>Google Ads / Meta</strong></td><td>HubSpot CRM</td><td>Pixel + Offline conversions</td><td>Leads, conversiones</td><td>Diario</td></tr>
+          <tr><td><strong>Clínica (citas completadas)</strong></td><td>WhatsApp + CRM</td><td>n8n webhook</td><td>Confirmaciones, recordatorios</td><td>Programado</td></tr>
+          <tr><td><strong>Google Reviews</strong></td><td>Slack + CRM</td><td>Make + Places API</td><td>Nuevas reseñas</td><td>Cada 6h</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>HubSpot — Upsert de Contacto</h3>
+    <div class="code-block">
+      <div class="code-header">
+        <span class="code-lang">JavaScript — HubSpot Contact Upsert via API</span>
+        <div class="code-dots"><span class="dot-red"></span><span class="dot-amber"></span><span class="dot-green"></span></div>
+      </div>
+      <pre><code><span class="c-kw">const</span> <span class="c-key">upsertDentalLead</span> = <span class="c-kw">async</span> (leadData) => {
+  <span class="c-kw">const</span> { nombre, email, telefono, tratamiento, leadScore } = leadData;
+
+  <span class="c-kw">const</span> payload = {
+    <span class="c-key">properties</span>: {
+      <span class="c-key">firstname</span>: nombre.split(<span class="c-str">' '</span>)[<span class="c-num">0</span>],
+      <span class="c-key">lastname</span>: nombre.split(<span class="c-str">' '</span>).slice(<span class="c-num">1</span>).join(<span class="c-str">' '</span>),
+      <span class="c-key">email</span>: email,
+      <span class="c-key">phone</span>: telefono,
+      <span class="c-key">tratamiento_interes</span>: tratamiento,
+      <span class="c-key">hs_lead_status</span>: <span class="c-str">'NEW'</span>,
+      <span class="c-key">lead_score_ia</span>: leadScore,
+      <span class="c-key">fuente_captacion</span>: <span class="c-str">'chatbot_web'</span>
+    }
+  };
+
+  <span class="c-kw">const</span> response = <span class="c-kw">await</span> <span class="c-fn">fetch</span>(
+    <span class="c-str">'https://api.hubapi.com/crm/v3/objects/contacts/upsert'</span>,
+    {
+      method: <span class="c-str">'POST'</span>,
+      headers: {
+        <span class="c-str">'Authorization'</span>: <span class="c-str">`Bearer ${process.env.HUBSPOT_TOKEN}`</span>,
+        <span class="c-str">'Content-Type'</span>: <span class="c-str">'application/json'</span>
+      },
+      body: JSON.<span class="c-fn">stringify</span>(payload)
+    }
+  );
+
+  <span class="c-kw">if</span> (response.ok) {
+    <span class="c-comment">// Disparar secuencia de nurturing en ActiveCampaign</span>
+    <span class="c-kw">await</span> <span class="c-fn">triggerNurturingSequence</span>(email, tratamiento);
+  }
+};</code></pre>
+    </div>
+  </section>
+
+  <!-- ════ GENERACIÓN DE CONTENIDO CON IA ════ -->
+  <section id="contenido">
+    <div class="section-header">
+      <div class="section-icon"><svg class="icon icon-b"><use href="#i-bulb"/></svg></div>
+      <div>
+        <div class="section-title">Generación de Contenido con IA</div>
+        <div class="section-subtitle">Emails de nurturing, copy para TV y respuestas a reseñas</div>
+      </div>
+    </div>
+
+    <div class="two-col">
+      <div class="card">
+        <div class="card-icon"><svg class="icon icon-b"><use href="#i-mail"/></svg></div>
+        <h4>Emails de Nurturing</h4>
+        <ul class="feature-list">
+          <li>Generar una plantilla de email por cada tratamiento principal: ortodoncia, implantes, blanqueamiento, periodoncia</li>
+          <li>Prompt: tratamiento + perfil (edad 30–55, sin tecnicismos) + CTA a primera visita gratuita</li>
+          <li>Incluir un dato educativo relevante para aumentar apertura y confianza</li>
+          <li>Revisar y aprobar antes de subir a ActiveCampaign</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="card-icon"><svg class="icon icon-b"><use href="#i-tv"/></svg></div>
+        <h4>Copy para TV Escaparate</h4>
+        <ul class="feature-list">
+          <li>Generar titulo_1, titulo_2, titulo_3 y descripción para cada spot mensual</li>
+          <li>Input del especialista de vídeo: tratamiento + precio + oferta activa</li>
+          <li>Output en JSON para que el pipeline programático lo inserte directamente en el slide</li>
+          <li>Máximo 6 palabras por título; descripción máximo 2 líneas</li>
+        </ul>
+      </div>
+    </div>
+
+    <h3>Generador de Copy para Spots</h3>
+    <div class="code-block">
+      <div class="code-header">
+        <span class="code-lang">Python — Generador de Copy para TV con GPT-4o</span>
+        <div class="code-dots"><span class="dot-red"></span><span class="dot-amber"></span><span class="dot-green"></span></div>
+      </div>
+      <pre><code><span class="c-kw">import</span> openai, json
+
+<span class="c-fn">def</span> <span class="c-key">generar_copy_tv</span>(tratamiento: <span class="c-key">str</span>, precio: <span class="c-key">str</span>, oferta: <span class="c-key">str</span> = <span class="c-str">""</span>) -> <span class="c-key">dict</span>:
+    prompt = <span class="c-str">f"""
+Crea el copy para un slide de TV dental. Devuelve SOLO JSON válido.
+
+Tratamiento: {tratamiento}
+Precio: {precio}
+Oferta activa: {oferta if oferta else "ninguna"}
+
+Formato de respuesta (JSON):
+{{
+  "titulo_1": "máximo 4 palabras en mayúsculas",
+  "titulo_2": "beneficio principal, máximo 5 palabras",
+  "titulo_3": "detalle o puntos clave, máximo 6 palabras",
+  "descripcion": "2 líneas descriptivas, tono cercano",
+  "cta": "llamada a la acción breve"
+}}
+
+Tono: directo, confianza, sin tecnicismos. Para pacientes 30-55 años.
+"""</span>
+
+    response = openai.chat.completions.create(
+        model=<span class="c-str">"gpt-4o"</span>,
+        messages=[{<span class="c-str">"role"</span>: <span class="c-str">"user"</span>, <span class="c-str">"content"</span>: prompt}],
+        response_format={<span class="c-str">"type"</span>: <span class="c-str">"json_object"</span>},
+        temperature=<span class="c-num">0.6</span>
+    )
+
+    <span class="c-kw">return</span> json.loads(response.choices[<span class="c-num">0</span>].message.content)
+
+<span class="c-comment"># Uso: generar_copy_tv("Implantes dentales", "Desde 900€", "Financiación sin intereses")</span></code></pre>
+    </div>
+
+    <h3>Análisis y Respuesta a Reseñas Google</h3>
+    <div class="code-block">
+      <div class="code-header">
+        <span class="code-lang">Python — Análisis de Sentimiento y Respuesta Automática</span>
+        <div class="code-dots"><span class="dot-red"></span><span class="dot-amber"></span><span class="dot-green"></span></div>
+      </div>
+      <pre><code><span class="c-fn">def</span> <span class="c-key">analizar_resena</span>(texto_resena: <span class="c-key">str</span>, puntuacion: <span class="c-key">int</span>) -> <span class="c-key">dict</span>:
+    prompt = <span class="c-str">f"""
+Analiza esta reseña de una clínica dental y genera una respuesta profesional.
+
+Reseña ({puntuacion}/5 estrellas): "{texto_resena}"
+
+Devuelve JSON con:
+{{
+  "sentimiento": "positivo | negativo | neutro",
+  "tema_principal": "descripción breve del tema",
+  "respuesta": "respuesta profesional en primera persona del plural (nosotros), máximo 3 frases",
+  "requiere_atencion": true/false
+}}
+
+Si la puntuación es < 3, requiere_atencion debe ser true.
+Tono: empático, profesional, sin defensividad.
+"""</span>
+
+    response = openai.chat.completions.create(
+        model=<span class="c-str">"gpt-4o"</span>,
+        messages=[{<span class="c-str">"role"</span>: <span class="c-str">"user"</span>, <span class="c-str">"content"</span>: prompt}],
+        response_format={<span class="c-str">"type"</span>: <span class="c-str">"json_object"</span>}
+    )
+
+    resultado = json.loads(response.choices[<span class="c-num">0</span>].message.content)
+
+    <span class="c-kw">if</span> resultado[<span class="c-str">"requiere_atencion"</span>]:
+        <span class="c-fn">notificar_recepcion</span>(texto_resena, resultado[<span class="c-str">"respuesta"</span>])
+
+    <span class="c-kw">return</span> resultado</code></pre>
+    </div>
+  </section>
+
 </div>
+{% endraw %}
