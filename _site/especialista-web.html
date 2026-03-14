@@ -347,6 +347,23 @@
       link.addEventListener('click', closeMenu);
     });
   })();
+  // Collapsible code blocks
+  (function() {
+    document.querySelectorAll('.code-block').forEach(function(block) {
+      var header = block.querySelector('.code-header');
+      if (!header) return;
+      // Inyectar chevron
+      var chev = document.createElement('span');
+      chev.className = 'code-chevron';
+      chev.setAttribute('aria-hidden', 'true');
+      chev.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>';
+      header.insertBefore(chev, header.querySelector('.code-dots'));
+      // Toggle al hacer click en el header
+      header.addEventListener('click', function() {
+        block.classList.toggle('open');
+      });
+    });
+  })();
   // Active nav link on scroll (index page sections)
   const sections = document.querySelectorAll('section[id]');
   const navLinks = document.querySelectorAll('nav a');

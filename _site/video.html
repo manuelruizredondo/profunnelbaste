@@ -179,7 +179,7 @@
   
 <div class="hero">
   <h1>Estrategia de Vídeo</h1>
-  <p>Pipeline de producción profesional asistido por inteligencia artificial. Grabaciones en Centre Médic Basté.</p>
+  <p>Pipeline de producción profesional asistido por inteligencia artificial. Grabaciones en Dental Basté.</p>
   <p style="margin-top:12px; font-size:.9rem; opacity:.9;"><a href="#pedir-material" style="color:var(--white); text-decoration:underline;">Pedir material</a> · <a href="#almacenamiento" style="color:var(--white); text-decoration:underline;">Almacenamiento</a> · <a href="#edicion" style="color:var(--white); text-decoration:underline;">Guía de Edición</a></p>
 </div>
 
@@ -223,8 +223,8 @@
         <h4>3. Producción del vídeo</h4>
         <ul class="feature-list">
           <li>Genera el vídeo con los datos unificados</li>
-          <li>Formato 3840×2160 para TV del escaparate</li>
-          <li>Canva Pro, After Effects o DaVinci Resolve</li>
+          <li>Imágenes y vídeos de fondo desde Canva</li>
+          <li>Diseños programáticos (textos, overlays) — formato 3840×2160</li>
         </ul>
       </div>
       <div class="card">
@@ -283,6 +283,7 @@
     </div>
 
     <h4>Imagen o vídeo de fondo (obligatorio)</h4>
+    <p><strong>Fuente:</strong> Canva Pro — se extraen imágenes y vídeos de fondo desde Canva. Los diseños (textos, overlays, posiciones) se generan de forma programática.</p>
     <div class="table-wrap">
       <table>
         <thead>
@@ -360,13 +361,6 @@
             <td>~0,023€/GB/mes + transferencia</td>
             <td>URL pública o CloudFront</td>
           </tr>
-          <tr>
-            <td><strong>Vimeo (modo almacenamiento)</strong></td>
-            <td>Streaming web, embeds</td>
-            <td>Player profesional. Privacidad. Estadísticas. No para TV (límites de embedding).</td>
-            <td>Gratis (limitado) o Pro ~8€/mes</td>
-            <td>No recomendado para digital signage</td>
-          </tr>
         </tbody>
       </table>
     </div>
@@ -405,12 +399,6 @@
             <td>2/mes</td><td>1–3 min</td><td>YouTube + Stories</td>
             <td>FAQ generadas por IA desde chatbot</td>
             <td><span class="pill badge-amber">Medio</span></td>
-          </tr>
-          <tr>
-            <td><strong>Vídeo Avatar IA (HeyGen)</strong></td>
-            <td>2/mes</td><td>1–2 min</td><td>Email + Ads</td>
-            <td>100% generado por IA (HeyGen)</td>
-            <td><span class="pill badge-blue">Test</span></td>
           </tr>
         </tbody>
       </table>
@@ -515,24 +503,7 @@ Incluye [PAUSA] donde aplique y [B-ROLL: descripción] para el editor.
       </table>
     </div>
 
-    <h4>2. Parámetros de Export en DaVinci Resolve</h4>
-    <div class="spec-box">
-      <h4>TV Escaparate (1 pantalla LG 75UQ80006LB)</h4>
-      <div class="spec-row"><span class="spec-label">Resolución</span><span class="spec-value">3840 × 2160</span></div>
-      <div class="spec-row"><span class="spec-label">Frame rate</span><span class="spec-value">25 fps (PAL) o 30 fps</span></div>
-      <div class="spec-row"><span class="spec-label">Codec vídeo</span><span class="spec-value">H.264 High Profile</span></div>
-      <div class="spec-row"><span class="spec-label">Bitrate</span><span class="spec-value">CBR 30 Mbps (mínimo 25)</span></div>
-      <div class="spec-row"><span class="spec-label">Audio</span><span class="spec-value">AAC 48 kHz, 256 kbps (o sin audio si es solo visual)</span></div>
-      <div class="spec-row"><span class="spec-label">Contenedor</span><span class="spec-value">MP4 (QuickTime)</span></div>
-    </div>
-    <div class="spec-box">
-      <h4>TV Escaparate — 2 pantallas en tándem</h4>
-      <div class="spec-row"><span class="spec-label">Resolución</span><span class="spec-value">3840 × 4320</span></div>
-      <div class="spec-row"><span class="spec-label">Safe zone texto</span><span class="spec-value">Margen 80 px en todos los bordes</span></div>
-      <div class="spec-row"><span class="spec-label">Evitar</span><span class="spec-value">Texto o logos en el centro (línea de unión entre TVs)</span></div>
-    </div>
-
-    <h4>3. Safe Zones y Legibilidad</h4>
+    <h4>2. Safe Zones y Legibilidad</h4>
     <ul class="feature-list">
       <li><strong>TV 16:9:</strong> Mantener texto y logos dentro del 90 % central (márgenes 5 % cada lado). Algunas TVs recortan los bordes.</li>
       <li><strong>Fuente mínima:</strong> En 3840 px de ancho, usar mínimo 72 px para texto legible a distancia en escaparate.</li>
@@ -540,7 +511,7 @@ Incluye [PAUSA] donde aplique y [B-ROLL: descripción] para el editor.
       <li><strong>Duración de texto en pantalla:</strong> Mínimo 2 segundos por frase. Lectura cómoda: ~3 palabras/segundo.</li>
     </ul>
 
-    <h4>4. Flujo de Trabajo Recomendado</h4>
+    <h4>3. Flujo de Trabajo Recomendado</h4>
     <ol style="padding-left:20px; margin-bottom:20px; font-size:.9rem; color:var(--gray-700); line-height:1.8;">
       <li><strong>Importar</strong> — Material en bruto en carpeta por fecha y proyecto (ej: <code>2026-03_implantes/</code>).</li>
       <li><strong>Descript (opcional)</strong> — Si hay mucho diálogo: transcripción automática, eliminar "ums" y pausas largas. Exportar a Resolve.</li>
@@ -551,7 +522,7 @@ Incluye [PAUSA] donde aplique y [B-ROLL: descripción] para el editor.
       <li><strong>Export</strong> — Una versión por destino (TV, YouTube, Reels). Usar preset o template guardado.</li>
     </ol>
 
-    <h4>5. Nomenclatura de Archivos</h4>
+    <h4>4. Nomenclatura de Archivos</h4>
     <div class="spec-box">
       <p style="margin:0 0 10px;"><strong>Patrón:</strong> <code>PROFUNNEL_[TIPO]_[TEMA]_[FECHA]_[VERSION].[ext]</code></p>
       <div class="spec-row"><span class="spec-label">Ejemplo TV</span><span class="spec-value">PROFUNNEL_TV_implantes_20260315_v1.mp4</span></div>
@@ -560,7 +531,7 @@ Incluye [PAUSA] donde aplique y [B-ROLL: descripción] para el editor.
       <p style="margin:12px 0 0; font-size:.82rem; color:var(--gray-600);">Tipos: TV, YT (YouTube), REEL, WEB, EMAIL</p>
     </div>
 
-    <h4>6. Audio</h4>
+    <h4>5. Audio</h4>
     <ul class="feature-list">
       <li><strong>Voz:</strong> -14 a -16 LUFS (estándar streaming). Normalizar con Limiter si hay picos.</li>
       <li><strong>Música de fondo:</strong> -18 a -24 LUFS bajo la voz. No debe competir con el mensaje.</li>
@@ -568,7 +539,7 @@ Incluye [PAUSA] donde aplique y [B-ROLL: descripción] para el editor.
       <li><strong>Silencio inicial:</strong> Evitar clicks. Fade in de 100–200 ms en el primer frame de audio.</li>
     </ul>
 
-    <h4>7. Duración por Tipo de Pieza</h4>
+    <h4>6. Duración por Tipo de Pieza</h4>
     <div class="table-wrap">
       <table>
         <thead>
@@ -584,7 +555,7 @@ Incluye [PAUSA] donde aplique y [B-ROLL: descripción] para el editor.
       </table>
     </div>
 
-    <h4>8. Checklist de Entrega</h4>
+    <h4>7. Checklist de Entrega</h4>
     <ul class="checklist">
       <li>Resolución correcta según destino (3840×2160 para TV 1 pantalla, 3840×4320 para 2 TVs)</li>
       <li>Sin barras negras ni letterbox no deseadas</li>
@@ -623,6 +594,23 @@ Incluye [PAUSA] donde aplique y [B-ROLL: descripción] para el editor.
     if (backdrop) backdrop.addEventListener('click', closeMenu);
     document.querySelectorAll('#sidebar a').forEach(function(link) {
       link.addEventListener('click', closeMenu);
+    });
+  })();
+  // Collapsible code blocks
+  (function() {
+    document.querySelectorAll('.code-block').forEach(function(block) {
+      var header = block.querySelector('.code-header');
+      if (!header) return;
+      // Inyectar chevron
+      var chev = document.createElement('span');
+      chev.className = 'code-chevron';
+      chev.setAttribute('aria-hidden', 'true');
+      chev.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>';
+      header.insertBefore(chev, header.querySelector('.code-dots'));
+      // Toggle al hacer click en el header
+      header.addEventListener('click', function() {
+        block.classList.toggle('open');
+      });
     });
   })();
   // Active nav link on scroll (index page sections)
