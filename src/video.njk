@@ -8,7 +8,7 @@ permalink: /video.html
 <div class="hero">
   <h1>Estrategia de Vídeo</h1>
   <p>Pipeline de producción profesional asistido por inteligencia artificial. Grabaciones en Centre Médic Basté.</p>
-  <p style="margin-top:12px; font-size:.9rem; opacity:.9;"><a href="#edicion" style="color:var(--white); text-decoration:underline;">Ir a Guía de Edición para el Filmmaker</a></p>
+  <p style="margin-top:12px; font-size:.9rem; opacity:.9;"><a href="#almacenamiento" style="color:var(--white); text-decoration:underline;">Almacenamiento</a> · <a href="#edicion" style="color:var(--white); text-decoration:underline;">Guía de Edición</a></p>
 </div>
 
 <div class="page-content">
@@ -68,6 +68,64 @@ permalink: /video.html
           <li>Publicación programada con Buffer/Later</li>
         </ul>
       </div>
+    </div>
+
+    <h3 id="almacenamiento">Almacenamiento de Vídeos</h3>
+    <p>Opciones para guardar y servir los vídeos (TV escaparate, web, Rise Vision). Los vídeos necesitan una URL pública o accesible para que Rise Vision los reproduzca en las TVs.</p>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Opción</th><th>Uso recomendado</th><th>Ventajas</th><th>Coste</th><th>Integración Rise Vision</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Rise Vision (almacenamiento propio)</strong></td>
+            <td>TV escaparate</td>
+            <td>Subes directamente desde el panel. Sin configurar servidor. Gestión remota incluida.</td>
+            <td>Incluido en plan (~11€/pantalla/mes)</td>
+            <td><span class="pill badge-green">Nativa</span></td>
+          </tr>
+          <tr>
+            <td><strong>Google Drive</strong></td>
+            <td>Archivo maestro, compartir con equipo</td>
+            <td>Familiar, 15 GB gratis. Compartir enlaces. Carpeta compartida con el equipo de vídeo.</td>
+            <td>Gratis o Google One ~2€/mes (100 GB)</td>
+            <td>Enlace directo (convertir a formato de descarga)</td>
+          </tr>
+          <tr>
+            <td><strong>Dropbox</strong></td>
+            <td>Archivo maestro, enlaces directos</td>
+            <td>Enlaces directos para vídeo. Fácil de usar. Sincronización con equipo.</td>
+            <td>Gratis 2 GB, Plus ~12€/mes (2 TB)</td>
+            <td>URL directa cambiando ?dl=0 por ?dl=1</td>
+          </tr>
+          <tr>
+            <td><strong>Cloudflare R2</strong></td>
+            <td>Producción, alto volumen</td>
+            <td>Sin coste de egress. URLs públicas. Compatible con S3. Ideal si creces.</td>
+            <td>10 GB gratis, luego ~0,015€/GB/mes</td>
+            <td>URL pública por archivo</td>
+          </tr>
+          <tr>
+            <td><strong>AWS S3</strong></td>
+            <td>Producción, integraciones</td>
+            <td>Estándar de la industria. CloudFront para CDN. Control total.</td>
+            <td>~0,023€/GB/mes + transferencia</td>
+            <td>URL pública o CloudFront</td>
+          </tr>
+          <tr>
+            <td><strong>Vimeo (modo almacenamiento)</strong></td>
+            <td>Streaming web, embeds</td>
+            <td>Player profesional. Privacidad. Estadísticas. No para TV (límites de embedding).</td>
+            <td>Gratis (limitado) o Pro ~8€/mes</td>
+            <td>No recomendado para digital signage</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="alert alert-blue">
+      <span class="alert-icon"><svg class="icon icon-b"><use href="#i-bulb"/></svg></span>
+      <p><strong>Recomendación para empezar:</strong> Usar <strong>Rise Vision</strong> para la TV del escaparate (subida directa en su panel). Para archivo maestro y trabajo en equipo: <strong>Google Drive</strong> o <strong>Dropbox</strong> con carpeta compartida "Pro Funnel Basté - Vídeos". Estructura sugerida: <code>/TV_Escaparate/</code>, <code>/YouTube/</code>, <code>/Reels/</code>, <code>/Raw/</code> (material sin editar).</p>
     </div>
 
     <h3>Tipos de Vídeo y Frecuencia</h3>
