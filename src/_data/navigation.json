@@ -17,12 +17,6 @@
       ]
     },
     {
-      "section": "Vídeo",
-      "links": [
-        { "label": "Estrategia de Vídeo", "url": "/video.html", "page": "video" }
-      ]
-    },
-    {
       "section": "Equipo",
       "links": [
         { "label": "Roadmap", "url": "/roadmap.html", "page": "roadmap" },
