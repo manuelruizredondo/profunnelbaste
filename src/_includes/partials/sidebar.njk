@@ -8,17 +8,17 @@
   {% for section in navigation.items %}
   <div class="nav-section-label">{{ section.section }}</div>
   {% for link in section.links %}
-  {% set isActive = (page.url == "/" or page.url == "/index.html") and link.page == "index" or (page.url and link.url and link.page != "index" and link.page in page.url) %}
+  {% set isActive = link.page != "index" and page.url and link.page and link.page in page.url %}
   <a href="{{ link.url }}" class="{% if isActive %}active{% endif %}">
     <span class="nav-icon">
       {% if link.label == "TV Escaparate" %}<svg class="icon icon-w"><use href="#i-tv"/></svg>
-      {% elif link.label == "Visión General" %}<svg class="icon icon-w"><use href="#i-target"/></svg>
-      {% elif link.label == "Arquitectura Técnica" %}<svg class="icon icon-w"><use href="#i-building"/></svg>
-      {% elif link.label == "Flujos y Procesos" %}<svg class="icon icon-w"><use href="#i-gear"/></svg>
-      {% elif link.label == "Integraciones y APIs" %}<svg class="icon icon-w"><use href="#i-link"/></svg>
+      {% elif link.label == "Vista General" %}<svg class="icon icon-w"><use href="#i-target"/></svg>
+      {% elif link.label == "Stack Técnico" %}<svg class="icon icon-w"><use href="#i-gear"/></svg>
+      {% elif link.label == "Automatizaciones" %}<svg class="icon icon-w"><use href="#i-refresh"/></svg>
+      {% elif link.label == "Integraciones" %}<svg class="icon icon-w"><use href="#i-link"/></svg>
+      {% elif link.label == "KPIs" %}<svg class="icon icon-w"><use href="#i-chart"/></svg>
       {% elif link.label == "Estrategia de Vídeo" %}<svg class="icon icon-w"><use href="#i-video"/></svg>
-      {% elif link.label == "KPIs y Métricas" %}<svg class="icon icon-w"><use href="#i-chart"/></svg>
-      {% elif link.label == "Roadmap General" %}<svg class="icon icon-w"><use href="#i-list"/></svg>
+      {% elif link.label == "Roadmap" %}<svg class="icon icon-w"><use href="#i-list"/></svg>
       {% elif link.label == "Especialista IA" %}<svg class="icon icon-w"><use href="#i-bot"/></svg>
       {% elif link.label == "Especialista Web" %}<svg class="icon icon-w"><use href="#i-globe"/></svg>
       {% elif link.label == "Especialista Vídeo" %}<svg class="icon icon-w"><use href="#i-video"/></svg>

@@ -7,20 +7,25 @@
       ]
     },
     {
-      "section": "Documentación",
+      "section": "Proyecto",
       "links": [
-        { "label": "Visión General", "url": "/#vision", "page": "index" },
-        { "label": "Arquitectura Técnica", "url": "/#arquitectura", "page": "index" },
-        { "label": "Flujos y Procesos", "url": "/#flujos", "page": "index" },
-        { "label": "Integraciones y APIs", "url": "/#integraciones", "page": "index" },
-        { "label": "Estrategia de Vídeo", "url": "/video.html", "page": "video" },
-        { "label": "KPIs y Métricas", "url": "/#kpis", "page": "index" }
+        { "label": "Vista General", "url": "/#vision", "page": "index" },
+        { "label": "Stack Técnico", "url": "/#arquitectura", "page": "index" },
+        { "label": "Automatizaciones", "url": "/#flujos", "page": "index" },
+        { "label": "Integraciones", "url": "/#integraciones", "page": "index" },
+        { "label": "KPIs", "url": "/#kpis", "page": "index" }
+      ]
+    },
+    {
+      "section": "Vídeo",
+      "links": [
+        { "label": "Estrategia de Vídeo", "url": "/video.html", "page": "video" }
       ]
     },
     {
       "section": "Equipo",
       "links": [
-        { "label": "Roadmap General", "url": "/roadmap.html", "page": "roadmap" },
+        { "label": "Roadmap", "url": "/roadmap.html", "page": "roadmap" },
         { "label": "Especialista IA", "url": "/especialista-ia.html", "page": "especialista-ia" },
         { "label": "Especialista Web", "url": "/especialista-web.html", "page": "especialista-web" },
         { "label": "Especialista Vídeo", "url": "/especialista-video.html", "page": "especialista-video" }

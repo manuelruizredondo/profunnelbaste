@@ -54,7 +54,7 @@
   <div class="nav-section-label">Prioridad 0</div>
   
   
-  <a href="/#tv-escaparate" class="active">
+  <a href="/#tv-escaparate" class="">
     <span class="nav-icon">
       <svg class="icon icon-w"><use href="#i-tv"/></svg>
       
@@ -63,43 +63,55 @@
   </a>
   
   
-  <div class="nav-section-label">Documentación</div>
+  <div class="nav-section-label">Proyecto</div>
   
   
-  <a href="/#vision" class="active">
+  <a href="/#vision" class="">
     <span class="nav-icon">
       <svg class="icon icon-w"><use href="#i-target"/></svg>
       
     </span>
-    Visión General
+    Vista General
   </a>
   
   
-  <a href="/#arquitectura" class="active">
-    <span class="nav-icon">
-      <svg class="icon icon-w"><use href="#i-building"/></svg>
-      
-    </span>
-    Arquitectura Técnica
-  </a>
-  
-  
-  <a href="/#flujos" class="active">
+  <a href="/#arquitectura" class="">
     <span class="nav-icon">
       <svg class="icon icon-w"><use href="#i-gear"/></svg>
       
     </span>
-    Flujos y Procesos
+    Stack Técnico
   </a>
   
   
-  <a href="/#integraciones" class="active">
+  <a href="/#flujos" class="">
+    <span class="nav-icon">
+      <svg class="icon icon-w"><use href="#i-refresh"/></svg>
+      
+    </span>
+    Automatizaciones
+  </a>
+  
+  
+  <a href="/#integraciones" class="">
     <span class="nav-icon">
       <svg class="icon icon-w"><use href="#i-link"/></svg>
       
     </span>
-    Integraciones y APIs
+    Integraciones
   </a>
+  
+  
+  <a href="/#kpis" class="">
+    <span class="nav-icon">
+      <svg class="icon icon-w"><use href="#i-chart"/></svg>
+      
+    </span>
+    KPIs
+  </a>
+  
+  
+  <div class="nav-section-label">Vídeo</div>
   
   
   <a href="/video.html" class="">
@@ -111,15 +123,6 @@
   </a>
   
   
-  <a href="/#kpis" class="active">
-    <span class="nav-icon">
-      <svg class="icon icon-w"><use href="#i-chart"/></svg>
-      
-    </span>
-    KPIs y Métricas
-  </a>
-  
-  
   <div class="nav-section-label">Equipo</div>
   
   
@@ -128,7 +131,7 @@
       <svg class="icon icon-w"><use href="#i-list"/></svg>
       
     </span>
-    Roadmap General
+    Roadmap
   </a>
   
   
@@ -203,7 +206,7 @@
     <div class="section-header">
       <div class="section-icon"><svg class="icon icon-b"><use href="#i-tv"/></svg></div>
       <div>
-        <div class="section-title">0. TV Escaparate — Digital Signage Dental</div>
+        <div class="section-title">TV Escaparate — Digital Signage Dental</div>
         <div class="section-subtitle">El primer punto de contacto con el paciente: la calle</div>
       </div>
     </div>
@@ -566,7 +569,7 @@ Tono: Profesional, confianza, urgencia suave. Español neutro.
     <div class="section-header">
       <div class="section-icon"><svg class="icon icon-b"><use href="#i-target"/></svg></div>
       <div>
-        <div class="section-title">1. Visión General</div>
+        <div class="section-title">Vista General</div>
         <div class="section-subtitle">Resumen ejecutivo y hoja de ruta de implementación</div>
       </div>
     </div>
@@ -751,7 +754,7 @@ Tono: Profesional, confianza, urgencia suave. Español neutro.
     <div class="section-header">
       <div class="section-icon"><svg class="icon icon-b"><use href="#i-building"/></svg></div>
       <div>
-        <div class="section-title">2. Arquitectura Técnica</div>
+        <div class="section-title">Stack Técnico</div>
         <div class="section-subtitle">Stack de herramientas, integraciones y responsabilidades</div>
       </div>
     </div>
@@ -918,7 +921,7 @@ Tono: Profesional, confianza, urgencia suave. Español neutro.
     <div class="section-header">
       <div class="section-icon"><svg class="icon icon-b"><use href="#i-gear"/></svg></div>
       <div>
-        <div class="section-title">3. Flujos y Procesos</div>
+        <div class="section-title">Automatizaciones</div>
         <div class="section-subtitle">Automatizaciones paso a paso con triggers, acciones y configuraciones</div>
       </div>
     </div>
@@ -1175,7 +1178,7 @@ Tono: cercano, profesional, en español. Respuestas máximo 3 frases.
     <div class="section-header">
       <div class="section-icon"><svg class="icon icon-b"><use href="#i-link"/></svg></div>
       <div>
-        <div class="section-title">4. Integraciones y APIs</div>
+        <div class="section-title">Integraciones</div>
         <div class="section-subtitle">Mapa de conexiones, credenciales y notas técnicas</div>
       </div>
     </div>
@@ -1250,7 +1253,7 @@ Tono: cercano, profesional, en español. Respuestas máximo 3 frases.
     <div class="section-header">
       <div class="section-icon"><svg class="icon icon-b"><use href="#i-chart"/></svg></div>
       <div>
-        <div class="section-title">5. KPIs y Métricas</div>
+        <div class="section-title">KPIs y Métricas</div>
         <div class="section-subtitle">Indicadores clave de rendimiento, targets y fuentes de datos</div>
       </div>
     </div>
@@ -1504,7 +1507,9 @@ Tono: cercano, profesional, en español. Respuestas máximo 3 frases.
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           navLinks.forEach(link => {
-            link.classList.toggle('active', link.getAttribute('href') === '#' + entry.target.id);
+            const href = link.getAttribute('href');
+            const matchesSection = href === '/#' + entry.target.id || href === '#' + entry.target.id;
+            link.classList.toggle('active', matchesSection);
           });
         }
       });

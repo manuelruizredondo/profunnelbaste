@@ -63,7 +63,7 @@
   </a>
   
   
-  <div class="nav-section-label">Documentación</div>
+  <div class="nav-section-label">Proyecto</div>
   
   
   <a href="/#vision" class="">
@@ -71,25 +71,25 @@
       <svg class="icon icon-w"><use href="#i-target"/></svg>
       
     </span>
-    Visión General
+    Vista General
   </a>
   
   
   <a href="/#arquitectura" class="">
     <span class="nav-icon">
-      <svg class="icon icon-w"><use href="#i-building"/></svg>
+      <svg class="icon icon-w"><use href="#i-gear"/></svg>
       
     </span>
-    Arquitectura Técnica
+    Stack Técnico
   </a>
   
   
   <a href="/#flujos" class="">
     <span class="nav-icon">
-      <svg class="icon icon-w"><use href="#i-gear"/></svg>
+      <svg class="icon icon-w"><use href="#i-refresh"/></svg>
       
     </span>
-    Flujos y Procesos
+    Automatizaciones
   </a>
   
   
@@ -98,8 +98,20 @@
       <svg class="icon icon-w"><use href="#i-link"/></svg>
       
     </span>
-    Integraciones y APIs
+    Integraciones
   </a>
+  
+  
+  <a href="/#kpis" class="">
+    <span class="nav-icon">
+      <svg class="icon icon-w"><use href="#i-chart"/></svg>
+      
+    </span>
+    KPIs
+  </a>
+  
+  
+  <div class="nav-section-label">Vídeo</div>
   
   
   <a href="/video.html" class="">
@@ -111,15 +123,6 @@
   </a>
   
   
-  <a href="/#kpis" class="">
-    <span class="nav-icon">
-      <svg class="icon icon-w"><use href="#i-chart"/></svg>
-      
-    </span>
-    KPIs y Métricas
-  </a>
-  
-  
   <div class="nav-section-label">Equipo</div>
   
   
@@ -128,7 +131,7 @@
       <svg class="icon icon-w"><use href="#i-list"/></svg>
       
     </span>
-    Roadmap General
+    Roadmap
   </a>
   
   
@@ -372,7 +375,9 @@
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           navLinks.forEach(link => {
-            link.classList.toggle('active', link.getAttribute('href') === '#' + entry.target.id);
+            const href = link.getAttribute('href');
+            const matchesSection = href === '/#' + entry.target.id || href === '#' + entry.target.id;
+            link.classList.toggle('active', matchesSection);
           });
         }
       });
