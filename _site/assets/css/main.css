@@ -1049,6 +1049,22 @@
   .task-tag.low { background: var(--gray-100); color: var(--gray-600); }
   .info-box { background: var(--gray-100); border: 1px solid var(--gray-200); border-radius: var(--radius-md); padding: 18px 22px; margin-bottom: 24px; font-size: .95rem; color: var(--gray-800); line-height: 1.6; }
   .info-box strong { color: var(--gray-900); }
+  /* Links de referencia a páginas de especialistas */
+  .ref-links { display: flex; flex-direction: column; gap: 8px; margin: 24px 0; }
+  .ref-link {
+    display: flex; align-items: center; gap: 10px;
+    padding: 12px 18px;
+    background: var(--gray-50);
+    border: 1px solid var(--gray-200);
+    border-left: 3px solid var(--brand-500);
+    border-radius: var(--radius-md);
+    color: var(--brand-700);
+    text-decoration: none;
+    font-size: .88rem; font-weight: 500;
+    transition: background .15s, border-color .15s;
+  }
+  .ref-link:hover { background: var(--brand-50); border-left-color: var(--brand-600); color: var(--brand-800); }
+  .ref-link .icon { flex-shrink: 0; opacity: .7; }
   .card-link { text-decoration: none; color: inherit; transition: transform .15s, box-shadow .15s; display: block; }
   .card-link:hover { transform: translateY(-2px); box-shadow: var(--shadow-md); }
   .card-cta { display: inline-block; margin-top: 12px; font-size: .85rem; font-weight: 600; color: var(--brand-500); }

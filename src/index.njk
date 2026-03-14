@@ -113,234 +113,23 @@ title: Pro Funnel Basté — Documentación Técnica y Operativa
 
     </div>
 
-    <!-- SPEC TÉCNICAS -->
-    <h3>Especificaciones Técnicas de Exportación</h3>
-    <div class="two-col">
-      <div class="spec-highlight">
-        <h4>Formato Horizontal — LG 75UQ80006LB</h4>
-        <div class="spec-row"><span class="spec-label">1 TV (4K)</span><span class="spec-value">3840 × 2160 px</span></div>
-        <div class="spec-row"><span class="spec-label">2 TVs tándem (USB)</span><span class="spec-value">3840 × 4320 px</span></div>
-        <div class="spec-row"><span class="spec-label">Full HD (escalado)</span><span class="spec-value">1920 × 1080 px</span></div>
-        <div class="spec-row"><span class="spec-label">Frame rate</span><span class="spec-value">25 fps o 30 fps</span></div>
-        <div class="spec-row"><span class="spec-label">Codec vídeo</span><span class="spec-value">H.264 / H.265</span></div>
-        <div class="spec-row"><span class="spec-label">Bitrate</span><span class="spec-value">10–15 Mbps (FHD)</span></div>
-        <div class="spec-row"><span class="spec-label">Audio</span><span class="spec-value">AAC 48kHz — o sin audio</span></div>
-        <div class="spec-row"><span class="spec-label">Formato archivo</span><span class="spec-value">.mp4 (contenedor)</span></div>
-        <div class="spec-row"><span class="spec-label">Duración recomendada</span><span class="spec-value">10 – 30 segundos por clip</span></div>
-      </div>
-    </div>
-
-    <!-- PIPELINE PRODUCCIÓN -->
-    <h3>Pipeline de Producción de Vídeo para TV</h3>
-    <div class="flow-container">
-      <div class="flow-title"><svg class="icon icon-b"><use href="#i-tv"/></svg> Pipeline — De Excel a Pantalla del Escaparate</div>
-      <div class="flow-steps">
-        <div class="flow-step trigger">
-          <div class="step-label">1. Excel en Drive</div>
-          <div class="step-text">Rellenamos el Excel de Drive con textos y materiales</div>
-        </div>
-        <div class="flow-arrow">→</div>
-        <div class="flow-step action">
-          <div class="step-label">2. Comunicación</div>
-          <div class="step-text">Comunicamos a la persona que se han subido los textos y materiales</div>
-        </div>
-        <div class="flow-arrow">→</div>
-        <div class="flow-step action">
-          <div class="step-label">3. Marketing</div>
-          <div class="step-text">La persona de marketing unifica los datos</div>
-        </div>
-        <div class="flow-arrow">→</div>
-        <div class="flow-step action">
-          <div class="step-label">4. Producción</div>
-          <div class="step-text">Genera el vídeo</div>
-        </div>
-        <div class="flow-arrow">→</div>
-        <div class="flow-step output">
-          <div class="step-label">5. Entrega</div>
-          <div class="step-text">Envía el vídeo para ponerlo en la TV o lo sube a Dropbox</div>
-        </div>
-      </div>
-    </div>
-
-    <!-- HERRAMIENTAS -->
-    <h3>Herramientas Específicas para Digital Signage</h3>
-    <div class="table-wrap">
-      <table>
-        <thead>
-          <tr><th>Herramienta</th><th>Uso</th><th>Precio</th><th>Por qué usarla</th><th>Prioridad</th></tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><strong>USB físico (LG nativo)</strong></td>
-            <td>Playlist de vídeos reproducida directamente por el reproductor integrado de la TV LG</td>
-            <td>Gratis</td>
-            <td>Sin suscripción, sin configuración de red. Los archivos se ordenan por nombre (prefijo numérico).</td>
-            <td><span class="pill badge-rose">Crítico</span></td>
-          </tr>
-          <tr>
-            <td><strong>Google Drive</strong></td>
-            <td>Archivo maestro compartido con el equipo. El filmmaker sube aquí los archivos editados.</td>
-            <td>Gratis (15 GB) o ~2€/mes</td>
-            <td>Centraliza todo el contenido. Marketing descarga y copia al USB para actualizar la TV.</td>
-            <td><span class="pill badge-rose">Crítico</span></td>
-          </tr>
-          <tr>
-            <td><strong>Canva Pro</strong></td>
-            <td>Imágenes y vídeos de fondo para los spots. Los diseños se generan de forma programática.</td>
-            <td>~13€/mes</td>
-            <td>Extraer fondos de Canva para usar como base. El diseño final (textos, overlays) se hace con código.</td>
-            <td><span class="pill badge-rose">Crítico</span></td>
-          </tr>
-          <tr>
-            <td><strong>Adobe After Effects / Premiere</strong></td>
-            <td>Animaciones profesionales, motion graphics, spots de alta calidad</td>
-            <td>Plan CC ~60€/mes</td>
-            <td>Para piezas de alto impacto: lanzamientos, campañas estacionales (verano, Navidad, vuelta al cole)</td>
-            <td><span class="pill badge-amber">Alta</span></td>
-          </tr>
-          <tr>
-            <td><strong>HeyGen</strong></td>
-            <td>Generar presentador IA (avatar) que habla el guión para spots sin grabar</td>
-            <td>Desde 24€/mes</td>
-            <td>Producir spots rápidos con "doctor IA" presentando promociones sin necesidad de grabar</td>
-            <td><span class="pill badge-purple">Opcional</span></td>
-          </tr>
-          <tr>
-            <td><strong>Runway Gen-3</strong></td>
-            <td>Generar vídeo IA (imágenes de tratamientos, clínica, sonrisas) de manera realista</td>
-            <td>Desde 12€/mes</td>
-            <td>Stock de vídeo personalizado sin necesidad de contratar grabaciones extra</td>
-            <td><span class="pill badge-gray">Futuro</span></td>
-          </tr>
-          <tr>
-            <td><strong>QR Tiger / Uniqode</strong></td>
-            <td>Generador de QR dinámicos con analytics para incluir en los vídeos</td>
-            <td>Desde 0€ (QR estático gratis)</td>
-            <td>El QR en pantalla lleva al paciente directamente a la reserva de cita. Rastrea escaneos.</td>
-            <td><span class="pill badge-rose">Crítico</span></td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-
-    <!-- CÓDIGO: GENERADOR DE COPY PARA TV -->
-    <div class="code-block">
-      <div class="code-header">
-        <span class="code-lang">Python — Generador de Copy para Spot de TV (GPT-4o)</span>
-        <div class="code-dots"><span class="dot-red"></span><span class="dot-amber"></span><span class="dot-green"></span></div>
-      </div>
-      <pre><code><span class="c-kw">import</span> openai
-
-<span class="c-fn">def</span> <span class="c-key">generar_spot_tv</span>(
-    tratamiento: <span class="c-key">str</span>,
-    duracion_seg: <span class="c-key">int</span> = <span class="c-num">15</span>,
-    oferta: <span class="c-key">str</span> = <span class="c-str">""</span>,
-    orientacion: <span class="c-key">str</span> = <span class="c-str">"horizontal"</span>
-) -> <span class="c-key">dict</span>:
-
-    palabras_max = duracion_seg * <span class="c-num">3</span>  <span class="c-comment"># ~3 palabras/segundo leídas en pantalla</span>
-
-    prompt = <span class="c-str">f"""
-Crea el contenido textual para un spot de TV digital de escaparate de clínica dental.
-
-Parámetros:
-- Tratamiento: {tratamiento}
-- Duración: {duracion_seg} segundos (máximo {palabras_max} palabras visibles)
-- Oferta especial: {oferta if oferta else "ninguna"}
-- Formato pantalla: {orientacion}
-
-Devuelve JSON con esta estructura exacta:
-{{
-  "titular": "Texto grande, máximo 5 palabras, impacto máximo",
-  "subtitulo": "Beneficio principal, máximo 8 palabras",
-  "cuerpo": "Detalle opcional, máximo 12 palabras",
-  "cta": "Llamada a la acción, máximo 4 palabras",
-  "qr_texto": "Texto junto al QR, máximo 5 palabras",
-  "color_fondo_sugerido": "#hexcolor",
-  "emoji_decorativo": "1 emoji relevante"
-}}
-Tono: Profesional, confianza, urgencia suave. Español neutro.
-"""</span>
-
-    response = openai.chat.completions.create(
-        model=<span class="c-str">"gpt-4o"</span>,
-        messages=[{<span class="c-str">"role"</span>: <span class="c-str">"user"</span>, <span class="c-str">"content"</span>: prompt}],
-        response_format={<span class="c-str">"type"</span>: <span class="c-str">"json_object"</span>},
-        temperature=<span class="c-num">0.6</span>
-    )
-
-    spot_data = response.choices[<span class="c-num">0</span>].message.content
-    <span class="c-kw">return</span> spot_data
-
-<span class="c-comment"># Ejemplos de uso:</span>
-<span class="c-comment"># generar_spot_tv("Ortodoncia invisible", 20, "Primera consulta gratis")</span>
-<span class="c-comment"># generar_spot_tv("Blanqueamiento dental", 15, "50% en julio")</span>
-<span class="c-comment"># generar_spot_tv("Implantes dentales", 30, "Financiación sin intereses")</span></code></pre>
-    </div>
-
-    <!-- TIPOS DE CONTENIDO Y PLAYLIST -->
-    <h3>Playlist Semanal Recomendada para el Escaparate</h3>
-    <div class="table-wrap">
-      <table>
-        <thead>
-          <tr><th>#</th><th>Pieza</th><th>Duración</th><th>Frecuencia en playlist</th><th>Actualización</th><th>Herramienta</th></tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><strong>1</strong></td>
-            <td><strong>Spot promoción principal del mes</strong> — tratamiento estrella con precio/oferta</td>
-            <td>15–20 seg</td><td>Cada 2 clips</td><td>Mensual</td>
-            <td><span class="pill badge-purple">Canva Pro</span></td>
-          </tr>
-          <tr>
-            <td><strong>2</strong></td>
-            <td><strong>Antes/Después animado</strong> — fotos reales de pacientes (con permiso firmado)</td>
-            <td>10–15 seg</td><td>Cada 3 clips</td><td>Quincenal</td>
-            <td><span class="pill badge-blue">Premiere/Canva</span></td>
-          </tr>
-          <tr>
-            <td><strong>3</strong></td>
-            <td><strong>Presentación del equipo</strong> — doctor/a + higienistas, humaniza la clínica</td>
-            <td>20 seg</td><td>1 vez cada 10 min</td><td>Semestral</td>
-            <td><span class="pill badge-rose">Grabación real</span></td>
-          </tr>
-          <tr>
-            <td><strong>4</strong></td>
-            <td><strong>Dato educativo / curiosidad dental</strong> — "¿Sabías que…?"</td>
-            <td>8–12 seg</td><td>Cada 4 clips</td><td>Semanal</td>
-            <td><span class="pill badge-teal">Canva (IA copy)</span></td>
-          </tr>
-          <tr>
-            <td><strong>5</strong></td>
-            <td><strong>QR + CTA directo</strong> — "Reserva ahora tu cita gratis"</td>
-            <td>10 seg</td><td>Cada 5 clips</td><td>Permanente</td>
-            <td><span class="pill badge-purple">Canva + QR Tiger</span></td>
-          </tr>
-          <tr>
-            <td><strong>6</strong></td>
-            <td><strong>Vídeo testimonial de paciente</strong> — grabado en clínica, 30–60 seg editado a 20</td>
-            <td>20 seg</td><td>1 vez cada 15 min</td><td>Mensual</td>
-            <td><span class="pill badge-rose">Grabación + Descript</span></td>
-          </tr>
-          <tr>
-            <td><strong>7</strong></td>
-            <td><strong>Campaña estacional</strong> — Navidad, verano, vuelta al cole, San Valentín</td>
-            <td>15–20 seg</td><td>Sustituye spot principal</td><td>Estacional</td>
-            <td><span class="pill badge-blue">After Effects</span></td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-
-    <!-- PLAYLIST USB -->
-    <div class="info-box">
-      <strong>Orden de reproducción en el USB:</strong> La TV LG reproduce los archivos en orden alfabético. Usa un prefijo numérico para controlar la secuencia.<br><br>
-      <code>01_bienvenida.mp4</code> — Spot bienvenida / presentación clínica<br>
-      <code>02_oferta_mes.mp4</code> — Oferta o tratamiento del mes<br>
-      <code>03_testimonio.mp4</code> — Testimonio de paciente<br>
-      <code>04_tratamiento.mp4</code> — Explicativo de tratamiento<br>
-      <code>05_qr_reserva.mp4</code> — Spot QR de reserva de cita<br>
-      <code>06_dato_educativo.mp4</code> — ¿Sabías que…? semanal
+    <div class="ref-links">
+      <a href="/especialista-marketing.html#pipeline" class="ref-link">
+        <svg class="icon icon-b"><use href="#i-trend"/></svg>
+        Pipeline completo de producción → Especialista Marketing
+      </a>
+      <a href="/especialista-marketing.html#material" class="ref-link">
+        <svg class="icon icon-b"><use href="#i-clipboard"/></svg>
+        Especificaciones de exportación y material slides → Especialista Marketing
+      </a>
+      <a href="/especialista-video.html#que-grabar" class="ref-link">
+        <svg class="icon icon-b"><use href="#i-video"/></svg>
+        Qué y cómo grabar en la clínica → Especialista Vídeo
+      </a>
+      <a href="/especialista-ia.html#contenido" class="ref-link">
+        <svg class="icon icon-b"><use href="#i-bot"/></svg>
+        Generación de copy con IA para spots → Especialista IA
+      </a>
     </div>
 
     <div class="alert alert-green">
@@ -493,45 +282,11 @@ Tono: Profesional, confianza, urgencia suave. Español neutro.
 
     </div>
 
-    <h3>Tabla Maestra de Fases</h3>
-    <div class="table-wrap">
-      <table>
-        <thead>
-          <tr>
-            <th>Fase</th><th>Plazo</th><th>Entregables Clave</th><th>Responsable</th><th>Prioridad</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><strong>F1 — Cimientos</strong></td>
-            <td>Sem 1–3</td>
-            <td>CRM, Chatbot básico, Tracking, GTM, Onboarding</td>
-            <td>Tech Lead + Mktg</td>
-            <td><span class="pill badge-rose">Crítico</span></td>
-          </tr>
-          <tr>
-            <td><strong>F2 — Captación</strong></td>
-            <td>Sem 4–6</td>
-            <td>Ads, Email/SMS sequences, WhatsApp API, Booking</td>
-            <td>Marketing Manager</td>
-            <td><span class="pill badge-amber">Alta</span></td>
-          </tr>
-          <tr>
-            <td><strong>F3 — Vídeo IA</strong></td>
-            <td>Sem 7–9</td>
-            <td>4 vídeos, Guiones IA, YouTube, Social scheduler</td>
-            <td>Content Creator + IA</td>
-            <td><span class="pill badge-amber">Alta</span></td>
-          </tr>
-          <tr>
-            <td><strong>F4 — Optimización</strong></td>
-            <td>Sem 10–12</td>
-            <td>Lead scoring IA, Retargeting, Dashboard ejecutivo</td>
-            <td>Data Analyst + Tech</td>
-            <td><span class="pill badge-green">Media</span></td>
-          </tr>
-        </tbody>
-      </table>
+    <div class="ref-links">
+      <a href="/roadmap.html" class="ref-link">
+        <svg class="icon icon-b"><use href="#i-list"/></svg>
+        Roadmap detallado con entregables y responsables por fase →
+      </a>
     </div>
   </section>
 
@@ -743,55 +498,6 @@ Tono: Profesional, confianza, urgencia suave. Español neutro.
       </div>
     </div>
 
-    <div class="code-block">
-      <div class="code-header">
-        <span class="code-lang">Python — Chatbot Handler (Make / n8n webhook)</span>
-        <div class="code-dots"><span class="dot-red"></span><span class="dot-amber"></span><span class="dot-green"></span></div>
-      </div>
-      <pre><code><span class="c-comment"># Sistema prompt para el chatbot dental IA</span>
-<span class="c-key">SYSTEM_PROMPT</span> = <span class="c-str">"""
-Eres el asistente virtual de Dental Basté.
-Tu objetivo es:
-1. Saludar calurosamente y preguntar en qué puedes ayudar
-2. Identificar el tratamiento de interés (ortodoncia, implantes, blanqueamiento, etc.)
-3. Recopilar nombre completo y método de contacto
-4. Ofrecer disponibilidad de cita y redirigir al booking
-5. Nunca diagnosticar. Si preguntan por síntomas, remitir al doctor.
-
-Tono: cercano, profesional, en español. Respuestas máximo 3 frases.
-"""</span>
-
-<span class="c-kw">import</span> openai, json
-
-<span class="c-fn">def</span> <span class="c-key">process_lead_message</span>(user_message: <span class="c-key">str</span>, conversation_history: <span class="c-key">list</span>) -> <span class="c-key">dict</span>:
-    messages = [
-        {<span class="c-str">"role"</span>: <span class="c-str">"system"</span>, <span class="c-str">"content"</span>: SYSTEM_PROMPT},
-        *conversation_history,
-        {<span class="c-str">"role"</span>: <span class="c-str">"user"</span>, <span class="c-str">"content"</span>: user_message}
-    ]
-
-    response = openai.chat.completions.create(
-        model=<span class="c-str">"gpt-4o"</span>,
-        messages=messages,
-        temperature=<span class="c-num">0.4</span>,
-        max_tokens=<span class="c-num">200</span>,
-        response_format={<span class="c-str">"type"</span>: <span class="c-str">"json_object"</span>},
-        functions=[{
-            <span class="c-str">"name"</span>: <span class="c-str">"capture_lead_data"</span>,
-            <span class="c-str">"parameters"</span>: {
-                <span class="c-str">"type"</span>: <span class="c-str">"object"</span>,
-                <span class="c-str">"properties"</span>: {
-                    <span class="c-str">"nombre"</span>: {<span class="c-str">"type"</span>: <span class="c-str">"string"</span>},
-                    <span class="c-str">"tratamiento_interes"</span>: {<span class="c-str">"type"</span>: <span class="c-str">"string"</span>},
-                    <span class="c-str">"telefono"</span>: {<span class="c-str">"type"</span>: <span class="c-str">"string"</span>},
-                    <span class="c-str">"lead_score"</span>: {<span class="c-str">"type"</span>: <span class="c-str">"number"</span>, <span class="c-str">"description"</span>: <span class="c-str">"0-100"</span>}
-                }
-            }
-        }]
-    )
-    <span class="c-kw">return</span> response.choices[<span class="c-num">0</span>].message</code></pre>
-    </div>
-
     <!-- FLUJO 2 -->
     <div class="flow-container">
       <div class="flow-title"><svg class="icon icon-b"><use href="#i-calendar"/></svg> Flujo 2 — Reserva Automática de Cita y Recordatorios</div>
@@ -821,45 +527,6 @@ Tono: cercano, profesional, en español. Respuestas máximo 3 frases.
           <div class="step-text">WhatsApp 24h antes + SMS 2h antes de la cita</div>
         </div>
       </div>
-    </div>
-
-    <div class="code-block">
-      <div class="code-header">
-        <span class="code-lang">JSON — Make Scenario: Reminder Automation</span>
-        <div class="code-dots"><span class="dot-red"></span><span class="dot-amber"></span><span class="dot-green"></span></div>
-      </div>
-      <pre><code>{
-  <span class="c-key">"scenario"</span>: <span class="c-str">"dental_appointment_reminder"</span>,
-  <span class="c-key">"trigger"</span>: {
-    <span class="c-key">"app"</span>: <span class="c-str">"calendly"</span>,
-    <span class="c-key">"event"</span>: <span class="c-str">"invitee.created"</span>
-  },
-  <span class="c-key">"steps"</span>: [
-    {
-      <span class="c-key">"id"</span>: <span class="c-num">1</span>,
-      <span class="c-key">"app"</span>: <span class="c-str">"hubspot"</span>,
-      <span class="c-key">"action"</span>: <span class="c-str">"update_contact"</span>,
-      <span class="c-key">"data"</span>: {
-        <span class="c-key">"lifecycle_stage"</span>: <span class="c-str">"opportunity"</span>,
-        <span class="c-key">"appointment_date"</span>: <span class="c-str">"{{trigger.event.start_time}}"</span>
-      }
-    },
-    {
-      <span class="c-key">"id"</span>: <span class="c-num">2</span>,
-      <span class="c-key">"app"</span>: <span class="c-str">"twilio"</span>,
-      <span class="c-key">"action"</span>: <span class="c-str">"send_sms"</span>,
-      <span class="c-key">"schedule"</span>: <span class="c-str">"-24h"</span>,
-      <span class="c-key">"template"</span>: <span class="c-str">"Hola {{nombre}}, te recordamos tu cita mañana a las {{hora}}. Responde CANCELAR si no puedes asistir."</span>
-    },
-    {
-      <span class="c-key">"id"</span>: <span class="c-num">3</span>,
-      <span class="c-key">"app"</span>: <span class="c-str">"whatsapp_360dialog"</span>,
-      <span class="c-key">"action"</span>: <span class="c-str">"send_template_message"</span>,
-      <span class="c-key">"schedule"</span>: <span class="c-str">"-2h"</span>,
-      <span class="c-key">"template_name"</span>: <span class="c-str">"appointment_reminder_es"</span>
-    }
-  ]
-}</code></pre>
     </div>
 
     <!-- FLUJO 3 -->
@@ -893,39 +560,6 @@ Tono: cercano, profesional, en español. Respuestas máximo 3 frases.
       </div>
     </div>
 
-    <div class="code-block">
-      <div class="code-header">
-        <span class="code-lang">YAML — ActiveCampaign Automation: Nurture Sequence</span>
-        <div class="code-dots"><span class="dot-red"></span><span class="dot-amber"></span><span class="dot-green"></span></div>
-      </div>
-      <pre><code><span class="c-key">automation</span>:
-  <span class="c-key">name</span>: <span class="c-str">"Dental Lead Nurturing ES"</span>
-  <span class="c-key">trigger</span>:
-    <span class="c-key">type</span>: <span class="c-str">contact_tag_added</span>
-    <span class="c-key">tag</span>: <span class="c-str">"lead-cualificado"</span>
-
-  <span class="c-key">steps</span>:
-    - <span class="c-key">wait</span>: <span class="c-num">0</span>
-      <span class="c-key">action</span>: send_email
-      <span class="c-key">template</span>: <span class="c-str">"bienvenida_dental"</span>
-      <span class="c-key">subject</span>: <span class="c-str">"Tu sonrisa merece lo mejor 😊 — Guía gratuita incluida"</span>
-
-    - <span class="c-key">wait</span>: <span class="c-num">3</span> <span class="c-comment"># días</span>
-      <span class="c-key">condition</span>: <span class="c-str">"NOT has_appointment"</span>
-      <span class="c-key">action</span>: send_email
-      <span class="c-key">template</span>: <span class="c-str">"educativo_{{lead.tratamiento_interes}}"</span>
-
-    - <span class="c-key">wait</span>: <span class="c-num">7</span>
-      <span class="c-key">condition</span>: <span class="c-str">"NOT has_appointment"</span>
-      <span class="c-key">action</span>: send_whatsapp
-      <span class="c-key">message</span>: <span class="c-str">"Hola {{first_name}}, ¿tienes 15 min esta semana? Primera visita sin coste 🦷"</span>
-
-    - <span class="c-key">wait</span>: <span class="c-num">14</span>
-      <span class="c-key">condition</span>: <span class="c-str">"NOT has_appointment"</span>
-      <span class="c-key">action</span>: assign_to_sales_rep
-      <span class="c-key">priority</span>: <span class="c-str">"high"</span></code></pre>
-    </div>
-
     <!-- FLUJO 4 -->
     <div class="flow-container">
       <div class="flow-title"><svg class="icon icon-b"><use href="#i-star"/></svg> Flujo 4 — Solicitud Automática de Reseña Post-Tratamiento</div>
@@ -955,6 +589,17 @@ Tono: cercano, profesional, en español. Respuestas máximo 3 frases.
           <div class="step-text">Reseña publicada / Incidencia gestionada por equipo</div>
         </div>
       </div>
+    </div>
+
+    <div class="ref-links">
+      <a href="/especialista-ia.html#automatizaciones" class="ref-link">
+        <svg class="icon icon-b"><use href="#i-bot"/></svg>
+        Configuración técnica completa de cada flujo → Especialista IA
+      </a>
+      <a href="/especialista-ia.html#chatbot" class="ref-link">
+        <svg class="icon icon-b"><use href="#i-message"/></svg>
+        System prompt y código del chatbot GPT-4o → Especialista IA
+      </a>
     </div>
 
   </section>
@@ -993,44 +638,15 @@ Tono: cercano, profesional, en español. Respuestas máximo 3 frases.
       </table>
     </div>
 
-    <div class="code-block">
-      <div class="code-header">
-        <span class="code-lang">JavaScript — HubSpot Contact Upsert via API</span>
-        <div class="code-dots"><span class="dot-red"></span><span class="dot-amber"></span><span class="dot-green"></span></div>
-      </div>
-      <pre><code><span class="c-kw">const</span> <span class="c-key">upsertDentalLead</span> = <span class="c-kw">async</span> (leadData) => {
-  <span class="c-kw">const</span> { nombre, email, telefono, tratamiento, leadScore } = leadData;
-
-  <span class="c-kw">const</span> payload = {
-    <span class="c-key">properties</span>: {
-      <span class="c-key">firstname</span>: nombre.split(<span class="c-str">' '</span>)[<span class="c-num">0</span>],
-      <span class="c-key">lastname</span>: nombre.split(<span class="c-str">' '</span>).slice(<span class="c-num">1</span>).join(<span class="c-str">' '</span>),
-      <span class="c-key">email</span>: email,
-      <span class="c-key">phone</span>: telefono,
-      <span class="c-key">tratamiento_interes</span>: tratamiento,
-      <span class="c-key">hs_lead_status</span>: <span class="c-str">'NEW'</span>,
-      <span class="c-key">lead_score_ia</span>: leadScore,
-      <span class="c-key">fuente_captacion</span>: <span class="c-str">'chatbot_web'</span>
-    }
-  };
-
-  <span class="c-kw">const</span> response = <span class="c-kw">await</span> <span class="c-fn">fetch</span>(
-    <span class="c-str">'https://api.hubapi.com/crm/v3/objects/contacts/upsert'</span>,
-    {
-      method: <span class="c-str">'POST'</span>,
-      headers: {
-        <span class="c-str">'Authorization'</span>: <span class="c-str">`Bearer ${process.env.HUBSPOT_TOKEN}`</span>,
-        <span class="c-str">'Content-Type'</span>: <span class="c-str">'application/json'</span>
-      },
-      body: JSON.<span class="c-fn">stringify</span>(payload)
-    }
-  );
-
-  <span class="c-kw">if</span> (response.ok) {
-    <span class="c-comment">// Disparar secuencia de nurturing en ActiveCampaign</span>
-    <span class="c-kw">await</span> <span class="c-fn">triggerNurturingSequence</span>(email, tratamiento);
-  }
-};</code></pre>
+    <div class="ref-links">
+      <a href="/especialista-ia.html#integraciones" class="ref-link">
+        <svg class="icon icon-b"><use href="#i-bot"/></svg>
+        Código HubSpot API y gestión de credenciales → Especialista IA
+      </a>
+      <a href="/especialista-web.html#integraciones" class="ref-link">
+        <svg class="icon icon-b"><use href="#i-globe"/></svg>
+        Integraciones web (formularios, Calendly, tracking) → Especialista Web
+      </a>
     </div>
   </section>
 
