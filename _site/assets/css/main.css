@@ -677,6 +677,7 @@
     .card-grid { grid-template-columns: 1fr; }
     .kpi-grid { grid-template-columns: 1fr; }
     .two-col { grid-template-columns: 1fr; }
+    .content-calendar { min-width: 360px; }
   }
 
   /* ── SCROLLBAR ────────────────────────────────────────── */
@@ -688,7 +689,7 @@
   .priority-zero-banner {
     background: var(--gray-900);
     border-bottom: 3px solid var(--gray-600);
-    padding: 10px 64px;
+    padding: 10px 32px;
     display: flex; align-items: center; gap: 12px;
     font-size: .8rem; font-weight: 700;
     color: var(--gray-300);
@@ -806,6 +807,9 @@
     grid-template-columns: repeat(7, 1fr);
     gap: 6px;
     margin-bottom: 24px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    min-width: 320px;
   }
   .cal-header {
     text-align: center;
