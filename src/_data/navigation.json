@@ -22,6 +22,7 @@
         { "label": "Roadmap", "url": "/roadmap.html", "page": "roadmap" },
         { "label": "Especialista IA", "url": "/especialista-ia.html", "page": "especialista-ia" },
         { "label": "Especialista Web", "url": "/especialista-web.html", "page": "especialista-web" },
+        { "label": "Especialista Marketing", "url": "/especialista-marketing.html", "page": "especialista-marketing" },
         { "label": "Especialista Vídeo", "url": "/especialista-video.html", "page": "especialista-video" }
       ]
     }

@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pro Funnel Basté — Especialista en Marketing</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/assets/css/main.css" />
+</head>
+<body>
+
+<svg xmlns="http://www.w3.org/2000/svg" style="position:absolute;width:0;height:0">
+  <defs>
+    <symbol id="i-tv" viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="15" rx="2"/><path d="M17 2l-5 5-5-5"/></symbol>
+    <symbol id="i-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></symbol>
+    <symbol id="i-building" viewBox="0 0 24 24"><rect x="4" y="2" width="16" height="20" rx="2"/><path d="M9 6h6M9 10h6M9 14h6M9 18h6"/></symbol>
+    <symbol id="i-gear" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 1v2M12 21v2M1 12h2M21 12h2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M4.2 19.8l1.4-1.4M18.4 5.6l-1.4-1.4"/></symbol>
+    <symbol id="i-link" viewBox="0 0 24 24"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></symbol>
+    <symbol id="i-video" viewBox="0 0 24 24"><path d="m22 8-6 4 6 4V8Z"/><rect x="2" y="6" width="14" height="12" rx="2"/></symbol>
+    <symbol id="i-chart" viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="M7 16v-4M12 16v-8M17 16V7"/></symbol>
+    <symbol id="i-list" viewBox="0 0 24 24"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></symbol>
+    <symbol id="i-tooth" viewBox="0 0 24 24"><path d="M12 2c-2 2-3 5-3 8 0 4 2 5 3 5s3-1 3-5c0-3-1-6-3-8z"/></symbol>
+    <symbol id="i-alert" viewBox="0 0 24 24"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"/><path d="M12 9v4"/><path d="M12 17h.01"/></symbol>
+    <symbol id="i-bulb" viewBox="0 0 24 24"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/></symbol>
+    <symbol id="i-lock" viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></symbol>
+    <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></symbol>
+    <symbol id="i-message" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></symbol>
+    <symbol id="i-dollar" viewBox="0 0 24 24"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></symbol>
+    <symbol id="i-refresh" viewBox="0 0 24 24"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/></symbol>
+    <symbol id="i-ruler" viewBox="0 0 24 24"><path d="M21 3H3v18h18"/><path d="M3 9h3M3 15h3M3 12h6M9 3v3M15 3v3M12 3v6"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+    <symbol id="i-bot" viewBox="0 0 24 24"><path d="M12 8V4H8"/><rect x="2" y="14" width="20" height="8" rx="2"/><path d="M6 18v-4M18 18v-4"/><path d="M12 8a4 4 0 0 0-4 4h8a4 4 0 0 0-4-4z"/></symbol>
+    <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/><path d="M2 12h20"/></symbol>
+    <symbol id="i-clipboard" viewBox="0 0 24 24"><rect x="8" y="2" width="8" height="4" rx="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/></symbol>
+    <symbol id="i-trend" viewBox="0 0 24 24"><path d="m22 7-8.5 8.5-4-4L2 17"/><path d="M16 7h6v6"/></symbol>
+    <symbol id="i-scissors" viewBox="0 0 24 24"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M20 4 8.5 15.5"/><path d="M8.5 8.5 20 20"/></symbol>
+    <symbol id="i-upload" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/></symbol>
+  </defs>
+</svg>
+
+<nav id="sidebar">
+  <div class="sidebar-logo">
+    <div class="logo-icon"><svg class="icon icon-w"><use href="#i-tooth"/></svg></div>
+    <h1>Pro Funnel Basté</h1>
+    <p>Marketing Automation Suite</p>
+  </div>
+
+  
+  <div class="nav-section-label">Prioridad 0</div>
+  
+  
+  <a href="/#tv-escaparate" class="">
+    <span class="nav-icon">
+      <svg class="icon icon-w"><use href="#i-tv"/></svg>
+      
+    </span>
+    TV Escaparate
+  </a>
+  
+  
+  <div class="nav-section-label">Proyecto</div>
+  
+  
+  <a href="/#vision" class="">
+    <span class="nav-icon">
+      <svg class="icon icon-w"><use href="#i-target"/></svg>
+      
+    </span>
+    Vista General
+  </a>
+  
+  
+  <a href="/#arquitectura" class="">
+    <span class="nav-icon">
+      <svg class="icon icon-w"><use href="#i-gear"/></svg>
+      
+    </span>
+    Stack Técnico
+  </a>
+  
+  
+  <a href="/#flujos" class="">
+    <span class="nav-icon">
+      <svg class="icon icon-w"><use href="#i-refresh"/></svg>
+      
+    </span>
+    Automatizaciones
+  </a>
+  
+  
+  <a href="/#integraciones" class="">
+    <span class="nav-icon">
+      <svg class="icon icon-w"><use href="#i-link"/></svg>
+      
+    </span>
+    Integraciones
+  </a>
+  
+  
+  <a href="/#kpis" class="">
+    <span class="nav-icon">
+      <svg class="icon icon-w"><use href="#i-chart"/></svg>
+      
+    </span>
+    KPIs
+  </a>
+  
+  
+  <div class="nav-section-label">Equipo</div>
+  
+  
+  <a href="/roadmap.html" class="">
+    <span class="nav-icon">
+      <svg class="icon icon-w"><use href="#i-list"/></svg>
+      
+    </span>
+    Roadmap
+  </a>
+  
+  
+  <a href="/especialista-ia.html" class="">
+    <span class="nav-icon">
+      <svg class="icon icon-w"><use href="#i-bot"/></svg>
+      
+    </span>
+    Especialista IA
+  </a>
+  
+  
+  <a href="/especialista-web.html" class="">
+    <span class="nav-icon">
+      <svg class="icon icon-w"><use href="#i-globe"/></svg>
+      
+    </span>
+    Especialista Web
+  </a>
+  
+  
+  <a href="/especialista-marketing.html" class="active">
+    <span class="nav-icon">
+      <svg class="icon icon-w"><use href="#i-trend"/></svg>
+      
+    </span>
+    Especialista Marketing
+  </a>
+  
+  
+  <a href="/especialista-video.html" class="">
+    <span class="nav-icon">
+      <svg class="icon icon-w"><use href="#i-video"/></svg>
+      
+    </span>
+    Especialista Vídeo
+  </a>
+  
+  
+
+  <div class="sidebar-footer">
+    <div>Pro Funnel Basté v1.0</div>
+    <div>Última revisión: Mar 2026</div>
+    <span class="version-badge">CONFIDENCIAL</span>
+  </div>
+</nav>
+
+
+<button id="menu-toggle" type="button" class="menu-toggle" aria-label="Abrir menú">
+  <span class="menu-toggle-bar"></span>
+  <span class="menu-toggle-bar"></span>
+  <span class="menu-toggle-bar"></span>
+</button>
+<div id="menu-backdrop" class="menu-backdrop" aria-hidden="true"></div>
+
+<main class="layout-simple">
+  
+<div class="hero">
+  <h1>Especialista en Marketing</h1>
+  <p>TV física · Pipeline de contenido · Slides programáticos · Campañas · Calendario editorial</p>
+  <p style="margin-top:12px; font-size:.9rem; opacity:.9;">
+    <a href="/roadmap.html" style="color:var(--white); text-decoration:underline;">← Volver al Roadmap</a>
+    &nbsp;·&nbsp; <a href="#pipeline" style="color:var(--white); text-decoration:underline;">Pipeline TV</a>
+    &nbsp;·&nbsp; <a href="#material" style="color:var(--white); text-decoration:underline;">Material slides</a>
+    &nbsp;·&nbsp; <a href="#almacenamiento" style="color:var(--white); text-decoration:underline;">Almacenamiento</a>
+  </p>
+</div>
+
+<div class="page-content">
+
+  <div class="alert alert-blue">
+    <span class="alert-icon"><svg class="icon icon-b"><use href="#i-star"/></svg></span>
+    <p><strong>Tu rol:</strong> Gestionas el contenido de la TV del escaparate — desde recibir los materiales hasta publicar en la pantalla. También coordinas las campañas de ads, el calendario editorial y la producción mensual de spots. El <a href="/especialista-video.html" style="color:var(--brand-400);font-weight:600;">Especialista en Vídeo</a> graba el contenido real en la clínica; tú lo publicas y completas con diseños programáticos.</p>
+  </div>
+
+  <!-- ════ TAREAS ════ -->
+  <section class="specialist-section">
+    <div class="specialist-header" style="background:linear-gradient(135deg,var(--brand-600),var(--brand-400));">
+      <div class="specialist-icon"><svg class="icon icon-b"><use href="#i-star"/></svg></div>
+      <div>
+        <div class="specialist-title">Mis tareas</div>
+        <div class="specialist-subtitle">Lo que debo hacer como Especialista en Marketing</div>
+      </div>
+    </div>
+    <div class="roadmap">
+
+      <div class="roadmap-phase">
+        <div class="phase-header">
+          <div class="phase-badge" style="background:var(--brand-500);color:#fff;">0</div>
+          <div>
+            <div class="phase-title">Fase 0 — TV Física en Marcha (Semanas 1–2)</div>
+            <div class="phase-dates">Prioridad 0 — Primer entregable del proyecto</div>
+          </div>
+        </div>
+        <ul class="task-list">
+          <li class="task-item priority">
+            <span class="task-checkbox"></span>
+            <div class="task-content">
+              <div class="task-title">Producir 3 spots iniciales para la TV del escaparate</div>
+              <div class="task-detail">(1) Spot bienvenida + servicios, (2) Oferta del mes, (3) QR reserva de cita. Fondos desde Canva Pro. Diseños programáticos (textos, overlays). Formato: 3840×2160 (1 TV) o 3840×4320 (2 TVs tándem). 10–20 seg cada uno.</div>
+              <span class="task-tag critical">Crítico</span>
+            </div>
+          </li>
+          <li class="task-item priority">
+            <span class="task-checkbox"></span>
+            <div class="task-content">
+              <div class="task-title">Configurar Rise Vision y cargar la playlist inicial</div>
+              <div class="task-detail">Crear cuenta Rise Vision, registrar la pantalla, subir los 3 spots y configurar la rotación. Probar que la TV reproduce correctamente.</div>
+              <span class="task-tag critical">Crítico</span>
+            </div>
+          </li>
+          <li class="task-item">
+            <span class="task-checkbox"></span>
+            <div class="task-content">
+              <div class="task-title">Crear plantilla de marca programática reutilizable</div>
+              <div class="task-detail">Logo, colores, tipografía, safe zones y posiciones fijas de cada campo (titulo_1, titulo_2, titulo_3, descripcion, precio). Base para generar futuros spots mensualmente en minutos.</div>
+              <span class="task-tag high">Alta</span>
+            </div>
+          </li>
+          <li class="task-item">
+            <span class="task-checkbox"></span>
+            <div class="task-content">
+              <div class="task-title">Configurar QR code para el spot de reserva</div>
+              <div class="task-detail">Generar con QR Tiger o Uniqode. Destino: dentalbaste.com/escaparate (coordinar con especialista web). QR dinámico para poder cambiar el destino sin regenerar el spot.</div>
+              <span class="task-tag high">Alta</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="roadmap-phase">
+        <div class="phase-header">
+          <div class="phase-badge" style="background:var(--brand-500);color:#fff;">2</div>
+          <div>
+            <div class="phase-title">Fase 2 — Contenido Mensual y Campañas (Semanas 4–8)</div>
+            <div class="phase-dates">Ritmo de producción + ads</div>
+          </div>
+        </div>
+        <ul class="task-list">
+          <li class="task-item">
+            <span class="task-checkbox"></span>
+            <div class="task-content">
+              <div class="task-title">Actualizar playlist de TV con vídeos grabados en la clínica</div>
+              <div class="task-detail">Cuando el especialista de vídeo entrega las piezas editadas, subirlas a Rise Vision y actualizar la rotación. Sustituir los spots programáticos por contenido real grabado.</div>
+              <span class="task-tag high">Alta</span>
+            </div>
+          </li>
+          <li class="task-item">
+            <span class="task-checkbox"></span>
+            <div class="task-content">
+              <div class="task-title">Spot mensual nuevo para la TV</div>
+              <div class="task-detail">Cada mes: un tratamiento u oferta diferente. Rellenar el Excel en Drive con los textos, solicitar el fondo a Canva, generar el vídeo con la plantilla programática y subir a Rise Vision.</div>
+              <span class="task-tag high">Alta</span>
+            </div>
+          </li>
+          <li class="task-item">
+            <span class="task-checkbox"></span>
+            <div class="task-content">
+              <div class="task-title">Coordinación de campañas Google Ads + Meta Ads</div>
+              <div class="task-detail">Briefing mensual con los tratamientos a promocionar. Coordinar copys con el especialista IA. Revisar rendimiento semanal (CPL, CTR). Ajustar presupuesto según resultados.</div>
+              <span class="task-tag high">Alta</span>
+            </div>
+          </li>
+          <li class="task-item">
+            <span class="task-checkbox"></span>
+            <div class="task-content">
+              <div class="task-title">Publicación en redes sociales (Instagram, Facebook)</div>
+              <div class="task-detail">Programar las piezas de vídeo que entrega el filmmaker. Calendario: 4–6 publicaciones/semana. Herramienta: Buffer o Meta Business Suite.</div>
+              <span class="task-tag medium">Media</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="roadmap-phase">
+        <div class="phase-header">
+          <div class="phase-badge" style="background:var(--brand-500);color:#fff;">3</div>
+          <div>
+            <div class="phase-title">Fase 3 — Optimización y Analytics (Semanas 9–12)</div>
+            <div class="phase-dates">Dashboard · A/B · Calendario editorial</div>
+          </div>
+        </div>
+        <ul class="task-list">
+          <li class="task-item">
+            <span class="task-checkbox"></span>
+            <div class="task-content">
+              <div class="task-title">Looker Studio: dashboard de marketing unificado</div>
+              <div class="task-detail">Conectar GA4 + HubSpot + Meta Ads + Google Ads. Métricas clave: CPL, conversión landing, leads por canal, no-show rate. Revisión semanal con el equipo.</div>
+              <span class="task-tag medium">Media</span>
+            </div>
+          </li>
+          <li class="task-item">
+            <span class="task-checkbox"></span>
+            <div class="task-content">
+              <div class="task-title">Calendario editorial mensual</div>
+              <div class="task-detail">Planificar con un mes de antelación: qué tratamiento destaca cada semana en TV + redes + email. Coordinar con especialista vídeo (sesiones de grabación) y especialista IA (copys y emails).</div>
+              <span class="task-tag medium">Media</span>
+            </div>
+          </li>
+          <li class="task-item">
+            <span class="task-checkbox"></span>
+            <div class="task-content">
+              <div class="task-title">Piezas "Dato educativo" semanales para TV</div>
+              <div class="task-detail">Slides animados tipo "¿Sabías que…?" con curiosidades dentales. Copy generado por IA. Fondos desde Canva, diseño programático. 8–12 seg cada uno.</div>
+              <span class="task-tag low">Baja</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ════ PIPELINE TV FÍSICA ════ -->
+  <section id="pipeline">
+    <div class="section-header">
+      <div class="section-icon"><svg class="icon icon-b"><use href="#i-tv"/></svg></div>
+      <div>
+        <div class="section-title">Pipeline de la TV Física</div>
+        <div class="section-subtitle">Excel Drive · Comunicación · Marketing · Producción · Entrega en TV</div>
+      </div>
+    </div>
+
+    <div class="alert alert-blue">
+      <span class="alert-icon"><svg class="icon icon-b"><use href="#i-target"/></svg></span>
+      <p><strong>Flujo:</strong> La clínica (o el equipo) rellena el Excel de Drive con los textos del nuevo spot y sube el fondo visual. Se notifica al responsable de marketing. Marketing unifica los datos, genera el vídeo con la plantilla programática y lo sube a Rise Vision o Dropbox para la TV.</p>
+    </div>
+
+    <div class="card-grid">
+      <div class="card">
+        <div class="card-icon"><svg class="icon icon-b"><use href="#i-clipboard"/></svg></div>
+        <h4>1. Excel en Drive</h4>
+        <ul class="feature-list">
+          <li>Rellenar los campos del spot: titulo_1, titulo_2, titulo_3, descripcion, precio, precio_antes</li>
+          <li>Subir imagen o vídeo de fondo (desde Canva Pro o archivo propio)</li>
+          <li>Indicar la fecha de publicación deseada</li>
+          <li>Notificar al responsable de marketing que los materiales están listos</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="card-icon"><svg class="icon icon-b"><use href="#i-star"/></svg></div>
+        <h4>2. Marketing unifica</h4>
+        <ul class="feature-list">
+          <li>Revisar que todos los campos están completos</li>
+          <li>Verificar que el fondo es de calidad suficiente (mínimo 3840×2160)</li>
+          <li>Coordinar con el especialista IA si necesita copy mejorado</li>
+          <li>Preparar el brief de producción con todos los datos</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="card-icon"><svg class="icon icon-b"><use href="#i-scissors"/></svg></div>
+        <h4>3. Producción del spot</h4>
+        <ul class="feature-list">
+          <li>Aplicar los textos sobre la plantilla programática de marca</li>
+          <li>Fondo desde Canva (imagen o vídeo en bucle)</li>
+          <li>Exportar en formato TV: 3840×2160 px, H.264, 25–35 Mbps, .mp4</li>
+          <li>Revisar: safe zones, contraste, legibilidad a distancia</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="card-icon"><svg class="icon icon-b"><use href="#i-upload"/></svg></div>
+        <h4>4. Entrega en TV</h4>
+        <ul class="feature-list">
+          <li>Subir a Rise Vision y añadir a la playlist activa</li>
+          <li>O exportar a USB / Dropbox para carga manual en la TV</li>
+          <li>Confirmar que la pantalla reproduce el nuevo spot</li>
+          <li>Archivar el archivo en Drive: <code>/TV_Escaparate/AAAA-MM/</code></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════ MATERIAL PARA SLIDES ════ -->
+  <section id="material">
+    <div class="section-header">
+      <div class="section-icon"><svg class="icon icon-b"><use href="#i-ruler"/></svg></div>
+      <div>
+        <div class="section-title">Material Necesario para los Slides</div>
+        <div class="section-subtitle">Campos de texto y especificaciones del fondo visual</div>
+      </div>
+    </div>
+
+    <h4>Campos de texto (obligatorios / opcionales)</h4>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Campo</th><th>Descripción</th><th>Obligatorio</th><th>Ejemplo</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>titulo_1</strong></td>
+            <td>Nombre del tratamiento — texto grande, máximo 4 palabras</td>
+            <td>Sí</td>
+            <td>"IMPLANTES DENTALES"</td>
+          </tr>
+          <tr>
+            <td><strong>titulo_2</strong></td>
+            <td>Beneficio principal, máximo 5 palabras</td>
+            <td>Sí</td>
+            <td>"Recupera tu sonrisa para siempre"</td>
+          </tr>
+          <tr>
+            <td><strong>titulo_3</strong></td>
+            <td>Puntos clave o detalle adicional, máximo 6 palabras</td>
+            <td>No</td>
+            <td>"Sin dolor · Financiación sin intereses"</td>
+          </tr>
+          <tr>
+            <td><strong>descripcion</strong></td>
+            <td>Texto descriptivo de 2–3 líneas</td>
+            <td>No</td>
+            <td>"Solución definitiva para dientes perdidos..."</td>
+          </tr>
+          <tr>
+            <td><strong>precio</strong></td>
+            <td>Precio actual visible en el slide</td>
+            <td>No</td>
+            <td>"Desde 900 €"</td>
+          </tr>
+          <tr>
+            <td><strong>precio_antes</strong></td>
+            <td>Precio tachado (solo si hay oferta activa)</td>
+            <td>No</td>
+            <td>"1.200 €"</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h4>Imagen o vídeo de fondo (obligatorio)</h4>
+    <p><strong>Fuente principal:</strong> Canva Pro — se extraen imágenes y vídeos de fondo desde las colecciones de Canva. Los textos y overlays se aplican de forma programática encima.</p>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Formato</th><th>Resolución mínima</th><th>Notas</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>.jpg / .png</strong></td>
+            <td>3840 × 2160 px</td>
+            <td>Imagen estática. Exportar desde Canva en máxima calidad</td>
+          </tr>
+          <tr>
+            <td><strong>.mp4 / .mov</strong></td>
+            <td>Cualquier resolución</td>
+            <td>Vídeo en bucle. Se escala automáticamente. Máx 30 seg recomendado</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h4>Esquema del slide — Posiciones de los textos</h4>
+    <p>Logo y tagline arriba centrados; títulos en bloque central; descripción debajo; precios en la parte inferior.</p>
+    <div class="slide-schema-wrap">
+      <img src="/assets/images/slide-esquema.png" alt="Esquema del slide de vídeo con posiciones de texto" class="slide-schema-img" />
+      <div class="slide-schema-legend">
+        <div class="schema-zone"><span class="schema-label">Logo + tagline</span> — Arriba centrado</div>
+        <div class="schema-zone"><span class="schema-label">titulo_1</span> — Título grande, centro superior</div>
+        <div class="schema-zone"><span class="schema-label">titulo_2</span> — Subtítulo, debajo de titulo_1</div>
+        <div class="schema-zone"><span class="schema-label">titulo_3</span> — Detalle, debajo de titulo_2</div>
+        <div class="schema-zone"><span class="schema-label">descripcion</span> — Texto 2–3 líneas, zona media</div>
+        <div class="schema-zone"><span class="schema-label">precio_antes</span> — Izquierda abajo, tachado</div>
+        <div class="schema-zone"><span class="schema-label">precio</span> — Derecha abajo, precio actual</div>
+        <div class="schema-zone"><span class="schema-label">Fondo</span> — Imagen o vídeo en bucle (3840×2160)</div>
+      </div>
+    </div>
+
+    <h3>Tipos de Spot y Frecuencia</h3>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Tipo de spot</th><th>Frecuencia</th><th>Duración</th><th>Origen del contenido</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Spot bienvenida / clínica</strong></td>
+            <td>Siempre en rotación</td>
+            <td>15–20 seg</td>
+            <td>Vídeo grabado en clínica (filmmaker)</td>
+          </tr>
+          <tr>
+            <td><strong>Oferta del mes</strong></td>
+            <td>1/mes</td>
+            <td>10–15 seg</td>
+            <td>Programático (Excel → plantilla)</td>
+          </tr>
+          <tr>
+            <td><strong>QR reserva de cita</strong></td>
+            <td>Siempre en rotación</td>
+            <td>10 seg</td>
+            <td>Programático</td>
+          </tr>
+          <tr>
+            <td><strong>Presentación tratamiento</strong></td>
+            <td>Rotar mensualmente</td>
+            <td>20–30 seg</td>
+            <td>Vídeo grabado (filmmaker) o programático</td>
+          </tr>
+          <tr>
+            <td><strong>Testimonio de paciente</strong></td>
+            <td>Cuando haya material</td>
+            <td>30–60 seg</td>
+            <td>Vídeo grabado (filmmaker)</td>
+          </tr>
+          <tr>
+            <td><strong>Dato educativo semanal</strong></td>
+            <td>1/semana</td>
+            <td>8–12 seg</td>
+            <td>Programático (copy de IA)</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ════ ALMACENAMIENTO ════ -->
+  <section id="almacenamiento">
+    <div class="section-header">
+      <div class="section-icon"><svg class="icon icon-b"><use href="#i-upload"/></svg></div>
+      <div>
+        <div class="section-title">Almacenamiento y Distribución</div>
+        <div class="section-subtitle">Dónde guardar los vídeos y cómo servirlos a Rise Vision</div>
+      </div>
+    </div>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Opción</th><th>Uso recomendado</th><th>Ventajas</th><th>Coste</th><th>Rise Vision</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Rise Vision (propio)</strong></td>
+            <td>TV escaparate</td>
+            <td>Subida directa desde el panel, gestión remota incluida, sin configurar servidor</td>
+            <td>~11€/pantalla/mes</td>
+            <td><span class="pill badge-green">Nativa</span></td>
+          </tr>
+          <tr>
+            <td><strong>Google Drive</strong></td>
+            <td>Archivo maestro y trabajo en equipo</td>
+            <td>Familiar para el equipo, carpeta compartida, 15 GB gratis</td>
+            <td>Gratis o ~2€/mes (100 GB)</td>
+            <td>Enlace de descarga directa</td>
+          </tr>
+          <tr>
+            <td><strong>Dropbox</strong></td>
+            <td>Entrega de archivos grandes</td>
+            <td>URLs directas de vídeo, fácil de compartir con el filmmaker</td>
+            <td>Gratis 2 GB, Plus ~12€/mes (2 TB)</td>
+            <td>URL directa (?dl=1)</td>
+          </tr>
+          <tr>
+            <td><strong>Cloudflare R2</strong></td>
+            <td>Si crece el volumen</td>
+            <td>Sin coste de egress, URLs públicas, compatible con S3</td>
+            <td>10 GB gratis, ~0,015€/GB/mes</td>
+            <td>URL pública por archivo</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="alert alert-blue">
+      <span class="alert-icon"><svg class="icon icon-b"><use href="#i-bulb"/></svg></span>
+      <p><strong>Estructura de carpetas recomendada en Drive / Dropbox:</strong><br>
+        <code>/TV_Escaparate/</code> — spots listos para pantalla<br>
+        <code>/TV_Escaparate/AAAA-MM/</code> — archivo por mes<br>
+        <code>/YouTube/</code> — versiones largas para YouTube<br>
+        <code>/Reels/</code> — versiones verticales para redes<br>
+        <code>/Raw/</code> — material en bruto del filmmaker (no tocar)
+      </p>
+    </div>
+  </section>
+
+</div>
+
+</main>
+
+<script>
+  // Mobile menu toggle
+  (function() {
+    const toggle = document.getElementById('menu-toggle');
+    const sidebar = document.getElementById('sidebar');
+    const backdrop = document.getElementById('menu-backdrop');
+    const closeMenu = function() {
+      document.body.classList.remove('menu-open');
+      if (backdrop) backdrop.setAttribute('aria-hidden', 'true');
+    };
+    const openMenu = function() {
+      document.body.classList.add('menu-open');
+      if (backdrop) backdrop.setAttribute('aria-hidden', 'false');
+    };
+    if (toggle) {
+      toggle.addEventListener('click', function() {
+        document.body.classList.toggle('menu-open');
+        backdrop.setAttribute('aria-hidden', document.body.classList.contains('menu-open') ? 'false' : 'true');
+      });
+    }
+    if (backdrop) backdrop.addEventListener('click', closeMenu);
+    document.querySelectorAll('#sidebar a').forEach(function(link) {
+      link.addEventListener('click', closeMenu);
+    });
+  })();
+  // Collapsible code blocks
+  (function() {
+    document.querySelectorAll('.code-block').forEach(function(block) {
+      var header = block.querySelector('.code-header');
+      if (!header) return;
+      // Inyectar chevron
+      var chev = document.createElement('span');
+      chev.className = 'code-chevron';
+      chev.setAttribute('aria-hidden', 'true');
+      chev.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>';
+      header.insertBefore(chev, header.querySelector('.code-dots'));
+      // Toggle al hacer click en el header
+      header.addEventListener('click', function() {
+        block.classList.toggle('open');
+      });
+    });
+  })();
+  // Active nav link on scroll (index page sections)
+  const sections = document.querySelectorAll('section[id]');
+  const navLinks = document.querySelectorAll('nav a');
+  if (sections.length && navLinks.length) {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          navLinks.forEach(link => {
+            const href = link.getAttribute('href');
+            const matchesSection = href === '/#' + entry.target.id || href === '#' + entry.target.id;
+            link.classList.toggle('active', matchesSection);
+          });
+        }
+      });
+    }, { threshold: 0.25 });
+    sections.forEach(s => observer.observe(s));
+  }
+</script>
+</body>
+</html>
