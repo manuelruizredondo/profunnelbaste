@@ -174,7 +174,7 @@
     0%,100% { opacity: 1; }
     50% { opacity: .4; }
   }
-  .hero h2 {
+  .hero h1, .hero h2 {
     font-size: 2.6rem; font-weight: 800;
     color: var(--white);
     line-height: 1.15;
@@ -585,7 +585,7 @@
     #sidebar { transform: translateX(-100%); }
     main { margin-left: 0; }
     .hero, section { padding: 40px 24px; }
-    .hero h2 { font-size: 1.9rem; }
+    .hero h1, .hero h2 { font-size: 1.9rem; }
     .flow-steps { flex-direction: column; }
     .flow-arrow { transform: rotate(90deg); align-self: center; }
   }
