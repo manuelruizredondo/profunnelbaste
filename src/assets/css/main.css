@@ -119,6 +119,34 @@
     border-left-color: var(--brand-400);
   }
 
+  /* Sub-navegación de especialistas */
+  .nav-subsections {
+    margin: 0 0 4px 0;
+    border-left: 1px solid rgba(255,255,255,.1);
+    margin-left: 40px;
+  }
+  .nav-sub {
+    display: flex !important;
+    align-items: center;
+    gap: 8px;
+    padding: 5px 16px !important;
+    color: var(--brand-300) !important;
+    font-size: .78rem !important;
+    font-weight: 400 !important;
+    border-left: 2px solid transparent !important;
+    text-decoration: none;
+    transition: color .15s, background .15s;
+  }
+  .nav-sub:hover { color: var(--white) !important; background: rgba(255,255,255,.04) !important; }
+  .nav-sub.active { color: var(--white) !important; border-left-color: var(--brand-400) !important; }
+  .nav-sub-dot {
+    width: 4px; height: 4px;
+    border-radius: 50%;
+    background: currentColor;
+    opacity: .5;
+    flex-shrink: 0;
+  }
+
   .sidebar-footer {
     margin-top: auto;
     padding: 20px 24px;

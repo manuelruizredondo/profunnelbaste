@@ -67,21 +67,29 @@
       });
     });
   })();
-  // Active nav link on scroll (index page sections)
+  // Active nav link on scroll (index page sections + specialist subsections)
   const sections = document.querySelectorAll('section[id]');
-  const navLinks = document.querySelectorAll('nav a');
-  if (sections.length && navLinks.length) {
+  const navLinks = document.querySelectorAll('nav a:not(.nav-sub)');
+  const navSubLinks = document.querySelectorAll('nav a.nav-sub');
+  if (sections.length && (navLinks.length || navSubLinks.length)) {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
+          // Main links (index anchors)
           navLinks.forEach(link => {
             const href = link.getAttribute('href');
             const matchesSection = href === '/#' + entry.target.id || href === '#' + entry.target.id;
             link.classList.toggle('active', matchesSection);
           });
+          // Sub-links (specialist page sections)
+          navSubLinks.forEach(link => {
+            const href = link.getAttribute('href') || '';
+            const anchorMatch = href.endsWith('#' + entry.target.id);
+            link.classList.toggle('active', anchorMatch);
+          });
         }
       });
-    }, { threshold: 0.25 });
+    }, { threshold: 0.3, rootMargin: '-10% 0px -60% 0px' });
     sections.forEach(s => observer.observe(s));
   }
 </script>

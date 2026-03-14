@@ -20,10 +20,48 @@
       "section": "Equipo",
       "links": [
         { "label": "Roadmap", "url": "/roadmap.html", "page": "roadmap" },
-        { "label": "Especialista IA", "url": "/especialista-ia.html", "page": "especialista-ia" },
-        { "label": "Especialista Web", "url": "/especialista-web.html", "page": "especialista-web" },
-        { "label": "Especialista Marketing", "url": "/especialista-marketing.html", "page": "especialista-marketing" },
-        { "label": "Especialista Vídeo", "url": "/especialista-video.html", "page": "especialista-video" }
+        {
+          "label": "Especialista IA",
+          "url": "/especialista-ia.html",
+          "page": "especialista-ia",
+          "subsections": [
+            { "label": "Chatbot IA", "url": "/especialista-ia.html#chatbot" },
+            { "label": "Automatizaciones", "url": "/especialista-ia.html#automatizaciones" },
+            { "label": "Integraciones", "url": "/especialista-ia.html#integraciones" },
+            { "label": "Contenido con IA", "url": "/especialista-ia.html#contenido" }
+          ]
+        },
+        {
+          "label": "Especialista Web",
+          "url": "/especialista-web.html",
+          "page": "especialista-web",
+          "subsections": [
+            { "label": "Tracking y Analítica", "url": "/especialista-web.html#tracking" },
+            { "label": "Landing Pages", "url": "/especialista-web.html#landings" },
+            { "label": "SEO Local", "url": "/especialista-web.html#seo" },
+            { "label": "Integraciones Web", "url": "/especialista-web.html#integraciones" }
+          ]
+        },
+        {
+          "label": "Especialista Marketing",
+          "url": "/especialista-marketing.html",
+          "page": "especialista-marketing",
+          "subsections": [
+            { "label": "Pipeline TV", "url": "/especialista-marketing.html#pipeline" },
+            { "label": "Material Slides", "url": "/especialista-marketing.html#material" },
+            { "label": "Almacenamiento", "url": "/especialista-marketing.html#almacenamiento" }
+          ]
+        },
+        {
+          "label": "Especialista Vídeo",
+          "url": "/especialista-video.html",
+          "page": "especialista-video",
+          "subsections": [
+            { "label": "Qué Grabar", "url": "/especialista-video.html#que-grabar" },
+            { "label": "Cómo Grabar", "url": "/especialista-video.html#como-grabar" },
+            { "label": "Guía de Edición", "url": "/especialista-video.html#edicion" }
+          ]
+        }
       ]
     }
   ]

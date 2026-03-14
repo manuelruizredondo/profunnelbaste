@@ -54,7 +54,7 @@
   <div class="nav-section-label">Prioridad 0</div>
   
   
-  <a href="/#tv-escaparate" class="">
+  <a href="/#tv-escaparate" class="nav-link">
     <span class="nav-icon">
       <svg class="icon icon-w"><use href="#i-tv"/></svg>
       
@@ -63,10 +63,11 @@
   </a>
   
   
+  
   <div class="nav-section-label">Proyecto</div>
   
   
-  <a href="/#vision" class="">
+  <a href="/#vision" class="nav-link">
     <span class="nav-icon">
       <svg class="icon icon-w"><use href="#i-target"/></svg>
       
@@ -75,7 +76,8 @@
   </a>
   
   
-  <a href="/#arquitectura" class="">
+  
+  <a href="/#arquitectura" class="nav-link">
     <span class="nav-icon">
       <svg class="icon icon-w"><use href="#i-gear"/></svg>
       
@@ -84,7 +86,8 @@
   </a>
   
   
-  <a href="/#flujos" class="">
+  
+  <a href="/#flujos" class="nav-link">
     <span class="nav-icon">
       <svg class="icon icon-w"><use href="#i-refresh"/></svg>
       
@@ -93,7 +96,8 @@
   </a>
   
   
-  <a href="/#integraciones" class="">
+  
+  <a href="/#integraciones" class="nav-link">
     <span class="nav-icon">
       <svg class="icon icon-w"><use href="#i-link"/></svg>
       
@@ -102,7 +106,8 @@
   </a>
   
   
-  <a href="/#kpis" class="">
+  
+  <a href="/#kpis" class="nav-link">
     <span class="nav-icon">
       <svg class="icon icon-w"><use href="#i-chart"/></svg>
       
@@ -111,10 +116,11 @@
   </a>
   
   
+  
   <div class="nav-section-label">Equipo</div>
   
   
-  <a href="/roadmap.html" class="">
+  <a href="/roadmap.html" class="nav-link">
     <span class="nav-icon">
       <svg class="icon icon-w"><use href="#i-list"/></svg>
       
@@ -123,7 +129,8 @@
   </a>
   
   
-  <a href="/especialista-ia.html" class="">
+  
+  <a href="/especialista-ia.html" class="nav-link">
     <span class="nav-icon">
       <svg class="icon icon-w"><use href="#i-bot"/></svg>
       
@@ -132,7 +139,8 @@
   </a>
   
   
-  <a href="/especialista-web.html" class="">
+  
+  <a href="/especialista-web.html" class="nav-link">
     <span class="nav-icon">
       <svg class="icon icon-w"><use href="#i-globe"/></svg>
       
@@ -141,7 +149,8 @@
   </a>
   
   
-  <a href="/especialista-marketing.html" class="">
+  
+  <a href="/especialista-marketing.html" class="nav-link">
     <span class="nav-icon">
       <svg class="icon icon-w"><use href="#i-trend"/></svg>
       
@@ -150,13 +159,31 @@
   </a>
   
   
-  <a href="/especialista-video.html" class="active">
+  
+  <a href="/especialista-video.html" class="nav-link active">
     <span class="nav-icon">
       <svg class="icon icon-w"><use href="#i-video"/></svg>
       
     </span>
     Especialista Vídeo
   </a>
+  
+  <div class="nav-subsections">
+    
+    <a href="/especialista-video.html#que-grabar" class="nav-sub">
+      <span class="nav-sub-dot"></span>Qué Grabar
+    </a>
+    
+    <a href="/especialista-video.html#como-grabar" class="nav-sub">
+      <span class="nav-sub-dot"></span>Cómo Grabar
+    </a>
+    
+    <a href="/especialista-video.html#edicion" class="nav-sub">
+      <span class="nav-sub-dot"></span>Guía de Edición
+    </a>
+    
+  </div>
+  
   
   
 
@@ -543,7 +570,7 @@
         <div class="card-icon"><svg class="icon icon-b"><use href="#i-target"/></svg></div>
         <h4>Espacios y configuración</h4>
         <ul class="feature-list">
-          <li><strong>Entrevistas:</strong> recepción o sala de espera — fondo limpio, logo visible</li>
+          <li><strong>Entrevistas:</strong><br>recepción o sala de espera — fondo limpio, logo visible</li>
           <li><strong>B-roll clínico:</strong> consultorio principal con equipo moderno en plano</li>
           <li><strong>Evitar:</strong> fondos desordenados, papeles, material clínico visible innecesario</li>
           <li><strong>Luz natural:</strong> útil como relleno, nunca como fuente principal</li>
@@ -721,21 +748,29 @@
       });
     });
   })();
-  // Active nav link on scroll (index page sections)
+  // Active nav link on scroll (index page sections + specialist subsections)
   const sections = document.querySelectorAll('section[id]');
-  const navLinks = document.querySelectorAll('nav a');
-  if (sections.length && navLinks.length) {
+  const navLinks = document.querySelectorAll('nav a:not(.nav-sub)');
+  const navSubLinks = document.querySelectorAll('nav a.nav-sub');
+  if (sections.length && (navLinks.length || navSubLinks.length)) {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
+          // Main links (index anchors)
           navLinks.forEach(link => {
             const href = link.getAttribute('href');
             const matchesSection = href === '/#' + entry.target.id || href === '#' + entry.target.id;
             link.classList.toggle('active', matchesSection);
           });
+          // Sub-links (specialist page sections)
+          navSubLinks.forEach(link => {
+            const href = link.getAttribute('href') || '';
+            const anchorMatch = href.endsWith('#' + entry.target.id);
+            link.classList.toggle('active', anchorMatch);
+          });
         }
       });
-    }, { threshold: 0.25 });
+    }, { threshold: 0.3, rootMargin: '-10% 0px -60% 0px' });
     sections.forEach(s => observer.observe(s));
   }
 </script>
