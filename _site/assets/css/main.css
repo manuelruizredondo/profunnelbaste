@@ -501,6 +501,15 @@
     line-height: 1.65;
     color: #e2e8f0;
   }
+  /* Inline code fuera de bloques de código (tablas, párrafos, listas) */
+  :not(pre) > code {
+    color: var(--gray-900);
+    background: var(--gray-100);
+    border: 1px solid var(--gray-200);
+    padding: 1px 6px;
+    border-radius: 4px;
+    font-size: .76rem;
+  }
   .c-comment { color: #64748b; }
   .c-key     { color: #93c5fd; }
   .c-str     { color: #86efac; }
