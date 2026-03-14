@@ -826,6 +826,7 @@
   .roadmap-phase { margin-bottom: 28px; padding-bottom: 24px; border-bottom: 1px dashed var(--gray-200); }
   .roadmap-phase:last-child { margin-bottom: 0; padding-bottom: 0; border-bottom: none; }
   .phase-badge { width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: .85rem; font-weight: 800; color: var(--white); background: var(--gray-800); flex-shrink: 0; }
+  .phase-desc { font-size: .9rem; color: var(--gray-600); margin: 12px 0 0 36px; line-height: 1.6; }
   .phase-title { font-size: 1rem; font-weight: 700; color: var(--gray-900); }
   .phase-dates { font-size: .78rem; color: var(--gray-500); font-weight: 600; }
   .task-list { list-style: none; padding: 0; margin: 0; }
@@ -845,6 +846,9 @@
   .task-tag.low { background: var(--gray-100); color: var(--gray-600); }
   .info-box { background: var(--gray-100); border: 1px solid var(--gray-200); border-radius: var(--radius-md); padding: 16px 20px; margin-bottom: 24px; font-size: .85rem; color: var(--gray-700); }
   .info-box strong { color: var(--gray-900); }
+  .card-link { text-decoration: none; color: inherit; transition: transform .15s, box-shadow .15s; display: block; }
+  .card-link:hover { transform: translateY(-2px); box-shadow: var(--shadow-md); }
+  .card-cta { display: inline-block; margin-top: 12px; font-size: .85rem; font-weight: 600; color: var(--brand-500); }
 
   /* ── VIDEO PAGE ────────────────────────────────────────── */
   .spec-box { background: var(--gray-100); border: 1px solid var(--gray-200); border-radius: var(--radius-md); padding: 18px 22px; margin-bottom: 20px; font-size: .88rem; }

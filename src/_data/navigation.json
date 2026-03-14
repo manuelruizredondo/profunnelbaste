@@ -20,7 +20,10 @@
     {
       "section": "Equipo",
       "links": [
-        { "label": "Roadmaps y Tareas", "url": "/roadmap.html", "page": "roadmap" }
+        { "label": "Roadmap General", "url": "/roadmap.html", "page": "roadmap" },
+        { "label": "Especialista IA", "url": "/especialista-ia.html", "page": "especialista-ia" },
+        { "label": "Especialista Web", "url": "/especialista-web.html", "page": "especialista-web" },
+        { "label": "Especialista Vídeo", "url": "/especialista-video.html", "page": "especialista-video" }
       ]
     }
   ]

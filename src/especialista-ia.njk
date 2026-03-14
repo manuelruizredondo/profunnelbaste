@@ -1,0 +1,141 @@
+---
+layout: base.njk
+title: Pro Funnel Basté — Especialista en IA
+layoutClass: layout-simple
+permalink: /especialista-ia.html
+---
+
+<div class="hero">
+  <h1>Especialista en Inteligencia Artificial</h1>
+  <p>Chatbot con ManyChat, automatizaciones, generación de contenido textual y análisis de datos.</p>
+  <p style="margin-top:12px; font-size:.9rem; opacity:.9;"><a href="/roadmap.html" style="color:var(--white); text-decoration:underline;">← Volver al Roadmap</a></p>
+</div>
+
+<div class="page-content">
+
+  <section class="specialist-section">
+    <div class="specialist-header ai">
+      <div class="specialist-icon"><svg class="icon icon-b"><use href="#i-bot"/></svg></div>
+      <div>
+        <div class="specialist-title">Mis tareas</div>
+        <div class="specialist-subtitle">Lo que debo hacer como Especialista en IA</div>
+      </div>
+    </div>
+    <div class="roadmap">
+      <div class="roadmap-phase">
+        <div class="phase-header">
+          <div class="phase-badge ai">1</div>
+          <div>
+            <div class="phase-title">Fase 1 — Chatbot y Captación (Semanas 1–3)</div>
+            <div class="phase-dates">Prioridad crítica</div>
+          </div>
+        </div>
+        <ul class="task-list">
+          <li class="task-item priority">
+            <span class="task-checkbox"></span>
+            <div class="task-content">
+              <div class="task-title">Configurar ManyChat para Instagram y Facebook Messenger</div>
+              <div class="task-detail">Crear flujos de chatbot en ManyChat para DM. Integrar con OpenAI GPT-4o vía webhook para respuestas inteligentes. System prompt para rol dental.</div>
+              <span class="task-tag critical">Crítico</span>
+            </div>
+          </li>
+          <li class="task-item">
+            <span class="task-checkbox"></span>
+            <div class="task-content">
+              <div class="task-title">Definir flujo de cualificación de leads en el chatbot</div>
+              <div class="task-detail">Preguntas: tratamiento de interés, nombre, email/teléfono. Función de extracción de datos estructurados (JSON).</div>
+              <span class="task-tag high">Alta</span>
+            </div>
+          </li>
+          <li class="task-item">
+            <span class="task-checkbox"></span>
+            <div class="task-content">
+              <div class="task-title">Conectar chatbot con HubSpot CRM</div>
+              <div class="task-detail">Upsert de contactos vía API cuando el lead proporciona datos. Asignar etiquetas según tratamiento.</div>
+              <span class="task-tag critical">Crítico</span>
+            </div>
+          </li>
+          <li class="task-item">
+            <span class="task-checkbox"></span>
+            <div class="task-content">
+              <div class="task-title">Implementar lead scoring básico con IA</div>
+              <div class="task-detail">Puntuación 0–100 según intención, completitud de datos y tratamiento (implantes/ortodoncia = mayor score).</div>
+              <span class="task-tag medium">Media</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="roadmap-phase">
+        <div class="phase-header">
+          <div class="phase-badge ai">2</div>
+          <div>
+            <div class="phase-title">Fase 2 — Automatizaciones y Nurturing (Semanas 4–6)</div>
+            <div class="phase-dates">Make / n8n</div>
+          </div>
+        </div>
+        <ul class="task-list">
+          <li class="task-item">
+            <span class="task-checkbox"></span>
+            <div class="task-content">
+              <div class="task-title">Configurar escenarios Make para flujo Calendly → HubSpot → Twilio</div>
+              <div class="task-detail">Cuando se confirma cita: actualizar CRM, enviar SMS confirmación, programar recordatorio 24h antes.</div>
+              <span class="task-tag high">Alta</span>
+            </div>
+          </li>
+          <li class="task-item">
+            <span class="task-checkbox"></span>
+            <div class="task-content">
+              <div class="task-title">Generar copy de emails de nurturing con GPT-4o</div>
+              <div class="task-detail">Plantillas personalizadas por tratamiento (ortodoncia, implantes, blanqueamiento). Integrar con ActiveCampaign.</div>
+              <span class="task-tag high">Alta</span>
+            </div>
+          </li>
+          <li class="task-item">
+            <span class="task-checkbox"></span>
+            <div class="task-content">
+              <div class="task-title">Integrar WhatsApp Business API con flujos de IA</div>
+              <div class="task-detail">Respuestas automáticas con templates aprobados. Handoff a humano cuando el lead pide hablar con alguien.</div>
+              <span class="task-tag medium">Media</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="roadmap-phase">
+        <div class="phase-header">
+          <div class="phase-badge ai">3</div>
+          <div>
+            <div class="phase-title">Fase 3 — Análisis y Optimización (Semanas 7–12)</div>
+            <div class="phase-dates">Lead scoring avanzado, reseñas</div>
+          </div>
+        </div>
+        <ul class="task-list">
+          <li class="task-item">
+            <span class="task-checkbox"></span>
+            <div class="task-content">
+              <div class="task-title">Análisis de sentimiento de reseñas Google con IA</div>
+              <div class="task-detail">Pipeline para detectar reseñas negativas y sugerir respuesta. Alertas internas si puntuación &lt; 3.</div>
+              <span class="task-tag medium">Media</span>
+            </div>
+          </li>
+          <li class="task-item">
+            <span class="task-checkbox"></span>
+            <div class="task-content">
+              <div class="task-title">Generador de copy para spots de TV del escaparate</div>
+              <div class="task-detail">Script Python que llama a GPT-4o para titular, subtítulo, CTA según tratamiento y duración. Entregar al equipo de vídeo.</div>
+              <span class="task-tag medium">Media</span>
+            </div>
+          </li>
+          <li class="task-item">
+            <span class="task-checkbox"></span>
+            <div class="task-content">
+              <div class="task-title">Dashboard Looker Studio con métricas de chatbot</div>
+              <div class="task-detail">Leads captados, tasa de cualificación, CSAT del chat. Conexión a BigQuery o datos de HubSpot.</div>
+              <span class="task-tag low">Baja</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+</div>

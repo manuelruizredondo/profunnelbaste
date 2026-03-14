@@ -1,458 +1,91 @@
 ---
 layout: base.njk
-title: Pro Funnel Basté — Roadmaps y Tareas por Especialista
+title: Pro Funnel Basté — Roadmap del Equipo
 layoutClass: layout-simple
 permalink: /roadmap.html
 ---
 
 <div class="hero">
-  <h1>Roadmaps y Tareas por Especialista</h1>
-  <p>Plan de trabajo detallado para el equipo: IA, Web y Vídeo. Cada rol tiene su roadmap con fases, tareas y prioridades.</p>
+  <h1>Roadmap del Equipo</h1>
+  <p>Plan de trabajo general y tareas por especialista. Cada rol tiene su propia página con el detalle de lo que debe hacer.</p>
 </div>
 
 <div class="page-content">
 
-  <!-- ════ ESPECIALISTA IA ════ -->
+  <!-- ROADMAP GENÉRICO -->
   <section class="specialist-section">
-    <div class="specialist-header ai">
-      <div class="specialist-icon"><svg class="icon icon-b"><use href="#i-bot"/></svg></div>
+    <div class="specialist-header">
+      <div class="specialist-icon"><svg class="icon icon-b"><use href="#i-list"/></svg></div>
       <div>
-        <div class="specialist-title">Especialista en Inteligencia Artificial</div>
-        <div class="specialist-subtitle">Chatbot, automatizaciones, generación de contenido textual y análisis de datos</div>
+        <div class="specialist-title">Roadmap General</div>
+        <div class="specialist-subtitle">Fases de implementación del proyecto Pro Funnel Basté</div>
       </div>
     </div>
     <div class="roadmap">
       <div class="roadmap-phase">
         <div class="phase-header">
-          <div class="phase-badge ai">1</div>
+          <div class="phase-badge">1</div>
           <div>
-            <div class="phase-title">Fase 1 — Chatbot y Captación (Semanas 1–3)</div>
-            <div class="phase-dates">Prioridad crítica</div>
+            <div class="phase-title">Fase 1 — Cimientos Digitales (Semanas 1–3)</div>
+            <div class="phase-dates">CRM, Chatbot, Tracking, GTM</div>
           </div>
         </div>
-        <ul class="task-list">
-          <li class="task-item priority">
-            <span class="task-checkbox"></span>
-            <div class="task-content">
-              <div class="task-title">Configurar integración OpenAI GPT-4o con webhook</div>
-              <div class="task-detail">Crear endpoint que reciba mensajes del chat web y responda con el modelo. Implementar system prompt para rol dental.</div>
-              <span class="task-tag critical">Crítico</span>
-            </div>
-          </li>
-          <li class="task-item">
-            <span class="task-checkbox"></span>
-            <div class="task-content">
-              <div class="task-title">Definir flujo de cualificación de leads en el chatbot</div>
-              <div class="task-detail">Preguntas: tratamiento de interés, nombre, email/teléfono. Función de extracción de datos estructurados (JSON).</div>
-              <span class="task-tag high">Alta</span>
-            </div>
-          </li>
-          <li class="task-item">
-            <span class="task-checkbox"></span>
-            <div class="task-content">
-              <div class="task-title">Conectar chatbot con HubSpot CRM</div>
-              <div class="task-detail">Upsert de contactos vía API cuando el lead proporciona datos. Asignar etiquetas según tratamiento.</div>
-              <span class="task-tag critical">Crítico</span>
-            </div>
-          </li>
-          <li class="task-item">
-            <span class="task-checkbox"></span>
-            <div class="task-content">
-              <div class="task-title">Implementar lead scoring básico con IA</div>
-              <div class="task-detail">Puntuación 0–100 según intención, completitud de datos y tratamiento (implantes/ortodoncia = mayor score).</div>
-              <span class="task-tag medium">Media</span>
-            </div>
-          </li>
-        </ul>
+        <p class="phase-desc">Instalación del CRM, configuración del chatbot ManyChat, integración con Google Calendar, pixel de Facebook y Google Tag Manager. Onboarding del equipo.</p>
       </div>
       <div class="roadmap-phase">
         <div class="phase-header">
-          <div class="phase-badge ai">2</div>
+          <div class="phase-badge">2</div>
           <div>
-            <div class="phase-title">Fase 2 — Automatizaciones y Nurturing (Semanas 4–6)</div>
-            <div class="phase-dates">Make / n8n</div>
+            <div class="phase-title">Fase 2 — Automatización de Captación (Semanas 4–6)</div>
+            <div class="phase-dates">Ads, Email/SMS, WhatsApp, Booking</div>
           </div>
         </div>
-        <ul class="task-list">
-          <li class="task-item">
-            <span class="task-checkbox"></span>
-            <div class="task-content">
-              <div class="task-title">Configurar escenarios Make para flujo Calendly → HubSpot → Twilio</div>
-              <div class="task-detail">Cuando se confirma cita: actualizar CRM, enviar SMS confirmación, programar recordatorio 24h antes.</div>
-              <span class="task-tag high">Alta</span>
-            </div>
-          </li>
-          <li class="task-item">
-            <span class="task-checkbox"></span>
-            <div class="task-content">
-              <div class="task-title">Generar copy de emails de nurturing con GPT-4o</div>
-              <div class="task-detail">Plantillas personalizadas por tratamiento (ortodoncia, implantes, blanqueamiento). Integrar con ActiveCampaign.</div>
-              <span class="task-tag high">Alta</span>
-            </div>
-          </li>
-          <li class="task-item">
-            <span class="task-checkbox"></span>
-            <div class="task-content">
-              <div class="task-title">Integrar WhatsApp Business API con flujos de IA</div>
-              <div class="task-detail">Respuestas automáticas con templates aprobados. Handoff a humano cuando el lead pide hablar con alguien.</div>
-              <span class="task-tag medium">Media</span>
-            </div>
-          </li>
-        </ul>
+        <p class="phase-desc">Lanzamiento de funnels de captación con Meta Ads + Google Ads, secuencias de email/SMS automatizadas, integración WhatsApp Business API y flujos de reserva 24/7.</p>
       </div>
       <div class="roadmap-phase">
         <div class="phase-header">
-          <div class="phase-badge ai">3</div>
+          <div class="phase-badge">3</div>
           <div>
-            <div class="phase-title">Fase 3 — Análisis y Optimización (Semanas 7–12)</div>
-            <div class="phase-dates">Lead scoring avanzado, reseñas</div>
+            <div class="phase-title">Fase 3 — Contenido y Vídeo (Semanas 7–9)</div>
+            <div class="phase-dates">TV escaparate, grabaciones, redes</div>
           </div>
         </div>
-        <ul class="task-list">
-          <li class="task-item">
-            <span class="task-checkbox"></span>
-            <div class="task-content">
-              <div class="task-title">Análisis de sentimiento de reseñas Google con IA</div>
-              <div class="task-detail">Pipeline para detectar reseñas negativas y sugerir respuesta. Alertas internas si puntuación &lt; 3.</div>
-              <span class="task-tag medium">Media</span>
-            </div>
-          </li>
-          <li class="task-item">
-            <span class="task-checkbox"></span>
-            <div class="task-content">
-              <div class="task-title">Generador de copy para spots de TV del escaparate</div>
-              <div class="task-detail">Script Python que llama a GPT-4o para titular, subtítulo, CTA según tratamiento y duración. Entregar al equipo de vídeo.</div>
-              <span class="task-tag medium">Media</span>
-            </div>
-          </li>
-          <li class="task-item">
-            <span class="task-checkbox"></span>
-            <div class="task-content">
-              <div class="task-title">Dashboard Looker Studio con métricas de chatbot</div>
-              <div class="task-detail">Leads captados, tasa de cualificación, CSAT del chat. Conexión a BigQuery o datos de HubSpot.</div>
-              <span class="task-tag low">Baja</span>
-            </div>
-          </li>
-        </ul>
+        <p class="phase-desc">Producción de vídeos para TV del escaparate, grabaciones profesionales en Centre Médic Basté, publicación en YouTube y redes sociales.</p>
+      </div>
+      <div class="roadmap-phase">
+        <div class="phase-header">
+          <div class="phase-badge">4</div>
+          <div>
+            <div class="phase-title">Fase 4 — Optimización (Semanas 10–12)</div>
+            <div class="phase-dates">Lead scoring, retargeting, dashboard</div>
+          </div>
+        </div>
+        <p class="phase-desc">Implementación de IA predictiva para lead scoring, personalización dinámica, retargeting avanzado y dashboard ejecutivo.</p>
       </div>
     </div>
   </section>
 
-  <!-- ════ ESPECIALISTA WEB ════ -->
-  <section class="specialist-section">
-    <div class="specialist-header web">
-      <div class="specialist-icon"><svg class="icon icon-b"><use href="#i-globe"/></svg></div>
-      <div>
-        <div class="specialist-title">Especialista en Web</div>
-        <div class="specialist-subtitle">Landing pages, tracking, integración de chatbot, SEO y conversión</div>
-      </div>
-    </div>
-    <div class="roadmap">
-      <div class="roadmap-phase">
-        <div class="phase-header">
-          <div class="phase-badge web">1</div>
-          <div>
-            <div class="phase-title">Fase 1 — Fundamentos y Tracking (Semanas 1–3)</div>
-            <div class="phase-dates">Prioridad crítica</div>
-          </div>
-        </div>
-        <ul class="task-list">
-          <li class="task-item priority">
-            <span class="task-checkbox"></span>
-            <div class="task-content">
-              <div class="task-title">Instalar y configurar Google Tag Manager en la web</div>
-              <div class="task-detail">Contenedor GTM en todas las páginas. Crear variables y triggers base.</div>
-              <span class="task-tag critical">Crítico</span>
-            </div>
-          </li>
-          <li class="task-item">
-            <span class="task-checkbox"></span>
-            <div class="task-content">
-              <div class="task-title">Implementar Google Analytics 4 y Meta Pixel</div>
-              <div class="task-detail">Eventos: page_view, scroll, click CTA, inicio formulario, envío formulario, click chatbot.</div>
-              <span class="task-tag critical">Crítico</span>
-            </div>
-          </li>
-          <li class="task-item">
-            <span class="task-checkbox"></span>
-            <div class="task-content">
-              <div class="task-title">Integrar widget de chatbot en la web</div>
-              <div class="task-detail">Widget flotante que conecta con el backend del especialista IA. Diseño responsive y accesible.</div>
-              <span class="task-tag critical">Crítico</span>
-            </div>
-          </li>
-          <li class="task-item">
-            <span class="task-checkbox"></span>
-            <div class="task-content">
-              <div class="task-title">Crear landing page de captación principal</div>
-              <div class="task-detail">Página de aterrizaje para campañas de ads. Formulario + chatbot. CTA claro: "Reserva tu primera visita gratis".</div>
-              <span class="task-tag high">Alta</span>
-            </div>
-          </li>
-          <li class="task-item">
-            <span class="task-checkbox"></span>
-            <div class="task-content">
-              <div class="task-title">Configurar Calendly / Cal.com embebido</div>
-              <div class="task-detail">Widget de reserva integrado en web y landing. Sincronización con Google Calendar de la clínica.</div>
-              <span class="task-tag high">Alta</span>
-            </div>
-          </li>
-        </ul>
-      </div>
-      <div class="roadmap-phase">
-        <div class="phase-header">
-          <div class="phase-badge web">2</div>
-          <div>
-            <div class="phase-title">Fase 2 — Conversión y SEO (Semanas 4–8)</div>
-            <div class="phase-dates">Landings por tratamiento, optimización</div>
-          </div>
-        </div>
-        <ul class="task-list">
-          <li class="task-item">
-            <span class="task-checkbox"></span>
-            <div class="task-content">
-              <div class="task-title">Landing pages por tratamiento (ortodoncia, implantes, blanqueamiento)</div>
-              <div class="task-detail">Una página por tratamiento con contenido SEO, testimonios, CTA y formulario/chatbot.</div>
-              <span class="task-tag high">Alta</span>
-            </div>
-          </li>
-          <li class="task-item">
-            <span class="task-checkbox"></span>
-            <div class="task-content">
-              <div class="task-title">Implementar Hotjar o similar para mapas de calor</div>
-              <div class="task-detail">Análisis de comportamiento: dónde hacen click, dónde abandonan, scroll depth.</div>
-              <span class="task-tag medium">Media</span>
-            </div>
-          </li>
-          <li class="task-item">
-            <span class="task-checkbox"></span>
-            <div class="task-content">
-              <div class="task-title">Optimización SEO on-page</div>
-              <div class="task-detail">Meta titles, descriptions, headings H1–H3, schema markup para negocio local (LocalBusiness).</div>
-              <span class="task-tag medium">Media</span>
-            </div>
-          </li>
-          <li class="task-item">
-            <span class="task-checkbox"></span>
-            <div class="task-content">
-              <div class="task-title">Página de destino para QR del escaparate</div>
-              <div class="task-detail">URL corta y dedicada para el QR de la TV. Landing minimalista: "Has escaneado desde nuestro escaparate" + reserva directa.</div>
-              <span class="task-tag high">Alta</span>
-            </div>
-          </li>
-        </ul>
-      </div>
-      <div class="roadmap-phase">
-        <div class="phase-header">
-          <div class="phase-badge web">3</div>
-          <div>
-            <div class="phase-title">Fase 3 — Integraciones y Mantenimiento (Semanas 9–12)</div>
-            <div class="phase-dates">CRM, formularios, A/B testing</div>
-          </div>
-        </div>
-        <ul class="task-list">
-          <li class="task-item">
-            <span class="task-checkbox"></span>
-            <div class="task-content">
-              <div class="task-title">Sincronización bidireccional HubSpot ↔ formularios web</div>
-              <div class="task-detail">Todos los formularios envían datos a HubSpot. Webhooks para actualizar etapas del pipeline.</div>
-              <span class="task-tag medium">Media</span>
-            </div>
-          </li>
-          <li class="task-item">
-            <span class="task-checkbox"></span>
-            <div class="task-content">
-              <div class="task-title">A/B testing de headlines y CTAs</div>
-              <div class="task-detail">Google Optimize o similar. Pruebas en landing principal y páginas de tratamiento.</div>
-              <span class="task-tag low">Baja</span>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- ════ ESPECIALISTA VÍDEO ════ -->
-  <div class="alert">
-    <span class="alert-icon"><svg class="icon icon-b"><use href="#i-video"/></svg></span>
-    <p><strong>Importante:</strong> Los vídeos son <strong>grabados por un profesional</strong> que acude a <strong>Centre Médic Basté</strong> para las sesiones. No se utilizan vídeos generados por IA. El especialista en vídeo coordina las grabaciones in situ, la postproducción y la distribución.</p>
+  <!-- ESPECIALISTAS -->
+  <h3 style="margin-top:48px;margin-bottom:20px;">Tareas por Especialista</h3>
+  <div class="card-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+    <a href="/especialista-ia.html" class="card card-link">
+      <div class="card-icon"><svg class="icon icon-b"><use href="#i-bot"/></svg></div>
+      <h4>Especialista en IA</h4>
+      <p>Chatbot con ManyChat, automatizaciones, generación de contenido textual y análisis de datos.</p>
+      <span class="card-cta">Ver mis tareas →</span>
+    </a>
+    <a href="/especialista-web.html" class="card card-link">
+      <div class="card-icon"><svg class="icon icon-b"><use href="#i-globe"/></svg></div>
+      <h4>Especialista en Web</h4>
+      <p>Landing pages, tracking, integración de chatbot, SEO y conversión.</p>
+      <span class="card-cta">Ver mis tareas →</span>
+    </a>
+    <a href="/especialista-video.html" class="card card-link">
+      <div class="card-icon"><svg class="icon icon-b"><use href="#i-video"/></svg></div>
+      <h4>Especialista en Vídeo</h4>
+      <p>Grabación profesional en Centre Médic Basté, postproducción, TV escaparate y redes sociales.</p>
+      <span class="card-cta">Ver mis tareas →</span>
+    </a>
   </div>
-
-  <section class="specialist-section">
-    <div class="specialist-header video">
-      <div class="specialist-icon"><svg class="icon icon-b"><use href="#i-video"/></svg></div>
-      <div>
-        <div class="specialist-title">Especialista en Vídeo</div>
-        <div class="specialist-subtitle">Grabación profesional en Centre Médic Basté · Postproducción · TV escaparate · Redes sociales</div>
-      </div>
-    </div>
-    <div class="roadmap">
-      <div class="info-box">
-        <strong>Ubicación de grabación:</strong> Centre Médic Basté. El profesional de vídeo acude al centro para grabar testimonios, presentaciones del equipo, tratamientos (con consentimiento) y B-roll de las instalaciones.
-      </div>
-      <div class="info-box">
-        <strong>Televisores instalados:</strong> LG 75UQ80006LB (75", 4K). Resolución 1 TV: 3840×2160 px. Resolución 2 TVs en tándem (USB): 3840×4320 px.
-      </div>
-      <div class="info-box">
-        <a href="video.html" style="color:var(--brand-400);font-weight:600;text-decoration:none;">Ver estrategia completa de vídeo →</a>
-      </div>
-      <div class="roadmap-phase">
-        <div class="phase-header">
-          <div class="phase-badge video">1</div>
-          <div>
-            <div class="phase-title">Fase 1 — TV del Escaparate (Semanas 1–2)</div>
-            <div class="phase-dates">Prioridad 0 — Primer entregable</div>
-          </div>
-        </div>
-        <ul class="task-list">
-          <li class="task-item priority">
-            <span class="task-checkbox"></span>
-            <div class="task-content">
-              <div class="task-title">Producir 3 piezas iniciales para la TV del escaparate</div>
-              <div class="task-detail">(1) Spot bienvenida + servicios, (2) Oferta del mes, (3) QR reserva. Formato 3840×2160 (1 TV) o 3840×4320 (2 TVs tándem), 10–20 seg cada una. Canva Pro o After Effects.</div>
-              <span class="task-tag critical">Crítico</span>
-            </div>
-          </li>
-          <li class="task-item">
-            <span class="task-checkbox"></span>
-            <div class="task-content">
-              <div class="task-title">Configurar reproducción en el reproductor integrado de la TV</div>
-              <div class="task-detail">Cargar playlist (USB o almacenamiento interno). Probar que la pantalla reproduce correctamente.</div>
-              <span class="task-tag critical">Crítico</span>
-            </div>
-          </li>
-          <li class="task-item">
-            <span class="task-checkbox"></span>
-            <div class="task-content">
-              <div class="task-title">Crear plantilla de marca para spots de TV</div>
-              <div class="task-detail">Logo, colores, tipografía, safe zones. Reutilizable para futuras piezas mensuales.</div>
-              <span class="task-tag high">Alta</span>
-            </div>
-          </li>
-        </ul>
-      </div>
-      <div class="roadmap-phase">
-        <div class="phase-header">
-          <div class="phase-badge video">2</div>
-          <div>
-            <div class="phase-title">Fase 2 — Grabación en Centre Médic Basté (Semanas 3–6)</div>
-            <div class="phase-dates">Sesiones in situ con profesional</div>
-          </div>
-        </div>
-        <ul class="task-list">
-          <li class="task-item">
-            <span class="task-checkbox"></span>
-            <div class="task-content">
-              <div class="task-title">Coordinar primera sesión de grabación en Centre Médic Basté</div>
-              <div class="task-detail">Agendar con el equipo del centro. Equipo: cámara 4K, micrófono solapa, ring light. Espacio preparado (consultorio, recepción).</div>
-              <span class="task-tag critical">Crítico</span>
-            </div>
-          </li>
-          <li class="task-item">
-            <span class="task-checkbox"></span>
-            <div class="task-content">
-              <div class="task-title">Grabar presentación del equipo (doctor/a, higienistas)</div>
-              <div class="task-detail">Pieza de 20–30 seg para TV escaparate y web. Humaniza la clínica. Guión breve aprobado previamente.</div>
-              <span class="task-tag high">Alta</span>
-            </div>
-          </li>
-          <li class="task-item">
-            <span class="task-checkbox"></span>
-            <div class="task-content">
-              <div class="task-title">Grabar 1–2 testimonios de pacientes (con consentimiento firmado)</div>
-              <div class="task-detail">Pacientes que acepten aparecer. Preguntas guía: "¿Por qué elegiste la clínica?", "¿Cómo fue tu experiencia?". Editar a 20–40 seg.</div>
-              <span class="task-tag high">Alta</span>
-            </div>
-          </li>
-          <li class="task-item">
-            <span class="task-checkbox"></span>
-            <div class="task-content">
-              <div class="task-title">B-roll de instalaciones y tratamientos</div>
-              <div class="task-detail">Planos generales de la clínica, equipamiento, sala de espera. Para usar en spots y redes. Sin pacientes identificables salvo con permiso.</div>
-              <span class="task-tag medium">Media</span>
-            </div>
-          </li>
-        </ul>
-      </div>
-      <div class="roadmap-phase">
-        <div class="phase-header">
-          <div class="phase-badge video">3</div>
-          <div>
-            <div class="phase-title">Fase 3 — Postproducción y Distribución (Semanas 5–8)</div>
-            <div class="phase-dates">Edición, subtítulos, publicación</div>
-          </div>
-        </div>
-        <ul class="task-list">
-          <li class="task-item">
-            <span class="task-checkbox"></span>
-            <div class="task-content">
-              <div class="task-title">Editar material grabado en Centre Médic Basté</div>
-              <div class="task-detail">DaVinci Resolve o Premiere. Cortes, color grading, música. Versiones: larga (YouTube), corta (Reels/Stories), TV 4K (3840×2160) o 2 TVs (3840×4320).</div>
-              <span class="task-tag high">Alta</span>
-            </div>
-          </li>
-          <li class="task-item">
-            <span class="task-checkbox"></span>
-            <div class="task-content">
-              <div class="task-title">Añadir subtítulos automáticos (Whisper o Descript)</div>
-              <div class="task-detail">Subtítulos en castellano para accesibilidad y reproducción sin sonido en redes.</div>
-              <span class="task-tag medium">Media</span>
-            </div>
-          </li>
-          <li class="task-item">
-            <span class="task-checkbox"></span>
-            <div class="task-content">
-              <div class="task-title">Actualizar playlist de la TV del escaparate con vídeos grabados</div>
-              <div class="task-detail">Incluir presentación del equipo y testimonios en la rotación. Sustituir piezas estáticas por contenido real.</div>
-              <span class="task-tag high">Alta</span>
-            </div>
-          </li>
-          <li class="task-item">
-            <span class="task-checkbox"></span>
-            <div class="task-content">
-              <div class="task-title">Publicar en YouTube, Instagram y redes</div>
-              <div class="task-detail">Subir a YouTube (versión larga). Crear Reels/Shorts de 30–60 seg. Programar con Buffer o Later.</div>
-              <span class="task-tag medium">Media</span>
-            </div>
-          </li>
-        </ul>
-      </div>
-      <div class="roadmap-phase">
-        <div class="phase-header">
-          <div class="phase-badge video">4</div>
-          <div>
-            <div class="phase-title">Fase 4 — Producción Recurrente (Semanas 9–12)</div>
-            <div class="phase-dates">Ritmo mensual sostenible</div>
-          </div>
-        </div>
-        <ul class="task-list">
-          <li class="task-item">
-            <span class="task-checkbox"></span>
-            <div class="task-content">
-              <div class="task-title">Spot promocional mensual para TV</div>
-              <div class="task-detail">Cada mes: nuevo tratamiento u oferta. Usar copy generado por IA (especialista IA). Diseño con plantilla de marca.</div>
-              <span class="task-tag high">Alta</span>
-            </div>
-          </li>
-          <li class="task-item">
-            <span class="task-checkbox"></span>
-            <div class="task-content">
-              <div class="task-title">Segunda sesión de grabación en Centre Médic Basté</div>
-              <div class="task-detail">Nuevos testimonios, vídeo educativo de un tratamiento, campaña estacional (Navidad, verano, etc.).</div>
-              <span class="task-tag medium">Media</span>
-            </div>
-          </li>
-          <li class="task-item">
-            <span class="task-checkbox"></span>
-            <div class="task-content">
-              <div class="task-title">Piezas "Dato educativo" semanales para TV</div>
-              <div class="task-detail">Slides animados tipo "¿Sabías que…?" con curiosidades dentales. Copy de IA. Canva. 8–12 seg.</div>
-              <span class="task-tag low">Baja</span>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </section>
 
 </div>
