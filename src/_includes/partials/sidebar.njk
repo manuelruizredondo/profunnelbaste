@@ -12,6 +12,8 @@
   <a href="{{ link.url }}" class="nav-link{% if isActive %} active{% endif %}">
     <span class="nav-icon">
       {% if link.label == "TV Escaparate" %}<svg class="icon icon-w"><use href="#i-tv"/></svg>
+      {% elif link.label == "El Funnel" %}<svg class="icon icon-w"><use href="#i-target"/></svg>
+      {% elif link.label == "El Equipo" %}<svg class="icon icon-w"><use href="#i-star"/></svg>
       {% elif link.label == "Vista General" %}<svg class="icon icon-w"><use href="#i-target"/></svg>
       {% elif link.label == "Stack Técnico" %}<svg class="icon icon-w"><use href="#i-gear"/></svg>
       {% elif link.label == "Automatizaciones" %}<svg class="icon icon-w"><use href="#i-refresh"/></svg>

@@ -9,7 +9,8 @@
     {
       "section": "Proyecto",
       "links": [
-        { "label": "Vista General", "url": "/#vision", "page": "index" },
+        { "label": "El Funnel", "url": "/#vision", "page": "index" },
+        { "label": "El Equipo", "url": "/#equipo", "page": "index" },
         { "label": "Stack Técnico", "url": "/#arquitectura", "page": "index" },
         { "label": "Automatizaciones", "url": "/#flujos", "page": "index" },
         { "label": "Integraciones", "url": "/#integraciones", "page": "index" },
