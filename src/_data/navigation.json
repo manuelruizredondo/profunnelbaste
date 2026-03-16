@@ -37,10 +37,10 @@
           "url": "/especialista-web.html",
           "page": "especialista-web",
           "subsections": [
-            { "label": "Tracking y Analítica", "url": "/especialista-web.html#tracking" },
-            { "label": "Landing Pages", "url": "/especialista-web.html#landings" },
-            { "label": "SEO Local", "url": "/especialista-web.html#seo" },
-            { "label": "Integraciones Web", "url": "/especialista-web.html#integraciones" }
+            { "label": "Fase 0 — Tracking", "url": "/especialista-web.html#fase-0" },
+            { "label": "Fase 1 — Landings y reservas", "url": "/especialista-web.html#fase-1" },
+            { "label": "Fase 2 — SEO", "url": "/especialista-web.html#fase-2" },
+            { "label": "Fase 3 — CRO", "url": "/especialista-web.html#fase-3" }
           ]
         },
         {
@@ -48,9 +48,10 @@
           "url": "/especialista-marketing.html",
           "page": "especialista-marketing",
           "subsections": [
-            { "label": "Pipeline TV", "url": "/especialista-marketing.html#pipeline" },
-            { "label": "Material Slides", "url": "/especialista-marketing.html#material" },
-            { "label": "Almacenamiento", "url": "/especialista-marketing.html#almacenamiento" }
+            { "label": "Fase 0 — TV Escaparate", "url": "/especialista-marketing.html#fase-0" },
+            { "label": "Fase 1 — Campañas Ads", "url": "/especialista-marketing.html#fase-1" },
+            { "label": "Fase 2 — Redes y ritmo", "url": "/especialista-marketing.html#fase-2" },
+            { "label": "Fase 3 — Analítica", "url": "/especialista-marketing.html#fase-3" }
           ]
         },
         {
@@ -61,6 +62,17 @@
             { "label": "Qué Grabar", "url": "/especialista-video.html#que-grabar" },
             { "label": "Cómo Grabar", "url": "/especialista-video.html#como-grabar" },
             { "label": "Guía de Edición", "url": "/especialista-video.html#edicion" }
+          ]
+        },
+        {
+          "label": "Coordinadora Pacientes",
+          "url": "/especialista-recepcion.html",
+          "page": "especialista-recepcion",
+          "subsections": [
+            { "label": "Fase 0 — Herramientas", "url": "/especialista-recepcion.html#fase-0" },
+            { "label": "Fase 1 — Leads y citas", "url": "/especialista-recepcion.html#fase-1" },
+            { "label": "Fase 2 — Experiencia", "url": "/especialista-recepcion.html#fase-2" },
+            { "label": "Fase 3 — Retención", "url": "/especialista-recepcion.html#fase-3" }
           ]
         }
       ]

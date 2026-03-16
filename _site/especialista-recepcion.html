@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pro Funnel Basté — Coordinadora de Pacientes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/assets/css/main.css" />
+</head>
+<body>
+
+<svg xmlns="http://www.w3.org/2000/svg" style="position:absolute;width:0;height:0">
+  <defs>
+    <symbol id="i-tv" viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="15" rx="2"/><path d="M17 2l-5 5-5-5"/></symbol>
+    <symbol id="i-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></symbol>
+    <symbol id="i-building" viewBox="0 0 24 24"><rect x="4" y="2" width="16" height="20" rx="2"/><path d="M9 6h6M9 10h6M9 14h6M9 18h6"/></symbol>
+    <symbol id="i-gear" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 1v2M12 21v2M1 12h2M21 12h2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M4.2 19.8l1.4-1.4M18.4 5.6l-1.4-1.4"/></symbol>
+    <symbol id="i-link" viewBox="0 0 24 24"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></symbol>
+    <symbol id="i-video" viewBox="0 0 24 24"><path d="m22 8-6 4 6 4V8Z"/><rect x="2" y="6" width="14" height="12" rx="2"/></symbol>
+    <symbol id="i-chart" viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="M7 16v-4M12 16v-8M17 16V7"/></symbol>
+    <symbol id="i-list" viewBox="0 0 24 24"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></symbol>
+    <symbol id="i-tooth" viewBox="0 0 24 24"><path d="M12 2c-2 2-3 5-3 8 0 4 2 5 3 5s3-1 3-5c0-3-1-6-3-8z"/></symbol>
+    <symbol id="i-alert" viewBox="0 0 24 24"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"/><path d="M12 9v4"/><path d="M12 17h.01"/></symbol>
+    <symbol id="i-bulb" viewBox="0 0 24 24"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/></symbol>
+    <symbol id="i-lock" viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></symbol>
+    <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></symbol>
+    <symbol id="i-message" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></symbol>
+    <symbol id="i-dollar" viewBox="0 0 24 24"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></symbol>
+    <symbol id="i-refresh" viewBox="0 0 24 24"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/></symbol>
+    <symbol id="i-ruler" viewBox="0 0 24 24"><path d="M21 3H3v18h18"/><path d="M3 9h3M3 15h3M3 12h6M9 3v3M15 3v3M12 3v6"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+    <symbol id="i-bot" viewBox="0 0 24 24"><path d="M12 8V4H8"/><rect x="2" y="14" width="20" height="8" rx="2"/><path d="M6 18v-4M18 18v-4"/><path d="M12 8a4 4 0 0 0-4 4h8a4 4 0 0 0-4-4z"/></symbol>
+    <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/><path d="M2 12h20"/></symbol>
+    <symbol id="i-clipboard" viewBox="0 0 24 24"><rect x="8" y="2" width="8" height="4" rx="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/></symbol>
+    <symbol id="i-trend" viewBox="0 0 24 24"><path d="m22 7-8.5 8.5-4-4L2 17"/><path d="M16 7h6v6"/></symbol>
+    <symbol id="i-scissors" viewBox="0 0 24 24"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M20 4 8.5 15.5"/><path d="M8.5 8.5 20 20"/></symbol>
+    <symbol id="i-upload" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/></symbol>
+  </defs>
+</svg>
+
+<nav id="sidebar">
+  <div class="sidebar-logo">
+    <div class="logo-icon"><svg class="icon icon-w"><use href="#i-tooth"/></svg></div>
+    <h1>Pro Funnel Basté</h1>
+    <p>Marketing Automation Suite</p>
+  </div>
+
+  
+  <div class="nav-section-label">Prioridad 0</div>
+  
+  
+  <a href="/#tv-escaparate" class="nav-link">
+    <span class="nav-icon">
+      <svg class="icon icon-w"><use href="#i-tv"/></svg>
+      
+    </span>
+    TV Escaparate
+  </a>
+  
+  
+  
+  <div class="nav-section-label">Proyecto</div>
+  
+  
+  <a href="/#vision" class="nav-link">
+    <span class="nav-icon">
+      <svg class="icon icon-w"><use href="#i-target"/></svg>
+      
+    </span>
+    Vista General
+  </a>
+  
+  
+  
+  <a href="/#arquitectura" class="nav-link">
+    <span class="nav-icon">
+      <svg class="icon icon-w"><use href="#i-gear"/></svg>
+      
+    </span>
+    Stack Técnico
+  </a>
+  
+  
+  
+  <a href="/#flujos" class="nav-link">
+    <span class="nav-icon">
+      <svg class="icon icon-w"><use href="#i-refresh"/></svg>
+      
+    </span>
+    Automatizaciones
+  </a>
+  
+  
+  
+  <a href="/#integraciones" class="nav-link">
+    <span class="nav-icon">
+      <svg class="icon icon-w"><use href="#i-link"/></svg>
+      
+    </span>
+    Integraciones
+  </a>
+  
+  
+  
+  <a href="/#kpis" class="nav-link">
+    <span class="nav-icon">
+      <svg class="icon icon-w"><use href="#i-chart"/></svg>
+      
+    </span>
+    KPIs
+  </a>
+  
+  
+  
+  <div class="nav-section-label">Equipo</div>
+  
+  
+  <a href="/roadmap.html" class="nav-link">
+    <span class="nav-icon">
+      <svg class="icon icon-w"><use href="#i-list"/></svg>
+      
+    </span>
+    Roadmap
+  </a>
+  
+  
+  
+  <a href="/especialista-ia.html" class="nav-link">
+    <span class="nav-icon">
+      <svg class="icon icon-w"><use href="#i-bot"/></svg>
+      
+    </span>
+    Especialista IA
+  </a>
+  
+  
+  
+  <a href="/especialista-web.html" class="nav-link">
+    <span class="nav-icon">
+      <svg class="icon icon-w"><use href="#i-globe"/></svg>
+      
+    </span>
+    Especialista Web
+  </a>
+  
+  
+  
+  <a href="/especialista-marketing.html" class="nav-link">
+    <span class="nav-icon">
+      <svg class="icon icon-w"><use href="#i-trend"/></svg>
+      
+    </span>
+    Especialista Marketing
+  </a>
+  
+  
+  
+  <a href="/especialista-video.html" class="nav-link">
+    <span class="nav-icon">
+      <svg class="icon icon-w"><use href="#i-video"/></svg>
+      
+    </span>
+    Especialista Vídeo
+  </a>
+  
+  
+  
+  <a href="/especialista-recepcion.html" class="nav-link active">
+    <span class="nav-icon">
+      <svg class="icon icon-w"><use href="#i-message"/></svg>
+      
+    </span>
+    Coordinadora Pacientes
+  </a>
+  
+  <div class="nav-subsections">
+    
+    <a href="/especialista-recepcion.html#fase-0" class="nav-sub">
+      <span class="nav-sub-dot"></span>Fase 0 — Herramientas
+    </a>
+    
+    <a href="/especialista-recepcion.html#fase-1" class="nav-sub">
+      <span class="nav-sub-dot"></span>Fase 1 — Leads y citas
+    </a>
+    
+    <a href="/especialista-recepcion.html#fase-2" class="nav-sub">
+      <span class="nav-sub-dot"></span>Fase 2 — Experiencia
+    </a>
+    
+    <a href="/especialista-recepcion.html#fase-3" class="nav-sub">
+      <span class="nav-sub-dot"></span>Fase 3 — Retención
+    </a>
+    
+  </div>
+  
+  
+  
+
+  <div class="sidebar-footer">
+    <div>Pro Funnel Basté v1.0</div>
+    <div>Última revisión: Mar 2026</div>
+    <span class="version-badge">CONFIDENCIAL</span>
+  </div>
+</nav>
+
+
+<button id="menu-toggle" type="button" class="menu-toggle" aria-label="Abrir menú">
+  <span class="menu-toggle-bar"></span>
+  <span class="menu-toggle-bar"></span>
+  <span class="menu-toggle-bar"></span>
+</button>
+<div id="menu-backdrop" class="menu-backdrop" aria-hidden="true"></div>
+
+<main class="layout-simple">
+  
+<div class="hero">
+  <h1>Coordinadora de Pacientes</h1>
+  <p>Eres el punto humano del funnel — aquí el lead se convierte en paciente real</p>
+  <p style="margin-top:12px; font-size:.9rem; opacity:.9;">
+    <a href="/roadmap.html" style="color:var(--white); text-decoration:underline;">← Roadmap</a>
+    &nbsp;·&nbsp; <a href="#fase-0" style="color:var(--white); text-decoration:underline;">Fase 0</a>
+    &nbsp;·&nbsp; <a href="#fase-1" style="color:var(--white); text-decoration:underline;">Fase 1</a>
+    &nbsp;·&nbsp; <a href="#fase-2" style="color:var(--white); text-decoration:underline;">Fase 2</a>
+    &nbsp;·&nbsp; <a href="#fase-3" style="color:var(--white); text-decoration:underline;">Fase 3</a>
+  </p>
+</div>
+
+<div class="page-content">
+
+  <div class="alert alert-blue">
+    <span class="alert-icon"><svg class="icon icon-b"><use href="#i-message"/></svg></span>
+    <p><strong>Tu rol en el funnel:</strong> El chatbot y los anuncios atraen al paciente. La web y el booking facilitan la cita. <strong>Pero eres tú quien cierra.</strong> Tu trabajo es asegurarte de que los leads cualificados se conviertan en visitas reales, que las citas se cumplan, y que el paciente tenga una experiencia que genere reseñas y referencias. Sin este rol, el funnel tiene una fuga enorme.</p>
+  </div>
+
+  <!-- ════ FASE 0 ════ -->
+  <section id="fase-0">
+    <div class="section-header">
+      <div class="section-icon" style="background:var(--rose-500);color:#fff;">0</div>
+      <div>
+        <div class="section-title">Fase 0 — Configurar tus herramientas</div>
+        <div class="section-subtitle">Esta semana · Accesos y configuración · Sin esto no puedes trabajar</div>
+      </div>
+    </div>
+
+    <div class="alert alert-amber">
+      <span class="alert-icon"><svg class="icon icon-b"><use href="#i-alert"/></svg></span>
+      <p><strong>Objetivo:</strong> Tener todos los accesos configurados y saber qué pasa cuando llega un lead. El sistema automatizado te avisa, pero la acción final (llamar, confirmar, responder) es tuya.</p>
+    </div>
+
+    <!-- ACCIÓN 0.1 -->
+    <div class="phase-action-block">
+      <div class="phase-action-header">
+        <span class="phase-action-num">0.1</span>
+        <div>
+          <div class="phase-action-title">Configurar acceso a Gesden y entender el pipeline de leads</div>
+          <span class="task-tag critical">Crítico</span>
+        </div>
+      </div>
+      <div class="two-col">
+        <div class="info-box">
+          <strong>Cómo funciona el flujo de leads:</strong><br>
+          1. El paciente rellena un formulario web, escanea el QR de la TV o habla con el chatbot<br>
+          2. El sistema (Make + Especialista IA) crea automáticamente un contacto en Gesden<br>
+          3. Tú recibes una notificación (email o WhatsApp) con los datos del lead<br>
+          4. Si el lead reservó cita en Calendly: ya está en el calendario, solo confirmar<br>
+          5. Si el lead dejó sus datos pero NO reservó cita: tienes que llamarle en &lt; 2 horas<br><br>
+          <strong>Regla de oro:</strong> Un lead que no recibe contacto humano en las primeras 2 horas tiene 80% menos probabilidades de convertirse.
+        </div>
+        <div class="info-box">
+          <strong>Accesos que necesitas:</strong><br>
+          — <strong>Gesden</strong>: Cuenta con permisos de recepción (gestión de citas y pacientes)<br>
+          — <strong>Calendly</strong>: Acceso de equipo para ver y gestionar todas las citas<br>
+          — <strong>WhatsApp Business</strong>: Acceso al número de la clínica para responder mensajes<br>
+          — <strong>Gmail / email de la clínica</strong>: Para notificaciones de nuevos leads<br>
+          — <strong>Google Calendar</strong>: Sincronizado con Calendly (para ver huecos disponibles)<br><br>
+          Pedir estos accesos al Especialista IA en la primera semana.
+        </div>
+      </div>
+    </div>
+
+    <!-- ACCIÓN 0.2 -->
+    <div class="phase-action-block">
+      <div class="phase-action-header">
+        <span class="phase-action-num">0.2</span>
+        <div>
+          <div class="phase-action-title">Aprender el protocolo de handoff del chatbot</div>
+          <span class="task-tag critical">Crítico</span>
+        </div>
+      </div>
+      <div class="two-col">
+        <div class="info-box">
+          <strong>Cuándo el chatbot te pasa un lead:</strong><br>
+          El chatbot transfiere automáticamente a recepción humana cuando:<br>
+          — El paciente pregunta por precios (el chatbot no da precios)<br>
+          — El paciente pregunta por algo fuera del guión (casos complejos)<br>
+          — El paciente ha tenido 3 o más interacciones sin reservar cita<br>
+          — El lead score supera 70 puntos (lead muy cualificado)<br><br>
+          Recibirás un aviso por WhatsApp/email con el resumen de la conversación y los datos del lead.
+        </div>
+        <div class="info-box">
+          <strong>Cómo responder a un handoff:</strong><br>
+          1. Leer el resumen de la conversación que te manda el sistema<br>
+          2. <strong>NO volver a preguntar</strong> lo que ya contó al chatbot — el paciente se frustra<br>
+          3. Empezar con: <em>"Hola [nombre], te escribo de Dental Basté. He visto que estás interesado/a en [tratamiento]. ¿Tienes unos minutos para hablar o prefieres que te llame?"</em><br>
+          4. Objetivo de la llamada: confirmar que entienden el tratamiento y reservar la cita de valoración<br>
+          5. Registrar el resultado en Gesden (cita reservada / no contestó / necesita más info)
+        </div>
+      </div>
+    </div>
+
+    <!-- ACCIÓN 0.3 -->
+    <div class="phase-action-block">
+      <div class="phase-action-header">
+        <span class="phase-action-num">0.3</span>
+        <div>
+          <div class="phase-action-title">Configurar las notificaciones de nuevas citas en Calendly</div>
+          <span class="task-tag critical">Crítico</span>
+        </div>
+      </div>
+      <div class="two-col">
+        <div class="info-box">
+          <strong>Cómo hacerlo:</strong><br>
+          1. En Calendly → Configuración de notificaciones → Activar email de confirmación para el equipo<br>
+          2. Añadir tu email para recibir un aviso cada vez que se reserve una cita<br>
+          3. Verificar en Google Calendar que la cita aparece automáticamente<br>
+          4. Confirmar que el sistema envía el recordatorio automático al paciente (24h y 2h antes) — esto lo configura el Especialista IA<br>
+          5. Si el paciente no aparece: marcar como "no-show" en Gesden y activar el flujo de recuperación
+        </div>
+        <div class="info-box">
+          <strong>Qué ocurre automáticamente cuando se reserva una cita:</strong><br>
+          — El paciente recibe email de confirmación (Calendly)<br>
+          — El paciente recibe WhatsApp de confirmación (Make + 360dialog)<br>
+          — Se crea el recordatorio automático para 24h antes<br>
+          — El lead se actualiza en Gesden con estado "cita reservada"<br><br>
+          <strong>Tu tarea</strong>: Revisar que todo ocurrió correctamente y preparar la visita.
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ════ FASE 1 ════ -->
+  <section id="fase-1">
+    <div class="section-header">
+      <div class="section-icon" style="background:var(--brand-600);color:#fff;">1</div>
+      <div>
+        <div class="section-title">Fase 1 — Gestión diaria de leads y citas</div>
+        <div class="section-subtitle">Día a día · Protocolo de contacto · Confirmación y reducción de no-shows</div>
+      </div>
+    </div>
+
+    <!-- ACCIÓN 1.1 -->
+    <div class="phase-action-block">
+      <div class="phase-action-header">
+        <span class="phase-action-num">1.1</span>
+        <div>
+          <div class="phase-action-title">Protocolo de contacto con leads que NO reservaron cita</div>
+          <span class="task-tag critical">Crítico</span>
+        </div>
+      </div>
+      <div class="two-col">
+        <div class="info-box">
+          <strong>Secuencia de contacto (en este orden):</strong><br>
+          <strong>Contacto 1 (dentro de las primeras 2 horas):</strong><br>
+          WhatsApp: <em>"Hola [nombre], soy [tu nombre] de Dental Basté. Te escribo porque has dejado tus datos en nuestra web interesándote por [tratamiento]. ¿Tienes disponibilidad esta semana para una visita de valoración gratuita?"</em><br><br>
+          <strong>Contacto 2 (si no responde en 24h):</strong><br>
+          Llamada telefónica. Si no contesta: dejar un mensaje de voz corto.<br><br>
+          <strong>Contacto 3 (48h después):</strong><br>
+          WhatsApp: <em>"Hola [nombre], te vuelvo a escribir por si no viste mi mensaje. Tu primera visita es sin coste — reserva cuando quieras: [link Calendly]"</em>
+        </div>
+        <div class="info-box">
+          <strong>Registrar siempre en Gesden:</strong><br>
+          — Fecha y hora de cada intento de contacto<br>
+          — Canal usado (WhatsApp / llamada / email)<br>
+          — Respuesta del lead (no contestó / interesado / no le interesa ahora / reservó cita)<br>
+          — Próxima acción y fecha<br><br>
+          Si el lead dice que no le interesa: marcar en Gesden como "descartado" para que el sistema pare los mensajes automáticos. Nunca insistir más de 3 veces.
+        </div>
+      </div>
+    </div>
+
+    <!-- ACCIÓN 1.2 -->
+    <div class="phase-action-block">
+      <div class="phase-action-header">
+        <span class="phase-action-num">1.2</span>
+        <div>
+          <div class="phase-action-title">Reducir el no-show: confirmación manual el día anterior</div>
+          <span class="task-tag high">Alta</span>
+        </div>
+      </div>
+      <div class="two-col">
+        <div class="info-box">
+          <strong>El sistema ya envía recordatorios automáticos, pero tú haces la diferencia:</strong><br>
+          1. El día anterior a la cita: el sistema envía un WhatsApp automático a las 10h<br>
+          2. Si el paciente no confirma antes de las 17h: envíale un mensaje personal (no automático)<br>
+          3. Mensaje: <em>"Hola [nombre], mañana tienes tu visita en Dental Basté a las [hora]. ¿Confirmamos? Si necesitas cambiar la hora, avísame y te busco otro hueco."</em><br>
+          4. Si no contesta: llamada telefónica breve<br><br>
+          Esta confirmación personal reduce el no-show del 30–40% al 10–15%.
+        </div>
+        <div class="info-box">
+          <strong>Qué hacer cuando hay un no-show:</strong><br>
+          1. Marcar en Gesden como "no-show"<br>
+          2. El sistema automático enviará un WhatsApp al día siguiente (configurado por Especialista IA)<br>
+          3. Si el paciente tenía alta intención: llamarle personalmente ese mismo día<br>
+          4. Ofrecerle reagendar inmediatamente: <em>"Entiendo que surgió algo. ¿Te parece si buscamos otro hueco esta semana?"</em><br><br>
+          El 50% de los no-shows se recuperan si se contacta el mismo día.
+        </div>
+      </div>
+    </div>
+
+    <!-- ACCIÓN 1.3 -->
+    <div class="phase-action-block">
+      <div class="phase-action-header">
+        <span class="phase-action-num">1.3</span>
+        <div>
+          <div class="phase-action-title">Responder reseñas de Google y mensajes directos</div>
+          <span class="task-tag high">Alta</span>
+        </div>
+      </div>
+      <div class="two-col">
+        <div class="info-box">
+          <strong>Reseñas de Google Business Profile:</strong><br>
+          — Objetivo: responder a todas las reseñas en menos de 24h<br>
+          — Reseña positiva: agradecer con el nombre del paciente + mención al tratamiento<br>
+          — Reseña negativa: respuesta empática, sin discutir, ofreciendo solución por privado<br>
+          — Nunca copiar y pegar la misma respuesta — Google penaliza esto<br><br>
+          El Especialista IA puede generar borradores de respuestas; tú los personalizas antes de publicar.
+        </div>
+        <div class="info-box">
+          <strong>Mensajes directos en redes sociales:</strong><br>
+          — Instagram DM y Facebook Messenger: responder en menos de 2h durante horario comercial<br>
+          — ManyChat gestiona los mensajes iniciales automáticamente (ver <a href="/especialista-ia.html#fase-0" style="color:var(--brand-600);">Fase 0 IA</a>)<br>
+          — Si el paciente pregunta por precios o info detallada: el chatbot te pasa el hilo<br>
+          — Usar las respuestas rápidas de Instagram para preguntas frecuentes
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ════ FASE 2 ════ -->
+  <section id="fase-2">
+    <div class="section-header">
+      <div class="section-icon" style="background:var(--teal-600);color:#fff;">2</div>
+      <div>
+        <div class="section-title">Fase 2 — Experiencia del paciente y reseñas</div>
+        <div class="section-subtitle">Semanas 4–8 · Onboarding del paciente · Generación de reseñas</div>
+      </div>
+    </div>
+
+    <!-- ACCIÓN 2.1 -->
+    <div class="phase-action-block">
+      <div class="phase-action-header">
+        <span class="phase-action-num">2.1</span>
+        <div>
+          <div class="phase-action-title">Onboarding del paciente antes de la primera visita</div>
+          <span class="task-tag high">Alta</span>
+        </div>
+      </div>
+      <div class="two-col">
+        <div class="info-box">
+          <strong>Secuencia automática (configurada por Especialista IA):</strong><br>
+          — Día 0 (reserva): Email + WhatsApp de confirmación con dirección y parking<br>
+          — Día -3: WhatsApp "Te esperamos el [día]" con recordatorio<br>
+          — Día -1: Confirmación final + enlace para cancelar si necesita (mejor que el no-show)<br>
+          — Día 0 (2h antes): Recordatorio final<br><br>
+          <strong>Tu tarea:</strong> Verificar que la secuencia funciona para cada nuevo paciente y personalizar si el caso lo requiere.
+        </div>
+        <div class="info-box">
+          <strong>Durante la visita — momentos clave para la experiencia:</strong><br>
+          — Recibir al paciente por su nombre desde la entrada<br>
+          — Tener preparado su historial básico en Gesden antes de que llegue<br>
+          — Si viene por el chatbot: ya sabes qué tratamiento le interesa — mencionarlo<br>
+          — Al finalizar: explicar los próximos pasos de forma clara<br>
+          — Si el tratamiento requiere más visitas: reservar la siguiente antes de que salga
+        </div>
+      </div>
+    </div>
+
+    <!-- ACCIÓN 2.2 -->
+    <div class="phase-action-block">
+      <div class="phase-action-header">
+        <span class="phase-action-num">2.2</span>
+        <div>
+          <div class="phase-action-title">Solicitar reseñas de Google (el activo más valioso)</div>
+          <span class="task-tag high">Alta</span>
+        </div>
+      </div>
+      <div class="two-col">
+        <div class="info-box">
+          <strong>Cómo pedir reseñas (el momento y el cómo importan):</strong><br>
+          1. El mejor momento: justo después de un tratamiento positivo, cuando el paciente está contento<br>
+          2. En persona: <em>"[Nombre], nos ayudaría muchísimo si pudieras dejarnos una reseña en Google — solo tardan 2 minutos."</em><br>
+          3. Mostrar el QR del Google Business Profile en recepción<br>
+          4. El sistema envía automáticamente un WhatsApp con el link 2 horas después de la visita (ver <a href="/especialista-ia.html#fase-2" style="color:var(--brand-600);">Fase 2 IA</a>)<br>
+          5. Objetivo: 2–3 reseñas nuevas por semana
+        </div>
+        <div class="info-box">
+          <strong>Por qué las reseñas son críticas para el funnel:</strong><br>
+          — Las reseñas de Google influyen directamente en el posicionamiento local (SEO)<br>
+          — Un paciente que llega desde una búsqueda "dentista [ciudad]" lee las reseñas antes de reservar<br>
+          — 50+ reseñas con 4.8+ estrellas reduce drásticamente el CPL de los anuncios (más confianza = más conversión)<br>
+          — Las reseñas con fotos tienen 3x más impacto<br><br>
+          Pedir siempre la reseña de forma personal — los mensajes automáticos convierten menos.
+        </div>
+      </div>
+    </div>
+
+    <!-- ACCIÓN 2.3 -->
+    <div class="phase-action-block">
+      <div class="phase-action-header">
+        <span class="phase-action-num">2.3</span>
+        <div>
+          <div class="phase-action-title">Coordinar sesiones de grabación en la clínica con el Especialista Vídeo</div>
+          <span class="task-tag medium">Media</span>
+        </div>
+      </div>
+      <div class="two-col">
+        <div class="info-box">
+          <strong>Tu papel como facilitadora de las grabaciones:</strong><br>
+          1. Gestionar los permisos de los pacientes que aparecerán en vídeo (formulario de consentimiento)<br>
+          2. Identificar pacientes que podrían dar un testimonio en vídeo (satisfechos, comunicativos)<br>
+          3. Coordinar con el equipo médico las horas de menor actividad para grabar sin interrupciones<br>
+          4. Avisar a todo el equipo cuando hay grabación ese día (para llegar presentables)<br>
+          5. Asegurar que el consentimiento RGPD está firmado antes de grabar
+        </div>
+        <div class="info-box">
+          <strong>Formulario de consentimiento RGPD para vídeo:</strong><br>
+          El documento debe incluir:<br>
+          — Nombre completo y DNI del paciente<br>
+          — Descripción del uso: redes sociales, TV del escaparate, web de la clínica<br>
+          — Duración de la cesión de derechos<br>
+          — Posibilidad de revocar el consentimiento en cualquier momento<br><br>
+          Archivar todos los consentimientos firmados en Google Drive: <code>/RGPD/Consentimientos_Video/</code>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ════ FASE 3 ════ -->
+  <section id="fase-3">
+    <div class="section-header">
+      <div class="section-icon" style="background:var(--purple-600);color:#fff;">3</div>
+      <div>
+        <div class="section-title">Fase 3 — Retención y referidos</div>
+        <div class="section-subtitle">Semanas 9–12 · Pacientes recurrentes · Programa de referidos</div>
+      </div>
+    </div>
+
+    <!-- ACCIÓN 3.1 -->
+    <div class="phase-action-block">
+      <div class="phase-action-header">
+        <span class="phase-action-num">3.1</span>
+        <div>
+          <div class="phase-action-title">Gestionar el seguimiento post-tratamiento</div>
+          <span class="task-tag medium">Media</span>
+        </div>
+      </div>
+      <div class="two-col">
+        <div class="info-box">
+          <strong>Secuencia automática post-tratamiento (Especialista IA configura esto):</strong><br>
+          — Día +1: WhatsApp "¿Cómo te encuentras después del tratamiento? Si tienes alguna duda, estamos aquí."<br>
+          — Día +7: Email con consejos de cuidado post-tratamiento<br>
+          — Día +30: Recordatorio de revisión (si aplica)<br>
+          — Día +90 / +180: Recordatorio de próxima limpieza o revisión anual<br><br>
+          <strong>Tu tarea:</strong> Si el paciente responde al WhatsApp, tomar el relevo de la conversación.
+        </div>
+        <div class="info-box">
+          <strong>Identificar oportunidades de upsell:</strong><br>
+          Durante la revisión, identificar tratamientos complementarios que podrían interesarle al paciente (siempre desde la perspectiva de su salud, nunca presión comercial):<br>
+          — Paciente con ortodoncia terminada → blanqueamiento<br>
+          — Paciente con implante → revisión de periodontal<br>
+          — Paciente con limpieza → valoración de brackets<br><br>
+          Registrar en Gesden el tratamiento potencial para el siguiente email automático.
+        </div>
+      </div>
+    </div>
+
+    <!-- ACCIÓN 3.2 -->
+    <div class="phase-action-block">
+      <div class="phase-action-header">
+        <span class="phase-action-num">3.2</span>
+        <div>
+          <div class="phase-action-title">Programa de referidos (el canal con menor CPL)</div>
+          <span class="task-tag low">Baja</span>
+        </div>
+      </div>
+      <div class="two-col">
+        <div class="info-box">
+          <strong>Cómo funciona:</strong><br>
+          1. Después de un tratamiento exitoso, ofrecer al paciente un incentivo por referir a un amigo:<br>
+          <em>"Si recomiendas Dental Basté a un amigo y viene a una primera visita, te regalamos [descuento/servicio]."</em><br>
+          2. El paciente recibe un código o link único de referido (gestionar con Especialista IA)<br>
+          3. Cuando el referido reserva cita usando ese link, el sistema lo registra automáticamente<br>
+          4. Notificar manualmente al paciente que ha conseguido su recompensa
+        </div>
+        <div class="info-box">
+          <strong>Por qué funciona:</strong><br>
+          — El CPL de un referido es prácticamente 0 (coste del incentivo vs coste del anuncio)<br>
+          — Los pacientes referidos tienen una tasa de conversión 4x mayor que los leads de ads<br>
+          — La retención de pacientes referidos es un 37% mayor<br>
+          — Es el canal con mayor LTV (Life Time Value)<br><br>
+          Comenzar con este programa a partir de 50 pacientes activos.
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- RESUMEN HERRAMIENTAS -->
+  <section id="herramientas">
+    <div class="section-header">
+      <div class="section-icon"><svg class="icon icon-b"><use href="#i-gear"/></svg></div>
+      <div>
+        <div class="section-title">Tus herramientas del día a día</div>
+        <div class="section-subtitle">Lo que usas cada día y para qué sirve</div>
+      </div>
+    </div>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Herramienta</th><th>Para qué la usas</th><th>Frecuencia</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>Gesden</strong></td><td>Ver, registrar y actualizar leads y citas. Historial del paciente.</td><td>Varias veces al día</td></tr>
+          <tr><td><strong>Calendly</strong></td><td>Ver el calendario de citas. Mover o cancelar citas si es necesario.</td><td>Cada mañana</td></tr>
+          <tr><td><strong>WhatsApp Business</strong></td><td>Responder a pacientes que el chatbot te pasa. Confirmaciones manuales.</td><td>Varias veces al día</td></tr>
+          <tr><td><strong>Google Calendar</strong></td><td>Ver la agenda del día con las citas confirmadas.</td><td>Cada mañana</td></tr>
+          <tr><td><strong>Google Business Profile</strong></td><td>Responder a las reseñas de Google.</td><td>Diario</td></tr>
+          <tr><td><strong>Instagram / Facebook</strong></td><td>Responder DMs que el chatbot te transfiere.</td><td>2–3 veces al día</td></tr>
+          <tr><td><strong>Email de la clínica</strong></td><td>Notificaciones de nuevos leads y confirmaciones de Calendly.</td><td>Cada mañana y tarde</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+</div>
+
+</main>
+
+<script>
+  // Mobile menu toggle
+  (function() {
+    const toggle = document.getElementById('menu-toggle');
+    const sidebar = document.getElementById('sidebar');
+    const backdrop = document.getElementById('menu-backdrop');
+    const closeMenu = function() {
+      document.body.classList.remove('menu-open');
+      if (backdrop) backdrop.setAttribute('aria-hidden', 'true');
+    };
+    const openMenu = function() {
+      document.body.classList.add('menu-open');
+      if (backdrop) backdrop.setAttribute('aria-hidden', 'false');
+    };
+    if (toggle) {
+      toggle.addEventListener('click', function() {
+        document.body.classList.toggle('menu-open');
+        backdrop.setAttribute('aria-hidden', document.body.classList.contains('menu-open') ? 'false' : 'true');
+      });
+    }
+    if (backdrop) backdrop.addEventListener('click', closeMenu);
+    document.querySelectorAll('#sidebar a').forEach(function(link) {
+      link.addEventListener('click', closeMenu);
+    });
+  })();
+  // Collapsible code blocks
+  (function() {
+    document.querySelectorAll('.code-block').forEach(function(block) {
+      var header = block.querySelector('.code-header');
+      if (!header) return;
+      // Inyectar chevron
+      var chev = document.createElement('span');
+      chev.className = 'code-chevron';
+      chev.setAttribute('aria-hidden', 'true');
+      chev.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>';
+      header.insertBefore(chev, header.querySelector('.code-dots'));
+      // Toggle al hacer click en el header
+      header.addEventListener('click', function() {
+        block.classList.toggle('open');
+      });
+    });
+  })();
+  // Active nav link on scroll (index page sections + specialist subsections)
+  const sections = document.querySelectorAll('section[id]');
+  const navLinks = document.querySelectorAll('nav a:not(.nav-sub)');
+  const navSubLinks = document.querySelectorAll('nav a.nav-sub');
+  if (sections.length && (navLinks.length || navSubLinks.length)) {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          // Main links (index anchors)
+          navLinks.forEach(link => {
+            const href = link.getAttribute('href');
+            const matchesSection = href === '/#' + entry.target.id || href === '#' + entry.target.id;
+            link.classList.toggle('active', matchesSection);
+          });
+          // Sub-links (specialist page sections)
+          navSubLinks.forEach(link => {
+            const href = link.getAttribute('href') || '';
+            const anchorMatch = href.endsWith('#' + entry.target.id);
+            link.classList.toggle('active', anchorMatch);
+          });
+        }
+      });
+    }, { threshold: 0.3, rootMargin: '-10% 0px -60% 0px' });
+    sections.forEach(s => observer.observe(s));
+  }
+</script>
+</body>
+</html>
