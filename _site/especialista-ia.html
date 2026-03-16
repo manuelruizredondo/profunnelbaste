@@ -140,20 +140,24 @@
   
   <div class="nav-subsections">
     
-    <a href="/especialista-ia.html#chatbot" class="nav-sub">
-      <span class="nav-sub-dot"></span>Chatbot IA
+    <a href="/especialista-ia.html#fase-0" class="nav-sub">
+      <span class="nav-sub-dot"></span>Fase 0 — Arranque
     </a>
     
-    <a href="/especialista-ia.html#automatizaciones" class="nav-sub">
-      <span class="nav-sub-dot"></span>Automatizaciones
+    <a href="/especialista-ia.html#fase-1" class="nav-sub">
+      <span class="nav-sub-dot"></span>Fase 1 — Chatbot
+    </a>
+    
+    <a href="/especialista-ia.html#fase-2" class="nav-sub">
+      <span class="nav-sub-dot"></span>Fase 2 — Nurturing
+    </a>
+    
+    <a href="/especialista-ia.html#fase-3" class="nav-sub">
+      <span class="nav-sub-dot"></span>Fase 3 — Contenido
     </a>
     
     <a href="/especialista-ia.html#integraciones" class="nav-sub">
-      <span class="nav-sub-dot"></span>Integraciones
-    </a>
-    
-    <a href="/especialista-ia.html#contenido" class="nav-sub">
-      <span class="nav-sub-dot"></span>Contenido con IA
+      <span class="nav-sub-dot"></span>Mapa de conexiones
     </a>
     
   </div>
@@ -210,13 +214,13 @@
   
 <div class="hero">
   <h1>Especialista en IA y Automatizaciones</h1>
-  <p>Chatbot conversacional · Automatizaciones Make/n8n · CRM · Nurturing · Generación de contenido</p>
+  <p>Todo lo que tienes que hacer, en orden, con instrucciones de cómo hacerlo</p>
   <p style="margin-top:12px; font-size:.9rem; opacity:.9;">
-    <a href="/roadmap.html" style="color:var(--white); text-decoration:underline;">← Volver al Roadmap</a>
-    &nbsp;·&nbsp; <a href="#chatbot" style="color:var(--white); text-decoration:underline;">Chatbot IA</a>
-    &nbsp;·&nbsp; <a href="#automatizaciones" style="color:var(--white); text-decoration:underline;">Automatizaciones</a>
-    &nbsp;·&nbsp; <a href="#integraciones" style="color:var(--white); text-decoration:underline;">Integraciones</a>
-    &nbsp;·&nbsp; <a href="#contenido" style="color:var(--white); text-decoration:underline;">Contenido IA</a>
+    <a href="/roadmap.html" style="color:var(--white); text-decoration:underline;">← Roadmap</a>
+    &nbsp;·&nbsp; <a href="#fase-0" style="color:var(--white); text-decoration:underline;">Fase 0</a>
+    &nbsp;·&nbsp; <a href="#fase-1" style="color:var(--white); text-decoration:underline;">Fase 1</a>
+    &nbsp;·&nbsp; <a href="#fase-2" style="color:var(--white); text-decoration:underline;">Fase 2</a>
+    &nbsp;·&nbsp; <a href="#fase-3" style="color:var(--white); text-decoration:underline;">Fase 3</a>
   </p>
 </div>
 
@@ -224,199 +228,89 @@
 
   <div class="alert alert-blue">
     <span class="alert-icon"><svg class="icon icon-b"><use href="#i-bot"/></svg></span>
-    <p><strong>Este rol cubre:</strong> la configuración y mantenimiento del chatbot (ManyChat + GPT-4o), todos los flujos de automatización en Make y n8n, las integraciones entre plataformas (Gesden, Calendly, WhatsApp, email), la generación programática de contenido textual con IA y la publicación automatizada en redes sociales vía Metricool.</p>
+    <p><strong>Tu rol:</strong> Eres el responsable de que todos los sistemas hablen entre sí. Configuras el chatbot, montas los flujos en Make/n8n, conectas las plataformas y generas contenido con IA. Sin ti, los leads se pierden y el trabajo manual se multiplica.</p>
   </div>
 
-  <!-- ════ TAREAS ════ -->
-  <section class="specialist-section">
-    <div class="specialist-header ai">
-      <div class="specialist-icon"><svg class="icon icon-b"><use href="#i-bot"/></svg></div>
-      <div>
-        <div class="specialist-title">Mis tareas</div>
-        <div class="specialist-subtitle">Lo que debo hacer como Especialista en IA y Automatizaciones</div>
-      </div>
-    </div>
-    <div class="roadmap">
-      <div class="roadmap-phase">
-        <div class="phase-header">
-          <div class="phase-badge ai">1</div>
-          <div>
-            <div class="phase-title">Fase 1 — Chatbot y Captación (Semanas 1–3)</div>
-            <div class="phase-dates">Prioridad crítica</div>
-          </div>
-        </div>
-        <ul class="task-list">
-          <li class="task-item priority">
-            <span class="task-checkbox"></span>
-            <div class="task-content">
-              <div class="task-title">Configurar ManyChat para Instagram DM y Facebook Messenger</div>
-              <div class="task-detail">Crear cuenta ManyChat conectada a la página de Instagram/Facebook de Dental Basté. Configurar el flujo de entrada (trigger por keyword o DM nuevo). Conectar con GPT-4o vía webhook para respuestas inteligentes. System prompt específico para rol dental.</div>
-              <span class="task-tag critical">Crítico</span>
-            </div>
-          </li>
-          <li class="task-item priority">
-            <span class="task-checkbox"></span>
-            <div class="task-content">
-              <div class="task-title">Definir y construir el flujo de cualificación de leads</div>
-              <div class="task-detail">El chatbot debe recoger: tratamiento de interés, nombre completo, email o teléfono. Usar function calling de GPT-4o para extraer datos estructurados en JSON y calcular lead score (0–100).</div>
-              <span class="task-tag critical">Crítico</span>
-            </div>
-          </li>
-          <li class="task-item priority">
-            <span class="task-checkbox"></span>
-            <div class="task-content">
-              <div class="task-title">Conectar chatbot con Gesden</div>
-              <div class="task-detail">Upsert de contacto vía API de Gesden cada vez que el lead proporciona datos. Asignar propiedades: tratamiento_interes, lead_score_ia, fuente_captacion. Disparar secuencia de nurturing en ActiveCampaign al crear el contacto.</div>
-              <span class="task-tag critical">Crítico</span>
-            </div>
-          </li>
-          <li class="task-item">
-            <span class="task-checkbox"></span>
-            <div class="task-content">
-              <div class="task-title">Implementar handoff chatbot → humano</div>
-              <div class="task-detail">Cuando el lead pide hablar con alguien, escalar a la recepción. Notificación interna vía WhatsApp o Slack con el resumen de la conversación.</div>
-              <span class="task-tag high">Alta</span>
-            </div>
-          </li>
-        </ul>
-      </div>
-
-      <div class="roadmap-phase">
-        <div class="phase-header">
-          <div class="phase-badge ai">2</div>
-          <div>
-            <div class="phase-title">Fase 2 — Automatizaciones y Nurturing (Semanas 4–6)</div>
-            <div class="phase-dates">Make · n8n · WhatsApp · Email</div>
-          </div>
-        </div>
-        <ul class="task-list">
-          <li class="task-item">
-            <span class="task-checkbox"></span>
-            <div class="task-content">
-              <div class="task-title">Montar escenario Make: Calendly → Gesden → notificaciones</div>
-              <div class="task-detail">Trigger: nueva cita en Calendly. Acciones: actualizar lifecycle en Gesden (→ "opportunity"), enviar email de confirmación automático, programar SMS recordatorio 24h antes y WhatsApp 2h antes.</div>
-              <span class="task-tag high">Alta</span>
-            </div>
-          </li>
-          <li class="task-item">
-            <span class="task-checkbox"></span>
-            <div class="task-content">
-              <div class="task-title">Configurar secuencia de nurturing post-lead en Gesden / ActiveCampaign</div>
-              <div class="task-detail">Día 0: email bienvenida + guía dental gratuita. Día 3: email educativo según tratamiento de interés (generado con GPT-4o). Día 7: WhatsApp con oferta primera visita. Día 14: asignar a comercial si no ha convertido.</div>
-              <span class="task-tag high">Alta</span>
-            </div>
-          </li>
-          <li class="task-item">
-            <span class="task-checkbox"></span>
-            <div class="task-content">
-              <div class="task-title">Integrar WhatsApp Business API (360dialog) en los flujos</div>
-              <div class="task-detail">Configurar templates aprobados de WhatsApp para recordatorios y nurturing. Los templates requieren aprobación de Meta previamente. Usar Make o n8n para disparar los envíos.</div>
-              <span class="task-tag high">Alta</span>
-            </div>
-          </li>
-          <li class="task-item">
-            <span class="task-checkbox"></span>
-            <div class="task-content">
-              <div class="task-title">Flujo de solicitud automática de reseña post-tratamiento</div>
-              <div class="task-detail">Trigger: cita marcada como completada. +2h: SMS de satisfacción (escala 1-5). Si puntuación ≥ 4: enviar enlace de reseña Google. Si &lt; 4: alerta interna + gestión manual.</div>
-              <span class="task-tag medium">Media</span>
-            </div>
-          </li>
-        </ul>
-      </div>
-
-      <div class="roadmap-phase">
-        <div class="phase-header">
-          <div class="phase-badge ai">3</div>
-          <div>
-            <div class="phase-title">Fase 3 — Análisis y Contenido IA (Semanas 7–12)</div>
-            <div class="phase-dates">Lead scoring avanzado · reseñas · copy</div>
-          </div>
-        </div>
-        <ul class="task-list">
-          <li class="task-item">
-            <span class="task-checkbox"></span>
-            <div class="task-content">
-              <div class="task-title">Lead scoring avanzado con IA predictiva</div>
-              <div class="task-detail">Usar datos históricos de Gesden para entrenar un modelo de puntuación. Variables: tratamiento, canal de entrada, interacciones, tiempo de respuesta. Integrar score en pipeline de ventas.</div>
-              <span class="task-tag high">Alta</span>
-            </div>
-          </li>
-          <li class="task-item">
-            <span class="task-checkbox"></span>
-            <div class="task-content">
-              <div class="task-title">Pipeline de análisis de reseñas Google con IA</div>
-              <div class="task-detail">Make + Google Places API: monitorizar nuevas reseñas cada 6h. Enviar texto a GPT-4o para análisis de sentimiento. Si negativa: generar respuesta sugerida y alertar a recepción vía Slack/WhatsApp.</div>
-              <span class="task-tag medium">Media</span>
-            </div>
-          </li>
-          <li class="task-item">
-            <span class="task-checkbox"></span>
-            <div class="task-content">
-              <div class="task-title">Generador de copy para spots TV y emails con GPT-4o</div>
-              <div class="task-detail">Script Python que recibe tratamiento + formato (TV spot, email, WhatsApp) y devuelve titulo_1, titulo_2, descripción, CTA. Coordinar salida con el especialista de vídeo.</div>
-              <span class="task-tag medium">Media</span>
-            </div>
-          </li>
-          <li class="task-item">
-            <span class="task-checkbox"></span>
-            <div class="task-content">
-              <div class="task-title">Dashboard Looker Studio con métricas de chatbot e IA</div>
-              <div class="task-detail">Leads captados por canal (chatbot/web/DM), tasa de cualificación, conversión lead→cita, CSAT del chat. Conectar a Gesden y datos de Calendly.</div>
-              <span class="task-tag low">Baja</span>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- ════ CHATBOT IA ════ -->
-  <section id="chatbot">
+  <!-- ════ FASE 0 ════ -->
+  <section id="fase-0">
     <div class="section-header">
-      <div class="section-icon"><svg class="icon icon-b"><use href="#i-bot"/></svg></div>
+      <div class="section-icon" style="background:var(--rose-500);color:#fff;">0</div>
       <div>
-        <div class="section-title">Chatbot IA — ManyChat + GPT-4o</div>
-        <div class="section-subtitle">Arquitectura, system prompt y flujo de cualificación</div>
+        <div class="section-title">Fase 0 — Arranque inmediato</div>
+        <div class="section-subtitle">Esta semana · Prioridad máxima · 3 acciones críticas</div>
       </div>
     </div>
 
-    <div class="two-col">
-      <div class="card">
-        <div class="card-icon"><svg class="icon icon-b"><use href="#i-message"/></svg></div>
-        <h4>ManyChat — qué hace</h4>
-        <ul class="feature-list">
-          <li>Gestiona los flujos de conversación en Instagram DM y Facebook Messenger</li>
-          <li>Captura el primer mensaje y decide si escalar a GPT-4o o responder con plantilla</li>
-          <li>Recoge nombre, email y teléfono cuando el usuario los proporciona</li>
-          <li>Activa la integración con Gesden vía webhook cuando hay datos suficientes</li>
-        </ul>
+    <div class="alert alert-amber">
+      <span class="alert-icon"><svg class="icon icon-b"><use href="#i-alert"/></svg></span>
+      <p><strong>Objetivo de esta fase:</strong> Que ningún lead que llega por Instagram, la web o Meta Ads se pierda. En 7 días tienes que tener captura automática funcionando.</p>
+    </div>
+
+    <!-- ACCIÓN 0.1 -->
+    <div class="phase-action-block">
+      <div class="phase-action-header">
+        <span class="phase-action-num">0.1</span>
+        <div>
+          <div class="phase-action-title">Crear cuenta ManyChat y conectar Instagram y Facebook</div>
+          <span class="task-tag critical">Crítico</span>
+        </div>
       </div>
-      <div class="card">
-        <div class="card-icon"><svg class="icon icon-b"><use href="#i-bot"/></svg></div>
-        <h4>GPT-4o — qué hace</h4>
-        <ul class="feature-list">
-          <li>Responde con lenguaje natural en castellano a las preguntas del lead</li>
-          <li>Extrae datos estructurados (nombre, tratamiento, contacto) con function calling</li>
-          <li>Calcula un lead score (0–100) basado en intención y completitud</li>
-          <li>Nunca diagnostica: deriva al doctor para preguntas clínicas</li>
-        </ul>
+      <div class="two-col">
+        <div class="info-box">
+          <strong>Cómo hacerlo:</strong><br>
+          1. Ir a <code>manychat.com</code> → crear cuenta con el email de la clínica<br>
+          2. Conectar la <strong>página de Facebook</strong> de Dental Basté (necesitas ser admin)<br>
+          3. Conectar la cuenta de <strong>Instagram Business</strong> (tiene que estar vinculada a la página de Facebook)<br>
+          4. Activar el trigger "Todos los DMs nuevos" → respuesta de bienvenida<br>
+          5. Probar enviando un DM desde otra cuenta
+        </div>
+        <div class="info-box">
+          <strong>Qué necesitas:</strong><br>
+          — Acceso de administrador a la página de Facebook de Dental Basté<br>
+          — Instagram Business vinculado a Facebook<br>
+          — Plan ManyChat Pro (~15€/mes) para automatizaciones avanzadas<br>
+          — Email de la clínica para registrar la cuenta
+        </div>
       </div>
     </div>
 
-    <h3>System Prompt del Chatbot Dental</h3>
-    <div class="code-block">
-      <div class="code-header">
-        <span class="code-lang">Python — Chatbot Handler (Make / n8n webhook)</span>
-        <div class="code-dots"><span class="dot-red"></span><span class="dot-amber"></span><span class="dot-green"></span></div>
+    <!-- ACCIÓN 0.2 -->
+    <div class="phase-action-block">
+      <div class="phase-action-header">
+        <span class="phase-action-num">0.2</span>
+        <div>
+          <div class="phase-action-title">Configurar el chatbot básico con GPT-4o (system prompt dental)</div>
+          <span class="task-tag critical">Crítico</span>
+        </div>
       </div>
-      <pre><code><span class="c-comment"># Sistema prompt para el chatbot dental IA</span>
-<span class="c-key">SYSTEM_PROMPT</span> = <span class="c-str">"""
+      <div class="two-col">
+        <div class="info-box">
+          <strong>Cómo hacerlo:</strong><br>
+          1. En ManyChat, crear un flujo "Respuesta IA" con un paso de tipo <strong>External Request</strong><br>
+          2. Apuntar el webhook a tu endpoint de Make/n8n que llama a GPT-4o<br>
+          3. Usar el system prompt de abajo (copiarlo tal cual, cambiando el nombre)<br>
+          4. Configurar captura de datos: cuando el bot detecta nombre/teléfono, guardarlos en campos de ManyChat<br>
+          5. Probar 5 conversaciones distintas simulando pacientes reales
+        </div>
+        <div class="info-box">
+          <strong>Qué necesitas:</strong><br>
+          — API Key de OpenAI (<code>platform.openai.com</code> → API Keys)<br>
+          — Cuenta en Make.com (plan gratuito para empezar)<br>
+          — El webhook URL de Make (lo crea Make automáticamente al añadir un módulo "Webhook")<br>
+          — Guardar la API Key en Bitwarden, nunca en texto plano
+        </div>
+      </div>
+      <div class="code-block" style="margin-top:16px;">
+        <div class="code-header">
+          <span class="code-lang">Python — System Prompt + Handler GPT-4o para chatbot dental</span>
+          <div class="code-dots"><span class="dot-red"></span><span class="dot-amber"></span><span class="dot-green"></span></div>
+        </div>
+        <pre><code><span class="c-key">SYSTEM_PROMPT</span> = <span class="c-str">"""
 Eres el asistente virtual de Dental Basté.
 Tu objetivo es:
 1. Saludar calurosamente y preguntar en qué puedes ayudar
 2. Identificar el tratamiento de interés (ortodoncia, implantes, blanqueamiento, etc.)
-3. Recopilar nombre completo y método de contacto
+3. Recopilar nombre completo y método de contacto (teléfono o email)
 4. Ofrecer disponibilidad de cita y redirigir al booking
 5. Nunca diagnosticar. Si preguntan por síntomas, remitir al doctor.
 
@@ -431,7 +325,6 @@ Tono: cercano, profesional, en español. Respuestas máximo 3 frases.
         *conversation_history,
         {<span class="c-str">"role"</span>: <span class="c-str">"user"</span>, <span class="c-str">"content"</span>: user_message}
     ]
-
     response = openai.chat.completions.create(
         model=<span class="c-str">"gpt-4o"</span>,
         messages=messages,
@@ -451,677 +344,606 @@ Tono: cercano, profesional, en español. Respuestas máximo 3 frases.
         }]
     )
     <span class="c-kw">return</span> response.choices[<span class="c-num">0</span>].message</code></pre>
+      </div>
     </div>
 
-    <h3>Lead Scoring — Criterios</h3>
-    <div class="table-wrap">
-      <table>
-        <thead>
-          <tr><th>Variable</th><th>Peso</th><th>Lógica</th></tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><strong>Tratamiento de interés</strong></td>
-            <td>+40 pts</td>
-            <td>Implantes u ortodoncia = 40. Blanqueamiento = 20. Consulta genérica = 10.</td>
-          </tr>
-          <tr>
-            <td><strong>Datos de contacto completos</strong></td>
-            <td>+30 pts</td>
-            <td>Nombre + teléfono + email = 30. Solo uno de los dos = 15.</td>
-          </tr>
-          <tr>
-            <td><strong>Intención explícita de cita</strong></td>
-            <td>+20 pts</td>
-            <td>Menciona querer pedir cita o preguntar por disponibilidad = 20.</td>
-          </tr>
-          <tr>
-            <td><strong>Urgencia expresada</strong></td>
-            <td>+10 pts</td>
-            <td>Palabras como "dolor", "urgente", "esta semana" = 10.</td>
-          </tr>
-        </tbody>
-      </table>
+    <!-- ACCIÓN 0.3 -->
+    <div class="phase-action-block">
+      <div class="phase-action-header">
+        <span class="phase-action-num">0.3</span>
+        <div>
+          <div class="phase-action-title">Conectar Meta Lead Ads → Gesden (captura automática de leads de anuncios)</div>
+          <span class="task-tag critical">Crítico</span>
+        </div>
+      </div>
+      <div class="two-col">
+        <div class="info-box">
+          <strong>Cómo hacerlo en Make:</strong><br>
+          1. En Make, crear un escenario nuevo<br>
+          2. Módulo 1: <strong>Facebook Lead Ads → Watch leads</strong> — conectar la cuenta de Meta<br>
+          3. Módulo 2: <strong>HTTP → Make an API Key Auth request</strong> — enviar datos a Gesden<br>
+          4. Módulo 3: <strong>ActiveCampaign → Add contact to list</strong> — añadir a la lista del tratamiento<br>
+          5. Módulo 4: <strong>360dialog → Send message</strong> — WhatsApp de bienvenida en &lt; 5 min<br>
+          6. Activar el escenario y probar con un lead de test
+        </div>
+        <div class="info-box">
+          <strong>Qué necesitas:</strong><br>
+          — Acceso a la cuenta de Meta Business / Meta Ads<br>
+          — API Key de Gesden (pedirla a la clínica)<br>
+          — Cuenta ActiveCampaign con listas creadas por tratamiento<br>
+          — Número de WhatsApp Business configurado en 360dialog<br>
+          — Template de WhatsApp aprobado por Meta (proceso de 24–48h)
+        </div>
+      </div>
+      <div class="flow-container" style="margin-top:16px;">
+        <div class="flow-title"><svg class="icon icon-b"><use href="#i-trend"/></svg> Flujo 0.3 — Meta Lead Ads → Gesden → Nurturing automático</div>
+        <div class="flow-steps">
+          <div class="flow-step trigger">
+            <div class="step-label">Trigger</div>
+            <div class="step-text">Lead rellena formulario en anuncio de Meta</div>
+          </div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-step action">
+            <div class="step-label">Make</div>
+            <div class="step-text">Crea contacto en Gesden + etiqueta tratamiento</div>
+          </div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-step action">
+            <div class="step-label">ActiveCampaign</div>
+            <div class="step-text">Añade a secuencia de nurturing del tratamiento</div>
+          </div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-step output">
+            <div class="step-label">WhatsApp</div>
+            <div class="step-text">Bienvenida personalizada en &lt; 5 min</div>
+          </div>
+        </div>
+      </div>
     </div>
+
   </section>
 
-  <!-- ════ AUTOMATIZACIONES ════ -->
-  <section id="automatizaciones">
+  <!-- ════ FASE 1 ════ -->
+  <section id="fase-1">
     <div class="section-header">
-      <div class="section-icon"><svg class="icon icon-b"><use href="#i-refresh"/></svg></div>
+      <div class="section-icon" style="background:var(--brand-600);color:#fff;">1</div>
       <div>
-        <div class="section-title">Automatizaciones</div>
-        <div class="section-subtitle">4 flujos principales en Make y n8n</div>
+        <div class="section-title">Fase 1 — Chatbot y cualificación completa</div>
+        <div class="section-subtitle">Semanas 1–3 · 4 acciones · Lead scoring + handoff</div>
       </div>
     </div>
 
-    <div class="info-box">
-      <strong>Make vs n8n:</strong> Usar <strong>Make</strong> para flujos generales entre plataformas (Calendly, Gesden, WhatsApp, email). Usar <strong>n8n self-hosted</strong> (VPS en España) para cualquier flujo que maneje datos clínicos o historial de pacientes — obligatorio por RGPD.
-    </div>
-
-    <!-- FLUJO 1 -->
-    <div class="flow-container">
-      <div class="flow-title"><svg class="icon icon-b"><use href="#i-bot"/></svg> Flujo 1 — Captación y Cualificación de Lead (Chatbot IA)</div>
-      <div class="flow-steps">
-        <div class="flow-step trigger">
-          <div class="step-label">Trigger</div>
-          <div class="step-text">Usuario llega a web o envía DM en Instagram/WhatsApp</div>
-        </div>
-        <div class="flow-arrow">→</div>
-        <div class="flow-step action">
-          <div class="step-label">Acción</div>
-          <div class="step-text">Chatbot GPT-4o saluda y pregunta tipo de tratamiento</div>
-        </div>
-        <div class="flow-arrow">→</div>
-        <div class="flow-step condition">
-          <div class="step-label">Condición</div>
-          <div class="step-text">¿Ha proporcionado nombre + email/teléfono?</div>
-        </div>
-        <div class="flow-arrow">→</div>
-        <div class="flow-step action">
-          <div class="step-label">Acción</div>
-          <div class="step-text">Crea contacto en Gesden + asigna etiqueta de interés</div>
-        </div>
-        <div class="flow-arrow">→</div>
-        <div class="flow-step output">
-          <div class="step-label">Salida</div>
-          <div class="step-text">Ofrece cita + envía SMS/email de confirmación</div>
+    <!-- ACCIÓN 1.1 -->
+    <div class="phase-action-block">
+      <div class="phase-action-header">
+        <span class="phase-action-num">1.1</span>
+        <div>
+          <div class="phase-action-title">Construir el flujo completo de cualificación de leads</div>
+          <span class="task-tag critical">Crítico</span>
         </div>
       </div>
-    </div>
-
-    <!-- FLUJO 2 -->
-    <div class="flow-container">
-      <div class="flow-title"><svg class="icon icon-b"><use href="#i-calendar"/></svg> Flujo 2 — Reserva Automática de Cita y Recordatorios</div>
-      <div class="flow-steps">
-        <div class="flow-step trigger">
-          <div class="step-label">Trigger</div>
-          <div class="step-text">Lead cualificado acepta proponer cita</div>
+      <div class="two-col">
+        <div class="info-box">
+          <strong>Cómo hacerlo:</strong><br>
+          1. En ManyChat, crear un flujo "Cualificación" con 3 preguntas secuenciales<br>
+          2. Pregunta 1: "¿Qué tratamiento te interesa?" (botones: Ortodoncia / Implantes / Blanqueamiento / Otro)<br>
+          3. Pregunta 2: "¿Cuál es tu nombre?"<br>
+          4. Pregunta 3: "¿Te contactamos por WhatsApp o email?"<br>
+          5. Al completar: enviar datos al webhook de Make → Gesden upsert<br>
+          6. Calcular lead score según la tabla de abajo y guardarlo como campo en Gesden
         </div>
-        <div class="flow-arrow">→</div>
-        <div class="flow-step action">
-          <div class="step-label">Acción</div>
-          <div class="step-text">Calendly muestra slots disponibles en tiempo real</div>
-        </div>
-        <div class="flow-arrow">→</div>
-        <div class="flow-step action">
-          <div class="step-label">Acción</div>
-          <div class="step-text">Cita confirmada → Make crea evento en Google Calendar clínica</div>
-        </div>
-        <div class="flow-arrow">→</div>
-        <div class="flow-step action">
-          <div class="step-label">Acción</div>
-          <div class="step-text">Email confirmación + SMS inmediato</div>
-        </div>
-        <div class="flow-arrow">→</div>
-        <div class="flow-step output">
-          <div class="step-label">Recordatorio</div>
-          <div class="step-text">WhatsApp 24h antes + SMS 2h antes de la cita</div>
+        <div class="info-box">
+          <strong>Lead scoring — criterios:</strong><br>
+          <code>+40 pts</code> Implantes u ortodoncia<br>
+          <code>+20 pts</code> Blanqueamiento o periodoncia<br>
+          <code>+30 pts</code> Nombre + teléfono + email completos<br>
+          <code>+20 pts</code> Menciona querer cita esta semana<br>
+          <code>+10 pts</code> Palabras "dolor", "urgente", "rápido"<br><br>
+          Score &gt; 70 → prioridad alta → notificar a recepción<br>
+          Score &lt; 30 → solo nurturing automático
         </div>
       </div>
     </div>
 
-    <div class="code-block">
-      <div class="code-header">
-        <span class="code-lang">JSON — Make Scenario: Reminder Automation</span>
-        <div class="code-dots"><span class="dot-red"></span><span class="dot-amber"></span><span class="dot-green"></span></div>
+    <!-- ACCIÓN 1.2 -->
+    <div class="phase-action-block">
+      <div class="phase-action-header">
+        <span class="phase-action-num">1.2</span>
+        <div>
+          <div class="phase-action-title">Implementar handoff chatbot → recepción</div>
+          <span class="task-tag high">Alta</span>
+        </div>
       </div>
-      <pre><code>{
+      <div class="two-col">
+        <div class="info-box">
+          <strong>Cómo hacerlo:</strong><br>
+          1. Detectar cuando el lead dice "quiero hablar con alguien" o "llamadme"<br>
+          2. En Make: trigger por webhook de ManyChat → módulo WhatsApp 360dialog<br>
+          3. Enviar a recepción un mensaje con: nombre del lead, tratamiento, extracto del chat, teléfono<br>
+          4. En ManyChat: mostrar al lead "En breve te contactará nuestro equipo"<br>
+          5. Marcar el lead en Gesden con etiqueta "requiere-llamada"
+        </div>
+        <div class="info-box">
+          <strong>Qué necesitas:</strong><br>
+          — Número de WhatsApp de recepción (el que recibirá la notificación)<br>
+          — Template de WhatsApp para notificación interna (no necesita aprobación Meta si es número a número)<br>
+          — Campo custom en Gesden: <code>requiere_llamada: boolean</code>
+        </div>
+      </div>
+    </div>
+
+    <!-- ACCIÓN 1.3 -->
+    <div class="phase-action-block">
+      <div class="phase-action-header">
+        <span class="phase-action-num">1.3</span>
+        <div>
+          <div class="phase-action-title">Configurar Calendly y enlazar con el chatbot</div>
+          <span class="task-tag critical">Crítico</span>
+        </div>
+      </div>
+      <div class="two-col">
+        <div class="info-box">
+          <strong>Cómo hacerlo:</strong><br>
+          1. Crear cuenta Calendly → crear evento tipo "Primera visita Dental Basté" (30 min)<br>
+          2. Conectar con Google Calendar de la clínica para sincronizar disponibilidad<br>
+          3. En ManyChat: cuando lead score &gt; 50, enviar enlace de Calendly directamente en el chat<br>
+          4. Configurar webhook de Calendly: <code>invitee.created</code> → Make escenario de recordatorios<br>
+          5. Probar reservando una cita de prueba y verificando que llega al calendario
+        </div>
+        <div class="info-box">
+          <strong>Qué necesitas:</strong><br>
+          — Cuenta Calendly (plan gratuito para empezar)<br>
+          — Acceso a Google Calendar de la clínica<br>
+          — URL de Calendly para incluir en los mensajes del chatbot<br>
+          — Webhook URL de Make (crear escenario "Recordatorio cita")
+        </div>
+      </div>
+    </div>
+
+    <!-- ACCIÓN 1.4 -->
+    <div class="phase-action-block">
+      <div class="phase-action-header">
+        <span class="phase-action-num">1.4</span>
+        <div>
+          <div class="phase-action-title">Montar escenario Make: Calendly → recordatorios automáticos</div>
+          <span class="task-tag critical">Crítico</span>
+        </div>
+      </div>
+      <div class="two-col">
+        <div class="info-box">
+          <strong>Cómo hacerlo en Make:</strong><br>
+          1. Módulo 1: <strong>Calendly → Watch invitees</strong><br>
+          2. Módulo 2: Actualizar contacto en Gesden con fecha de cita<br>
+          3. Módulo 3: <strong>Email → Send email</strong> — confirmación inmediata al paciente<br>
+          4. Módulo 4: <strong>360dialog → Schedule message</strong> — WhatsApp 24h antes<br>
+          5. Módulo 5: <strong>360dialog → Schedule message</strong> — WhatsApp 2h antes<br>
+          6. Activar y probar con una cita de prueba
+        </div>
+        <div class="info-box">
+          <strong>Qué necesitas:</strong><br>
+          — Credenciales Calendly en Make (OAuth)<br>
+          — Template WhatsApp aprobado: <code>appointment_reminder_es</code><br>
+          — Template WhatsApp aprobado: <code>appointment_reminder_2h_es</code><br>
+          — Los templates se aprueban en Meta Business Manager (24–48h)
+        </div>
+      </div>
+      <div class="code-block" style="margin-top:16px;">
+        <div class="code-header">
+          <span class="code-lang">JSON — Make Scenario: Recordatorio de cita (estructura)</span>
+          <div class="code-dots"><span class="dot-red"></span><span class="dot-amber"></span><span class="dot-green"></span></div>
+        </div>
+        <pre><code>{
   <span class="c-key">"scenario"</span>: <span class="c-str">"dental_appointment_reminder"</span>,
-  <span class="c-key">"trigger"</span>: {
-    <span class="c-key">"app"</span>: <span class="c-str">"calendly"</span>,
-    <span class="c-key">"event"</span>: <span class="c-str">"invitee.created"</span>
-  },
+  <span class="c-key">"trigger"</span>: { <span class="c-key">"app"</span>: <span class="c-str">"calendly"</span>, <span class="c-key">"event"</span>: <span class="c-str">"invitee.created"</span> },
   <span class="c-key">"steps"</span>: [
-    {
-      <span class="c-key">"id"</span>: <span class="c-num">1</span>,
-      <span class="c-key">"app"</span>: <span class="c-str">"gesden"</span>,
-      <span class="c-key">"action"</span>: <span class="c-str">"update_contact"</span>,
-      <span class="c-key">"data"</span>: {
-        <span class="c-key">"lifecycle_stage"</span>: <span class="c-str">"opportunity"</span>,
-        <span class="c-key">"appointment_date"</span>: <span class="c-str">"{{trigger.event.start_time}}"</span>
-      }
-    },
-    {
-      <span class="c-key">"id"</span>: <span class="c-num">2</span>,
-      <span class="c-key">"app"</span>: <span class="c-str">"whatsapp_360dialog"</span>,
-      <span class="c-key">"action"</span>: <span class="c-str">"send_template_message"</span>,
-      <span class="c-key">"schedule"</span>: <span class="c-str">"-24h"</span>,
-      <span class="c-key">"template_name"</span>: <span class="c-str">"appointment_reminder_es"</span>
-    },
-    {
-      <span class="c-key">"id"</span>: <span class="c-num">3</span>,
-      <span class="c-key">"app"</span>: <span class="c-str">"whatsapp_360dialog"</span>,
-      <span class="c-key">"action"</span>: <span class="c-str">"send_template_message"</span>,
-      <span class="c-key">"schedule"</span>: <span class="c-str">"-2h"</span>,
-      <span class="c-key">"template_name"</span>: <span class="c-str">"appointment_reminder_2h_es"</span>
-    }
+    { <span class="c-key">"app"</span>: <span class="c-str">"gesden"</span>, <span class="c-key">"action"</span>: <span class="c-str">"update_contact"</span>,
+      <span class="c-key">"data"</span>: { <span class="c-key">"appointment_date"</span>: <span class="c-str">"{{trigger.event.start_time}}"</span> } },
+    { <span class="c-key">"app"</span>: <span class="c-str">"whatsapp_360dialog"</span>, <span class="c-key">"schedule"</span>: <span class="c-str">"-24h"</span>,
+      <span class="c-key">"template_name"</span>: <span class="c-str">"appointment_reminder_es"</span> },
+    { <span class="c-key">"app"</span>: <span class="c-str">"whatsapp_360dialog"</span>, <span class="c-key">"schedule"</span>: <span class="c-str">"-2h"</span>,
+      <span class="c-key">"template_name"</span>: <span class="c-str">"appointment_reminder_2h_es"</span> }
   ]
 }</code></pre>
-    </div>
-
-    <!-- FLUJO 3 -->
-    <div class="flow-container">
-      <div class="flow-title"><svg class="icon icon-b"><use href="#i-mail"/></svg> Flujo 3 — Secuencia de Nurturing Post-Lead</div>
-      <div class="flow-steps">
-        <div class="flow-step trigger">
-          <div class="step-label">Trigger</div>
-          <div class="step-text">Nuevo contacto en Gesden sin cita confirmada</div>
-        </div>
-        <div class="flow-arrow">→</div>
-        <div class="flow-step action">
-          <div class="step-label">Día 0</div>
-          <div class="step-text">Email bienvenida + PDF guía dental gratuita</div>
-        </div>
-        <div class="flow-arrow">→</div>
-        <div class="flow-step action">
-          <div class="step-label">Día 3</div>
-          <div class="step-text">Email educativo sobre el tratamiento de interés + vídeo</div>
-        </div>
-        <div class="flow-arrow">→</div>
-        <div class="flow-step action">
-          <div class="step-label">Día 7</div>
-          <div class="step-text">WhatsApp con oferta de primera visita gratuita</div>
-        </div>
-        <div class="flow-arrow">→</div>
-        <div class="flow-step output">
-          <div class="step-label">Día 14</div>
-          <div class="step-text">SMS de seguimiento + transferencia a comercial si no convierte</div>
-        </div>
       </div>
-    </div>
-
-    <div class="code-block">
-      <div class="code-header">
-        <span class="code-lang">YAML — Gesden / ActiveCampaign: Nurture Sequence</span>
-        <div class="code-dots"><span class="dot-red"></span><span class="dot-amber"></span><span class="dot-green"></span></div>
-      </div>
-      <pre><code><span class="c-key">automation</span>:
-  <span class="c-key">name</span>: <span class="c-str">"Dental Lead Nurturing ES"</span>
-  <span class="c-key">trigger</span>:
-    <span class="c-key">type</span>: <span class="c-str">contact_tag_added</span>
-    <span class="c-key">tag</span>: <span class="c-str">"lead-cualificado"</span>
-
-  <span class="c-key">steps</span>:
-    - <span class="c-key">wait</span>: <span class="c-num">0</span>
-      <span class="c-key">action</span>: send_email
-      <span class="c-key">template</span>: <span class="c-str">"bienvenida_dental"</span>
-      <span class="c-key">subject</span>: <span class="c-str">"Tu sonrisa merece lo mejor — Guía gratuita incluida"</span>
-
-    - <span class="c-key">wait</span>: <span class="c-num">3</span> <span class="c-comment"># días</span>
-      <span class="c-key">condition</span>: <span class="c-str">"NOT has_appointment"</span>
-      <span class="c-key">action</span>: send_email
-      <span class="c-key">template</span>: <span class="c-str">"educativo_{{lead.tratamiento_interes}}"</span>
-
-    - <span class="c-key">wait</span>: <span class="c-num">7</span>
-      <span class="c-key">condition</span>: <span class="c-str">"NOT has_appointment"</span>
-      <span class="c-key">action</span>: send_whatsapp
-      <span class="c-key">message</span>: <span class="c-str">"Hola {{first_name}}, ¿tienes 15 min esta semana? Primera visita sin coste"</span>
-
-    - <span class="c-key">wait</span>: <span class="c-num">14</span>
-      <span class="c-key">condition</span>: <span class="c-str">"NOT has_appointment"</span>
-      <span class="c-key">action</span>: assign_to_sales_rep
-      <span class="c-key">priority</span>: <span class="c-str">"high"</span></code></pre>
-    </div>
-
-    <!-- FLUJO 4 -->
-    <div class="flow-container">
-      <div class="flow-title"><svg class="icon icon-b"><use href="#i-star"/></svg> Flujo 4 — Solicitud de Reseña Post-Tratamiento</div>
-      <div class="flow-steps">
-        <div class="flow-step trigger">
-          <div class="step-label">Trigger</div>
-          <div class="step-text">Cita marcada como "completada" en el sistema</div>
-        </div>
-        <div class="flow-arrow">→</div>
-        <div class="flow-step action">
-          <div class="step-label">+2h</div>
-          <div class="step-text">WhatsApp de satisfacción (escala 1–5)</div>
-        </div>
-        <div class="flow-arrow">→</div>
-        <div class="flow-step condition">
-          <div class="step-label">Condición</div>
-          <div class="step-text">Puntuación ≥ 4 → pedir reseña Google · &lt; 4 → alerta interna</div>
-        </div>
-        <div class="flow-arrow">→</div>
-        <div class="flow-step action">
-          <div class="step-label">Acción</div>
-          <div class="step-text">IA analiza texto de reseña negativa y genera respuesta sugerida</div>
-        </div>
-        <div class="flow-arrow">→</div>
-        <div class="flow-step output">
-          <div class="step-label">Salida</div>
-          <div class="step-text">Reseña publicada / Incidencia gestionada por recepción</div>
-        </div>
-      </div>
-    </div>
-
-    <!-- FLUJO 5 — ADS -->
-    <h3>Automatización de Campañas de Ads</h3>
-    <p>Hay tres niveles de automatización para Meta Ads y Google Ads, de menor a mayor complejidad:</p>
-
-    <div class="three-col" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-bottom:24px;">
-      <div class="card">
-        <div class="card-icon"><svg class="icon icon-b"><use href="#i-gear"/></svg></div>
-        <h4>Nivel 1 — Reglas nativas</h4>
-        <p style="font-size:.85rem;color:var(--gray-600);">Sin código. Dentro del propio panel de Meta/Google Ads.</p>
-        <ul class="feature-list">
-          <li>Pausar anuncio si CPL &gt; 20€</li>
-          <li>Aumentar presupuesto +20% si ROAS &gt; 4x</li>
-          <li>Activar campaña estacional en fechas concretas</li>
-          <li>Alerta por email si el gasto diario supera el límite</li>
-        </ul>
-        <span class="task-tag" style="background:var(--green-100);color:var(--green-800);font-size:.72rem;padding:3px 8px;border-radius:20px;display:inline-block;margin-top:8px;">Sin código</span>
-      </div>
-      <div class="card">
-        <div class="card-icon"><svg class="icon icon-b"><use href="#i-refresh"/></svg></div>
-        <h4>Nivel 2 — Make + APIs</h4>
-        <p style="font-size:.85rem;color:var(--gray-600);">Automatizaciones entre plataformas vía Make.</p>
-        <ul class="feature-list">
-          <li>Meta Lead Ads → Gesden + ActiveCampaign (lead capturado al instante)</li>
-          <li>Sincronizar lista de pacientes como audiencia personalizada en Meta</li>
-          <li>Informe semanal automático de rendimiento por email</li>
-          <li>Notificación a WhatsApp si una campaña se detiene por presupuesto</li>
-        </ul>
-        <span class="task-tag" style="background:var(--amber-100);color:var(--amber-800);font-size:.72rem;padding:3px 8px;border-radius:20px;display:inline-block;margin-top:8px;">Make</span>
-      </div>
-      <div class="card">
-        <div class="card-icon"><svg class="icon icon-b"><use href="#i-bot"/></svg></div>
-        <h4>Nivel 3 — GPT-4o copy</h4>
-        <p style="font-size:.85rem;color:var(--gray-600);">Generación automática de textos para anuncios.</p>
-        <ul class="feature-list">
-          <li>GPT-4o genera 3–5 variantes de headline + descripción por tratamiento</li>
-          <li>Listo para copiar en Meta Ads o Google Ads RSA</li>
-          <li>Trigger mensual o al cambiar la oferta activa</li>
-          <li>Cumple límites de caracteres de cada plataforma</li>
-        </ul>
-        <span class="task-tag" style="background:var(--blue-100);color:var(--blue-800);font-size:.72rem;padding:3px 8px;border-radius:20px;display:inline-block;margin-top:8px;">GPT-4o</span>
-      </div>
-    </div>
-
-    <div class="flow-container">
-      <div class="flow-title"><svg class="icon icon-b"><use href="#i-trend"/></svg> Flujo 5 — Meta Lead Ads → Gesden → Nurturing automático</div>
-      <div class="flow-steps">
-        <div class="flow-step trigger">
-          <div class="step-label">Trigger</div>
-          <div class="step-text">Lead rellena formulario en un anuncio de Meta (Lead Ads)</div>
-        </div>
-        <div class="flow-arrow">→</div>
-        <div class="flow-step action">
-          <div class="step-label">Make</div>
-          <div class="step-text">Webhook Meta → Make crea contacto en Gesden + etiqueta el tratamiento de interés</div>
-        </div>
-        <div class="flow-arrow">→</div>
-        <div class="flow-step action">
-          <div class="step-label">ActiveCampaign</div>
-          <div class="step-text">Se añade a la secuencia de nurturing correspondiente al tratamiento</div>
-        </div>
-        <div class="flow-arrow">→</div>
-        <div class="flow-step action">
-          <div class="step-label">WhatsApp</div>
-          <div class="step-text">Mensaje de bienvenida personalizado en &lt; 5 minutos vía 360dialog</div>
-        </div>
-        <div class="flow-arrow">→</div>
-        <div class="flow-step output">
-          <div class="step-label">Meta Ads</div>
-          <div class="step-text">Si convierte → enviar conversión offline a Meta para optimizar el algoritmo</div>
-        </div>
-      </div>
-    </div>
-
-    <div class="code-block">
-      <div class="code-header">
-        <span class="code-lang">Python — GPT-4o generador de copy para anuncios Meta/Google</span>
-        <div class="code-dots"><span class="dot-red"></span><span class="dot-amber"></span><span class="dot-green"></span></div>
-      </div>
-      <pre><code><span class="c-kw">import</span> openai, json
-
-<span class="c-fn">def</span> <span class="c-key">generar_copy_ads</span>(tratamiento: <span class="c-key">str</span>, plataforma: <span class="c-key">str</span>, oferta: <span class="c-key">str</span> = <span class="c-str">""</span>) -> <span class="c-key">dict</span>:
-    limites = {
-        <span class="c-str">"meta"</span>:   {<span class="c-str">"headline"</span>: <span class="c-num">40</span>, <span class="c-str">"descripcion"</span>: <span class="c-num">125</span>, <span class="c-str">"texto_principal"</span>: <span class="c-num">125</span>},
-        <span class="c-str">"google"</span>: {<span class="c-str">"headline"</span>: <span class="c-num">30</span>, <span class="c-str">"descripcion"</span>: <span class="c-num">90</span>,  <span class="c-str">"texto_principal"</span>: <span class="c-num">0</span>}
-    }
-    l = limites.get(plataforma, limites[<span class="c-str">"meta"</span>])
-
-    prompt = <span class="c-str">f"""
-Crea copy publicitario para {plataforma.upper()} Ads de una clínica dental.
-
-Tratamiento: {tratamiento}
-Oferta: {oferta if oferta else "primera visita gratuita"}
-
-Devuelve JSON con 3 variantes:
-{{
-  "variantes": [
-    {{
-      "headline": "máximo {l['headline']} caracteres",
-      "descripcion": "máximo {l['descripcion']} caracteres",
-      "texto_principal": "máximo {l['texto_principal']} caracteres (solo Meta)",
-      "cta": "BOOK_NOW | LEARN_MORE | CONTACT_US | GET_QUOTE"
-    }}
-  ]
-}}
-
-Tono: directo, confianza, urgencia suave. Sin tecnicismos. Español de España.
-"""</span>
-
-    response = openai.chat.completions.create(
-        model=<span class="c-str">"gpt-4o"</span>,
-        messages=[{<span class="c-str">"role"</span>: <span class="c-str">"user"</span>, <span class="c-str">"content"</span>: prompt}],
-        response_format={<span class="c-str">"type"</span>: <span class="c-str">"json_object"</span>},
-        temperature=<span class="c-num">0.8</span>
-    )
-    <span class="c-kw">return</span> json.loads(response.choices[<span class="c-num">0</span>].message.content)
-
-<span class="c-comment"># Uso:</span>
-<span class="c-comment"># generar_copy_ads("Ortodoncia invisible", "meta", "Primera consulta gratis")</span>
-<span class="c-comment"># generar_copy_ads("Implantes dentales", "google", "Financiación sin intereses")</span></code></pre>
-    </div>
-
-    <div class="alert alert-amber">
-      <span class="alert-icon"><svg class="icon icon-b"><use href="#i-alert"/></svg></span>
-      <p><strong>Conversiones offline (Meta):</strong> Cuando un lead de Meta Ads acaba reservando cita, enviar esa conversión de vuelta a Meta vía <strong>Conversions API</strong> (CAPI). Esto mejora el algoritmo de optimización y reduce el CPL. Make puede automatizarlo: Gesden cita confirmada → Make → Meta CAPI.</p>
     </div>
 
   </section>
 
-  <!-- ════ INTEGRACIONES ════ -->
+  <!-- ════ FASE 2 ════ -->
+  <section id="fase-2">
+    <div class="section-header">
+      <div class="section-icon" style="background:var(--teal-600);color:#fff;">2</div>
+      <div>
+        <div class="section-title">Fase 2 — Nurturing y automatizaciones completas</div>
+        <div class="section-subtitle">Semanas 4–6 · 4 acciones · Email · WhatsApp · Reseñas</div>
+      </div>
+    </div>
+
+    <!-- ACCIÓN 2.1 -->
+    <div class="phase-action-block">
+      <div class="phase-action-header">
+        <span class="phase-action-num">2.1</span>
+        <div>
+          <div class="phase-action-title">Configurar secuencia de nurturing en ActiveCampaign</div>
+          <span class="task-tag high">Alta</span>
+        </div>
+      </div>
+      <div class="two-col">
+        <div class="info-box">
+          <strong>Cómo hacerlo:</strong><br>
+          1. En ActiveCampaign, crear una automatización por tratamiento (4: ortodoncia, implantes, blanqueamiento, general)<br>
+          2. Trigger: etiqueta <code>lead-cualificado-{tratamiento}</code> añadida al contacto<br>
+          3. Día 0: email bienvenida + PDF "Guía dental gratuita" (adjunto o link Drive)<br>
+          4. Día 3: email educativo sobre el tratamiento (generado con GPT-4o, ver código abajo)<br>
+          5. Día 7: WhatsApp con oferta primera visita gratuita vía Make + 360dialog<br>
+          6. Día 14: si no tiene cita → asignar tarea manual a recepción en Gesden
+        </div>
+        <div class="info-box">
+          <strong>Qué necesitas:</strong><br>
+          — Cuenta ActiveCampaign (plan Lite ~15€/mes hasta 500 contactos)<br>
+          — API Key ActiveCampaign para conectar con Make<br>
+          — 4 emails de nurturing redactados (uno por tratamiento, puedes usar GPT-4o)<br>
+          — PDF "Guía dental" subido a Google Drive con link público<br>
+          — Template WhatsApp <code>oferta_primera_visita_es</code> aprobado en Meta
+        </div>
+      </div>
+      <div class="code-block" style="margin-top:16px;">
+        <div class="code-header">
+          <span class="code-lang">YAML — ActiveCampaign: estructura de la secuencia de nurturing</span>
+          <div class="code-dots"><span class="dot-red"></span><span class="dot-amber"></span><span class="dot-green"></span></div>
+        </div>
+        <pre><code><span class="c-key">automation</span>:
+  <span class="c-key">name</span>: <span class="c-str">"Nurturing Implantes"</span>
+  <span class="c-key">trigger</span>: { <span class="c-key">type</span>: <span class="c-str">tag_added</span>, <span class="c-key">tag</span>: <span class="c-str">"lead-implantes"</span> }
+  <span class="c-key">steps</span>:
+    - <span class="c-key">wait</span>: <span class="c-num">0</span>
+      <span class="c-key">action</span>: <span class="c-str">send_email</span>
+      <span class="c-key">subject</span>: <span class="c-str">"Tu sonrisa merece lo mejor — Guía gratuita incluida"</span>
+    - <span class="c-key">wait</span>: <span class="c-num">3</span>
+      <span class="c-key">condition</span>: <span class="c-str">"NOT has_appointment"</span>
+      <span class="c-key">action</span>: <span class="c-str">send_email</span>
+      <span class="c-key">subject</span>: <span class="c-str">"Implantes dentales: todo lo que debes saber"</span>
+    - <span class="c-key">wait</span>: <span class="c-num">7</span>
+      <span class="c-key">condition</span>: <span class="c-str">"NOT has_appointment"</span>
+      <span class="c-key">action</span>: <span class="c-str">webhook_make</span>  <span class="c-comment"># Make envía WhatsApp vía 360dialog</span>
+    - <span class="c-key">wait</span>: <span class="c-num">14</span>
+      <span class="c-key">condition</span>: <span class="c-str">"NOT has_appointment"</span>
+      <span class="c-key">action</span>: <span class="c-str">create_task</span>
+      <span class="c-key">assignee</span>: <span class="c-str">"recepcion@dentalbaste.es"</span></code></pre>
+      </div>
+    </div>
+
+    <!-- ACCIÓN 2.2 -->
+    <div class="phase-action-block">
+      <div class="phase-action-header">
+        <span class="phase-action-num">2.2</span>
+        <div>
+          <div class="phase-action-title">Activar WhatsApp Business API con 360dialog</div>
+          <span class="task-tag high">Alta</span>
+        </div>
+      </div>
+      <div class="two-col">
+        <div class="info-box">
+          <strong>Cómo hacerlo:</strong><br>
+          1. Ir a <code>360dialog.com</code> → registrar el número de WhatsApp de la clínica<br>
+          2. Verificar el negocio en Meta Business Manager (necesario para enviar templates)<br>
+          3. Crear los templates necesarios y enviarlos a aprobación de Meta<br>
+          4. En Make, usar el módulo HTTP para llamar a la API de 360dialog<br>
+          5. Probar enviando un template a un número de prueba
+        </div>
+        <div class="info-box">
+          <strong>Templates que necesitas crear:</strong><br>
+          <code>appointment_reminder_es</code> — recordatorio 24h<br>
+          <code>appointment_reminder_2h_es</code> — recordatorio 2h<br>
+          <code>oferta_primera_visita_es</code> — nurturing día 7<br>
+          <code>solicitud_resena_es</code> — post-tratamiento<br><br>
+          Cada template tarda 24–48h en aprobarse. Enviarlos todos a la vez.
+        </div>
+      </div>
+    </div>
+
+    <!-- ACCIÓN 2.3 -->
+    <div class="phase-action-block">
+      <div class="phase-action-header">
+        <span class="phase-action-num">2.3</span>
+        <div>
+          <div class="phase-action-title">Flujo automático de reseña post-tratamiento</div>
+          <span class="task-tag medium">Media</span>
+        </div>
+      </div>
+      <div class="two-col">
+        <div class="info-box">
+          <strong>Cómo hacerlo:</strong><br>
+          1. En Gesden, marcar la cita como "completada" activa un webhook a Make<br>
+          2. Make espera 2 horas → envía WhatsApp de satisfacción (escala 1–5)<br>
+          3. Si responde ≥ 4 → Make envía link de reseña Google<br>
+          4. Si responde &lt; 4 → notificación interna a recepción + GPT-4o sugiere respuesta<br>
+          5. Monitorizar con Make + Google Places API cada 6h nuevas reseñas
+        </div>
+        <div class="info-box">
+          <strong>Qué necesitas:</strong><br>
+          — Webhook en Gesden al completar cita (configurar con soporte Gesden)<br>
+          — Template WhatsApp <code>solicitud_resena_es</code> aprobado<br>
+          — URL de perfil Google Business de Dental Basté (para el link de reseña)<br>
+          — Google Places API Key para monitorizar reseñas nuevas
+        </div>
+      </div>
+      <div class="flow-container" style="margin-top:16px;">
+        <div class="flow-title"><svg class="icon icon-b"><use href="#i-star"/></svg> Flujo 2.3 — Reseña post-tratamiento</div>
+        <div class="flow-steps">
+          <div class="flow-step trigger">
+            <div class="step-label">Trigger</div>
+            <div class="step-text">Cita "completada" en Gesden</div>
+          </div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-step action">
+            <div class="step-label">+2h</div>
+            <div class="step-text">WhatsApp satisfacción 1–5</div>
+          </div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-step condition">
+            <div class="step-label">¿≥ 4?</div>
+            <div class="step-text">Sí → link reseña Google · No → alerta recepción</div>
+          </div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-step output">
+            <div class="step-label">IA</div>
+            <div class="step-text">GPT-4o sugiere respuesta si reseña negativa</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ACCIÓN 2.4 -->
+    <div class="phase-action-block">
+      <div class="phase-action-header">
+        <span class="phase-action-num">2.4</span>
+        <div>
+          <div class="phase-action-title">Automatizar campañas de Meta Ads (nivel 1 + 2)</div>
+          <span class="task-tag high">Alta</span>
+        </div>
+      </div>
+      <div class="two-col">
+        <div class="info-box">
+          <strong>Nivel 1 — Reglas nativas (sin código, hacer ya):</strong><br>
+          En Meta Ads Manager → Reglas automáticas:<br>
+          · Pausar anuncio si CPL &gt; 20€ en los últimos 7 días<br>
+          · Aumentar presupuesto +20% si ROAS &gt; 4x<br>
+          · Alerta por email si el gasto diario supera el límite<br>
+          · Activar campaña de reactivación si no hay leads en 3 días
+        </div>
+        <div class="info-box">
+          <strong>Nivel 2 — Make (configurar en esta fase):</strong><br>
+          · Informe semanal automático: Make extrae datos de Meta → formatea → envía email cada lunes<br>
+          · Sincronizar lista de pacientes Gesden → Meta Custom Audience (para lookalikes)<br>
+          · Si campaña gasta &gt; presupuesto → notificación WhatsApp al gestor de ads<br>
+          · Conversiones offline: cita confirmada en Gesden → Make → Meta CAPI (mejora el algoritmo)
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ════ FASE 3 ════ -->
+  <section id="fase-3">
+    <div class="section-header">
+      <div class="section-icon" style="background:var(--purple-600);color:#fff;">3</div>
+      <div>
+        <div class="section-title">Fase 3 — Contenido IA y optimización</div>
+        <div class="section-subtitle">Semanas 7–12 · 4 acciones · Metricool · Copy Ads · Dashboard</div>
+      </div>
+    </div>
+
+    <!-- ACCIÓN 3.1 -->
+    <div class="phase-action-block">
+      <div class="phase-action-header">
+        <span class="phase-action-num">3.1</span>
+        <div>
+          <div class="phase-action-title">Automatizar publicaciones en redes con Metricool + GPT-4o</div>
+          <span class="task-tag high">Alta</span>
+        </div>
+      </div>
+      <div class="two-col">
+        <div class="info-box">
+          <strong>Cómo hacerlo:</strong><br>
+          1. Crear cuenta Metricool → conectar Instagram, Facebook y Google Business<br>
+          2. Obtener API Token: Metricool → Settings → API → generar token<br>
+          3. En Make: escenario "Nuevo archivo en Drive → generar caption → programar post"<br>
+          4. Módulo 1: Google Drive → Watch files in folder (<code>/Posts/</code> y <code>/Reels/</code>)<br>
+          5. Módulo 2: HTTP → OpenAI API (generar caption con GPT-4o)<br>
+          6. Módulo 3: HTTP → Metricool API (programar post)<br>
+          7. Enviar notificación para revisión antes de publicar (opcional)
+        </div>
+        <div class="info-box">
+          <strong>Qué necesitas:</strong><br>
+          — Cuenta Metricool (plan Advanced ~18€/mes para API)<br>
+          — <code>METRICOOL_API_TOKEN</code> guardado en Bitwarden<br>
+          — Instagram Business conectado a Metricool<br>
+          — Carpeta en Drive: <code>/Posts/</code> y <code>/Reels/</code> compartida con el filmmaker<br>
+          — Frecuencia objetivo: 3–4 posts/semana automáticos
+        </div>
+      </div>
+      <div class="code-block" style="margin-top:16px;">
+        <div class="code-header">
+          <span class="code-lang">Python — Generar caption + programar en Metricool API</span>
+          <div class="code-dots"><span class="dot-red"></span><span class="dot-amber"></span><span class="dot-green"></span></div>
+        </div>
+        <pre><code><span class="c-kw">import</span> openai, requests, json
+
+<span class="c-fn">def</span> <span class="c-key">generar_caption</span>(tratamiento: <span class="c-key">str</span>, tipo: <span class="c-key">str</span>) -> <span class="c-key">dict</span>:
+    prompt = <span class="c-str">f"""
+Post de Instagram/Facebook para clínica dental.
+Tipo: {tipo} (educativo|promocional|testimonio|reel)
+Tratamiento: {tratamiento}
+JSON: {{"caption": "150 palabras máx, 1 emoji/párrafo, CTA al final",
+        "hashtags": ["10 hashtags"], "mejor_hora": "HH:MM"}}
+"""</span>
+    r = openai.chat.completions.create(model=<span class="c-str">"gpt-4o"</span>,
+        messages=[{<span class="c-str">"role"</span>:<span class="c-str">"user"</span>,<span class="c-str">"content"</span>:prompt}],
+        response_format={<span class="c-str">"type"</span>:<span class="c-str">"json_object"</span>}, temperature=<span class="c-num">0.7</span>)
+    <span class="c-kw">return</span> json.loads(r.choices[<span class="c-num">0</span>].message.content)
+
+<span class="c-fn">def</span> <span class="c-key">programar_post</span>(caption: <span class="c-key">dict</span>, media_url: <span class="c-key">str</span>, fecha: <span class="c-key">str</span>) -> <span class="c-key">bool</span>:
+    texto = caption[<span class="c-str">"caption"</span>] + <span class="c-str">" "</span> + <span class="c-str">" "</span>.join(caption[<span class="c-str">"hashtags"</span>])
+    r = requests.post(<span class="c-str">"https://app.metricool.com/api/v2/scheduler/post"</span>,
+        headers={<span class="c-str">"Authorization"</span>: <span class="c-str">f"Bearer {METRICOOL_API_TOKEN}"</span>},
+        json={<span class="c-str">"text"</span>: texto, <span class="c-str">"media"</span>: [{<span class="c-str">"url"</span>: media_url}],
+              <span class="c-str">"scheduledAt"</span>: fecha, <span class="c-str">"networks"</span>: [<span class="c-str">"instagram"</span>, <span class="c-str">"facebook"</span>]})
+    <span class="c-kw">return</span> r.status_code == <span class="c-num">200</span></code></pre>
+      </div>
+    </div>
+
+    <!-- ACCIÓN 3.2 -->
+    <div class="phase-action-block">
+      <div class="phase-action-header">
+        <span class="phase-action-num">3.2</span>
+        <div>
+          <div class="phase-action-title">Generar copy para anuncios Meta Ads y Google Ads con GPT-4o</div>
+          <span class="task-tag medium">Media</span>
+        </div>
+      </div>
+      <div class="two-col">
+        <div class="info-box">
+          <strong>Cómo hacerlo:</strong><br>
+          1. Cuando cambie el tratamiento o la oferta del mes, ejecutar el script de abajo<br>
+          2. GPT-4o genera 3 variantes de headline + descripción respetando los límites de cada plataforma<br>
+          3. Copiar las variantes al panel de Meta Ads / Google Ads para crear el anuncio<br>
+          4. A/B test automático: crear 2 conjuntos de anuncios con variantes distintas y dejar correr 7 días
+        </div>
+        <div class="info-box">
+          <strong>Límites de caracteres:</strong><br>
+          Meta Ads: Headline 40 · Descripción 125 · Texto principal 125<br>
+          Google RSA: Headline 30 · Descripción 90<br><br>
+          <strong>Trigger recomendado:</strong> Ejecutar manualmente cada vez que cambia la oferta del mes (no hace falta automatizarlo en esta fase).
+        </div>
+      </div>
+      <div class="code-block" style="margin-top:16px;">
+        <div class="code-header">
+          <span class="code-lang">Python — Generador de copy para anuncios Meta / Google Ads</span>
+          <div class="code-dots"><span class="dot-red"></span><span class="dot-amber"></span><span class="dot-green"></span></div>
+        </div>
+        <pre><code><span class="c-fn">def</span> <span class="c-key">generar_copy_ads</span>(tratamiento: <span class="c-key">str</span>, plataforma: <span class="c-key">str</span>, oferta: <span class="c-key">str</span> = <span class="c-str">""</span>) -> <span class="c-key">dict</span>:
+    l = {<span class="c-str">"meta"</span>:{<span class="c-str">"h"</span>:<span class="c-num">40</span>,<span class="c-str">"d"</span>:<span class="c-num">125</span>}, <span class="c-str">"google"</span>:{<span class="c-str">"h"</span>:<span class="c-num">30</span>,<span class="c-str">"d"</span>:<span class="c-num">90</span>}}.get(plataforma, {<span class="c-str">"h"</span>:<span class="c-num">40</span>,<span class="c-str">"d"</span>:<span class="c-num">125</span>})
+    prompt = <span class="c-str">f"""
+Copy para {plataforma.upper()} Ads. Clínica dental. Tratamiento: {tratamiento}. Oferta: {oferta or "primera visita gratis"}.
+3 variantes JSON: [{{"headline":"máx {l['h']} chars","descripcion":"máx {l['d']} chars","cta":"BOOK_NOW|LEARN_MORE"}}]
+Tono: directo, confianza, sin tecnicismos. Español de España.
+"""</span>
+    r = openai.chat.completions.create(model=<span class="c-str">"gpt-4o"</span>,
+        messages=[{<span class="c-str">"role"</span>:<span class="c-str">"user"</span>,<span class="c-str">"content"</span>:prompt}],
+        response_format={<span class="c-str">"type"</span>:<span class="c-str">"json_object"</span>}, temperature=<span class="c-num">0.8</span>)
+    <span class="c-kw">return</span> json.loads(r.choices[<span class="c-num">0</span>].message.content)
+
+<span class="c-comment"># generar_copy_ads("Ortodoncia invisible", "meta", "Primera consulta gratis")</span>
+<span class="c-comment"># generar_copy_ads("Implantes dentales", "google", "Financiación sin intereses")</span></code></pre>
+      </div>
+    </div>
+
+    <!-- ACCIÓN 3.3 -->
+    <div class="phase-action-block">
+      <div class="phase-action-header">
+        <span class="phase-action-num">3.3</span>
+        <div>
+          <div class="phase-action-title">Generar copy para spots TV y emails de nurturing con GPT-4o</div>
+          <span class="task-tag medium">Media</span>
+        </div>
+      </div>
+      <div class="two-col">
+        <div class="info-box">
+          <strong>Copy para TV (coordinado con el especialista de vídeo):</strong><br>
+          1. El especialista de vídeo te da: tratamiento + precio + oferta activa<br>
+          2. Ejecutas el script → obtienes titulo_1, titulo_2, titulo_3, descripción, CTA en JSON<br>
+          3. Pasas el JSON al especialista de marketing para insertar en el slide de la TV<br>
+          4. Máximo 6 palabras por título; descripción máximo 2 líneas
+        </div>
+        <div class="info-box">
+          <strong>Emails de nurturing (4 plantillas por tratamiento):</strong><br>
+          1. Generar una plantilla base con GPT-4o por cada tratamiento: ortodoncia, implantes, blanqueamiento, periodoncia<br>
+          2. Revisar y aprobar antes de subir a ActiveCampaign<br>
+          3. Incluir siempre: dato educativo + beneficio + CTA primera visita gratuita<br>
+          4. Subject line: probar 2 variantes por A/B test en ActiveCampaign
+        </div>
+      </div>
+    </div>
+
+    <!-- ACCIÓN 3.4 -->
+    <div class="phase-action-block">
+      <div class="phase-action-header">
+        <span class="phase-action-num">3.4</span>
+        <div>
+          <div class="phase-action-title">Montar dashboard de métricas en Looker Studio</div>
+          <span class="task-tag low">Baja</span>
+        </div>
+      </div>
+      <div class="two-col">
+        <div class="info-box">
+          <strong>Cómo hacerlo:</strong><br>
+          1. Ir a <code>lookerstudio.google.com</code> → Crear informe<br>
+          2. Conectar fuentes: Google Ads, Meta Ads (vía conector oficial), GA4, ActiveCampaign<br>
+          3. Crear páginas: Captación · Conversión · Email · Redes · Resumen ejecutivo<br>
+          4. Configurar envío automático cada lunes a las 9h por email al equipo
+        </div>
+        <div class="info-box">
+          <strong>Métricas clave a incluir:</strong><br>
+          — Leads captados por canal (chatbot / web / Meta Lead Ads)<br>
+          — CPL por campaña y tratamiento<br>
+          — Tasa lead → cita (objetivo &gt; 35%)<br>
+          — No-show rate (objetivo &lt; 12%)<br>
+          — Email open rate y CTR<br>
+          — Valoración media Google Business
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- MAPA DE CONEXIONES -->
   <section id="integraciones">
     <div class="section-header">
       <div class="section-icon"><svg class="icon icon-b"><use href="#i-link"/></svg></div>
       <div>
-        <div class="section-title">Integraciones y APIs</div>
-        <div class="section-subtitle">Mapa de conexiones, credenciales y notas técnicas</div>
+        <div class="section-title">Mapa de Conexiones</div>
+        <div class="section-subtitle">Todas las integraciones y credenciales necesarias</div>
       </div>
     </div>
 
     <div class="alert alert-green">
       <span class="alert-icon"><svg class="icon icon-b"><use href="#i-lock"/></svg></span>
-      <p><strong>Gestión de credenciales:</strong> Todas las API Keys deben almacenarse en un gestor de secretos (Bitwarden Secrets Manager o similar). Nunca en texto plano ni en repositorios. Rotación trimestral obligatoria.</p>
+      <p><strong>Gestión de credenciales:</strong> Todas las API Keys se guardan en <strong>Bitwarden Secrets</strong>. Nunca en texto plano, nunca en el repositorio. Rotación trimestral obligatoria.</p>
     </div>
 
-    <h3>Mapa de Conexiones</h3>
     <div class="table-wrap">
       <table>
         <thead>
-          <tr><th>Origen</th><th>Destino</th><th>Método</th><th>Dato transferido</th><th>Frecuencia</th></tr>
+          <tr><th>Origen</th><th>Destino</th><th>Herramienta</th><th>Dato transferido</th><th>Fase</th></tr>
         </thead>
         <tbody>
-          <tr><td><strong>Web / Landing</strong></td><td>Gesden</td><td>Formulario → Make Webhook</td><td>Nombre, email, tratamiento</td><td>Tiempo real</td></tr>
-          <tr><td><strong>Chatbot GPT-4o</strong></td><td>Gesden</td><td>API REST</td><td>Lead data + score</td><td>Tiempo real</td></tr>
-          <tr><td><strong>Calendly</strong></td><td>Gesden + WhatsApp</td><td>Webhook → Make</td><td>Cita confirmada + datos</td><td>Tiempo real</td></tr>
-          <tr><td><strong>Gesden</strong></td><td>ActiveCampaign</td><td>Webhook bidireccional</td><td>Stage cambios, etiquetas</td><td>Tiempo real</td></tr>
-          <tr><td><strong>ActiveCampaign</strong></td><td>360dialog (WhatsApp)</td><td>Make</td><td>Mensajes plantilla aprobados</td><td>Programado</td></tr>
-          <tr><td><strong>Google Ads / Meta</strong></td><td>Gesden</td><td>Pixel + Offline conversions</td><td>Leads, conversiones</td><td>Diario</td></tr>
-          <tr><td><strong>Clínica (citas completadas)</strong></td><td>WhatsApp + CRM</td><td>n8n webhook</td><td>Confirmaciones, recordatorios</td><td>Programado</td></tr>
-          <tr><td><strong>Google Reviews</strong></td><td>Slack + CRM</td><td>Make + Places API</td><td>Nuevas reseñas</td><td>Cada 6h</td></tr>
+          <tr><td><strong>Instagram / Facebook DM</strong></td><td>GPT-4o + Gesden</td><td>ManyChat + Make</td><td>Mensajes, datos lead, score</td><td><span class="badge badge-rose">F0</span></td></tr>
+          <tr><td><strong>Meta Lead Ads</strong></td><td>Gesden + ActiveCampaign</td><td>Make webhook</td><td>Nombre, email, tratamiento</td><td><span class="badge badge-rose">F0</span></td></tr>
+          <tr><td><strong>Calendly</strong></td><td>Gesden + WhatsApp</td><td>Make webhook</td><td>Cita confirmada, recordatorios</td><td><span class="badge badge-blue">F1</span></td></tr>
+          <tr><td><strong>Gesden (cita completada)</strong></td><td>WhatsApp + ActiveCampaign</td><td>n8n webhook</td><td>Solicitud reseña, nurturing</td><td><span class="badge badge-teal">F2</span></td></tr>
+          <tr><td><strong>Google Drive (nuevo archivo)</strong></td><td>Metricool</td><td>Make + GPT-4o</td><td>Post programado con caption</td><td><span class="badge badge-purple">F3</span></td></tr>
+          <tr><td><strong>Google Reviews</strong></td><td>WhatsApp recepción</td><td>Make + Places API</td><td>Nueva reseña + respuesta sugerida</td><td><span class="badge badge-teal">F2</span></td></tr>
+          <tr><td><strong>Gesden (cita → paciente)</strong></td><td>Meta CAPI</td><td>Make</td><td>Conversión offline</td><td><span class="badge badge-teal">F2</span></td></tr>
         </tbody>
       </table>
     </div>
 
-    <h3>Gesden — Upsert de Contacto</h3>
-    <div class="code-block">
-      <div class="code-header">
-        <span class="code-lang">JavaScript — Gesden Contact Upsert via API</span>
-        <div class="code-dots"><span class="dot-red"></span><span class="dot-amber"></span><span class="dot-green"></span></div>
-      </div>
-      <pre><code><span class="c-kw">const</span> <span class="c-key">upsertDentalLead</span> = <span class="c-kw">async</span> (leadData) => {
-  <span class="c-kw">const</span> { nombre, email, telefono, tratamiento, leadScore } = leadData;
-
-  <span class="c-kw">const</span> payload = {
-    <span class="c-key">properties</span>: {
-      <span class="c-key">firstname</span>: nombre.split(<span class="c-str">' '</span>)[<span class="c-num">0</span>],
-      <span class="c-key">lastname</span>: nombre.split(<span class="c-str">' '</span>).slice(<span class="c-num">1</span>).join(<span class="c-str">' '</span>),
-      <span class="c-key">email</span>: email,
-      <span class="c-key">phone</span>: telefono,
-      <span class="c-key">tratamiento_interes</span>: tratamiento,
-      <span class="c-key">hs_lead_status</span>: <span class="c-str">'NEW'</span>,
-      <span class="c-key">lead_score_ia</span>: leadScore,
-      <span class="c-key">fuente_captacion</span>: <span class="c-str">'chatbot_web'</span>
-    }
-  };
-
-  <span class="c-kw">const</span> response = <span class="c-kw">await</span> <span class="c-fn">fetch</span>(
-    <span class="c-str">'https://api.hubapi.com/crm/v3/objects/contacts/upsert'</span>,
-    {
-      method: <span class="c-str">'POST'</span>,
-      headers: {
-        <span class="c-str">'Authorization'</span>: <span class="c-str">`Bearer ${process.env.GESDEN_TOKEN}`</span>,
-        <span class="c-str">'Content-Type'</span>: <span class="c-str">'application/json'</span>
-      },
-      body: JSON.<span class="c-fn">stringify</span>(payload)
-    }
-  );
-
-  <span class="c-kw">if</span> (response.ok) {
-    <span class="c-comment">// Disparar secuencia de nurturing en ActiveCampaign</span>
-    <span class="c-kw">await</span> <span class="c-fn">triggerNurturingSequence</span>(email, tratamiento);
-  }
-};</code></pre>
-    </div>
-  </section>
-
-  <!-- ════ GENERACIÓN DE CONTENIDO CON IA ════ -->
-  <section id="contenido">
-    <div class="section-header">
-      <div class="section-icon"><svg class="icon icon-b"><use href="#i-bulb"/></svg></div>
-      <div>
-        <div class="section-title">Generación de Contenido con IA</div>
-        <div class="section-subtitle">Emails de nurturing, copy para TV, publicación en redes con Metricool y respuestas a reseñas</div>
-      </div>
-    </div>
-
-    <div class="two-col">
-      <div class="card">
-        <div class="card-icon"><svg class="icon icon-b"><use href="#i-mail"/></svg></div>
-        <h4>Emails de Nurturing</h4>
-        <ul class="feature-list">
-          <li>Generar una plantilla de email por cada tratamiento principal: ortodoncia, implantes, blanqueamiento, periodoncia</li>
-          <li>Prompt: tratamiento + perfil (edad 30–55, sin tecnicismos) + CTA a primera visita gratuita</li>
-          <li>Incluir un dato educativo relevante para aumentar apertura y confianza</li>
-          <li>Revisar y aprobar antes de subir a ActiveCampaign</li>
-        </ul>
-      </div>
-      <div class="card">
-        <div class="card-icon"><svg class="icon icon-b"><use href="#i-tv"/></svg></div>
-        <h4>Copy para TV Escaparate</h4>
-        <ul class="feature-list">
-          <li>Generar titulo_1, titulo_2, titulo_3 y descripción para cada spot mensual</li>
-          <li>Input del especialista de vídeo: tratamiento + precio + oferta activa</li>
-          <li>Output en JSON para que el pipeline programático lo inserte directamente en el slide</li>
-          <li>Máximo 6 palabras por título; descripción máximo 2 líneas</li>
-        </ul>
-      </div>
-    </div>
-
-    <h3>Generador de Copy para Spots</h3>
-    <div class="code-block">
-      <div class="code-header">
-        <span class="code-lang">Python — Generador de Copy para TV con GPT-4o</span>
-        <div class="code-dots"><span class="dot-red"></span><span class="dot-amber"></span><span class="dot-green"></span></div>
-      </div>
-      <pre><code><span class="c-kw">import</span> openai, json
-
-<span class="c-fn">def</span> <span class="c-key">generar_copy_tv</span>(tratamiento: <span class="c-key">str</span>, precio: <span class="c-key">str</span>, oferta: <span class="c-key">str</span> = <span class="c-str">""</span>) -> <span class="c-key">dict</span>:
-    prompt = <span class="c-str">f"""
-Crea el copy para un slide de TV dental. Devuelve SOLO JSON válido.
-
-Tratamiento: {tratamiento}
-Precio: {precio}
-Oferta activa: {oferta if oferta else "ninguna"}
-
-Formato de respuesta (JSON):
-{{
-  "titulo_1": "máximo 4 palabras en mayúsculas",
-  "titulo_2": "beneficio principal, máximo 5 palabras",
-  "titulo_3": "detalle o puntos clave, máximo 6 palabras",
-  "descripcion": "2 líneas descriptivas, tono cercano",
-  "cta": "llamada a la acción breve"
-}}
-
-Tono: directo, confianza, sin tecnicismos. Para pacientes 30-55 años.
-"""</span>
-
-    response = openai.chat.completions.create(
-        model=<span class="c-str">"gpt-4o"</span>,
-        messages=[{<span class="c-str">"role"</span>: <span class="c-str">"user"</span>, <span class="c-str">"content"</span>: prompt}],
-        response_format={<span class="c-str">"type"</span>: <span class="c-str">"json_object"</span>},
-        temperature=<span class="c-num">0.6</span>
-    )
-
-    <span class="c-kw">return</span> json.loads(response.choices[<span class="c-num">0</span>].message.content)
-
-<span class="c-comment"># Uso: generar_copy_tv("Implantes dentales", "Desde 900€", "Financiación sin intereses")</span></code></pre>
-    </div>
-
-    <!-- METRICOOL -->
-    <h3>Automatización de Publicaciones en Redes — Metricool</h3>
-
-    <div class="two-col">
-      <div class="card">
-        <div class="card-icon"><svg class="icon icon-b"><use href="#i-trend"/></svg></div>
-        <h4>Qué automatizar con Metricool</h4>
-        <ul class="feature-list">
-          <li>Generar el caption e hashtags de cada post con GPT-4o según el tratamiento del mes</li>
-          <li>Programar automáticamente la publicación vía Metricool API (Instagram, Facebook, Google Business)</li>
-          <li>Disparador: Make detecta nuevo vídeo o imagen en Google Drive → genera copy → programa en Metricool</li>
-          <li>Frecuencia sugerida: 3–4 posts/semana generados y programados de forma automática</li>
-        </ul>
-      </div>
-      <div class="card">
-        <div class="card-icon"><svg class="icon icon-b"><use href="#i-gear"/></svg></div>
-        <h4>Tipos de post generados por IA</h4>
-        <ul class="feature-list">
-          <li><strong>Educativo:</strong> "¿Sabías que…?" — dato dental relevante + CTA a reserva</li>
-          <li><strong>Promocional:</strong> Tratamiento del mes con precio/oferta + link en bio</li>
-          <li><strong>Testimonio:</strong> Cita del paciente + resultado (antes/después)</li>
-          <li><strong>Reel/vídeo:</strong> Caption + hashtags optimizados para el clip del filmmaker</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="flow-container">
-      <div class="flow-title"><svg class="icon icon-b"><use href="#i-trend"/></svg> Flujo — GPT-4o genera copy → Metricool programa el post</div>
-      <div class="flow-steps">
-        <div class="flow-step trigger">
-          <div class="step-label">Trigger</div>
-          <div class="step-text">Make detecta archivo nuevo en Google Drive (<code>/Reels/</code> o <code>/Posts/</code>)</div>
-        </div>
-        <div class="flow-arrow">→</div>
-        <div class="flow-step action">
-          <div class="step-label">IA</div>
-          <div class="step-text">GPT-4o genera caption + 10 hashtags según tipo y tratamiento</div>
-        </div>
-        <div class="flow-arrow">→</div>
-        <div class="flow-step action">
-          <div class="step-label">Revisión</div>
-          <div class="step-text">Notificación por email/WhatsApp al responsable para aprobar o editar</div>
-        </div>
-        <div class="flow-arrow">→</div>
-        <div class="flow-step output">
-          <div class="step-label">Metricool</div>
-          <div class="step-text">API programa el post en Instagram + Facebook + Google Business en el mejor horario</div>
-        </div>
-      </div>
-    </div>
-
-    <div class="code-block">
-      <div class="code-header">
-        <span class="code-lang">Python — Generador de caption + programación en Metricool API</span>
-        <div class="code-dots"><span class="dot-red"></span><span class="dot-amber"></span><span class="dot-green"></span></div>
-      </div>
-      <pre><code><span class="c-kw">import</span> openai, requests, json
-
-<span class="c-fn">def</span> <span class="c-key">generar_caption_post</span>(tratamiento: <span class="c-key">str</span>, tipo_post: <span class="c-key">str</span>, oferta: <span class="c-key">str</span> = <span class="c-str">""</span>) -> <span class="c-key">dict</span>:
-    prompt = <span class="c-str">f"""
-Crea el contenido para un post de Instagram/Facebook de una clínica dental.
-
-Tipo: {tipo_post}  (educativo | promocional | testimonio | reel)
-Tratamiento: {tratamiento}
-Oferta activa: {oferta if oferta else "ninguna"}
-
-Devuelve JSON:
-{{
-  "caption": "Texto del post. Máximo 150 palabras. Incluye 1 emoji por párrafo. CTA al final.",
-  "hashtags": ["lista", "de", "10", "hashtags", "relevantes"],
-  "mejor_hora": "HH:MM (hora pico para dental en España)",
-  "redes": ["instagram", "facebook", "google_business"]
-}}
-
-Tono: cercano, profesional, en español. Evitar tecnicismos.
-"""</span>
-
-    response = openai.chat.completions.create(
-        model=<span class="c-str">"gpt-4o"</span>,
-        messages=[{<span class="c-str">"role"</span>: <span class="c-str">"user"</span>, <span class="c-str">"content"</span>: prompt}],
-        response_format={<span class="c-str">"type"</span>: <span class="c-str">"json_object"</span>},
-        temperature=<span class="c-num">0.7</span>
-    )
-    <span class="c-kw">return</span> json.loads(response.choices[<span class="c-num">0</span>].message.content)
-
-
-<span class="c-fn">def</span> <span class="c-key">programar_en_metricool</span>(caption_data: <span class="c-key">dict</span>, media_url: <span class="c-key">str</span>, fecha_hora: <span class="c-key">str</span>) -> <span class="c-key">bool</span>:
-    <span class="c-comment"># Metricool API — https://developers.metricool.com</span>
-    endpoint = <span class="c-str">"https://app.metricool.com/api/v2/scheduler/post"</span>
-    headers = {
-        <span class="c-str">"Authorization"</span>: <span class="c-str">f"Bearer {METRICOOL_API_TOKEN}"</span>,
-        <span class="c-str">"Content-Type"</span>: <span class="c-str">"application/json"</span>
-    }
-    texto_completo = caption_data[<span class="c-str">"caption"</span>] + <span class="c-str">" "</span> + <span class="c-str">" "</span>.join(caption_data[<span class="c-str">"hashtags"</span>])
-    payload = {
-        <span class="c-str">"text"</span>: texto_completo,
-        <span class="c-str">"media"</span>: [{<span class="c-str">"url"</span>: media_url}],
-        <span class="c-str">"scheduledAt"</span>: fecha_hora,  <span class="c-comment"># ISO 8601: "2026-04-01T10:00:00Z"</span>
-        <span class="c-str">"networks"</span>: caption_data[<span class="c-str">"redes"</span>]
-    }
-    response = requests.post(endpoint, headers=headers, json=payload)
-    <span class="c-kw">return</span> response.status_code == <span class="c-num">200</span>
-
-
-<span class="c-comment"># Uso combinado:</span>
-<span class="c-comment"># caption = generar_caption_post("Ortodoncia invisible", "promocional", "Primera consulta gratis")</span>
-<span class="c-comment"># programar_en_metricool(caption, "https://drive.../reel_ortodoncia.mp4", "2026-04-01T10:00:00Z")</span></code></pre>
-    </div>
-
-    <div class="alert alert-blue">
-      <span class="alert-icon"><svg class="icon icon-b"><use href="#i-bulb"/></svg></span>
-      <p><strong>Credencial necesaria:</strong> Obtener el <code>METRICOOL_API_TOKEN</code> desde Metricool → Settings → API. Almacenarlo en Bitwarden Secrets o como variable de entorno en Make/n8n. La API de Metricool permite programar posts en Instagram Business, Facebook Page y Google Business Profile desde una sola llamada.</p>
-    </div>
-
-    <h3>Análisis y Respuesta a Reseñas Google</h3>
-    <div class="code-block">
-      <div class="code-header">
-        <span class="code-lang">Python — Análisis de Sentimiento y Respuesta Automática</span>
-        <div class="code-dots"><span class="dot-red"></span><span class="dot-amber"></span><span class="dot-green"></span></div>
-      </div>
-      <pre><code><span class="c-fn">def</span> <span class="c-key">analizar_resena</span>(texto_resena: <span class="c-key">str</span>, puntuacion: <span class="c-key">int</span>) -> <span class="c-key">dict</span>:
-    prompt = <span class="c-str">f"""
-Analiza esta reseña de una clínica dental y genera una respuesta profesional.
-
-Reseña ({puntuacion}/5 estrellas): "{texto_resena}"
-
-Devuelve JSON con:
-{{
-  "sentimiento": "positivo | negativo | neutro",
-  "tema_principal": "descripción breve del tema",
-  "respuesta": "respuesta profesional en primera persona del plural (nosotros), máximo 3 frases",
-  "requiere_atencion": true/false
-}}
-
-Si la puntuación es < 3, requiere_atencion debe ser true.
-Tono: empático, profesional, sin defensividad.
-"""</span>
-
-    response = openai.chat.completions.create(
-        model=<span class="c-str">"gpt-4o"</span>,
-        messages=[{<span class="c-str">"role"</span>: <span class="c-str">"user"</span>, <span class="c-str">"content"</span>: prompt}],
-        response_format={<span class="c-str">"type"</span>: <span class="c-str">"json_object"</span>}
-    )
-
-    resultado = json.loads(response.choices[<span class="c-num">0</span>].message.content)
-
-    <span class="c-kw">if</span> resultado[<span class="c-str">"requiere_atencion"</span>]:
-        <span class="c-fn">notificar_recepcion</span>(texto_resena, resultado[<span class="c-str">"respuesta"</span>])
-
-    <span class="c-kw">return</span> resultado</code></pre>
+    <h3>Credenciales que necesitas obtener</h3>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Credencial</th><th>Dónde obtenerla</th><th>Guardar como</th><th>Fase</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>OpenAI API Key</strong></td><td>platform.openai.com → API Keys</td><td><code>OPENAI_API_KEY</code></td><td><span class="badge badge-rose">F0</span></td></tr>
+          <tr><td><strong>Gesden API Key</strong></td><td>Pedir a soporte Gesden</td><td><code>GESDEN_API_KEY</code></td><td><span class="badge badge-rose">F0</span></td></tr>
+          <tr><td><strong>ActiveCampaign API Key</strong></td><td>AC → Settings → Developer</td><td><code>AC_API_KEY</code></td><td><span class="badge badge-rose">F0</span></td></tr>
+          <tr><td><strong>360dialog API Key</strong></td><td>hub.360dialog.com → API</td><td><code>WHATSAPP_API_KEY</code></td><td><span class="badge badge-blue">F1</span></td></tr>
+          <tr><td><strong>Metricool API Token</strong></td><td>Metricool → Settings → API</td><td><code>METRICOOL_API_TOKEN</code></td><td><span class="badge badge-purple">F3</span></td></tr>
+          <tr><td><strong>Google Places API Key</strong></td><td>console.cloud.google.com</td><td><code>GOOGLE_PLACES_KEY</code></td><td><span class="badge badge-teal">F2</span></td></tr>
+        </tbody>
+      </table>
     </div>
   </section>
 

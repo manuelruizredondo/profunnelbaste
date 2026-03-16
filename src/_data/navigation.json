@@ -25,10 +25,11 @@
           "url": "/especialista-ia.html",
           "page": "especialista-ia",
           "subsections": [
-            { "label": "Chatbot IA", "url": "/especialista-ia.html#chatbot" },
-            { "label": "Automatizaciones", "url": "/especialista-ia.html#automatizaciones" },
-            { "label": "Integraciones", "url": "/especialista-ia.html#integraciones" },
-            { "label": "Contenido con IA", "url": "/especialista-ia.html#contenido" }
+            { "label": "Fase 0 — Arranque", "url": "/especialista-ia.html#fase-0" },
+            { "label": "Fase 1 — Chatbot", "url": "/especialista-ia.html#fase-1" },
+            { "label": "Fase 2 — Nurturing", "url": "/especialista-ia.html#fase-2" },
+            { "label": "Fase 3 — Contenido", "url": "/especialista-ia.html#fase-3" },
+            { "label": "Mapa de conexiones", "url": "/especialista-ia.html#integraciones" }
           ]
         },
         {
