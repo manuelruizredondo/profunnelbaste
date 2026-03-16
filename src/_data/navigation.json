@@ -59,9 +59,11 @@
           "url": "/especialista-video.html",
           "page": "especialista-video",
           "subsections": [
-            { "label": "Qué Grabar", "url": "/especialista-video.html#que-grabar" },
-            { "label": "Cómo Grabar", "url": "/especialista-video.html#como-grabar" },
-            { "label": "Guía de Edición", "url": "/especialista-video.html#edicion" }
+            { "label": "Fase 0 — Preparación", "url": "/especialista-video.html#fase-0" },
+            { "label": "Qué grabar", "url": "/especialista-video.html#que-grabar" },
+            { "label": "Cómo grabar (2 cámaras)", "url": "/especialista-video.html#como-grabar" },
+            { "label": "Edición en Premiere", "url": "/especialista-video.html#edicion" },
+            { "label": "Entrega y formatos", "url": "/especialista-video.html#entrega" }
           ]
         },
         {
