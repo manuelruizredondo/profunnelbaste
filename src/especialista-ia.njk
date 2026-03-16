@@ -21,7 +21,7 @@ permalink: /especialista-ia.html
 
   <div class="alert alert-blue">
     <span class="alert-icon"><svg class="icon icon-b"><use href="#i-bot"/></svg></span>
-    <p><strong>Este rol cubre:</strong> la configuración y mantenimiento del chatbot (ManyChat + GPT-4o), todos los flujos de automatización en Make y n8n, las integraciones entre plataformas (HubSpot, Calendly, WhatsApp, email) y la generación programática de contenido textual con IA.</p>
+    <p><strong>Este rol cubre:</strong> la configuración y mantenimiento del chatbot (ManyChat + GPT-4o), todos los flujos de automatización en Make y n8n, las integraciones entre plataformas (Gesden, Calendly, WhatsApp, email) y la generación programática de contenido textual con IA.</p>
   </div>
 
   <!-- ════ TAREAS ════ -->
@@ -62,8 +62,8 @@ permalink: /especialista-ia.html
           <li class="task-item priority">
             <span class="task-checkbox"></span>
             <div class="task-content">
-              <div class="task-title">Conectar chatbot con HubSpot CRM</div>
-              <div class="task-detail">Upsert de contacto vía API de HubSpot cada vez que el lead proporciona datos. Asignar propiedades: tratamiento_interes, lead_score_ia, fuente_captacion. Disparar secuencia de nurturing en ActiveCampaign al crear el contacto.</div>
+              <div class="task-title">Conectar chatbot con Gesden</div>
+              <div class="task-detail">Upsert de contacto vía API de Gesden cada vez que el lead proporciona datos. Asignar propiedades: tratamiento_interes, lead_score_ia, fuente_captacion. Disparar secuencia de nurturing en ActiveCampaign al crear el contacto.</div>
               <span class="task-tag critical">Crítico</span>
             </div>
           </li>
@@ -90,15 +90,15 @@ permalink: /especialista-ia.html
           <li class="task-item">
             <span class="task-checkbox"></span>
             <div class="task-content">
-              <div class="task-title">Montar escenario Make: Calendly → HubSpot → notificaciones</div>
-              <div class="task-detail">Trigger: nueva cita en Calendly. Acciones: actualizar lifecycle en HubSpot (→ "opportunity"), enviar email de confirmación automático, programar SMS recordatorio 24h antes y WhatsApp 2h antes.</div>
+              <div class="task-title">Montar escenario Make: Calendly → Gesden → notificaciones</div>
+              <div class="task-detail">Trigger: nueva cita en Calendly. Acciones: actualizar lifecycle en Gesden (→ "opportunity"), enviar email de confirmación automático, programar SMS recordatorio 24h antes y WhatsApp 2h antes.</div>
               <span class="task-tag high">Alta</span>
             </div>
           </li>
           <li class="task-item">
             <span class="task-checkbox"></span>
             <div class="task-content">
-              <div class="task-title">Configurar secuencia de nurturing post-lead en HubSpot / ActiveCampaign</div>
+              <div class="task-title">Configurar secuencia de nurturing post-lead en Gesden / ActiveCampaign</div>
               <div class="task-detail">Día 0: email bienvenida + guía dental gratuita. Día 3: email educativo según tratamiento de interés (generado con GPT-4o). Día 7: WhatsApp con oferta primera visita. Día 14: asignar a comercial si no ha convertido.</div>
               <span class="task-tag high">Alta</span>
             </div>
@@ -135,7 +135,7 @@ permalink: /especialista-ia.html
             <span class="task-checkbox"></span>
             <div class="task-content">
               <div class="task-title">Lead scoring avanzado con IA predictiva</div>
-              <div class="task-detail">Usar datos históricos de HubSpot para entrenar un modelo de puntuación. Variables: tratamiento, canal de entrada, interacciones, tiempo de respuesta. Integrar score en pipeline de ventas.</div>
+              <div class="task-detail">Usar datos históricos de Gesden para entrenar un modelo de puntuación. Variables: tratamiento, canal de entrada, interacciones, tiempo de respuesta. Integrar score en pipeline de ventas.</div>
               <span class="task-tag high">Alta</span>
             </div>
           </li>
@@ -159,7 +159,7 @@ permalink: /especialista-ia.html
             <span class="task-checkbox"></span>
             <div class="task-content">
               <div class="task-title">Dashboard Looker Studio con métricas de chatbot e IA</div>
-              <div class="task-detail">Leads captados por canal (chatbot/web/DM), tasa de cualificación, conversión lead→cita, CSAT del chat. Conectar a HubSpot y datos de Calendly.</div>
+              <div class="task-detail">Leads captados por canal (chatbot/web/DM), tasa de cualificación, conversión lead→cita, CSAT del chat. Conectar a Gesden y datos de Calendly.</div>
               <span class="task-tag low">Baja</span>
             </div>
           </li>
@@ -186,7 +186,7 @@ permalink: /especialista-ia.html
           <li>Gestiona los flujos de conversación en Instagram DM y Facebook Messenger</li>
           <li>Captura el primer mensaje y decide si escalar a GPT-4o o responder con plantilla</li>
           <li>Recoge nombre, email y teléfono cuando el usuario los proporciona</li>
-          <li>Activa la integración con HubSpot vía webhook cuando hay datos suficientes</li>
+          <li>Activa la integración con Gesden vía webhook cuando hay datos suficientes</li>
         </ul>
       </div>
       <div class="card">
@@ -293,7 +293,7 @@ Tono: cercano, profesional, en español. Respuestas máximo 3 frases.
     </div>
 
     <div class="info-box">
-      <strong>Make vs n8n:</strong> Usar <strong>Make</strong> para flujos generales entre plataformas (Calendly, HubSpot, WhatsApp, email). Usar <strong>n8n self-hosted</strong> (VPS en España) para cualquier flujo que maneje datos clínicos o historial de pacientes — obligatorio por RGPD.
+      <strong>Make vs n8n:</strong> Usar <strong>Make</strong> para flujos generales entre plataformas (Calendly, Gesden, WhatsApp, email). Usar <strong>n8n self-hosted</strong> (VPS en España) para cualquier flujo que maneje datos clínicos o historial de pacientes — obligatorio por RGPD.
     </div>
 
     <!-- FLUJO 1 -->
@@ -317,7 +317,7 @@ Tono: cercano, profesional, en español. Respuestas máximo 3 frases.
         <div class="flow-arrow">→</div>
         <div class="flow-step action">
           <div class="step-label">Acción</div>
-          <div class="step-text">Crea contacto en HubSpot + asigna etiqueta de interés</div>
+          <div class="step-text">Crea contacto en Gesden + asigna etiqueta de interés</div>
         </div>
         <div class="flow-arrow">→</div>
         <div class="flow-step output">
@@ -372,7 +372,7 @@ Tono: cercano, profesional, en español. Respuestas máximo 3 frases.
   <span class="c-key">"steps"</span>: [
     {
       <span class="c-key">"id"</span>: <span class="c-num">1</span>,
-      <span class="c-key">"app"</span>: <span class="c-str">"hubspot"</span>,
+      <span class="c-key">"app"</span>: <span class="c-str">"gesden"</span>,
       <span class="c-key">"action"</span>: <span class="c-str">"update_contact"</span>,
       <span class="c-key">"data"</span>: {
         <span class="c-key">"lifecycle_stage"</span>: <span class="c-str">"opportunity"</span>,
@@ -403,7 +403,7 @@ Tono: cercano, profesional, en español. Respuestas máximo 3 frases.
       <div class="flow-steps">
         <div class="flow-step trigger">
           <div class="step-label">Trigger</div>
-          <div class="step-text">Nuevo contacto en HubSpot sin cita confirmada</div>
+          <div class="step-text">Nuevo contacto en Gesden sin cita confirmada</div>
         </div>
         <div class="flow-arrow">→</div>
         <div class="flow-step action">
@@ -430,7 +430,7 @@ Tono: cercano, profesional, en español. Respuestas máximo 3 frases.
 
     <div class="code-block">
       <div class="code-header">
-        <span class="code-lang">YAML — HubSpot / ActiveCampaign: Nurture Sequence</span>
+        <span class="code-lang">YAML — Gesden / ActiveCampaign: Nurture Sequence</span>
         <div class="code-dots"><span class="dot-red"></span><span class="dot-amber"></span><span class="dot-green"></span></div>
       </div>
       <pre><code><span class="c-key">automation</span>:
@@ -515,22 +515,22 @@ Tono: cercano, profesional, en español. Respuestas máximo 3 frases.
           <tr><th>Origen</th><th>Destino</th><th>Método</th><th>Dato transferido</th><th>Frecuencia</th></tr>
         </thead>
         <tbody>
-          <tr><td><strong>Web / Landing</strong></td><td>HubSpot CRM</td><td>Formulario → Make Webhook</td><td>Nombre, email, tratamiento</td><td>Tiempo real</td></tr>
-          <tr><td><strong>Chatbot GPT-4o</strong></td><td>HubSpot CRM</td><td>API REST</td><td>Lead data + score</td><td>Tiempo real</td></tr>
-          <tr><td><strong>Calendly</strong></td><td>HubSpot + WhatsApp</td><td>Webhook → Make</td><td>Cita confirmada + datos</td><td>Tiempo real</td></tr>
-          <tr><td><strong>HubSpot</strong></td><td>ActiveCampaign</td><td>Webhook bidireccional</td><td>Stage cambios, etiquetas</td><td>Tiempo real</td></tr>
+          <tr><td><strong>Web / Landing</strong></td><td>Gesden</td><td>Formulario → Make Webhook</td><td>Nombre, email, tratamiento</td><td>Tiempo real</td></tr>
+          <tr><td><strong>Chatbot GPT-4o</strong></td><td>Gesden</td><td>API REST</td><td>Lead data + score</td><td>Tiempo real</td></tr>
+          <tr><td><strong>Calendly</strong></td><td>Gesden + WhatsApp</td><td>Webhook → Make</td><td>Cita confirmada + datos</td><td>Tiempo real</td></tr>
+          <tr><td><strong>Gesden</strong></td><td>ActiveCampaign</td><td>Webhook bidireccional</td><td>Stage cambios, etiquetas</td><td>Tiempo real</td></tr>
           <tr><td><strong>ActiveCampaign</strong></td><td>360dialog (WhatsApp)</td><td>Make</td><td>Mensajes plantilla aprobados</td><td>Programado</td></tr>
-          <tr><td><strong>Google Ads / Meta</strong></td><td>HubSpot CRM</td><td>Pixel + Offline conversions</td><td>Leads, conversiones</td><td>Diario</td></tr>
+          <tr><td><strong>Google Ads / Meta</strong></td><td>Gesden</td><td>Pixel + Offline conversions</td><td>Leads, conversiones</td><td>Diario</td></tr>
           <tr><td><strong>Clínica (citas completadas)</strong></td><td>WhatsApp + CRM</td><td>n8n webhook</td><td>Confirmaciones, recordatorios</td><td>Programado</td></tr>
           <tr><td><strong>Google Reviews</strong></td><td>Slack + CRM</td><td>Make + Places API</td><td>Nuevas reseñas</td><td>Cada 6h</td></tr>
         </tbody>
       </table>
     </div>
 
-    <h3>HubSpot — Upsert de Contacto</h3>
+    <h3>Gesden — Upsert de Contacto</h3>
     <div class="code-block">
       <div class="code-header">
-        <span class="code-lang">JavaScript — HubSpot Contact Upsert via API</span>
+        <span class="code-lang">JavaScript — Gesden Contact Upsert via API</span>
         <div class="code-dots"><span class="dot-red"></span><span class="dot-amber"></span><span class="dot-green"></span></div>
       </div>
       <pre><code><span class="c-kw">const</span> <span class="c-key">upsertDentalLead</span> = <span class="c-kw">async</span> (leadData) => {
@@ -554,7 +554,7 @@ Tono: cercano, profesional, en español. Respuestas máximo 3 frases.
     {
       method: <span class="c-str">'POST'</span>,
       headers: {
-        <span class="c-str">'Authorization'</span>: <span class="c-str">`Bearer ${process.env.HUBSPOT_TOKEN}`</span>,
+        <span class="c-str">'Authorization'</span>: <span class="c-str">`Bearer ${process.env.GESDEN_TOKEN}`</span>,
         <span class="c-str">'Content-Type'</span>: <span class="c-str">'application/json'</span>
       },
       body: JSON.<span class="c-fn">stringify</span>(payload)

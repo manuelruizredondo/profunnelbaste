@@ -224,7 +224,7 @@
 
   <div class="alert alert-blue">
     <span class="alert-icon"><svg class="icon icon-b"><use href="#i-globe"/></svg></span>
-    <p><strong>Este rol cubre:</strong> la configuración del tracking (GTM, GA4, Meta Pixel), la creación y optimización de landing pages por tratamiento, el SEO local, la integración del chatbot y el widget de reserva en la web, y la sincronización de formularios con HubSpot.</p>
+    <p><strong>Este rol cubre:</strong> la configuración del tracking (GTM, GA4, Meta Pixel), la creación y optimización de landing pages por tratamiento, el SEO local, la integración del chatbot y el widget de reserva en la web, y la sincronización de formularios con Gesden.</p>
   </div>
 
   <!-- ════ TAREAS ════ -->
@@ -283,7 +283,7 @@
             <span class="task-checkbox"></span>
             <div class="task-content">
               <div class="task-title">Embeber Calendly / Cal.com en web y landing</div>
-              <div class="task-detail">Widget inline en la página de contacto y en todas las landings. Sincronización con Google Calendar de la clínica. Configurar confirmación de evento → webhook a HubSpot (coordinar con especialista IA).</div>
+              <div class="task-detail">Widget inline en la página de contacto y en todas las landings. Sincronización con Google Calendar de la clínica. Configurar confirmación de evento → webhook a Gesden (coordinar con especialista IA).</div>
               <span class="task-tag high">Alta</span>
             </div>
           </li>
@@ -339,15 +339,15 @@
           <div class="phase-badge web">3</div>
           <div>
             <div class="phase-title">Fase 3 — Optimización y CRO (Semanas 9–12)</div>
-            <div class="phase-dates">A/B testing · velocidad · HubSpot sync</div>
+            <div class="phase-dates">A/B testing · velocidad · Gesden sync</div>
           </div>
         </div>
         <ul class="task-list">
           <li class="task-item">
             <span class="task-checkbox"></span>
             <div class="task-content">
-              <div class="task-title">Sincronización bidireccional HubSpot ↔ formularios web</div>
-              <div class="task-detail">Todos los formularios envían datos directamente a HubSpot via API o formulario nativo. Webhook para actualizar etapas del pipeline cuando cambia el estado en CRM.</div>
+              <div class="task-title">Sincronización bidireccional Gesden ↔ formularios web</div>
+              <div class="task-detail">Todos los formularios envían datos directamente a Gesden via API o formulario nativo. Webhook para actualizar etapas del pipeline cuando cambia el estado en CRM.</div>
               <span class="task-tag medium">Media</span>
             </div>
           </li>
@@ -751,7 +751,7 @@ fbq(<span class="c-str">'track'</span>, <span class="c-str">'CompleteRegistratio
       <div class="section-icon"><svg class="icon icon-b"><use href="#i-link"/></svg></div>
       <div>
         <div class="section-title">Integraciones Web</div>
-        <div class="section-subtitle">Calendly · Chatbot · Formularios HubSpot · Mapa de conexiones</div>
+        <div class="section-subtitle">Calendly · Chatbot · Formularios Gesden · Mapa de conexiones</div>
       </div>
     </div>
 
@@ -784,10 +784,10 @@ fbq(<span class="c-str">'track'</span>, <span class="c-str">'CompleteRegistratio
 &lt;/<span class="c-kw">script</span>&gt;</code></pre>
     </div>
 
-    <h3>Formulario de Captación — Integración con HubSpot</h3>
+    <h3>Formulario de Captación — Integración con Gesden</h3>
     <div class="code-block">
       <div class="code-header">
-        <span class="code-lang">HTML + JavaScript — Formulario con envío a HubSpot API</span>
+        <span class="code-lang">HTML + JavaScript — Formulario con envío a Gesden API</span>
         <div class="code-dots"><span class="dot-red"></span><span class="dot-amber"></span><span class="dot-green"></span></div>
       </div>
       <pre><code>&lt;<span class="c-kw">form</span> id=<span class="c-str">"lead-form"</span>&gt;
@@ -808,7 +808,7 @@ document.getElementById(<span class="c-str">'lead-form'</span>).addEventListener
   e.preventDefault();
   const data = Object.fromEntries(new FormData(e.target));
 
-  <span class="c-comment">// Enviar a HubSpot Forms API</span>
+  <span class="c-comment">// Enviar a Gesden API</span>
   await fetch(<span class="c-str">'https://api.hsforms.com/submissions/v3/integration/submit/TU_PORTAL_ID/TU_FORM_ID'</span>, {
     method: <span class="c-str">'POST'</span>,
     headers: { <span class="c-str">'Content-Type'</span>: <span class="c-str">'application/json'</span> },
@@ -836,11 +836,11 @@ document.getElementById(<span class="c-str">'lead-form'</span>).addEventListener
           <tr><th>Elemento web</th><th>Destino</th><th>Método</th><th>Dato enviado</th></tr>
         </thead>
         <tbody>
-          <tr><td><strong>Formulario de captación</strong></td><td>HubSpot CRM</td><td>HubSpot Forms API</td><td>Nombre, email, teléfono, tratamiento</td></tr>
-          <tr><td><strong>Widget Calendly</strong></td><td>HubSpot + Make</td><td>Webhook Calendly</td><td>Cita confirmada, datos del lead</td></tr>
+          <tr><td><strong>Formulario de captación</strong></td><td>Gesden</td><td>Gesden API</td><td>Nombre, email, teléfono, tratamiento</td></tr>
+          <tr><td><strong>Widget Calendly</strong></td><td>Gesden + Make</td><td>Webhook Calendly</td><td>Cita confirmada, datos del lead</td></tr>
           <tr><td><strong>Widget chatbot</strong></td><td>Backend IA (Make/n8n)</td><td>Iframe / WebSocket</td><td>Mensajes de conversación</td></tr>
           <tr><td><strong>GTM — form_submit</strong></td><td>GA4 + Meta Pixel</td><td>dataLayer push</td><td>Evento de conversión + tratamiento</td></tr>
-          <tr><td><strong>GTM — booking_completed</strong></td><td>GA4 + Meta Pixel + HubSpot</td><td>dataLayer push</td><td>Conversión de cita</td></tr>
+          <tr><td><strong>GTM — booking_completed</strong></td><td>GA4 + Meta Pixel + Gesden</td><td>dataLayer push</td><td>Conversión de cita</td></tr>
           <tr><td><strong>Landing /escaparate</strong></td><td>GA4 + Calendly</td><td>UTM params + dataLayer</td><td>Fuente = qr_escaparate</td></tr>
         </tbody>
       </table>

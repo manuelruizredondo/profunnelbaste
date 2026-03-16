@@ -314,7 +314,7 @@ title: Pro Funnel Basté — Documentación Técnica y Operativa
       <div class="card">
         <div class="card-icon"><svg class="icon icon-b"><use href="#i-clipboard"/></svg></div>
         <h4>CRM &amp; Email</h4>
-        <p>HubSpot CRM (tier gratuito + Sales Hub). ActiveCampaign para email marketing y automatizaciones avanzadas de nurturing.</p>
+        <p>Gesden como software de gestión dental (pacientes, citas, historial clínico). ActiveCampaign para email marketing y automatizaciones de nurturing.</p>
       </div>
       <div class="card">
         <div class="card-icon"><svg class="icon icon-b"><use href="#i-phone"/></svg></div>
@@ -343,8 +343,8 @@ title: Pro Funnel Basté — Documentación Técnica y Operativa
         </thead>
         <tbody>
           <tr>
-            <td><strong>HubSpot CRM</strong></td>
-            <td>Gestión de contactos, pipeline de citas, historial de pacientes</td>
+            <td><strong>Gesden</strong></td>
+            <td>Software de gestión dental — pacientes, citas, historial clínico, facturación</td>
             <td>Marketing Manager</td>
             <td><span class="pill badge-purple">CRM</span></td>
             <td><span class="pill badge-rose">Crítico</span></td>
@@ -488,7 +488,7 @@ title: Pro Funnel Basté — Documentación Técnica y Operativa
         <div class="flow-arrow">→</div>
         <div class="flow-step action">
           <div class="step-label">Acción</div>
-          <div class="step-text">Crea contacto en HubSpot + asigna etiqueta de interés</div>
+          <div class="step-text">Crea contacto en Gesden + asigna etiqueta de interés</div>
         </div>
         <div class="flow-arrow">→</div>
         <div class="flow-step output">
@@ -535,7 +535,7 @@ title: Pro Funnel Basté — Documentación Técnica y Operativa
       <div class="flow-steps">
         <div class="flow-step trigger">
           <div class="step-label">Trigger</div>
-          <div class="step-text">Nuevo contacto en HubSpot sin cita confirmada</div>
+          <div class="step-text">Nuevo contacto en Gesden sin cita confirmada</div>
         </div>
         <div class="flow-arrow">→</div>
         <div class="flow-step action">
@@ -626,12 +626,12 @@ title: Pro Funnel Basté — Documentación Técnica y Operativa
           <tr><th>Origen</th><th>Destino</th><th>Método</th><th>Dato transferido</th><th>Frecuencia</th></tr>
         </thead>
         <tbody>
-          <tr><td><strong>Web / Landing</strong></td><td>HubSpot CRM</td><td>Formulario → Make Webhook</td><td>Nombre, email, tratamiento</td><td>Tiempo real</td></tr>
-          <tr><td><strong>Chatbot GPT-4o</strong></td><td>HubSpot CRM</td><td>API REST</td><td>Lead data + score</td><td>Tiempo real</td></tr>
-          <tr><td><strong>Calendly</strong></td><td>HubSpot + Twilio</td><td>Webhook → Make</td><td>Cita confirmada + datos</td><td>Tiempo real</td></tr>
-          <tr><td><strong>HubSpot</strong></td><td>ActiveCampaign</td><td>Webhook bidireccional</td><td>Stage cambios, etiquetas</td><td>Tiempo real</td></tr>
+          <tr><td><strong>Web / Landing</strong></td><td>Gesden</td><td>Formulario → Make Webhook</td><td>Nombre, email, tratamiento</td><td>Tiempo real</td></tr>
+          <tr><td><strong>Chatbot GPT-4o</strong></td><td>Gesden</td><td>API REST</td><td>Lead data + score</td><td>Tiempo real</td></tr>
+          <tr><td><strong>Calendly</strong></td><td>Gesden + Twilio</td><td>Webhook → Make</td><td>Cita confirmada + datos</td><td>Tiempo real</td></tr>
+          <tr><td><strong>Gesden</strong></td><td>ActiveCampaign</td><td>Webhook bidireccional</td><td>Stage cambios, etiquetas</td><td>Tiempo real</td></tr>
           <tr><td><strong>ActiveCampaign</strong></td><td>360dialog (WhatsApp)</td><td>Make / Zapier</td><td>Mensajes plantilla</td><td>Programado</td></tr>
-          <tr><td><strong>Google Ads / Meta</strong></td><td>HubSpot CRM</td><td>Pixel + Offline conversions</td><td>Leads, conversiones</td><td>Diario</td></tr>
+          <tr><td><strong>Google Ads / Meta</strong></td><td>Gesden</td><td>Pixel + Offline conversions</td><td>Leads, conversiones</td><td>Diario</td></tr>
           <tr><td><strong>Clínica (citas)</strong></td><td>Twilio SMS</td><td>n8n webhook</td><td>Confirmaciones, recordatorios</td><td>Programado</td></tr>
           <tr><td><strong>Google Reviews</strong></td><td>Slack + CRM</td><td>Make + Places API</td><td>Nuevas reseñas</td><td>Cada 6h</td></tr>
         </tbody>
@@ -641,7 +641,7 @@ title: Pro Funnel Basté — Documentación Técnica y Operativa
     <div class="ref-links">
       <a href="/especialista-ia.html#integraciones" class="ref-link">
         <svg class="icon icon-b"><use href="#i-bot"/></svg>
-        Código HubSpot API y gestión de credenciales → Especialista IA
+        Código Gesden API y gestión de credenciales → Especialista IA
       </a>
       <a href="/especialista-web.html#integraciones" class="ref-link">
         <svg class="icon icon-b"><use href="#i-globe"/></svg>
@@ -672,7 +672,7 @@ title: Pro Funnel Basté — Documentación Técnica y Operativa
         <div class="kpi-icon"><svg class="icon icon-b"><use href="#i-refresh"/></svg></div>
         <div class="kpi-metric">Lead → Cita</div>
         <div class="kpi-target">&gt; 35%</div>
-        <div class="kpi-source">HubSpot CRM Pipeline</div>
+        <div class="kpi-source">Gesden Pipeline</div>
         <span class="kpi-freq">Semanal</span>
       </div>
       <div class="kpi-card">
@@ -730,7 +730,7 @@ title: Pro Funnel Basté — Documentación Técnica y Operativa
             <td><strong>Leads/mes captados</strong></td>
             <td><span class="pill badge-blue">Captación</span></td>
             <td>+80 leads/mes</td><td>~30 actuales</td>
-            <td>HubSpot + GTM</td><td>Semanal</td>
+            <td>Gesden + GTM</td><td>Semanal</td>
           </tr>
           <tr>
             <td><strong>Coste por Lead (CPL)</strong></td>
@@ -742,7 +742,7 @@ title: Pro Funnel Basté — Documentación Técnica y Operativa
             <td><strong>Tasa Lead → Cita</strong></td>
             <td><span class="pill badge-green">Conversión</span></td>
             <td>&gt; 35%</td><td>~20%</td>
-            <td>HubSpot Pipeline</td><td>Semanal</td>
+            <td>Gesden Pipeline</td><td>Semanal</td>
           </tr>
           <tr>
             <td><strong>Tasa Cita → Paciente</strong></td>
@@ -784,7 +784,7 @@ title: Pro Funnel Basté — Documentación Técnica y Operativa
             <td><strong>Chatbot Cualificación</strong></td>
             <td><span class="pill badge-teal">IA</span></td>
             <td>&gt; 60%</td><td>N/A</td>
-            <td>Logs GPT + HubSpot</td><td>Mensual</td>
+            <td>Logs GPT + Gesden</td><td>Mensual</td>
           </tr>
           <tr>
             <td><strong>Views Vídeo/mes</strong></td>
@@ -828,7 +828,7 @@ title: Pro Funnel Basté — Documentación Técnica y Operativa
 
     <div class="alert alert-green">
       <span class="alert-icon"><svg class="icon icon-b"><use href="#i-trend"/></svg></span>
-      <p><strong>Dashboard recomendado:</strong> Consolidar todos los KPIs en <strong>Looker Studio</strong> conectado a Google Ads, Meta Ads, GA4, HubSpot y ActiveCampaign. Enviar resumen ejecutivo automático cada lunes a las 9h vía email usando Make + Google Slides API para generar el informe en PDF.</p>
+      <p><strong>Dashboard recomendado:</strong> Consolidar todos los KPIs en <strong>Looker Studio</strong> conectado a Google Ads, Meta Ads, GA4, Gesden y ActiveCampaign. Enviar resumen ejecutivo automático cada lunes a las 9h vía email usando Make + Google Slides API para generar el informe en PDF.</p>
     </div>
 
     <div class="card-grid" style="margin-top:24px;">
