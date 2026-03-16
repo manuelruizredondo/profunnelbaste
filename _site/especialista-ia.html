@@ -694,6 +694,133 @@ Tono: cercano, profesional, en español. Respuestas máximo 3 frases.
         </div>
       </div>
     </div>
+
+    <!-- FLUJO 5 — ADS -->
+    <h3>Automatización de Campañas de Ads</h3>
+    <p>Hay tres niveles de automatización para Meta Ads y Google Ads, de menor a mayor complejidad:</p>
+
+    <div class="three-col" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-bottom:24px;">
+      <div class="card">
+        <div class="card-icon"><svg class="icon icon-b"><use href="#i-gear"/></svg></div>
+        <h4>Nivel 1 — Reglas nativas</h4>
+        <p style="font-size:.85rem;color:var(--gray-600);">Sin código. Dentro del propio panel de Meta/Google Ads.</p>
+        <ul class="feature-list">
+          <li>Pausar anuncio si CPL &gt; 20€</li>
+          <li>Aumentar presupuesto +20% si ROAS &gt; 4x</li>
+          <li>Activar campaña estacional en fechas concretas</li>
+          <li>Alerta por email si el gasto diario supera el límite</li>
+        </ul>
+        <span class="task-tag" style="background:var(--green-100);color:var(--green-800);font-size:.72rem;padding:3px 8px;border-radius:20px;display:inline-block;margin-top:8px;">Sin código</span>
+      </div>
+      <div class="card">
+        <div class="card-icon"><svg class="icon icon-b"><use href="#i-refresh"/></svg></div>
+        <h4>Nivel 2 — Make + APIs</h4>
+        <p style="font-size:.85rem;color:var(--gray-600);">Automatizaciones entre plataformas vía Make.</p>
+        <ul class="feature-list">
+          <li>Meta Lead Ads → Gesden + ActiveCampaign (lead capturado al instante)</li>
+          <li>Sincronizar lista de pacientes como audiencia personalizada en Meta</li>
+          <li>Informe semanal automático de rendimiento por email</li>
+          <li>Notificación a WhatsApp si una campaña se detiene por presupuesto</li>
+        </ul>
+        <span class="task-tag" style="background:var(--amber-100);color:var(--amber-800);font-size:.72rem;padding:3px 8px;border-radius:20px;display:inline-block;margin-top:8px;">Make</span>
+      </div>
+      <div class="card">
+        <div class="card-icon"><svg class="icon icon-b"><use href="#i-bot"/></svg></div>
+        <h4>Nivel 3 — GPT-4o copy</h4>
+        <p style="font-size:.85rem;color:var(--gray-600);">Generación automática de textos para anuncios.</p>
+        <ul class="feature-list">
+          <li>GPT-4o genera 3–5 variantes de headline + descripción por tratamiento</li>
+          <li>Listo para copiar en Meta Ads o Google Ads RSA</li>
+          <li>Trigger mensual o al cambiar la oferta activa</li>
+          <li>Cumple límites de caracteres de cada plataforma</li>
+        </ul>
+        <span class="task-tag" style="background:var(--blue-100);color:var(--blue-800);font-size:.72rem;padding:3px 8px;border-radius:20px;display:inline-block;margin-top:8px;">GPT-4o</span>
+      </div>
+    </div>
+
+    <div class="flow-container">
+      <div class="flow-title"><svg class="icon icon-b"><use href="#i-trend"/></svg> Flujo 5 — Meta Lead Ads → Gesden → Nurturing automático</div>
+      <div class="flow-steps">
+        <div class="flow-step trigger">
+          <div class="step-label">Trigger</div>
+          <div class="step-text">Lead rellena formulario en un anuncio de Meta (Lead Ads)</div>
+        </div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-step action">
+          <div class="step-label">Make</div>
+          <div class="step-text">Webhook Meta → Make crea contacto en Gesden + etiqueta el tratamiento de interés</div>
+        </div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-step action">
+          <div class="step-label">ActiveCampaign</div>
+          <div class="step-text">Se añade a la secuencia de nurturing correspondiente al tratamiento</div>
+        </div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-step action">
+          <div class="step-label">WhatsApp</div>
+          <div class="step-text">Mensaje de bienvenida personalizado en &lt; 5 minutos vía 360dialog</div>
+        </div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-step output">
+          <div class="step-label">Meta Ads</div>
+          <div class="step-text">Si convierte → enviar conversión offline a Meta para optimizar el algoritmo</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="code-block">
+      <div class="code-header">
+        <span class="code-lang">Python — GPT-4o generador de copy para anuncios Meta/Google</span>
+        <div class="code-dots"><span class="dot-red"></span><span class="dot-amber"></span><span class="dot-green"></span></div>
+      </div>
+      <pre><code><span class="c-kw">import</span> openai, json
+
+<span class="c-fn">def</span> <span class="c-key">generar_copy_ads</span>(tratamiento: <span class="c-key">str</span>, plataforma: <span class="c-key">str</span>, oferta: <span class="c-key">str</span> = <span class="c-str">""</span>) -> <span class="c-key">dict</span>:
+    limites = {
+        <span class="c-str">"meta"</span>:   {<span class="c-str">"headline"</span>: <span class="c-num">40</span>, <span class="c-str">"descripcion"</span>: <span class="c-num">125</span>, <span class="c-str">"texto_principal"</span>: <span class="c-num">125</span>},
+        <span class="c-str">"google"</span>: {<span class="c-str">"headline"</span>: <span class="c-num">30</span>, <span class="c-str">"descripcion"</span>: <span class="c-num">90</span>,  <span class="c-str">"texto_principal"</span>: <span class="c-num">0</span>}
+    }
+    l = limites.get(plataforma, limites[<span class="c-str">"meta"</span>])
+
+    prompt = <span class="c-str">f"""
+Crea copy publicitario para {plataforma.upper()} Ads de una clínica dental.
+
+Tratamiento: {tratamiento}
+Oferta: {oferta if oferta else "primera visita gratuita"}
+
+Devuelve JSON con 3 variantes:
+{{
+  "variantes": [
+    {{
+      "headline": "máximo {l['headline']} caracteres",
+      "descripcion": "máximo {l['descripcion']} caracteres",
+      "texto_principal": "máximo {l['texto_principal']} caracteres (solo Meta)",
+      "cta": "BOOK_NOW | LEARN_MORE | CONTACT_US | GET_QUOTE"
+    }}
+  ]
+}}
+
+Tono: directo, confianza, urgencia suave. Sin tecnicismos. Español de España.
+"""</span>
+
+    response = openai.chat.completions.create(
+        model=<span class="c-str">"gpt-4o"</span>,
+        messages=[{<span class="c-str">"role"</span>: <span class="c-str">"user"</span>, <span class="c-str">"content"</span>: prompt}],
+        response_format={<span class="c-str">"type"</span>: <span class="c-str">"json_object"</span>},
+        temperature=<span class="c-num">0.8</span>
+    )
+    <span class="c-kw">return</span> json.loads(response.choices[<span class="c-num">0</span>].message.content)
+
+<span class="c-comment"># Uso:</span>
+<span class="c-comment"># generar_copy_ads("Ortodoncia invisible", "meta", "Primera consulta gratis")</span>
+<span class="c-comment"># generar_copy_ads("Implantes dentales", "google", "Financiación sin intereses")</span></code></pre>
+    </div>
+
+    <div class="alert alert-amber">
+      <span class="alert-icon"><svg class="icon icon-b"><use href="#i-alert"/></svg></span>
+      <p><strong>Conversiones offline (Meta):</strong> Cuando un lead de Meta Ads acaba reservando cita, enviar esa conversión de vuelta a Meta vía <strong>Conversions API</strong> (CAPI). Esto mejora el algoritmo de optimización y reduce el CPL. Make puede automatizarlo: Gesden cita confirmada → Make → Meta CAPI.</p>
+    </div>
+
   </section>
 
   <!-- ════ INTEGRACIONES ════ -->
